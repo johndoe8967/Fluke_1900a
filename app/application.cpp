@@ -11,6 +11,7 @@
 #include <SmingCore/Network/TelnetServer.h>
 #include "Fluke.h"
 #include "wpsConnect.h"
+#include "webserver.h"
 
 
 #define debug
@@ -26,32 +27,35 @@
 TcpServer *serialTelnet;
 TcpClient *myClient[MAXCLIENT];
 
-
+Fluke myFluke;
 
 Timer cyclicTimer;
 
-Fluke myFluke;
-
 void cyclicProcess() {
 	debugf("Read");
+#define debugWebServer
+#ifdef debugWebServer
+	float a = (float)rand()/(float)(RAND_MAX);
+
+	sendMeasureToClients(a);
+#else
 	if (myFluke.readI2C()) {
 		String message = myFluke.getPrintable();
 
 		debugf("Mess: %s", message.c_str() );
+		sendMeasureToClients((float)myFluke.getValue()/10);
 
 		for (char i=0; i<MAXCLIENT; i++) {
 			if (myClient[i]) {
-				if (myFluke.isOverflow())
-					myClient[i]->writeString("Ovl ");
-				else
-					myClient[i]->writeString("    ");
+				if (myFluke.isOverflow()) 	myClient[i]->writeString("Ovl ");
+				else 						myClient[i]->writeString("    ");
+
 				myClient[i]->writeString(message);
 			}
 		}
 	}
+#endif
 }
-
-
 
 // add up to 4 clients simultaneous
 void onClient(TcpClient* client) {
@@ -94,7 +98,8 @@ void startmDNS() {
 void onConnect() {
 	serialTelnet = new TcpServer(TcpClientConnectDelegate(onClient),TcpClientDataDelegate(clientReceiveData),TcpClientCompleteDelegate(clientComplete));
 	serialTelnet->listen(23);
-	cyclicTimer.initializeMs(500,TimerDelegate(&cyclicProcess)).start();
+	startWebServer();
+	cyclicTimer.initializeMs(100,TimerDelegate(&cyclicProcess)).start();
 	startmDNS();  // Start mDNS "Advertise" of your hostname "test.local" for this example
 }
 
@@ -117,12 +122,16 @@ void init()
 	WifiStation.enable(false);
 
 	Serial.begin(SERIAL_BAUD_RATE); // 115200 by default
-	Serial.systemDebugOutput(true); // Disable debug output
+	Serial.systemDebugOutput(false); // Disable debug output
 
+	debugf("Starting");
+	spiffs_mount(); // Mount file system, in order to work with files
+
+
+#ifndef debugWebServer
 	Wire.pins(SCL, SDA);
 	Wire.begin();
-
-	serialTelnet = new TelnetServer;
+#endif
 
 	WifiStation.enable(true);
 	WifiStation.waitConnection(ConnectionDelegate(&onConnect),10,ConnectionDelegate(&noConnect));
