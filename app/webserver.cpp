@@ -57,8 +57,9 @@ void wsDisconnected(WebSocket& socket)
 }
 
 void sendMeasureToClients(float value) {
+	String message = "{\"type\": \"JSON\", \"msg\": \"value\", \"value\": " + String(value) + "}";
 	for (int i = 0; i < clients.count(); i++)
-		clients[i].sendString("{\"type\": \"JSON\", \"msg\": \"value\", \"value\": " + String(value) + "}");
+		clients[i].sendString(message);
 }
 
 void startWebServer()
