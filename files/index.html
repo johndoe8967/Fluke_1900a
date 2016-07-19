@@ -29,7 +29,7 @@ function drawChart() {
   numberOfRows=1;
   options = {'title':'UV Chart',
                  'width':900,
-                 'height':500};
+                 'height':600};
 
   chart = new google.visualization.LineChart(document.getElementById('chart_div'));
   chart.draw(data, options);
@@ -75,7 +75,8 @@ function drawChart() {
       	  if (data.getNumberOfRows() > 300) {
 	      	  data.removeRow(0);
       	  }
-    	  chart.draw(data);    		
+      	  chart.clearChart();
+    	  chart.draw(data,options);    		
     	}
       break;
     }

@@ -33,7 +33,7 @@ Timer cyclicTimer;
 
 void cyclicProcess() {
 	debugf("Read");
-#define debugWebServer
+//#define debugWebServer
 #ifdef debugWebServer
 	float a = (float)rand()/(float)(RAND_MAX);
 

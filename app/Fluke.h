@@ -17,9 +17,9 @@
 #define ZENER 0x02
 #define HUNDERTER 0x04
 #define MEGA 0x08
-#define TRIG 0x10
-#define FREQ 0x20
-#define OVL 0x40
+#define FREQ 0x10
+#define OVL 0x20
+#define TRIG 0x40
 
 class Fluke {
 public:
