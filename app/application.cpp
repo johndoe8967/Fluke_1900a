@@ -40,6 +40,7 @@ void cyclicProcess() {
 	sendMeasureToClients(a);
 #else
 	if (myFluke.readI2C()) {
+		unsigned long timestamp = millis();
 		String message = myFluke.getPrintable();
 
 		debugf("Mess: %s", message.c_str() );
@@ -47,10 +48,15 @@ void cyclicProcess() {
 
 		for (char i=0; i<MAXCLIENT; i++) {
 			if (myClient[i]) {
-				if (myFluke.isOverflow()) 	myClient[i]->writeString("Ovl ");
-				else 						myClient[i]->writeString("    ");
+				String timeString = "          ";
+				timeString += String(timestamp);
+				timeString = timeString.substring(timeString.length()-10);
 
-				myClient[i]->writeString(message);
+				if (myFluke.isOverflow()) 	timeString += "Ovl ";
+				else 						timeString += "    ";
+
+				timeString += message;
+				myClient[i]->writeString(timeString);
 			}
 		}
 	}
