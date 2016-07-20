@@ -33,9 +33,9 @@ architecture espfluke_arch of espfluke is
 	);
   end component;
   signal READ_REQ_SIG 		: std_logic;
-  signal DATA_VALID_SIG		: std_logic;
+--  signal DATA_VALID_SIG		: std_logic;
   signal DATA_TO_MASTER_SIG	: std_logic_vector(7 downto 0);
-  signal DATA_FROM_MASTER_SIG	: std_logic_vector(7 downto 0);
+--  signal DATA_FROM_MASTER_SIG	: std_logic_vector(7 downto 0);
 
   signal BCD1_SIG		: std_logic_vector(3 downto 0);
   signal BCD2_SIG		: std_logic_vector(3 downto 0);

@@ -37,7 +37,7 @@ architecture arch of I2C_slave is
 
   -- Address and data received from master
   signal addr_reg             : std_logic_vector(6 downto 0) := (others => '0');
-  signal data_reg             : std_logic_vector(6 downto 0) := (others => '0');
+--  signal data_reg             : std_logic_vector(6 downto 0) := (others => '0');
 
   signal scl_prev_reg : std_logic := '1';
   -- Slave writes on scl
