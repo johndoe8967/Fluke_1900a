@@ -19,7 +19,7 @@
 // definition of IO pins
 #define SCL 	2
 #define SDA		0
-#define INT_PIN 0
+#define INT_PIN 3
 
 /*
  * tcp server for telnet connection
@@ -158,8 +158,10 @@ void init()
 	WifiAccessPoint.enable(false);
 	WifiStation.enable(false);
 
+#ifndef USEINTERRUPT
 	Serial.begin(SERIAL_BAUD_RATE); // 115200 by default
 	Serial.systemDebugOutput(false); // Disable debug output
+#endif
 
 	debugf("Starting");
 	spiffs_mount(); // Mount file system, in order to work with files
