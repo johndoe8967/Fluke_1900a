@@ -1,0 +1,284 @@
+Start: C:\ispLEVER_Classic2_0\ispcpld\bin\syndpm -i espfluke.laf -if laf -p ispLSI1032E-70LJ84 -pd "c:\projekt\espfluke\ver1\run5"  -of verilog -of vhdl
+
+Project dir : C:\Projekt\ESPFLUKE, project name : espfluke
+cmd line for CImpLegacy : -xpn espfluke.xpn -xct espfluke.xct -rsp espfluke.rsp -par espfluke.par -prj espfluke -ues espfluke.ues
+Warning: can not open parent constraint file C:\ispLEVER_Classic2_0\ispcpld\config/-
+arg[0] = C:\ispLEVER_Classic2_0\ispcomp\bin\dpm.exe
+arg[1] = -i
+arg[2] = "c:\projekt\espfluke\ver1\run5\espfluke.laf"
+arg[3] = -if
+arg[4] = laf
+arg[5] = -p
+arg[6] = ispLSI1032E-70LJ84
+arg[7] = -of
+arg[8] = verilog
+arg[9] = -of
+arg[10] = vhdl
+arg[11] = -s
+arg[12] = d
+arg[13] = -e
+arg[14] = 2
+arg[15] = -z
+arg[16] = -m
+arg[17] = 11
+arg[18] = -n
+arg[19] = 4
+arg[20] = -ta
+arg[21] = on
+arg[22] = -y
+arg[23] = "c:\projekt\espfluke\ver1\run5\espfluke.xpn"
+arg[24] = -r
+arg[25] = "c:\projekt\espfluke\ver1\run5\ispxpert.par"
+cmd line = C:\ispLEVER_Classic2_0\ispcomp\bin\dpm.exe -i "c:\projekt\espfluke\ver1\run5\espfluke.laf" -if laf -p ispLSI1032E-70LJ84 -of verilog -of vhdl -s d -e 2 -z -m 11 -n 4 -ta on -y "c:\projekt\espfluke\ver1\run5\espfluke.xpn" -r "c:\projekt\espfluke\ver1\run5\ispxpert.par" 
+ispEXPERT Compiler Release 2.0.00.17.20.15, May 20 2002 13:06:40
+
+Copyright (C) 1994-2000 by Lattice Semiconductor Corporation.
+All Rights Reserved.
+
+
+Design Process Management 
+
+
+Preprocessing design 'espfluke'...
+
+Processing design 'espfluke'...
+
+
+Logical LAF Reading and Translation 
+  
+Reading file 'c:\projekt\espfluke\ver1\run5\espfluke.laf'... 
+32583 WARNING: Pin 'CLK_IN' is in external pin file but not in design; 
+      pin 'CLK_IN' is ignored 
+  
+Checking design rules... 
+Selected part is 'ispLSI1032E-70LJ84' 
+32504 WARNING: Attribute 'Y1_AS_RESET ON' is not valid for part 
+      'ispLSI1032E-70LJ84'; attribute 'Y1_AS_RESET ON' is ignored 
+  
+Writing output files... 
+  
+Logical LAF reading and translation completed successfully 
+
+
+Synthesis and Partitioning 
+  
+Reading design 'espfluke'... 
+  
+Optimizing logic... 
+33581 WARNING: Register 'UQBN_B134' is not observable from any output 
+      pin; register is removed 
+  
+Trying to move PT reset signal to global reset pin... 
+      PT reset signal cannot be moved to global reset pin 
+      In order to move PT reset signal to global reset pin, the 
+      following conditions need to be satisfied: 
+      1. There exists at least one pin which drives all register's reset
+      signals 
+      2. This pin is unlocked 
+      3. This pin does not drive any data signals 
+      4. This pin can be disjointly decomposed with other pins, if any, 
+      which drive reset signals 
+ LAF PART ispLSI1032E-70LJ84
+  
+Partitioning logic into 11-input, 11-input with DIs, functions to 
+      minimize delay... 
+  
+Extracting LXOR2 gates to minimize delay... 
+  
+Packing functions into GLBs using 11 inputs and 4 outputs per GLB to 
+      minimize delay... 
+34506 WARNING: OE net 'UQNN_N26' comes from an IOC or drives logic 
+      besides three-state buffers; buffer 'BUF_1959' is inserted to 
+      generate PT OE 
+Constant VCC drives register 'TRIGGER_SIG' data input 
+  
+Synthesis and partitioning statistics: 
+  
+Number of Macrocells is 82 
+Number of GLBs is 27 
+Number of product terms is 210 
+Maximum number of GLB levels is 3 
+Average number of inputs per GLB is 9.2 
+Average number of outputs per GLB is 3.0 
+Average number of product terms per GLB is 7.8 
+  
+Synthesis and partitioning completed successfully 
+
+
+Physical LAF Reading and Translation
+
+Reading design 'espfluke'...
+
+Writing output files...
+
+Physical LAF reading and translation completed successfully
+
+
+Placement and Routing
+
+Reading design 'espfluke'...
+
+Routing
+.
+
+
+Writing output files...
+
+Placement and routing completed successfully
+
+
+Technology Remapping 
+  
+Reading design 'espfluke'... 
+  
+Remapping... 
+  
+Writing output files... 
+  
+Writing output lco files... 
+  
+Technology remapping completed successfully 
+
+
+Physical LAF Reading and Translation
+
+Reading design 'espfluke'...
+
+Writing output files...
+
+Physical LAF reading and translation completed successfully
+
+
+Fusemap Generation
+
+Reading design 'espfluke'...
+
+Writing output files...
+
+Fusemap generation completed successfully
+
+
+Simulation LAF Netlist Generation
+
+Reading design 'espfluke'...
+
+Writing output files...
+
+
+Information: Global reset (XRESET) is generated to reset all registers
+
+
+
+Simulation LAF netlist generation completed successfully
+
+
+Timing Analyzer 
+Reading design espfluke .... 
+Done: completed successfully
+
+
+Evaluating maximum operating frequency ...
+Evaluating setup and hold times...
+               
+Calculating Tpd Path delays .....
+
+43123 WARNING: There are no Tpd paths for this mode of analysis in this design
+               
+         
+Timing analyzer completed successfully 
+
+
+
+Lattice Verilog netlist writer
+writing verilog netlist ...
+
+writing SDF file espfluke.sdf ...
+
+MSG: Please use SDF file espfluke.vsf for tools that do not support conditional delays.
+
+writing SDF file espfluke.vsf ...
+
+Verilog netlist writer completed successfully.
+
+
+
+Lattice VHDL netlist writer
+Copyright (c) 1993 - 2000 by Lattice Semiconductor Corporation.
+All Rights Reserved.
+
+writing vhdl file ...
+
+Please use the file: espfluke.vho for non-VITAL VHDL timing simulation with max delay.
+
+
+MSG: Cross reference file [ESPFLUKE.vxf] is created
+       Invalid VHDL identifiers are mapped to new unique names.
+       You can use -ext_id option to use extended identifiers if your
+       target system supports extended VHDL identifiers.
+
+47502 Warning: Port name [OUT_IN(3)] is an invalid VHDL identifier.
+         It is renamed to [UNIQPIN_P1].
+47502 Warning: Port name [OUT_IN(2)] is an invalid VHDL identifier.
+         It is renamed to [UNIQPIN_P2].
+47502 Warning: Port name [OUT_IN(1)] is an invalid VHDL identifier.
+         It is renamed to [UNIQPIN_P3].
+47502 Warning: Port name [OUT_IN(0)] is an invalid VHDL identifier.
+         It is renamed to [UNIQPIN_P4].
+47502 Warning: Port name [AS_IN(6)] is an invalid VHDL identifier.
+         It is renamed to [UNIQPIN_P5].
+47502 Warning: Port name [AS_IN(5)] is an invalid VHDL identifier.
+         It is renamed to [UNIQPIN_P6].
+47502 Warning: Port name [AS_IN(4)] is an invalid VHDL identifier.
+         It is renamed to [UNIQPIN_P7].
+47502 Warning: Port name [AS_IN(3)] is an invalid VHDL identifier.
+         It is renamed to [UNIQPIN_P8].
+47502 Warning: Port name [AS_IN(2)] is an invalid VHDL identifier.
+         It is renamed to [UNIQPIN_P9].
+47502 Warning: Port name [AS_IN(1)] is an invalid VHDL identifier.
+         It is renamed to [UNIQPIN_P10].
+
+Please use file [ESPFLUKE.vxf] for cross referencing original and new VHDL names.
+
+
+Please use the file: espfluke.vhn for non-VITAL VHDL timing simulation with min delay.
+
+
+
+Please use the VHDL netlist espfluke.vto,
+the SDF file espfluke.sdf and Lattice Semiconductor VITAL library for
+timing simulation with a VITAL compliant simulator.
+
+
+writing SDF file espfluke.sdf ...
+VHDL netlist writer completed successfully.
+
+
+Design process management completed successfully
+
+Start: C:\ispLEVER_Classic2_0\ispcpld\bin\synsvf -exe "C:\ispLEVER_Classic2_0\ispvmsystem/ispufw" -prj espfluke -if espfluke.jed -j2s -log espfluke.svl 
+
+Need not generate svf file according to the constraints, exit
+Warning: can not open parent constraint file C:\ispLEVER_Classic2_0\ispcpld\config/-
+Done: completed successfully
+
+Start: C:\ispLEVER_Classic2_0\ispcpld\bin\synta -proj espfluke -pd "c:\projekt\espfluke\ver1\run5" -dpm_only 
+
+Timing Analyzer Software 
+Copyright (c) 1999 by Lattice Semiconductor Corporation 
+All Rights Reserved 
+
+Reading design espfluke .... 
+
+Evaluating maximum operating frequency ...
+Evaluating setup and hold times...
+               
+Calculating Tpd Path delays .....
+
+Calculating Tco Path delays .....
+
+43123 WARNING: There are no Tpd paths for this mode of analysis in this design
+               
+Timing analyzer completed successfully 
+
+Done: completed successfully
+

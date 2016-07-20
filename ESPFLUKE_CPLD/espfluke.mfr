@@ -1,0 +1,552 @@
+Frequency Analysis Report:
+-------------------------
+
+Design Name: ESPFLUKE
+Part Name: ispLSI1032E-70LJ84
+
+This report contains the maximum frequency at which the design
+can be operated. It also lists the path that determines the
+maximum frequency and the number of GLB levels. 
+The remaining internal register paths and their frequencies
+are also listed, if the source and the registers are driven
+by the same reference clock.
+
+
+Maximum Operating Frequency:    24 MHz
+
+The clock period is 41.50.
+Clock period = path delay + clock-to-output delay + setup time
+  path delay:              38.10
+  clock-to-output delay:   2.40
+  setup time:              1.00
+
+
+The following path determines the frequency: 
+
+  Startpoint: GLB_UQNN_N10/Q0
+              (edge-triggered flip-flop)
+  Endpoint: GLB_UQNN_N37/D0
+              (edge-triggered flip-flop)
+  No. of GLB Levels: 3
+
+Internal Register  Paths and Frequencies:
+
+  Source              Source                  Destination       Destination             Clock     Frequency   # of GLB     
+  Reference           Register                Reference         Register                Period      [MHz]     Levels       
+  Clock               Name                    Clock             Name                     [ns]     
+==----------------------------------------------------------------------------------------------------------------
+  CLK_MASTER          GLB_UQNN_N10/Q0         CLK_MASTER        GLB_UQNN_N37/D0          41.50     24        3    
+  CLK_MASTER          GLB_UQNN_N11/Q0         CLK_MASTER        GLB_UQNN_N37/D0          41.50     24        3    
+  CLK_MASTER          GLB_UQNN_N10/Q0         CLK_MASTER        GLB_UQNN_N38/D0          41.50     24        3    
+  CLK_MASTER          GLB_UQNN_N11/Q0         CLK_MASTER        GLB_UQNN_N38/D0          41.50     24        3    
+  CLK_MASTER          GLB_UQNN_N10/Q0         CLK_MASTER        GLB_UQNN_N39/D0          41.50     24        3    
+  CLK_MASTER          GLB_UQNN_N11/Q0         CLK_MASTER        GLB_UQNN_N39/D0          41.50     24        3    
+  CLK_MASTER          GLB_UQNN_N10/Q0         CLK_MASTER        GLB_UQNN_N40/D0          41.50     24        3    
+  CLK_MASTER          GLB_UQNN_N11/Q0         CLK_MASTER        GLB_UQNN_N40/D0          41.50     24        3    
+  CLK_MASTER          GLB_UQNN_N10/Q0         CLK_MASTER        GLB_UQNN_N41/D0          41.50     24        3    
+  CLK_MASTER          GLB_UQNN_N11/Q0         CLK_MASTER        GLB_UQNN_N41/D0          41.50     24        3    
+  CLK_MASTER          GLB_UQNN_N10/Q0         CLK_MASTER        GLB_UQNN_N42/D0          41.50     24        3    
+  CLK_MASTER          GLB_UQNN_N11/Q0         CLK_MASTER        GLB_UQNN_N42/D0          41.50     24        3    
+  CLK_MASTER          GLB_UQNN_N10/Q0         CLK_MASTER        GLB_UQNN_N43/D0          41.50     24        3    
+  CLK_MASTER          GLB_UQNN_N11/Q0         CLK_MASTER        GLB_UQNN_N43/D0          41.50     24        3    
+  CLK_MASTER          GLB_UQNN_N12/Q0         CLK_MASTER        GLB_UQNN_N37/D0          41.40     24        3    
+  CLK_MASTER          GLB_UQNN_N28/Q0         CLK_MASTER        GLB_UQNN_N37/D0          41.40     24        3    
+  CLK_MASTER          GLB_UQNN_N29/Q0         CLK_MASTER        GLB_UQNN_N37/D0          41.40     24        3    
+  CLK_MASTER          GLB_UQNN_N12/Q0         CLK_MASTER        GLB_UQNN_N38/D0          41.40     24        3    
+  CLK_MASTER          GLB_UQNN_N28/Q0         CLK_MASTER        GLB_UQNN_N38/D0          41.40     24        3    
+  CLK_MASTER          GLB_UQNN_N29/Q0         CLK_MASTER        GLB_UQNN_N38/D0          41.40     24        3    
+  CLK_MASTER          GLB_UQNN_N12/Q0         CLK_MASTER        GLB_UQNN_N39/D0          41.40     24        3    
+  CLK_MASTER          GLB_UQNN_N28/Q0         CLK_MASTER        GLB_UQNN_N39/D0          41.40     24        3    
+  CLK_MASTER          GLB_UQNN_N29/Q0         CLK_MASTER        GLB_UQNN_N39/D0          41.40     24        3    
+  CLK_MASTER          GLB_UQNN_N12/Q0         CLK_MASTER        GLB_UQNN_N40/D0          41.40     24        3    
+  CLK_MASTER          GLB_UQNN_N28/Q0         CLK_MASTER        GLB_UQNN_N40/D0          41.40     24        3    
+  CLK_MASTER          GLB_UQNN_N29/Q0         CLK_MASTER        GLB_UQNN_N40/D0          41.40     24        3    
+  CLK_MASTER          GLB_UQNN_N12/Q0         CLK_MASTER        GLB_UQNN_N41/D0          41.40     24        3    
+  CLK_MASTER          GLB_UQNN_N28/Q0         CLK_MASTER        GLB_UQNN_N41/D0          41.40     24        3    
+  CLK_MASTER          GLB_UQNN_N29/Q0         CLK_MASTER        GLB_UQNN_N41/D0          41.40     24        3    
+  CLK_MASTER          GLB_UQNN_N12/Q0         CLK_MASTER        GLB_UQNN_N42/D0          41.40     24        3    
+  CLK_MASTER          GLB_UQNN_N28/Q0         CLK_MASTER        GLB_UQNN_N42/D0          41.40     24        3    
+  CLK_MASTER          GLB_UQNN_N29/Q0         CLK_MASTER        GLB_UQNN_N42/D0          41.40     24        3    
+  CLK_MASTER          GLB_UQNN_N12/Q0         CLK_MASTER        GLB_UQNN_N43/D0          41.40     24        3    
+  CLK_MASTER          GLB_UQNN_N28/Q0         CLK_MASTER        GLB_UQNN_N43/D0          41.40     24        3    
+  CLK_MASTER          GLB_UQNN_N29/Q0         CLK_MASTER        GLB_UQNN_N43/D0          41.40     24        3    
+  CLK_MASTER          GLB_UQNN_N13/Q0         CLK_MASTER        GLB_UQNN_N37/D0          41.30     24        3    
+  CLK_MASTER          GLB_UQNN_N13/Q0         CLK_MASTER        GLB_UQNN_N38/D0          41.30     24        3    
+  CLK_MASTER          GLB_UQNN_N13/Q0         CLK_MASTER        GLB_UQNN_N39/D0          41.30     24        3    
+  CLK_MASTER          GLB_UQNN_N13/Q0         CLK_MASTER        GLB_UQNN_N40/D0          41.30     24        3    
+  CLK_MASTER          GLB_UQNN_N13/Q0         CLK_MASTER        GLB_UQNN_N41/D0          41.30     24        3    
+  CLK_MASTER          GLB_UQNN_N13/Q0         CLK_MASTER        GLB_UQNN_N42/D0          41.30     24        3    
+  CLK_MASTER          GLB_UQNN_N13/Q0         CLK_MASTER        GLB_UQNN_N43/D0          41.30     24        3    
+  CLK_MASTER          GLB_UQNN_N10/Q0         CLK_MASTER        GLB_UQNN_N44/D0          40.00     25        3    
+  CLK_MASTER          GLB_UQNN_N11/Q0         CLK_MASTER        GLB_UQNN_N44/D0          40.00     25        3    
+  CLK_MASTER          GLB_UQNN_N12/Q0         CLK_MASTER        GLB_UQNN_N44/D0          39.90     25        3    
+  CLK_MASTER          GLB_UQNN_N28/Q0         CLK_MASTER        GLB_UQNN_N44/D0          39.90     25        3    
+  CLK_MASTER          GLB_UQNN_N29/Q0         CLK_MASTER        GLB_UQNN_N44/D0          39.90     25        3    
+  CLK_MASTER          GLB_UQNN_N13/Q0         CLK_MASTER        GLB_UQNN_N44/D0          39.80     25        3    
+  CLK_MASTER          GLB_UQNN_N25/Q0         CLK_MASTER        GLB_UQNN_N37/D0          28.90     35        2    
+  CLK_MASTER          GLB_UQNN_N25/Q0         CLK_MASTER        GLB_UQNN_N38/D0          28.90     35        2    
+  CLK_MASTER          GLB_UQNN_N25/Q0         CLK_MASTER        GLB_UQNN_N39/D0          28.90     35        2    
+  CLK_MASTER          GLB_UQNN_N25/Q0         CLK_MASTER        GLB_UQNN_N40/D0          28.90     35        2    
+  CLK_MASTER          GLB_UQNN_N25/Q0         CLK_MASTER        GLB_UQNN_N41/D0          28.90     35        2    
+  CLK_MASTER          GLB_UQNN_N25/Q0         CLK_MASTER        GLB_UQNN_N42/D0          28.90     35        2    
+  CLK_MASTER          GLB_UQNN_N25/Q0         CLK_MASTER        GLB_UQNN_N43/D0          28.90     35        2    
+  CLK_MASTER          GLB_STOP_SIG/Q0         CLK_MASTER        GLB_UQNN_N13/D0          28.60     35        2    
+  CLK_MASTER          GLB_UQNN_N10/Q0         CLK_MASTER        GLB_UQNN_N13/D0          28.60     35        2    
+  CLK_MASTER          GLB_UQNN_N11/Q0         CLK_MASTER        GLB_UQNN_N13/D0          28.60     35        2    
+  CLK_MASTER          GLB_UQNN_N25/Q0         CLK_MASTER        GLB_UQNN_N13/D0          28.60     35        2    
+  CLK_MASTER          GLB_UQNN_N12/Q0         CLK_MASTER        GLB_UQNN_N13/D0          28.50     35        2    
+  CLK_MASTER          GLB_UQNN_N23/Q0         CLK_MASTER        GLB_UQNN_N13/D0          28.50     35        2    
+  CLK_MASTER          GLB_UQNN_N28/Q0         CLK_MASTER        GLB_UQNN_N13/D0          28.50     35        2    
+  CLK_MASTER          GLB_UQNN_N29/Q0         CLK_MASTER        GLB_UQNN_N13/D0          28.50     35        2    
+  CLK_MASTER          GLB_UQNN_N15/Q0         CLK_MASTER        GLB_UQNN_N37/D0          28.50     35        2    
+  CLK_MASTER          GLB_UQNN_N16/Q0         CLK_MASTER        GLB_UQNN_N37/D0          28.50     35        2    
+  CLK_MASTER          GLB_UQNN_N18/Q0         CLK_MASTER        GLB_UQNN_N37/D0          28.50     35        2    
+  CLK_MASTER          GLB_UQNN_N24/Q0         CLK_MASTER        GLB_UQNN_N37/D0          28.50     35        2    
+  CLK_MASTER          GLB_UQNN_N31/Q0         CLK_MASTER        GLB_UQNN_N37/D0          28.50     35        2    
+  CLK_MASTER          GLB_UQNN_N36/Q0         CLK_MASTER        GLB_UQNN_N37/D0          28.50     35        2    
+  CLK_MASTER          GLB_UQNN_N15/Q0         CLK_MASTER        GLB_UQNN_N38/D0          28.50     35        2    
+  CLK_MASTER          GLB_UQNN_N16/Q0         CLK_MASTER        GLB_UQNN_N38/D0          28.50     35        2    
+  CLK_MASTER          GLB_UQNN_N18/Q0         CLK_MASTER        GLB_UQNN_N38/D0          28.50     35        2    
+  CLK_MASTER          GLB_UQNN_N24/Q0         CLK_MASTER        GLB_UQNN_N38/D0          28.50     35        2    
+  CLK_MASTER          GLB_UQNN_N31/Q0         CLK_MASTER        GLB_UQNN_N38/D0          28.50     35        2    
+  CLK_MASTER          GLB_UQNN_N36/Q0         CLK_MASTER        GLB_UQNN_N38/D0          28.50     35        2    
+  CLK_MASTER          GLB_UQNN_N15/Q0         CLK_MASTER        GLB_UQNN_N39/D0          28.50     35        2    
+  CLK_MASTER          GLB_UQNN_N16/Q0         CLK_MASTER        GLB_UQNN_N39/D0          28.50     35        2    
+  CLK_MASTER          GLB_UQNN_N18/Q0         CLK_MASTER        GLB_UQNN_N39/D0          28.50     35        2    
+  CLK_MASTER          GLB_UQNN_N24/Q0         CLK_MASTER        GLB_UQNN_N39/D0          28.50     35        2    
+  CLK_MASTER          GLB_UQNN_N31/Q0         CLK_MASTER        GLB_UQNN_N39/D0          28.50     35        2    
+  CLK_MASTER          GLB_UQNN_N36/Q0         CLK_MASTER        GLB_UQNN_N39/D0          28.50     35        2    
+  CLK_MASTER          GLB_UQNN_N15/Q0         CLK_MASTER        GLB_UQNN_N40/D0          28.50     35        2    
+  CLK_MASTER          GLB_UQNN_N16/Q0         CLK_MASTER        GLB_UQNN_N40/D0          28.50     35        2    
+  CLK_MASTER          GLB_UQNN_N18/Q0         CLK_MASTER        GLB_UQNN_N40/D0          28.50     35        2    
+  CLK_MASTER          GLB_UQNN_N24/Q0         CLK_MASTER        GLB_UQNN_N40/D0          28.50     35        2    
+  CLK_MASTER          GLB_UQNN_N31/Q0         CLK_MASTER        GLB_UQNN_N40/D0          28.50     35        2    
+  CLK_MASTER          GLB_UQNN_N36/Q0         CLK_MASTER        GLB_UQNN_N40/D0          28.50     35        2    
+  CLK_MASTER          GLB_UQNN_N15/Q0         CLK_MASTER        GLB_UQNN_N41/D0          28.50     35        2    
+  CLK_MASTER          GLB_UQNN_N16/Q0         CLK_MASTER        GLB_UQNN_N41/D0          28.50     35        2    
+  CLK_MASTER          GLB_UQNN_N18/Q0         CLK_MASTER        GLB_UQNN_N41/D0          28.50     35        2    
+  CLK_MASTER          GLB_UQNN_N24/Q0         CLK_MASTER        GLB_UQNN_N41/D0          28.50     35        2    
+  CLK_MASTER          GLB_UQNN_N31/Q0         CLK_MASTER        GLB_UQNN_N41/D0          28.50     35        2    
+  CLK_MASTER          GLB_UQNN_N36/Q0         CLK_MASTER        GLB_UQNN_N41/D0          28.50     35        2    
+  CLK_MASTER          GLB_UQNN_N15/Q0         CLK_MASTER        GLB_UQNN_N42/D0          28.50     35        2    
+  CLK_MASTER          GLB_UQNN_N16/Q0         CLK_MASTER        GLB_UQNN_N42/D0          28.50     35        2    
+  CLK_MASTER          GLB_UQNN_N18/Q0         CLK_MASTER        GLB_UQNN_N42/D0          28.50     35        2    
+  CLK_MASTER          GLB_UQNN_N24/Q0         CLK_MASTER        GLB_UQNN_N42/D0          28.50     35        2    
+  CLK_MASTER          GLB_UQNN_N31/Q0         CLK_MASTER        GLB_UQNN_N42/D0          28.50     35        2    
+  CLK_MASTER          GLB_UQNN_N36/Q0         CLK_MASTER        GLB_UQNN_N42/D0          28.50     35        2    
+  CLK_MASTER          GLB_UQNN_N15/Q0         CLK_MASTER        GLB_UQNN_N43/D0          28.50     35        2    
+  CLK_MASTER          GLB_UQNN_N16/Q0         CLK_MASTER        GLB_UQNN_N43/D0          28.50     35        2    
+  CLK_MASTER          GLB_UQNN_N18/Q0         CLK_MASTER        GLB_UQNN_N43/D0          28.50     35        2    
+  CLK_MASTER          GLB_UQNN_N24/Q0         CLK_MASTER        GLB_UQNN_N43/D0          28.50     35        2    
+  CLK_MASTER          GLB_UQNN_N31/Q0         CLK_MASTER        GLB_UQNN_N43/D0          28.50     35        2    
+  CLK_MASTER          GLB_UQNN_N36/Q0         CLK_MASTER        GLB_UQNN_N43/D0          28.50     35        2    
+  CLK_MASTER          GLB_UQNN_N13/Q0         CLK_MASTER        GLB_UQNN_N13/D0          28.40     35        2    
+  CLK_MASTER          GLB_UQNN_N22/Q0         CLK_MASTER        GLB_UQNN_N13/D0          28.40     35        2    
+  CLK_MASTER          GLB_UQNN_N17/Q0         CLK_MASTER        GLB_UQNN_N37/D0          28.40     35        2    
+  CLK_MASTER          GLB_UQNN_N19/Q0         CLK_MASTER        GLB_UQNN_N37/D0          28.40     35        2    
+  CLK_MASTER          GLB_UQNN_N30/Q0         CLK_MASTER        GLB_UQNN_N37/D0          28.40     35        2    
+  CLK_MASTER          GLB_UQNN_N17/Q0         CLK_MASTER        GLB_UQNN_N38/D0          28.40     35        2    
+  CLK_MASTER          GLB_UQNN_N19/Q0         CLK_MASTER        GLB_UQNN_N38/D0          28.40     35        2    
+  CLK_MASTER          GLB_UQNN_N30/Q0         CLK_MASTER        GLB_UQNN_N38/D0          28.40     35        2    
+  CLK_MASTER          GLB_UQNN_N17/Q0         CLK_MASTER        GLB_UQNN_N39/D0          28.40     35        2    
+  CLK_MASTER          GLB_UQNN_N19/Q0         CLK_MASTER        GLB_UQNN_N39/D0          28.40     35        2    
+  CLK_MASTER          GLB_UQNN_N30/Q0         CLK_MASTER        GLB_UQNN_N39/D0          28.40     35        2    
+  CLK_MASTER          GLB_UQNN_N17/Q0         CLK_MASTER        GLB_UQNN_N40/D0          28.40     35        2    
+  CLK_MASTER          GLB_UQNN_N19/Q0         CLK_MASTER        GLB_UQNN_N40/D0          28.40     35        2    
+  CLK_MASTER          GLB_UQNN_N30/Q0         CLK_MASTER        GLB_UQNN_N40/D0          28.40     35        2    
+  CLK_MASTER          GLB_UQNN_N17/Q0         CLK_MASTER        GLB_UQNN_N41/D0          28.40     35        2    
+  CLK_MASTER          GLB_UQNN_N19/Q0         CLK_MASTER        GLB_UQNN_N41/D0          28.40     35        2    
+  CLK_MASTER          GLB_UQNN_N30/Q0         CLK_MASTER        GLB_UQNN_N41/D0          28.40     35        2    
+  CLK_MASTER          GLB_UQNN_N17/Q0         CLK_MASTER        GLB_UQNN_N42/D0          28.40     35        2    
+  CLK_MASTER          GLB_UQNN_N19/Q0         CLK_MASTER        GLB_UQNN_N42/D0          28.40     35        2    
+  CLK_MASTER          GLB_UQNN_N30/Q0         CLK_MASTER        GLB_UQNN_N42/D0          28.40     35        2    
+  CLK_MASTER          GLB_UQNN_N17/Q0         CLK_MASTER        GLB_UQNN_N43/D0          28.40     35        2    
+  CLK_MASTER          GLB_UQNN_N19/Q0         CLK_MASTER        GLB_UQNN_N43/D0          28.40     35        2    
+  CLK_MASTER          GLB_UQNN_N30/Q0         CLK_MASTER        GLB_UQNN_N43/D0          28.40     35        2    
+  CLK_MASTER          GLB_UQNN_N10/Q0         CLK_MASTER        GLB_..._SIG *1/D0        28.00     36        2    
+  CLK_MASTER          GLB_UQNN_N11/Q0         CLK_MASTER        GLB_..._SIG *1/D0        28.00     36        2    
+  CLK_MASTER          GLB_UQNN_N12/Q0         CLK_MASTER        GLB_..._SIG *1/D0        27.90     36        2    
+  CLK_MASTER          GLB_UQNN_N28/Q0         CLK_MASTER        GLB_..._SIG *1/D0        27.90     36        2    
+  CLK_MASTER          GLB_UQNN_N29/Q0         CLK_MASTER        GLB_..._SIG *1/D0        27.90     36        2    
+  CLK_MASTER          GLB_UQNN_N13/Q0         CLK_MASTER        GLB_..._SIG *1/D0        27.80     36        2    
+  CLK_MASTER          GLB_UQNN_N25/Q0         CLK_MASTER        GLB_UQNN_N44/D0          27.40     36        2    
+  CLK_MASTER          GLB_STOP_SIG/Q0         CLK_MASTER        GLB_UQNN_N10/D0          27.10     37        2    
+  CLK_MASTER          GLB_UQNN_N10/Q0         CLK_MASTER        GLB_UQNN_N10/D0          27.10     37        2    
+  CLK_MASTER          GLB_UQNN_N11/Q0         CLK_MASTER        GLB_UQNN_N10/D0          27.10     37        2    
+  CLK_MASTER          GLB_UQNN_N25/Q0         CLK_MASTER        GLB_UQNN_N10/D0          27.10     37        2    
+  CLK_MASTER          GLB_STOP_SIG/Q0         CLK_MASTER        GLB_UQNN_N11/D0          27.10     37        2    
+  CLK_MASTER          GLB_UQNN_N10/Q0         CLK_MASTER        GLB_UQNN_N11/D0          27.10     37        2    
+  CLK_MASTER          GLB_UQNN_N11/Q0         CLK_MASTER        GLB_UQNN_N11/D0          27.10     37        2    
+  CLK_MASTER          GLB_UQNN_N25/Q0         CLK_MASTER        GLB_UQNN_N11/D0          27.10     37        2    
+  CLK_MASTER          GLB_STOP_SIG/Q0         CLK_MASTER        GLB_UQNN_N12/D0          27.10     37        2    
+  CLK_MASTER          GLB_UQNN_N10/Q0         CLK_MASTER        GLB_UQNN_N12/D0          27.10     37        2    
+  CLK_MASTER          GLB_UQNN_N11/Q0         CLK_MASTER        GLB_UQNN_N12/D0          27.10     37        2    
+  CLK_MASTER          GLB_UQNN_N25/Q0         CLK_MASTER        GLB_UQNN_N12/D0          27.10     37        2    
+  CLK_MASTER          GLB_UQNN_N12/Q0         CLK_MASTER        GLB_UQNN_N10/D0          27.00     37        2    
+  CLK_MASTER          GLB_UQNN_N23/Q0         CLK_MASTER        GLB_UQNN_N10/D0          27.00     37        2    
+  CLK_MASTER          GLB_UQNN_N28/Q0         CLK_MASTER        GLB_UQNN_N10/D0          27.00     37        2    
+  CLK_MASTER          GLB_UQNN_N29/Q0         CLK_MASTER        GLB_UQNN_N10/D0          27.00     37        2    
+  CLK_MASTER          GLB_UQNN_N12/Q0         CLK_MASTER        GLB_UQNN_N11/D0          27.00     37        2    
+  CLK_MASTER          GLB_UQNN_N23/Q0         CLK_MASTER        GLB_UQNN_N11/D0          27.00     37        2    
+  CLK_MASTER          GLB_UQNN_N28/Q0         CLK_MASTER        GLB_UQNN_N11/D0          27.00     37        2    
+  CLK_MASTER          GLB_UQNN_N29/Q0         CLK_MASTER        GLB_UQNN_N11/D0          27.00     37        2    
+  CLK_MASTER          GLB_UQNN_N12/Q0         CLK_MASTER        GLB_UQNN_N12/D0          27.00     37        2    
+  CLK_MASTER          GLB_UQNN_N23/Q0         CLK_MASTER        GLB_UQNN_N12/D0          27.00     37        2    
+  CLK_MASTER          GLB_UQNN_N28/Q0         CLK_MASTER        GLB_UQNN_N12/D0          27.00     37        2    
+  CLK_MASTER          GLB_UQNN_N29/Q0         CLK_MASTER        GLB_UQNN_N12/D0          27.00     37        2    
+  CLK_MASTER          GLB_UQNN_N15/Q0         CLK_MASTER        GLB_UQNN_N44/D0          27.00     37        2    
+  CLK_MASTER          GLB_UQNN_N16/Q0         CLK_MASTER        GLB_UQNN_N44/D0          27.00     37        2    
+  CLK_MASTER          GLB_UQNN_N18/Q0         CLK_MASTER        GLB_UQNN_N44/D0          27.00     37        2    
+  CLK_MASTER          GLB_UQNN_N24/Q0         CLK_MASTER        GLB_UQNN_N44/D0          27.00     37        2    
+  CLK_MASTER          GLB_UQNN_N31/Q0         CLK_MASTER        GLB_UQNN_N44/D0          27.00     37        2    
+  CLK_MASTER          GLB_UQNN_N36/Q0         CLK_MASTER        GLB_UQNN_N44/D0          27.00     37        2    
+  CLK_MASTER          GLB_UQNN_N13/Q0         CLK_MASTER        GLB_UQNN_N10/D0          26.90     37        2    
+  CLK_MASTER          GLB_UQNN_N22/Q0         CLK_MASTER        GLB_UQNN_N10/D0          26.90     37        2    
+  CLK_MASTER          GLB_UQNN_N13/Q0         CLK_MASTER        GLB_UQNN_N11/D0          26.90     37        2    
+  CLK_MASTER          GLB_UQNN_N22/Q0         CLK_MASTER        GLB_UQNN_N11/D0          26.90     37        2    
+  CLK_MASTER          GLB_UQNN_N13/Q0         CLK_MASTER        GLB_UQNN_N12/D0          26.90     37        2    
+  CLK_MASTER          GLB_UQNN_N22/Q0         CLK_MASTER        GLB_UQNN_N12/D0          26.90     37        2    
+  CLK_MASTER          GLB_UQNN_N17/Q0         CLK_MASTER        GLB_UQNN_N44/D0          26.90     37        2    
+  CLK_MASTER          GLB_UQNN_N19/Q0         CLK_MASTER        GLB_UQNN_N44/D0          26.90     37        2    
+  CLK_MASTER          GLB_UQNN_N30/Q0         CLK_MASTER        GLB_UQNN_N44/D0          26.90     37        2    
+  CLK_MASTER          GLB_UQNN_N10/Q0         CLK_MASTER        GLB_UQNN_N33/D0          26.50     38        2    
+  CLK_MASTER          GLB_UQNN_N11/Q0         CLK_MASTER        GLB_UQNN_N33/D0          26.50     38        2    
+  CLK_MASTER          GLB_UQNN_N10/Q0         CLK_MASTER        GLB_UQNN_N48/D0          26.50     38        2    
+  CLK_MASTER          GLB_UQNN_N11/Q0         CLK_MASTER        GLB_UQNN_N48/D0          26.50     38        2    
+  CLK_MASTER          GLB_UQNN_N10/Q0         CLK_MASTER        GLB_UQNN_N22/D0          26.40     38        2    
+  CLK_MASTER          GLB_UQNN_N11/Q0         CLK_MASTER        GLB_UQNN_N22/D0          26.40     38        2    
+  CLK_MASTER          GLB_UQNN_N10/Q0         CLK_MASTER        GLB_UQNN_N24/D0          26.40     38        2    
+  CLK_MASTER          GLB_UQNN_N11/Q0         CLK_MASTER        GLB_UQNN_N24/D0          26.40     38        2    
+  CLK_MASTER          GLB_UQNN_N12/Q0         CLK_MASTER        GLB_UQNN_N33/D0          26.40     38        2    
+  CLK_MASTER          GLB_UQNN_N28/Q0         CLK_MASTER        GLB_UQNN_N33/D0          26.40     38        2    
+  CLK_MASTER          GLB_UQNN_N29/Q0         CLK_MASTER        GLB_UQNN_N33/D0          26.40     38        2    
+  CLK_MASTER          GLB_UQNN_N12/Q0         CLK_MASTER        GLB_UQNN_N48/D0          26.40     38        2    
+  CLK_MASTER          GLB_UQNN_N28/Q0         CLK_MASTER        GLB_UQNN_N48/D0          26.40     38        2    
+  CLK_MASTER          GLB_UQNN_N29/Q0         CLK_MASTER        GLB_UQNN_N48/D0          26.40     38        2    
+  CLK_MASTER          GLB_UQNN_N12/Q0         CLK_MASTER        GLB_UQNN_N22/D0          26.30     38        2    
+  CLK_MASTER          GLB_UQNN_N29/Q0         CLK_MASTER        GLB_UQNN_N22/D0          26.30     38        2    
+  CLK_MASTER          GLB_UQNN_N12/Q0         CLK_MASTER        GLB_UQNN_N24/D0          26.30     38        2    
+  CLK_MASTER          GLB_UQNN_N29/Q0         CLK_MASTER        GLB_UQNN_N24/D0          26.30     38        2    
+  CLK_MASTER          GLB_UQNN_N13/Q0         CLK_MASTER        GLB_UQNN_N33/D0          26.30     38        2    
+  CLK_MASTER          GLB_UQNN_N13/Q0         CLK_MASTER        GLB_UQNN_N48/D0          26.30     38        2    
+  CLK_MASTER          GLB_UQNN_N13/Q0         CLK_MASTER        GLB_UQNN_N22/D0          26.20     38        2    
+  CLK_MASTER          GLB_UQNN_N22/Q0         CLK_MASTER        GLB_UQNN_N22/D0          26.20     38        2    
+  CLK_MASTER          GLB_UQNN_N13/Q0         CLK_MASTER        GLB_UQNN_N24/D0          26.20     38        2    
+  CLK_MASTER          GLB_UQNN_N22/Q0         CLK_MASTER        GLB_UQNN_N24/D0          26.20     38        2    
+  CLK_MASTER          GLB_..._SIG *2/Q0       AS_IN(3)          GLB_M_part1/D0           15.80     ----     1    
+  CLK_MASTER          GLB_..._SIG *2/Q0       AS_IN(3)          GLB_M_part2/D0           15.80     ----     1    
+  CLK_MASTER          GLB_UQNN_N25/Q0         CLK_MASTER        GLB_..._SIG *1/D0        15.40     65        1    
+  CLK_MASTER          GLB_UQNN_N10/Q0         CLK_MASTER        GLB_UQNN_N15/D0          15.40     65        1    
+  CLK_MASTER          GLB_UQNN_N11/Q0         CLK_MASTER        GLB_UQNN_N15/D0          15.40     65        1    
+  CLK_MASTER          GLB_UQNN_N25/Q0         CLK_MASTER        GLB_UQNN_N15/D0          15.40     65        1    
+  CLK_MASTER          GLB_UQNN_N10/Q0         CLK_MASTER        GLB_UQNN_N16/D0          15.40     65        1    
+  CLK_MASTER          GLB_UQNN_N11/Q0         CLK_MASTER        GLB_UQNN_N16/D0          15.40     65        1    
+  CLK_MASTER          GLB_UQNN_N25/Q0         CLK_MASTER        GLB_UQNN_N16/D0          15.40     65        1    
+  CLK_MASTER          GLB_UQNN_N10/Q0         CLK_MASTER        GLB_UQNN_N17/D0          15.40     65        1    
+  CLK_MASTER          GLB_UQNN_N11/Q0         CLK_MASTER        GLB_UQNN_N17/D0          15.40     65        1    
+  CLK_MASTER          GLB_UQNN_N25/Q0         CLK_MASTER        GLB_UQNN_N17/D0          15.40     65        1    
+  CLK_MASTER          GLB_UQNN_N10/Q0         CLK_MASTER        GLB_UQNN_N18/D0          15.40     65        1    
+  CLK_MASTER          GLB_UQNN_N11/Q0         CLK_MASTER        GLB_UQNN_N18/D0          15.40     65        1    
+  CLK_MASTER          GLB_UQNN_N25/Q0         CLK_MASTER        GLB_UQNN_N18/D0          15.40     65        1    
+  CLK_MASTER          GLB_UQNN_N10/Q0         CLK_MASTER        GLB_UQNN_N19/D0          15.40     65        1    
+  CLK_MASTER          GLB_UQNN_N11/Q0         CLK_MASTER        GLB_UQNN_N19/D0          15.40     65        1    
+  CLK_MASTER          GLB_UQNN_N25/Q0         CLK_MASTER        GLB_UQNN_N19/D0          15.40     65        1    
+  CLK_MASTER          GLB_UQNN_N10/Q0         CLK_MASTER        GLB_UQNN_N26/D0          15.40     65        1    
+  CLK_MASTER          GLB_UQNN_N11/Q0         CLK_MASTER        GLB_UQNN_N26/D0          15.40     65        1    
+  CLK_MASTER          GLB_UQNN_N10/Q0         CLK_MASTER        GLB_UQNN_N28/D0          15.40     65        1    
+  CLK_MASTER          GLB_UQNN_N11/Q0         CLK_MASTER        GLB_UQNN_N28/D0          15.40     65        1    
+  CLK_MASTER          GLB_UQNN_N10/Q0         CLK_MASTER        GLB_UQNN_N30/D0          15.40     65        1    
+  CLK_MASTER          GLB_UQNN_N11/Q0         CLK_MASTER        GLB_UQNN_N30/D0          15.40     65        1    
+  CLK_MASTER          GLB_UQNN_N25/Q0         CLK_MASTER        GLB_UQNN_N30/D0          15.40     65        1    
+  CLK_MASTER          GLB_UQNN_N10/Q0         CLK_MASTER        GLB_UQNN_N31/D0          15.40     65        1    
+  CLK_MASTER          GLB_UQNN_N11/Q0         CLK_MASTER        GLB_UQNN_N31/D0          15.40     65        1    
+  CLK_MASTER          GLB_UQNN_N25/Q0         CLK_MASTER        GLB_UQNN_N31/D0          15.40     65        1    
+  CLK_MASTER          GLB_UQNN_N10/Q0         CLK_MASTER        GLB_UQNN_N36/D0          15.40     65        1    
+  CLK_MASTER          GLB_UQNN_N11/Q0         CLK_MASTER        GLB_UQNN_N36/D0          15.40     65        1    
+  CLK_MASTER          GLB_UQNN_N25/Q0         CLK_MASTER        GLB_UQNN_N36/D0          15.40     65        1    
+  CLK_MASTER          GLB_UQNN_N12/Q0         CLK_MASTER        GLB_UQNN_N15/D0          15.30     65        1    
+  CLK_MASTER          GLB_UQNN_N28/Q0         CLK_MASTER        GLB_UQNN_N15/D0          15.30     65        1    
+  CLK_MASTER          GLB_UQNN_N12/Q0         CLK_MASTER        GLB_UQNN_N16/D0          15.30     65        1    
+  CLK_MASTER          GLB_UQNN_N28/Q0         CLK_MASTER        GLB_UQNN_N16/D0          15.30     65        1    
+  CLK_MASTER          GLB_UQNN_N12/Q0         CLK_MASTER        GLB_UQNN_N17/D0          15.30     65        1    
+  CLK_MASTER          GLB_UQNN_N28/Q0         CLK_MASTER        GLB_UQNN_N17/D0          15.30     65        1    
+  CLK_MASTER          GLB_UQNN_N12/Q0         CLK_MASTER        GLB_UQNN_N18/D0          15.30     65        1    
+  CLK_MASTER          GLB_UQNN_N28/Q0         CLK_MASTER        GLB_UQNN_N18/D0          15.30     65        1    
+  CLK_MASTER          GLB_UQNN_N12/Q0         CLK_MASTER        GLB_UQNN_N19/D0          15.30     65        1    
+  CLK_MASTER          GLB_UQNN_N28/Q0         CLK_MASTER        GLB_UQNN_N19/D0          15.30     65        1    
+  CLK_MASTER          GLB_UQNN_N12/Q0         CLK_MASTER        GLB_UQNN_N26/D0          15.30     65        1    
+  CLK_MASTER          GLB_UQNN_N23/Q0         CLK_MASTER        GLB_UQNN_N28/D0          15.30     65        1    
+  CLK_MASTER          GLB_UQNN_N28/Q0         CLK_MASTER        GLB_UQNN_N28/D0          15.30     65        1    
+  CLK_MASTER          GLB_UQNN_N29/Q0         CLK_MASTER        GLB_UQNN_N28/D0          15.30     65        1    
+  CLK_MASTER          GLB_UQNN_N12/Q0         CLK_MASTER        GLB_UQNN_N30/D0          15.30     65        1    
+  CLK_MASTER          GLB_UQNN_N28/Q0         CLK_MASTER        GLB_UQNN_N30/D0          15.30     65        1    
+  CLK_MASTER          GLB_UQNN_N12/Q0         CLK_MASTER        GLB_UQNN_N31/D0          15.30     65        1    
+  CLK_MASTER          GLB_UQNN_N28/Q0         CLK_MASTER        GLB_UQNN_N31/D0          15.30     65        1    
+  CLK_MASTER          GLB_UQNN_N12/Q0         CLK_MASTER        GLB_UQNN_N36/D0          15.30     65        1    
+  CLK_MASTER          GLB_UQNN_N28/Q0         CLK_MASTER        GLB_UQNN_N36/D0          15.30     65        1    
+  CLK_MASTER          GLB_...G%0% *3/Q0       CLK_MASTER        GLB_UQNN_N37/D0          15.30     65        1    
+  CLK_MASTER          GLB_...G%0% *3/Q0       CLK_MASTER        GLB_UQNN_N38/D0          15.30     65        1    
+  CLK_MASTER          GLB_...G%0% *3/Q0       CLK_MASTER        GLB_UQNN_N39/D0          15.30     65        1    
+  CLK_MASTER          GLB_...G%0% *3/Q0       CLK_MASTER        GLB_UQNN_N40/D0          15.30     65        1    
+  CLK_MASTER          GLB_...G%0% *3/Q0       CLK_MASTER        GLB_UQNN_N41/D0          15.30     65        1    
+  CLK_MASTER          GLB_...G%0% *3/Q0       CLK_MASTER        GLB_UQNN_N42/D0          15.30     65        1    
+  CLK_MASTER          GLB_...G%0% *3/Q0       CLK_MASTER        GLB_UQNN_N43/D0          15.30     65        1    
+  CLK_MASTER          GLB_UQNN_N13/Q0         CLK_MASTER        GLB_UQNN_N15/D0          15.20     66        1    
+  CLK_MASTER          GLB_UQNN_N13/Q0         CLK_MASTER        GLB_UQNN_N16/D0          15.20     66        1    
+  CLK_MASTER          GLB_UQNN_N13/Q0         CLK_MASTER        GLB_UQNN_N17/D0          15.20     66        1    
+  CLK_MASTER          GLB_UQNN_N13/Q0         CLK_MASTER        GLB_UQNN_N18/D0          15.20     66        1    
+  CLK_MASTER          GLB_UQNN_N13/Q0         CLK_MASTER        GLB_UQNN_N19/D0          15.20     66        1    
+  CLK_MASTER          GLB_UQNN_N22/Q0         CLK_MASTER        GLB_UQNN_N26/D0          15.20     66        1    
+  CLK_MASTER          GLB_UQNN_N22/Q0         CLK_MASTER        GLB_UQNN_N27/D0          15.20     66        1    
+  CLK_MASTER          GLB_UQNN_N13/Q0         CLK_MASTER        GLB_UQNN_N30/D0          15.20     66        1    
+  CLK_MASTER          GLB_UQNN_N13/Q0         CLK_MASTER        GLB_UQNN_N31/D0          15.20     66        1    
+  CLK_MASTER          GLB_UQNN_N13/Q0         CLK_MASTER        GLB_UQNN_N36/D0          15.20     66        1    
+  CLK_MASTER          GLB_...G%1% *4/Q0       CLK_MASTER        GLB_UQNN_N37/D0          15.20     66        1    
+  CLK_MASTER          GLB_...G%1% *4/Q0       CLK_MASTER        GLB_UQNN_N38/D0          15.20     66        1    
+  CLK_MASTER          GLB_...G%1% *4/Q0       CLK_MASTER        GLB_UQNN_N39/D0          15.20     66        1    
+  CLK_MASTER          GLB_...G%1% *4/Q0       CLK_MASTER        GLB_UQNN_N40/D0          15.20     66        1    
+  CLK_MASTER          GLB_...G%1% *4/Q0       CLK_MASTER        GLB_UQNN_N43/D0          15.20     66        1    
+  CLK_MASTER          GLB_STOP_SIG/Q0         CLK_MASTER        GLB_UQNN_N28/D0          15.10     66        1    
+  CLK_MASTER          GLB_UQNN_N15/Q0         CLK_MASTER        GLB_..._SIG *1/D0        15.00     67        1    
+  CLK_MASTER          GLB_UQNN_N16/Q0         CLK_MASTER        GLB_..._SIG *1/D0        15.00     67        1    
+  CLK_MASTER          GLB_UQNN_N18/Q0         CLK_MASTER        GLB_..._SIG *1/D0        15.00     67        1    
+  CLK_MASTER          GLB_UQNN_N24/Q0         CLK_MASTER        GLB_..._SIG *1/D0        15.00     67        1    
+  CLK_MASTER          GLB_UQNN_N31/Q0         CLK_MASTER        GLB_..._SIG *1/D0        15.00     67        1    
+  CLK_MASTER          GLB_UQNN_N36/Q0         CLK_MASTER        GLB_..._SIG *1/D0        15.00     67        1    
+  CLK_MASTER          GLB_UQNN_N15/Q0         CLK_MASTER        GLB_UQNN_N15/D0          15.00     67        1    
+  CLK_MASTER          GLB_UQNN_N18/Q0         CLK_MASTER        GLB_UQNN_N18/D0          15.00     67        1    
+  CLK_MASTER          GLB_UQNN_N42/Q0         CLK_MASTER        GLB_UQNN_N26/D0          15.00     67        1    
+  CLK_MASTER          GLB_UQNN_N33/Q0         CLK_MASTER        GLB_UQNN_N27/D0          15.00     67        1    
+  CLK_MASTER          GLB_UQNN_N31/Q0         CLK_MASTER        GLB_UQNN_N31/D0          15.00     67        1    
+  AS_IN(4)            GLB_...G%0% *5/Q0       CLK_MASTER        GLB_UQNN_N37/D0          15.00     ----     1    
+  AS_IN(6)            GLB_...G%0% *6/Q0       CLK_MASTER        GLB_UQNN_N37/D0          15.00     ----     1    
+  AS_IN(2)            GLB_...G%1% *7/Q0       CLK_MASTER        GLB_UQNN_N38/D0          15.00     ----     1    
+  AS_IN(4)            GLB_...G%1% *8/Q0       CLK_MASTER        GLB_UQNN_N38/D0          15.00     ----     1    
+  AS_IN(2)            GLB_...G%3% *9/Q0       CLK_MASTER        GLB_UQNN_N40/D0          15.00     ----     1    
+  AS_IN(6)            GLB_...G%3% *10/Q0      CLK_MASTER        GLB_UQNN_N40/D0          15.00     ----     1    
+  AS_IN(3)            GLB_...G%0% *11/Q0      CLK_MASTER        GLB_UQNN_N41/D0          15.00     ----     1    
+  AS_IN(5)            GLB_...G%0% *12/Q0      CLK_MASTER        GLB_UQNN_N41/D0          15.00     ----     1    
+  AS_IN(3)            GLB_...G%1% *13/Q0      CLK_MASTER        GLB_UQNN_N42/D0          15.00     ----     1    
+  CLK_MASTER          GLB_UQNN_N17/Q0         CLK_MASTER        GLB_..._SIG *1/D0        14.90     67        1    
+  CLK_MASTER          GLB_UQNN_N19/Q0         CLK_MASTER        GLB_..._SIG *1/D0        14.90     67        1    
+  CLK_MASTER          GLB_UQNN_N30/Q0         CLK_MASTER        GLB_..._SIG *1/D0        14.90     67        1    
+  CLK_MASTER          GLB_UQNN_N37/Q0         CLK_MASTER        GLB_UQNN_N26/D0          14.90     67        1    
+  CLK_MASTER          GLB_UQNN_N38/Q0         CLK_MASTER        GLB_UQNN_N26/D0          14.90     67        1    
+  CLK_MASTER          GLB_UQNN_N39/Q0         CLK_MASTER        GLB_UQNN_N26/D0          14.90     67        1    
+  CLK_MASTER          GLB_UQNN_N41/Q0         CLK_MASTER        GLB_UQNN_N26/D0          14.90     67        1    
+  CLK_MASTER          GLB_UQNN_N43/Q0         CLK_MASTER        GLB_UQNN_N26/D0          14.90     67        1    
+  CLK_MASTER          GLB_UQNN_N48/Q0         CLK_MASTER        GLB_UQNN_N26/D0          14.90     67        1    
+  AS_IN(2)            GLB_...G%0% *14/Q0      CLK_MASTER        GLB_UQNN_N37/D0          14.90     ----     1    
+  AS_IN(6)            GLB_...G%1% *15/Q0      CLK_MASTER        GLB_UQNN_N38/D0          14.90     ----     1    
+  AS_IN(4)            GLB_...G%2% *16/Q0      CLK_MASTER        GLB_UQNN_N39/D0          14.90     ----     1    
+  AS_IN(6)            GLB_...G%2% *17/Q0      CLK_MASTER        GLB_UQNN_N39/D0          14.90     ----     1    
+  AS_IN(2)            GLB_N/Q0                CLK_MASTER        GLB_UQNN_N39/D0          14.90     ----     1    
+  AS_IN(4)            GLB_...G%3% *18/Q0      CLK_MASTER        GLB_UQNN_N40/D0          14.90     ----     1    
+  AS_IN(6)            GLB_FREQ_SIG/Q0         CLK_MASTER        GLB_UQNN_N41/D0          14.90     ----     1    
+  AS_IN(1)            GLB_...G%1% *19/Q0      CLK_MASTER        GLB_UQNN_N42/D0          14.90     ----     1    
+  AS_IN(5)            GLB_...G%1% *20/Q0      CLK_MASTER        GLB_UQNN_N42/D0          14.90     ----     1    
+  AS_IN(1)            GLB_...G%2% *21/Q0      CLK_MASTER        GLB_UQNN_N43/D0          14.90     ----     1    
+  AS_IN(3)            GLB_...G%2% *22/Q0      CLK_MASTER        GLB_UQNN_N43/D0          14.90     ----     1    
+  AS_IN(5)            GLB_...G%2% *23/Q0      CLK_MASTER        GLB_UQNN_N43/D0          14.90     ----     1    
+  CLK_MASTER          GLB_UQNN_N16/Q0         CLK_MASTER        GLB_UQNN_N16/D0          14.70     68        1    
+  AS_IN(1)            GLB_...G%0% *24/Q0      CLK_MASTER        GLB_UQNN_N41/D0          14.70     ----     1    
+  AS_IN(6)            GLB_OVFL_SIG/Q0         CLK_MASTER        GLB_UQNN_N42/D0          14.70     ----     1    
+  CLK_MASTER          GLB_UQNN_N42/Q0         CLK_MASTER        GLB_UQNN_N42/D0          14.70     68        1    
+  CLK_MASTER          GLB_UQNN_N40/Q0         CLK_MASTER        GLB_UQNN_N26/D0          14.60     68        1    
+  CLK_MASTER          GLB_UQNN_N44/Q0         CLK_MASTER        GLB_UQNN_N26/D0          14.60     68        1    
+  AS_IN(4)            GLB_L/Q0                CLK_MASTER        GLB_UQNN_N37/D0          14.60     ----     1    
+  AS_IN(3)            GLB_M_part1/Q0          CLK_MASTER        GLB_UQNN_N38/D0          14.60     ----     1    
+  AS_IN(2)            GLB_...G%2% *25/Q0      CLK_MASTER        GLB_UQNN_N39/D0          14.60     ----     1    
+  AS_IN(6)            GLB_ML_SIG/Q0           CLK_MASTER        GLB_UQNN_N40/D0          14.60     ----     1    
+  MUP_IN              GLB_..._SIG *26/Q0      CLK_MASTER        GLB_UQNN_N43/D0          14.60     ----     1    
+  CLK_MASTER          GLB_..._SIG *2/Q0       AS_IN(1)          GLB_...G%0% *24/D0       14.30     ----     1    
+  CLK_MASTER          GLB_..._SIG *2/Q0       AS_IN(1)          GLB_...G%1% *19/D0       14.30     ----     1    
+  CLK_MASTER          GLB_..._SIG *2/Q0       AS_IN(1)          GLB_...G%2% *21/D0       14.30     ----     1    
+  CLK_MASTER          GLB_..._SIG *2/Q0       AS_IN(1)          GLB_...G%3% *27/D0       14.30     ----     1    
+  CLK_MASTER          GLB_..._SIG *2/Q0       AS_IN(2)          GLB_...G%0% *14/D0       14.30     ----     1    
+  CLK_MASTER          GLB_..._SIG *2/Q0       AS_IN(2)          GLB_...G%1% *7/D0        14.30     ----     1    
+  CLK_MASTER          GLB_..._SIG *2/Q0       AS_IN(2)          GLB_...G%2% *25/D0       14.30     ----     1    
+  CLK_MASTER          GLB_..._SIG *2/Q0       AS_IN(2)          GLB_...G%3% *9/D0        14.30     ----     1    
+  CLK_MASTER          GLB_..._SIG *2/Q0       AS_IN(3)          GLB_...G%0% *11/D0       14.30     ----     1    
+  CLK_MASTER          GLB_..._SIG *2/Q0       AS_IN(3)          GLB_...G%1% *13/D0       14.30     ----     1    
+  CLK_MASTER          GLB_..._SIG *2/Q0       AS_IN(3)          GLB_...G%2% *22/D0       14.30     ----     1    
+  CLK_MASTER          GLB_..._SIG *2/Q0       AS_IN(3)          GLB_...G%3% *28/D0       14.30     ----     1    
+  CLK_MASTER          GLB_..._SIG *2/Q0       AS_IN(4)          GLB_...G%0% *5/D0        14.30     ----     1    
+  CLK_MASTER          GLB_..._SIG *2/Q0       AS_IN(4)          GLB_...G%1% *8/D0        14.30     ----     1    
+  CLK_MASTER          GLB_..._SIG *2/Q0       AS_IN(4)          GLB_...G%2% *16/D0       14.30     ----     1    
+  CLK_MASTER          GLB_..._SIG *2/Q0       AS_IN(4)          GLB_...G%3% *18/D0       14.30     ----     1    
+  CLK_MASTER          GLB_..._SIG *2/Q0       AS_IN(5)          GLB_...G%0% *12/D0       14.30     ----     1    
+  CLK_MASTER          GLB_..._SIG *2/Q0       AS_IN(5)          GLB_...G%1% *20/D0       14.30     ----     1    
+  CLK_MASTER          GLB_..._SIG *2/Q0       AS_IN(5)          GLB_...G%2% *23/D0       14.30     ----     1    
+  CLK_MASTER          GLB_..._SIG *2/Q0       AS_IN(5)          GLB_...G%3% *29/D0       14.30     ----     1    
+  CLK_MASTER          GLB_..._SIG *2/Q0       AS_IN(6)          GLB_...G%0% *6/D0        14.30     ----     1    
+  CLK_MASTER          GLB_..._SIG *2/Q0       AS_IN(6)          GLB_...G%1% *15/D0       14.30     ----     1    
+  CLK_MASTER          GLB_..._SIG *2/Q0       AS_IN(6)          GLB_...G%2% *17/D0       14.30     ----     1    
+  CLK_MASTER          GLB_..._SIG *2/Q0       AS_IN(6)          GLB_...G%3% *10/D0       14.30     ----     1    
+  CLK_MASTER          GLB_..._SIG *2/Q0       AS_IN(6)          GLB_FREQ_SIG/D0          14.30     ----     1    
+  CLK_MASTER          GLB_..._SIG *2/Q0       AS_IN(4)          GLB_L/D0                 14.30     ----     1    
+  CLK_MASTER          GLB_..._SIG *2/Q0       AS_IN(6)          GLB_ML_SIG/D0            14.30     ----     1    
+  CLK_MASTER          GLB_..._SIG *2/Q0       AS_IN(2)          GLB_N/D0                 14.30     ----     1    
+  CLK_MASTER          GLB_..._SIG *2/Q0       AS_IN(6)          GLB_OVFL_SIG/D0          14.30     ----     1    
+  CLK_MASTER          GLB_UQNN_N20/Q0         CLK_MASTER        GLB_STOP_SIG/D0          14.30     70        1    
+  CLK_MASTER          GLB_UQNN_N14/Q0         CLK_MASTER        GLB_UQNN_N20/D0          14.30     70        1    
+  CLK_MASTER          GLB_UQNN_N20/Q0         CLK_MASTER        GLB_UQNN_N23/D0          14.30     70        1    
+  CLK_MASTER          GLB_UQNN_N14/Q0         CLK_MASTER        GLB_UQNN_N25/D0          14.30     70        1    
+  CLK_MASTER          GLB_UQNN_N20/Q0         CLK_MASTER        GLB_UQNN_N25/D0          14.30     70        1    
+  CLK_MASTER          GLB_UQNN_N14/Q0         CLK_MASTER        GLB_UQNN_N29/D0          14.30     70        1    
+  CLK_MASTER          GLB_UQNN_N20/Q0         CLK_MASTER        GLB_UQNN_N29/D0          14.30     70        1    
+  CLK_MASTER          GLB_STOP_SIG/Q0         CLK_MASTER        GLB_..._SIG *30/D0       13.90     72        1    
+  CLK_MASTER          GLB_STOP_SIG/Q0         CLK_MASTER        GLB_UQNN_N22/D0          13.90     72        1    
+  CLK_MASTER          GLB_STOP_SIG/Q0         CLK_MASTER        GLB_UQNN_N24/D0          13.90     72        1    
+  CLK_MASTER          GLB_UQNN_N25/Q0         CLK_MASTER        GLB_UQNN_N24/D0          13.90     72        1    
+  CLK_MASTER          GLB_UQNN_N25/Q0         CLK_MASTER        GLB_UQNN_N32/D0          13.90     72        1    
+  CLK_MASTER          GLB_STOP_SIG/Q0         CLK_MASTER        GLB_UQNN_N33/D0          13.90     72        1    
+  CLK_MASTER          GLB_STOP_SIG/Q0         CLK_MASTER        GLB_UQNN_N34/D0          13.90     72        1    
+  CLK_MASTER          GLB_UQNN_N25/Q0         CLK_MASTER        GLB_UQNN_N34/D0          13.90     72        1    
+  CLK_MASTER          GLB_STOP_SIG/Q0         CLK_MASTER        GLB_UQNN_N48/D0          13.90     72        1    
+  CLK_MASTER          GLB_...G%0% *3/Q0       CLK_MASTER        GLB_...G%0% *3/D0        13.80     72        1    
+  CLK_MASTER          GLB_...G%0% *3/Q0       CLK_MASTER        GLB_...G%1% *4/D0        13.80     72        1    
+  CLK_MASTER          GLB_UQNN_N23/Q0         CLK_MASTER        GLB_..._SIG *30/D0       13.80     72        1    
+  CLK_MASTER          GLB_UQNN_N23/Q0         CLK_MASTER        GLB_UQNN_N22/D0          13.80     72        1    
+  CLK_MASTER          GLB_UQNN_N23/Q0         CLK_MASTER        GLB_UQNN_N24/D0          13.80     72        1    
+  CLK_MASTER          GLB_UQNN_N23/Q0         CLK_MASTER        GLB_UQNN_N33/D0          13.80     72        1    
+  CLK_MASTER          GLB_UQNN_N23/Q0         CLK_MASTER        GLB_UQNN_N34/D0          13.80     72        1    
+  CLK_MASTER          GLB_UQNN_N29/Q0         CLK_MASTER        GLB_UQNN_N34/D0          13.80     72        1    
+  CLK_MASTER          GLB_...G%0% *3/Q0       CLK_MASTER        GLB_UQNN_N44/D0          13.80     72        1    
+  CLK_MASTER          GLB_UQNN_N23/Q0         CLK_MASTER        GLB_UQNN_N48/D0          13.80     72        1    
+  AS_IN(3)            GLB_M_part2/Q0          AS_IN(3)          GLB_M_part1/D0           13.70     73        1    
+  AS_IN(3)            GLB_M_part2/Q0          AS_IN(3)          GLB_M_part2/D0           13.70     73        1    
+  CLK_MASTER          GLB_UQNN_N17/Q0         CLK_MASTER        GLB_UQNN_N17/D0          13.70     73        1    
+  CLK_MASTER          GLB_UQNN_N12/Q0         CLK_MASTER        GLB_UQNN_N28/D0          13.70     73        1    
+  CLK_MASTER          GLB_UQNN_N13/Q0         CLK_MASTER        GLB_UQNN_N28/D0          13.70     73        1    
+  CLK_MASTER          GLB_UQNN_N30/Q0         CLK_MASTER        GLB_UQNN_N30/D0          13.70     73        1    
+  CLK_MASTER          GLB_UQNN_N36/Q0         CLK_MASTER        GLB_UQNN_N36/D0          13.70     73        1    
+  CLK_MASTER          GLB_UQNN_N39/Q0         CLK_MASTER        GLB_UQNN_N39/D0          13.70     73        1    
+  CLK_MASTER          GLB_...G%1% *4/Q0       CLK_MASTER        GLB_UQNN_N41/D0          13.70     73        1    
+  CLK_MASTER          GLB_UQNN_N41/Q0         CLK_MASTER        GLB_UQNN_N41/D0          13.70     73        1    
+  CLK_MASTER          GLB_...G%1% *4/Q0       CLK_MASTER        GLB_UQNN_N42/D0          13.70     73        1    
+  CLK_MASTER          GLB_...G%1% *4/Q0       CLK_MASTER        GLB_UQNN_N44/D0          13.70     73        1    
+  AS_IN(1)            GLB_...G%0% *24/Q0      AS_IN(1)          GLB_...G%0% *24/D0       13.50     74        1    
+  AS_IN(1)            GLB_...G%3% *27/Q0      AS_IN(1)          GLB_...G%3% *27/D0       13.50     74        1    
+  AS_IN(2)            GLB_...G%1% *7/Q0       AS_IN(2)          GLB_...G%1% *7/D0        13.50     74        1    
+  AS_IN(2)            GLB_...G%3% *9/Q0       AS_IN(2)          GLB_...G%3% *9/D0        13.50     74        1    
+  AS_IN(3)            GLB_...G%0% *11/Q0      AS_IN(3)          GLB_...G%0% *11/D0       13.50     74        1    
+  AS_IN(3)            GLB_...G%1% *13/Q0      AS_IN(3)          GLB_...G%1% *13/D0       13.50     74        1    
+  AS_IN(4)            GLB_...G%0% *5/Q0       AS_IN(4)          GLB_...G%0% *5/D0        13.50     74        1    
+  AS_IN(4)            GLB_...G%1% *8/Q0       AS_IN(4)          GLB_...G%1% *8/D0        13.50     74        1    
+  AS_IN(5)            GLB_...G%0% *12/Q0      AS_IN(5)          GLB_...G%0% *12/D0       13.50     74        1    
+  AS_IN(5)            GLB_...G%3% *29/Q0      AS_IN(5)          GLB_...G%3% *29/D0       13.50     74        1    
+  AS_IN(6)            GLB_...G%0% *6/Q0       AS_IN(6)          GLB_...G%0% *6/D0        13.50     74        1    
+  AS_IN(6)            GLB_...G%3% *10/Q0      AS_IN(6)          GLB_...G%3% *10/D0       13.50     74        1    
+  CLK_MASTER          GLB_..._SIG *30/Q0      CLK_MASTER        GLB_...G%0% *3/D0        13.50     74        1    
+  CLK_MASTER          GLB_..._SIG *30/Q0      CLK_MASTER        GLB_...G%1% *4/D0        13.50     74        1    
+  AS_IN(6)            GLB_OVFL_SIG/Q0         AS_IN(6)          GLB_OVFL_SIG/D0          13.50     74        1    
+  CLK_MASTER          GLB_..._SIG *30/Q0      CLK_MASTER        GLB_..._SIG *2/D0        13.50     74        1    
+  CLK_MASTER          GLB_UQNN_N33/Q0         CLK_MASTER        GLB_UQNN_N22/D0          13.50     74        1    
+  CLK_MASTER          GLB_UQNN_N36/Q0         CLK_MASTER        GLB_UQNN_N22/D0          13.50     74        1    
+  CLK_MASTER          GLB_UQNN_N24/Q0         CLK_MASTER        GLB_UQNN_N32/D0          13.50     74        1    
+  CLK_MASTER          GLB_UQNN_N15/Q0         CLK_MASTER        GLB_UQNN_N33/D0          13.50     74        1    
+  CLK_MASTER          GLB_UQNN_N16/Q0         CLK_MASTER        GLB_UQNN_N33/D0          13.50     74        1    
+  CLK_MASTER          GLB_UQNN_N18/Q0         CLK_MASTER        GLB_UQNN_N33/D0          13.50     74        1    
+  CLK_MASTER          GLB_UQNN_N31/Q0         CLK_MASTER        GLB_UQNN_N33/D0          13.50     74        1    
+  CLK_MASTER          GLB_UQNN_N36/Q0         CLK_MASTER        GLB_UQNN_N33/D0          13.50     74        1    
+  AS_IN(5)            GLB_...G%3% *29/Q0      CLK_MASTER        GLB_UQNN_N44/D0          13.50     ----     1    
+  CLK_MASTER          GLB_UQNN_N15/Q0         CLK_MASTER        GLB_UQNN_N48/D0          13.50     74        1    
+  CLK_MASTER          GLB_UQNN_N16/Q0         CLK_MASTER        GLB_UQNN_N48/D0          13.50     74        1    
+  CLK_MASTER          GLB_UQNN_N18/Q0         CLK_MASTER        GLB_UQNN_N48/D0          13.50     74        1    
+  CLK_MASTER          GLB_UQNN_N31/Q0         CLK_MASTER        GLB_UQNN_N48/D0          13.50     74        1    
+  CLK_MASTER          GLB_..._SIG *1/Q0       CLK_MASTER        GLB_...G%0% *3/D0        13.40     75        1    
+  CLK_MASTER          GLB_..._SIG *1/Q0       CLK_MASTER        GLB_...G%1% *4/D0        13.40     75        1    
+  CLK_MASTER          GLB_UQNN_N19/Q0         CLK_MASTER        GLB_UQNN_N19/D0          13.40     75        1    
+  CLK_MASTER          GLB_UQNN_N32/Q0         CLK_MASTER        GLB_UQNN_N22/D0          13.40     75        1    
+  CLK_MASTER          GLB_UQNN_N34/Q0         CLK_MASTER        GLB_UQNN_N22/D0          13.40     75        1    
+  CLK_MASTER          GLB_UQNN_N17/Q0         CLK_MASTER        GLB_UQNN_N33/D0          13.40     75        1    
+  CLK_MASTER          GLB_UQNN_N19/Q0         CLK_MASTER        GLB_UQNN_N33/D0          13.40     75        1    
+  CLK_MASTER          GLB_UQNN_N30/Q0         CLK_MASTER        GLB_UQNN_N33/D0          13.40     75        1    
+  CLK_MASTER          GLB_UQNN_N34/Q0         CLK_MASTER        GLB_UQNN_N34/D0          13.40     75        1    
+  CLK_MASTER          GLB_UQNN_N37/Q0         CLK_MASTER        GLB_UQNN_N37/D0          13.40     75        1    
+  CLK_MASTER          GLB_UQNN_N38/Q0         CLK_MASTER        GLB_UQNN_N38/D0          13.40     75        1    
+  CLK_MASTER          GLB_UQNN_N40/Q0         CLK_MASTER        GLB_UQNN_N40/D0          13.40     75        1    
+  CLK_MASTER          GLB_UQNN_N43/Q0         CLK_MASTER        GLB_UQNN_N43/D0          13.40     75        1    
+  AS_IN(3)            GLB_...G%3% *28/Q0      CLK_MASTER        GLB_UQNN_N44/D0          13.40     ----     1    
+  CLK_MASTER          GLB_UQNN_N17/Q0         CLK_MASTER        GLB_UQNN_N48/D0          13.40     75        1    
+  CLK_MASTER          GLB_UQNN_N19/Q0         CLK_MASTER        GLB_UQNN_N48/D0          13.40     75        1    
+  CLK_MASTER          GLB_UQNN_N30/Q0         CLK_MASTER        GLB_UQNN_N48/D0          13.40     75        1    
+  CLK_MASTER          GLB_UQNN_N36/Q0         CLK_MASTER        GLB_UQNN_N34/D0          13.20     76        1    
+  AS_IN(1)            GLB_...G%3% *27/Q0      CLK_MASTER        GLB_UQNN_N44/D0          13.20     ----     1    
+  CLK_MASTER          GLB_UQNN_N32/Q0         CLK_MASTER        GLB_UQNN_N34/D0          13.10     76        1    
+  CLK_MASTER          GLB_UQNN_N21/Q0         CLK_MASTER        GLB_STOP_SIG/D0          13.00     77        1    
+  CLK_MASTER          GLB_UQNN_N21/Q0         CLK_MASTER        GLB_UQNN_N23/D0          13.00     77        1    
+  AS_IN(1)            GLB_...G%1% *19/Q0      AS_IN(1)          GLB_...G%1% *19/D0       12.20     82        1    
+  AS_IN(1)            GLB_...G%2% *21/Q0      AS_IN(1)          GLB_...G%2% *21/D0       12.20     82        1    
+  AS_IN(2)            GLB_...G%0% *14/Q0      AS_IN(2)          GLB_...G%0% *14/D0       12.20     82        1    
+  AS_IN(2)            GLB_...G%2% *25/Q0      AS_IN(2)          GLB_...G%2% *25/D0       12.20     82        1    
+  AS_IN(3)            GLB_...G%2% *22/Q0      AS_IN(3)          GLB_...G%2% *22/D0       12.20     82        1    
+  AS_IN(3)            GLB_...G%3% *28/Q0      AS_IN(3)          GLB_...G%3% *28/D0       12.20     82        1    
+  AS_IN(4)            GLB_...G%2% *16/Q0      AS_IN(4)          GLB_...G%2% *16/D0       12.20     82        1    
+  AS_IN(4)            GLB_...G%3% *18/Q0      AS_IN(4)          GLB_...G%3% *18/D0       12.20     82        1    
+  AS_IN(5)            GLB_...G%1% *20/Q0      AS_IN(5)          GLB_...G%1% *20/D0       12.20     82        1    
+  AS_IN(5)            GLB_...G%2% *23/Q0      AS_IN(5)          GLB_...G%2% *23/D0       12.20     82        1    
+  AS_IN(6)            GLB_...G%1% *15/Q0      AS_IN(6)          GLB_...G%1% *15/D0       12.20     82        1    
+  AS_IN(6)            GLB_...G%2% *17/Q0      AS_IN(6)          GLB_...G%2% *17/D0       12.20     82        1    
+  CLK_MASTER          GLB_...G%1% *4/Q0       CLK_MASTER        GLB_...G%1% *4/D0        12.20     82        1    
+  AS_IN(6)            GLB_FREQ_SIG/Q0         AS_IN(6)          GLB_FREQ_SIG/D0          12.20     82        1    
+  AS_IN(4)            GLB_L/Q0                AS_IN(4)          GLB_L/D0                 12.20     82        1    
+  AS_IN(6)            GLB_ML_SIG/Q0           AS_IN(6)          GLB_ML_SIG/D0            12.20     82        1    
+  AS_IN(2)            GLB_N/Q0                AS_IN(2)          GLB_N/D0                 12.20     82        1    
+  CLK_MASTER          GLB_..._SIG *30/Q0      CLK_MASTER        GLB_..._SIG *30/D0       12.20     82        1    
+  CLK_MASTER          GLB_..._SIG *2/Q0       CLK_MASTER        GLB_..._SIG *2/D0        12.20     82        1    
+  CLK_MASTER          GLB_UQNN_N24/Q0         CLK_MASTER        GLB_UQNN_N24/D0          12.20     82        1    
+  CLK_MASTER          GLB_UQNN_N32/Q0         CLK_MASTER        GLB_UQNN_N32/D0          12.20     82        1    
+  CLK_MASTER          GLB_UQNN_N33/Q0         CLK_MASTER        GLB_UQNN_N33/D0          12.20     82        1    
+  CLK_MASTER          GLB_UQNN_N24/Q0         CLK_MASTER        GLB_UQNN_N34/D0          12.20     82        1    
+  CLK_MASTER          GLB_UQNN_N44/Q0         CLK_MASTER        GLB_UQNN_N44/D0          12.20     82        1    
+  CLK_MASTER          GLB_UQNN_N48/Q0         CLK_MASTER        GLB_UQNN_N48/D0          12.20     82        1    
+==-------------------------------------------------------------------------------------------
+
+Index Name Table
+==----------------------------------------
+    *1  GLB_READ_REQ_SIG
+    *2  GLB_UPDATE_SIG
+    *3  GLB_CNT_SIG%0%
+    *4  GLB_CNT_SIG%1%
+    *5  GLB_BCD4_SIG%0%
+    *6  GLB_BCD6_SIG%0%
+    *7  GLB_BCD2_SIG%1%
+    *8  GLB_BCD4_SIG%1%
+    *9  GLB_BCD2_SIG%3%
+    *10  GLB_BCD6_SIG%3%
+    *11  GLB_BCD3_SIG%0%
+    *12  GLB_BCD5_SIG%0%
+    *13  GLB_BCD3_SIG%1%
+    *14  GLB_BCD2_SIG%0%
+    *15  GLB_BCD6_SIG%1%
+    *16  GLB_BCD4_SIG%2%
+    *17  GLB_BCD6_SIG%2%
+    *18  GLB_BCD4_SIG%3%
+    *19  GLB_BCD1_SIG%1%
+    *20  GLB_BCD5_SIG%1%
+    *21  GLB_BCD1_SIG%2%
+    *22  GLB_BCD3_SIG%2%
+    *23  GLB_BCD5_SIG%2%
+    *24  GLB_BCD1_SIG%0%
+    *25  GLB_BCD2_SIG%2%
+    *26  GLB_TRIGGER_SIG
+    *27  GLB_BCD1_SIG%3%
+    *28  GLB_BCD3_SIG%3%
+    *29  GLB_BCD5_SIG%3%
+    *30  GLB_TRANSFER_SIG
+==----------------------------------------
+
+Information for flip-flop:
+
+  Global reset-to-output delay:   6.80
+  Clock-to-output maximum delay: 2.40
+  Clock-to-output minimum delay: 1.40
+  User reset-to-output delay:     6.80
+  Data-to-output delay:           0.00
+  Setup time:                     1.00
+  Hold time:                      8.30
+  Pulse-width time:               5.00
+
+

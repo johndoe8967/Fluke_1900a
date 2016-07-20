@@ -1,0 +1,3 @@
+@E: CS187 :"C:\projekt\espfluke\espfluke.vhd":70:18:70:18|Expecting ,
+@E|Parse errors encountered - exiting
+

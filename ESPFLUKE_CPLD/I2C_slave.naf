@@ -1,0 +1,15 @@
+scl  b
+sda  b
+clk  i
+rst  i
+transfer  o
+read_req  o
+stop  o
+data_to_master[7]  i
+data_to_master[6]  i
+data_to_master[5]  i
+data_to_master[4]  i
+data_to_master[3]  i
+data_to_master[2]  i
+data_to_master[1]  i
+data_to_master[0]  i

@@ -1,0 +1,5 @@
+-devfile "C:/ispLEVER_Classic2_0/ispcpld/data/lc1k/le1032_84j.dev"
+-lci espfluke.lct
+-touch espfluke.ir0
+-src espfluke.emf
+-type EDIF

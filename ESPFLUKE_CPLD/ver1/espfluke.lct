@@ -1,0 +1,126 @@
+
+[Device]
+Family = plsi1k;
+PartNumber = ispLSI1032E-70LJ84;
+Package = 84PLCC;
+PartType = ispLSI1032E;
+Speed = 70;
+Operating_condition = COM;
+Status = Obsolete;
+EN_PinGLB = Yes;
+EN_PinMacrocell = Yes;
+
+[Revision]
+Parent = lc1ke.lci;
+DATE = 07/10/2016;
+TIME = 18:04:16;
+Source_Format = Schematic_VHDL;
+Synthesis = Synplify;
+
+[Ignore Assignments]
+
+[Clear Assignments]
+
+[Backannotate Assignments]
+
+[Global Constraints]
+ispLSI_Strategy = Area;
+ispLSI_Max_GLB_Inputs = 18;
+ispLSI_Max_GLB_Outputs = 4;
+ispLSI_Carry_Pin_Direction = On;
+ispLSI_Min_GLB_Levels = High;
+Fitter_Effort_Level = High;
+
+[Location Assignments]
+layer = OFF;
+CLK_IN = Pin, 66, -, -, -;
+SCL_IN = Pin, 55, -, C, -;
+SDA_BI = Pin, 54, -, C, -;
+LED = Pin, 45, -, C, -;
+AS_IN(1) = Pin, 52, -, C, -;
+AS_IN(2) = Pin, 51, -, C, -;
+AS_IN(3) = Pin, 50, -, C, -;
+AS_IN(4) = Pin, 49, -, C, -;
+AS_IN(5) = Pin, 48, -, C, -;
+OUT_IN(0) = Pin, 56, -, C, -;
+OUT_IN(1) = Pin, 57, -, A, -;
+OUT_IN(2) = Pin, 58, -, A, -;
+OUT_IN(3) = Pin, 59, -, A, -;
+DS_IN = Pin, 72, -, A, -;
+ML_IN = Pin, 71, -, A, -;
+MUP_IN = Pin, 70, -, A, -;
+OVFL_IN = Pin, 69, -, A, -;
+RNG2_IN = Pin, 46, -, C, -;
+AS_IN(6) = Pin, 53, -, C, -;
+
+[Group Assignments]
+layer = OFF;
+
+[Resource Reservations]
+layer = OFF;
+
+[Fitter Report Format]
+
+[Power]
+
+[Source Constraint Option]
+
+[Fast Bypass]
+
+[OSM Bypass]
+
+[Input Registers]
+
+[Netlist/Delay Format]
+
+[IO Types]
+layer = OFF;
+
+[Pullup]
+OFF = SDA_BI;
+UP = CLK_IN, SCL_IN;
+
+[Slewrate]
+SLOW = SDA_BI, LED;
+
+[Region]
+
+[Timing Constraints]
+
+[HSI Attributes]
+
+[Input Delay]
+
+[Pin attributes list]
+
+[global constraints list]
+
+[LOCATION ASSIGNMENTS LIST]
+
+[symbol/module attribute]
+layer = OFF;
+
+[symbol/module attribute list]
+
+[Node attribute list]
+
+[RESOURCE RESERVATIONS LIST]
+
+[Timing Analyzer]
+
+[PLL Assignments]
+
+[Global Constraints Process Update]
+
+[Explorer Results]
+
+[Explorer User Settings]
+
+[Constraint Version]
+version = 1.0;
+
+[ORP ASSIGNMENTS]
+layer = OFF;
+
+[Node attribute]
+layer = OFF;

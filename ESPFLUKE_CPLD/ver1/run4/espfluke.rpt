@@ -1,0 +1,2098 @@
+ispEXPERT Compiler Release 2.0.00.17.20.15, May 20 2002 13:06:40
+
+
+Design Parameters
+-----------------
+
+CARRY_PIN_DIRECTION:            ON
+EFFORT:                         HIGH (3)
+IGNORE_FIXED_PIN:               OFF
+MAX_GLB_IN:                     18
+MAX_GLB_OUT:                    4
+OUTPUT_FORM:                    VERILOG, VHDL
+OS_VERSION:                     Windows NT 6.1
+PARAM_FILE:                     'c:\projekt\espfluke\ver1\run4\ispxpert'
+PIN_FILE:                       'c:\projekt\espfluke\ver1\run4\espfluke.xpn'
+REDUCE_LEVEL_EFFORT:            HIGH
+STRATEGY:                       AREA
+TIMING_ANALYZER:                ON 
+USE_GLOBAL_RESET:               ON
+
+
+Design Specification
+--------------------
+
+Design:                         espfluke
+Part:                           ispLSI1032E-70LJ84
+
+
+ISP:                            ON
+ISP_EXCEPT_Y2:                  OFF
+PULL:                           UP
+SECURITY:                       OFF
+SLOWSLEW:                       OFF
+
+
+Number of Critical Pins:        0
+Number of Free Pins:            1
+Number of Locked Pins:          18
+Number of Reserved Pins:        0
+
+
+Input Pins
+
+    Pin Name                Pin Attribute
+
+        AS_IN(1)                LOCK 52, PULLUP
+        AS_IN(2)                LOCK 51, PULLUP
+        AS_IN(3)                LOCK 50, PULLUP
+        AS_IN(4)                LOCK 49, PULLUP
+        AS_IN(5)                LOCK 48, PULLUP
+        AS_IN(6)                LOCK 53, PULLUP
+        CLK_MASTER              PULLUP
+        DS_IN                   LOCK 72, PULLUP
+        ML_IN                   LOCK 71, PULLUP
+        MUP_IN                  LOCK 70, PULLUP
+        OUT_IN(0)               LOCK 56, PULLUP
+        OUT_IN(1)               LOCK 57, PULLUP
+        OUT_IN(2)               LOCK 58, PULLUP
+        OUT_IN(3)               LOCK 59, PULLUP
+        OVFL_IN                 LOCK 69, PULLUP
+        RNG2_IN                 LOCK 46, PULLUP
+        SCL_IN                  LOCK 55, PULLUP
+
+
+Output Pins
+
+    Pin Name                Pin Attribute
+
+        LED                     LOCK 45, PULLUP, SLOWSLEW
+
+
+Bidirectional Pins
+
+    Pin Name                Pin Attribute
+
+        SDA_BI                  LOCK 54, SLOWSLEW
+
+
+Pre-Route Design Statistics
+---------------------------
+
+Number of Macrocells:           79
+Number of GLBs:                 24
+Number of I/Os:                 18
+Number of Nets:                 94
+
+Number of Free Inputs:          0
+Number of Free Outputs:         0
+Number of Free Three-States:    0
+Number of Free Bidi's:          0
+
+Number of Locked Input IOCs:    16
+Number of Locked DIs:           0
+Number of Locked Outputs:       1
+Number of Locked Three-States:  0
+Number of Locked Bidi's:        1
+
+Number of CRIT Outputs:         0
+Number of Global OEs:           0
+Number of External Clocks:      1
+
+
+GLB Utilization (Out of 32):	75%
+I/O Utilization (Out of 68):	26%
+Net Utilization (Out of 196):	47%
+
+
+Nets with Fanout of  1:         11
+Nets with Fanout of  2:         49
+Nets with Fanout of  3:         14
+Nets with Fanout of  4:         7
+Nets with Fanout of  5:         2
+Nets with Fanout of  6:         9
+Nets with Fanout of  8:         1
+Nets with Fanout of 12:         1
+
+Average Fanout per Net:         2.80
+
+
+GLBs with  2 Input(s):          1
+GLBs with  3 Input(s):          1
+GLBs with  4 Input(s):          2
+GLBs with  7 Input(s):          2
+GLBs with  8 Input(s):          1
+GLBs with  9 Input(s):          2
+GLBs with 10 Input(s):          4
+GLBs with 11 Input(s):          3
+GLBs with 13 Input(s):          1
+GLBs with 16 Input(s):          1
+GLBs with 17 Input(s):          2
+GLBs with 18 Input(s):          4
+
+Average Inputs per GLB:         10.88
+
+
+GLBs with  1 Output(s):         4
+GLBs with  3 Output(s):         5
+GLBs with  4 Output(s):         15
+
+Average Outputs per GLB:        3.29
+
+
+Output Enable Nets:             1
+
+    Net Name                Net Fanout
+
+    BUF_2437                    1
+
+
+Number of GLB Registers:        73
+Number of IOC Registers:        0
+
+
+Post-Route Design Implementation
+--------------------------------
+
+Number of Macrocells:		79
+Number of GLBs:			26
+Number of IOCs:			18
+Number of DIs:			0
+Number of GLB Levels:		3
+
+
+GLB glb00, C5
+
+    18 Input(s)
+        (SDA_BI.O, SDA_BI_Z0, I13), (glb01.O3, UQNN_N27, I15), 
+        (glb12.O1, UQNN_N29, I1), (glb12.O0, UQNN_N30, I11), (glb17.O3, 
+        UQNN_N23, I12), (glb00.O1, UQNN_N34, I17), (glb11.O0, 
+        UQNN_N36, I7), (glb18.O0, UQNN_N28_part2, I0), (glb14.O2, 
+        UQNN_N20, I9), (glb00.O0, UQNN_N49, I16), (glb14.O1, 
+        UQNN_N21, I10), (glb07.O0, UQNN_N196, I3), (glb11.O3, 
+        UQNN_N13, I4), (glb11.O2, UQNN_N14, I14), (glb11.O1, 
+        UQNN_N15, I6), (glb12.O3, UQNN_N16, I8), (glb12.O2, 
+        UQNN_N17, I2), (glb13_part1.O2, UQNN_N24, I5)
+    4 Output(s)
+        (UQNN_N49, O0), (UQNN_N34, O1), (READ_REQ_SIG, O2), 
+        (OR_1147, O3)
+    9 Product Term(s)
+
+    Output UQNN_N49
+
+        12 Input(s)
+            UQNN_N13, UQNN_N30, UQNN_N27, UQNN_N14, UQNN_N15, UQNN_N29,
+            UQNN_N16, UQNN_N17, UQNN_N196, UQNN_N20, UQNN_N21, UQNN_N49
+        2 Fanout(s)
+            glb01.I15, glb00.I16
+        4 Product Term(s)
+        2 GLB Level(s)
+
+        UQNN_N49.D = UQNN_N21 & !UQNN_N20
+            # UQNN_N49 & !UQNN_N20 & !UQNN_N27
+            # UQNN_N49 & !UQNN_N20 & !UQNN_N196
+            # UQNN_N29 & UQNN_N30 & UQNN_N49 & !UQNN_N20 & !UQNN_N13
+            & !UQNN_N14 & !UQNN_N15 & !UQNN_N16 & !UQNN_N17
+        UQNN_N49.C = CLK_MASTERX
+        UQNN_N49.R = 
+    Output UQNN_N34
+
+        6 Input(s)
+            UQNN_N23, UQNN_N24, UQNN_N28_part2, UQNN_N20, UQNN_N34,
+            UQNN_N21
+        2 Fanout(s)
+            glb00.I17, glb13_part2.I1
+        3 Product Term(s)
+        1 GLB Level(s)
+
+        UQNN_N34.D = UQNN_N34 & UQNN_N24 & !UQNN_N20 & !UQNN_N21
+            # UQNN_N23 & UQNN_N24 & !UQNN_N20 & !UQNN_N21
+            # UQNN_N34 & !UQNN_N20 & !UQNN_N21 & !UQNN_N28_part2
+        UQNN_N34.C = CLK_MASTERX
+        UQNN_N34.R = 
+    Output READ_REQ_SIG
+
+        13 Input(s)
+            UQNN_N36, UQNN_N23, UQNN_N24, UQNN_N13, UQNN_N30, UQNN_N27,
+            UQNN_N14, SDA_BI_Z0, UQNN_N15, UQNN_N29, UQNN_N16, UQNN_N17,
+            UQNN_N196
+        2 Fanout(s)
+            glb17.I13, glb02.I2
+        2 Product Term(s)
+        2 GLB Level(s)
+
+        READ_REQ_SIG.D = (UQNN_N23 & UQNN_N24 & !SDA_BI_Z0
+            # UQNN_N27 & UQNN_N29 & UQNN_N30 & UQNN_N36 & UQNN_N196
+            & !UQNN_N13 & !UQNN_N14 & !UQNN_N15 & !UQNN_N16 & !UQNN_N17)
+        READ_REQ_SIG.C = CLK_MASTERX
+        READ_REQ_SIG.R = 
+    Output OR_1147
+
+        13 Input(s)
+            UQNN_N36, UQNN_N23, UQNN_N24, UQNN_N13, UQNN_N30, UQNN_N27,
+            UQNN_N14, SDA_BI_Z0, UQNN_N15, UQNN_N29, UQNN_N16, UQNN_N17,
+            UQNN_N196
+        4 Fanout(s)
+            glb17.I12, glb15_part2.I3, glb16.I3, glb15_part1.I3
+        2 Product Term(s)
+        2 GLB Level(s)
+
+        OR_1147 = (UQNN_N23 & UQNN_N24 & !SDA_BI_Z0
+            # UQNN_N27 & UQNN_N29 & UQNN_N30 & UQNN_N36 & UQNN_N196
+            & !UQNN_N13 & !UQNN_N14 & !UQNN_N15 & !UQNN_N16 & !UQNN_N17)
+
+
+GLB glb01, B6
+
+    18 Input(s)
+        (glb01.O3, UQNN_N27, I17), (glb13_part2.O1, UQNN_N32, I9), 
+        (glb15_part1.O1, UQNN_N37, I13), (glb15_part1.O2, 
+        UQNN_N38, I10), (glb16.O1, UQNN_N39, I5), (glb16.O3, 
+        UQNN_N40_part1, I7), (glb17.O0, UQNN_N41, I0), (glb17.O2, 
+        UQNN_N42, I2), (glb16.O0, UQNN_N43, I4), (glb15_part2.O0, 
+        UQNN_N44, I3), (glb14.O2, UQNN_N20, I6), (glb01.O0, 
+        LED_C, I16), (glb00.O0, UQNN_N49, I15), (glb14.O1, 
+        UQNN_N21, I1), (glb13_part2.O0, UQNN_N8, I8), (glb07.O0, 
+        UQNN_N196, I12), (glb10.O3, UQNN_N9, I11), (glb10.O2, 
+        UQNN_N10, I14)
+    3 Output(s)
+        (UQNN_N27, O3), (UQNN_N25, O1), (LED_C, O0)
+    12 Product Term(s)
+
+    Output UQNN_N27
+
+        4 Input(s)
+            UQNN_N27, UQNN_N196, UQNN_N20, UQNN_N21
+        8 Fanout(s)
+            glb18.I0, glb07.I0, glb01.I17, glb10.I0, glb12.I15,
+            glb11.I15, glb00.I15, glb13_part2.I15
+        2 Product Term(s)
+        2 GLB Level(s)
+
+        UQNN_N27.D = UQNN_N21 & !UQNN_N20
+            # UQNN_N27 & !UQNN_N20 & !UQNN_N196
+        UQNN_N27.C = CLK_MASTERX
+        UQNN_N27.R = 
+    Output UQNN_N25
+
+        13 Input(s)
+            UQNN_N9, UQNN_N8, UQNN_N37, UQNN_N10, UQNN_N41, UQNN_N38,
+            UQNN_N42, UQNN_N39, UQNN_N43, UQNN_N44, UQNN_N40_part1,
+            UQNN_N32, UQNN_N49
+        1 Fanout(s)
+            SDA_BI.IR
+        8 Product Term(s)
+        1 GLB Level(s)
+
+        UQNN_N25.D = (UQNN_N32 & UQNN_N37 & UQNN_N49 & UQNN_N8 & UQNN_N9
+            & UQNN_N10
+            # UQNN_N32 & UQNN_N38 & UQNN_N49 & UQNN_N9 & UQNN_N10
+            & !UQNN_N8
+            # UQNN_N32 & UQNN_N39 & UQNN_N49 & UQNN_N8 & UQNN_N10
+            & !UQNN_N9
+            # UQNN_N32 & UQNN_N40_part1 & UQNN_N49 & UQNN_N10 & !UQNN_N8
+            & !UQNN_N9
+            # UQNN_N32 & UQNN_N41 & UQNN_N49 & UQNN_N8 & UQNN_N9
+            & !UQNN_N10
+            # UQNN_N32 & UQNN_N42 & UQNN_N49 & UQNN_N9 & !UQNN_N8
+            & !UQNN_N10
+            # UQNN_N32 & UQNN_N43 & UQNN_N49 & UQNN_N8 & !UQNN_N9
+            & !UQNN_N10
+            # UQNN_N32 & UQNN_N44 & UQNN_N49 & !UQNN_N8 & !UQNN_N9
+            & !UQNN_N10)
+        UQNN_N25.C = CLK_MASTERX
+        UQNN_N25.R = 
+    Output LED_C
+
+        3 Input(s)
+            UQNN_N20, UQNN_N21, LED_C
+        4 Fanout(s)
+            glb17.I8, glb01.I16, glb02.I7, LED.IR
+        2 Product Term(s)
+        1 GLB Level(s)
+
+        LED_C.D = LED_C & !UQNN_N20
+            # UQNN_N21 & !UQNN_N20
+        LED_C.C = CLK_MASTERX
+        LED_C.R = 
+
+Clock GLB glb02, C0
+
+    7 Input(s)
+        (AS_IN(1).O, AS_IN(1)X, I8), (AS_IN(2).O, AS_IN(2)X, I9), 
+        (AS_IN(6).O, AS_IN(6)X, I12), (glb02.O3, CNT_SIG[0], I17), 
+        (glb02.O2, UPDATE_SIG, I16), (glb01.O0, LED_C, I7), (glb00.O2, 
+        READ_REQ_SIG, I2)
+    4 Output(s)
+        (UPDATE_SIG, O2), (CNT_SIG[0], O3), (BUF_2439, O1), 
+        (BUF_2438, O0)
+    7 Product Term(s)
+
+    Output UPDATE_SIG
+
+        4 Input(s)
+            AS_IN(6)X, UPDATE_SIG, AS_IN(1)X, LED_C
+        12 Fanout(s)
+            glb19.I2, glb05.I2, glb04.I2, glb09.I2, glb06.I2, glb21.I2,
+            glb20.I2, glb02.I16, glb22.I9, glb03.I9, glb08.I13,
+            glb23.I13
+        3 Product Term(s)
+        1 GLB Level(s)
+
+        UPDATE_SIG.D = UPDATE_SIG & !AS_IN(1)X
+            # AS_IN(6)X & !LED_C
+            # UPDATE_SIG & !LED_C
+        UPDATE_SIG.C = CLK_MASTERX
+        UPDATE_SIG.R = 
+    Output CNT_SIG[0]
+
+        3 Input(s)
+            READ_REQ_SIG, CNT_SIG[0], LED_C
+        5 Fanout(s)
+            glb17.I3, glb02.I17, glb15_part2.I8, glb16.I8,
+            glb15_part1.I8
+        2 Product Term(s)
+        1 GLB Level(s)
+
+        CNT_SIG[0].D = LED_C & READ_REQ_SIG & !CNT_SIG[0]
+            # CNT_SIG[0] & LED_C & !READ_REQ_SIG
+        CNT_SIG[0].C = CLK_MASTERX
+        CNT_SIG[0].R = 
+    Output BUF_2439
+
+        1 Input(s)
+            AS_IN(6)X
+        2 Fanout(s)
+            glb22.CLK2, glb23.CLK2
+        1 Product Term(s)
+        1 GLB Level(s)
+
+        BUF_2439 = AS_IN(6)X
+
+    Output BUF_2438
+
+        1 Input(s)
+            AS_IN(2)X
+        2 Fanout(s)
+            glb06.CLK1, glb21.CLK1
+        1 Product Term(s)
+        1 GLB Level(s)
+
+        BUF_2438 = AS_IN(2)X
+
+
+GLB glb03, D0
+
+    2 Input(s)
+        (MUP_IN.O, MUP_INX, I13), (glb02.O2, UPDATE_SIG, I9)
+    1 Output(s)
+        (TRIGGER_SIG, O0)
+    2 Product Term(s)
+
+    Output TRIGGER_SIG
+
+        2 Input(s)
+            MUP_INX, UPDATE_SIG
+        1 Fanout(s)
+            glb16.I11
+        0 Product Term(s)
+        1 GLB Level(s)
+
+        TRIGGER_SIG.D = VCC
+        TRIGGER_SIG.C = MUP_INX
+        TRIGGER_SIG.R = !UPDATE_SIG
+
+
+GLB glb04, A5
+
+    4 Input(s)
+        (AS_IN(4).O, AS_IN(4)X, I4), (glb04.O0, BCD4_SIG[3], I16), 
+        (OUT_IN(3).O, OUT_IN(3)X, I10), (glb02.O2, UPDATE_SIG, I2)
+    1 Output(s)
+        (BCD4_SIG[3], O0)
+    3 Product Term(s)
+
+    Output BCD4_SIG[3]
+
+        4 Input(s)
+            OUT_IN(3)X, BCD4_SIG[3], AS_IN(4)X, UPDATE_SIG
+        2 Fanout(s)
+            glb04.I16, glb16.I0
+        2 Product Term(s)
+        1 GLB Level(s)
+
+        BCD4_SIG[3].D = OUT_IN(3)X & UPDATE_SIG
+            # BCD4_SIG[3] & !UPDATE_SIG
+        BCD4_SIG[3].C = AS_IN(4)X
+        BCD4_SIG[3].R = 
+
+GLB glb05, A4
+
+    4 Input(s)
+        (AS_IN(3).O, AS_IN(3)X, I5), (glb05.O0, BCD3_SIG[3], I16), 
+        (OUT_IN(3).O, OUT_IN(3)X, I10), (glb02.O2, UPDATE_SIG, I2)
+    1 Output(s)
+        (BCD3_SIG[3], O0)
+    3 Product Term(s)
+
+    Output BCD3_SIG[3]
+
+        4 Input(s)
+            OUT_IN(3)X, BCD3_SIG[3], UPDATE_SIG, AS_IN(3)X
+        2 Fanout(s)
+            glb05.I16, glb15_part2.I15
+        2 Product Term(s)
+        1 GLB Level(s)
+
+        BCD3_SIG[3].D = OUT_IN(3)X & UPDATE_SIG
+            # BCD3_SIG[3] & !UPDATE_SIG
+        BCD3_SIG[3].C = AS_IN(3)X
+        BCD3_SIG[3].R = 
+
+GLB glb06, B0
+
+    3 Input(s)
+        (glb06.O0, BCD2_SIG[3], I16), (OUT_IN(3).O, OUT_IN(3)X, I10), 
+        (glb02.O2, UPDATE_SIG, I2)
+    1 Output(s)
+        (BCD2_SIG[3], O0)
+    2 Product Term(s)
+
+    Output BCD2_SIG[3]
+
+        3 Input(s)
+            OUT_IN(3)X, BCD2_SIG[3], UPDATE_SIG
+        2 Fanout(s)
+            glb06.I16, glb16.I15
+        2 Product Term(s)
+        1 GLB Level(s)
+
+        BCD2_SIG[3].D = OUT_IN(3)X & UPDATE_SIG
+            # BCD2_SIG[3] & !UPDATE_SIG
+        BCD2_SIG[3].C = BUF_2438
+        BCD2_SIG[3].R = 
+
+GLB glb07, A7
+
+    13 Input(s)
+        (SCL_IN.O, SCL_INX, I1), (glb01.O3, UQNN_N27, I0), 
+        (glb13_part2.O1, UQNN_N32, I9), (glb17.O3, UQNN_N23, I3), 
+        (glb18.O0, UQNN_N28_part2, I4), (glb14.O2, UQNN_N20, I2), 
+        (glb14.O1, UQNN_N21, I5), (glb13_part2.O0, UQNN_N8, I8), 
+        (glb07.O0, UQNN_N196, I16), (glb10.O3, UQNN_N9, I11), 
+        (glb10.O2, UQNN_N10, I10), (glb10.O0, UQNN_N11, I12), 
+        (glb13_part2.O3, UQNN_N22, I15)
+    4 Output(s)
+        (UQNN_N196, O0), (UQNN_N120, O1), (UQNN_N12, O2), (OR_858, O3)
+    10 Product Term(s)
+
+    Output UQNN_N196
+
+        5 Input(s)
+            UQNN_N9, UQNN_N8, UQNN_N10, UQNN_N11, UQNN_N28_part2
+        6 Fanout(s)
+            glb18.I8, glb07.I16, glb01.I12, glb10.I12, glb00.I3,
+            glb13_part2.I7
+        1 Product Term(s)
+        1 GLB Level(s)
+
+        UQNN_N196 = UQNN_N28_part2 & UQNN_N11 & !UQNN_N8 & !UQNN_N9
+            & !UQNN_N10
+
+    Output UQNN_N120
+
+        6 Input(s)
+            UQNN_N9, UQNN_N8, UQNN_N10, UQNN_N11, UQNN_N28_part2,
+            UQNN_N32
+        3 Fanout(s)
+            glb13_part1.I9, glb10.I9, glb13_part2.I6
+        1 Product Term(s)
+        1 GLB Level(s)
+
+        UQNN_N120 = UQNN_N32 & UQNN_N28_part2 & UQNN_N8 & UQNN_N9
+            & UQNN_N10 & !UQNN_N11
+
+    Output UQNN_N12
+
+        1 Input(s)
+            SCL_INX
+        3 Fanout(s)
+            glb17.I14, glb18.I14, glb15_part1.I1
+        1 Product Term(s)
+        1 GLB Level(s)
+
+        UQNN_N12.D = SCL_INX
+        !UQNN_N12.C = CLK_MASTERX
+        UQNN_N12.R = 
+    Output OR_858
+
+        12 Input(s)
+            UQNN_N22, UQNN_N9, UQNN_N8, UQNN_N23, UQNN_N10, UQNN_N11,
+            UQNN_N28_part2, UQNN_N27, UQNN_N32, UQNN_N196, UQNN_N20,
+            UQNN_N21
+        2 Fanout(s)
+            glb10.I15, glb13_part2.I0
+        7 Product Term(s)
+        2 GLB Level(s)
+
+        OR_858 = (UQNN_N20
+            # UQNN_N21
+            # UQNN_N27 & UQNN_N196
+            # UQNN_N23 & UQNN_N22
+            # UQNN_N32 & UQNN_N28_part2 & !UQNN_N11
+            # UQNN_N27 & UQNN_N23 & !UQNN_N11
+            # UQNN_N28_part2 & UQNN_N11 & UQNN_N22 & !UQNN_N8 & !UQNN_N9
+            & !UQNN_N10)
+
+
+GLB glb08, D1
+
+    10 Input(s)
+        (AS_IN(1).O, AS_IN(1)X, I8), (glb08.O3, BCD1_SIG[0], I3), 
+        (glb08.O2, BCD1_SIG[1], I17), (glb08.O1, BCD1_SIG[2], I16), 
+        (glb08.O0, BCD1_SIG[3], I11), (OUT_IN(0).O, OUT_IN(0)X, I15), 
+        (OUT_IN(1).O, OUT_IN(1)X, I7), (OUT_IN(2).O, OUT_IN(2)X, I6), 
+        (OUT_IN(3).O, OUT_IN(3)X, I5), (glb02.O2, UPDATE_SIG, I13)
+    4 Output(s)
+        (BCD1_SIG[3], O0), (BCD1_SIG[2], O1), (BCD1_SIG[1], O2), 
+        (BCD1_SIG[0], O3)
+    9 Product Term(s)
+
+    Output BCD1_SIG[3]
+
+        4 Input(s)
+            OUT_IN(3)X, BCD1_SIG[3], UPDATE_SIG, AS_IN(1)X
+        2 Fanout(s)
+            glb08.I11, glb15_part2.I11
+        2 Product Term(s)
+        1 GLB Level(s)
+
+        BCD1_SIG[3].D = OUT_IN(3)X & UPDATE_SIG
+            # BCD1_SIG[3] & !UPDATE_SIG
+        BCD1_SIG[3].C = AS_IN(1)X
+        BCD1_SIG[3].R = 
+    Output BCD1_SIG[2]
+
+        4 Input(s)
+            BCD1_SIG[2], UPDATE_SIG, OUT_IN(2)X, AS_IN(1)X
+        2 Fanout(s)
+            glb08.I16, glb16.I1
+        2 Product Term(s)
+        1 GLB Level(s)
+
+        BCD1_SIG[2].D = OUT_IN(2)X & UPDATE_SIG
+            # BCD1_SIG[2] & !UPDATE_SIG
+        BCD1_SIG[2].C = AS_IN(1)X
+        BCD1_SIG[2].R = 
+    Output BCD1_SIG[1]
+
+        4 Input(s)
+            BCD1_SIG[1], OUT_IN(1)X, UPDATE_SIG, AS_IN(1)X
+        2 Fanout(s)
+            glb17.I6, glb08.I17
+        2 Product Term(s)
+        1 GLB Level(s)
+
+        BCD1_SIG[1].D = OUT_IN(1)X & UPDATE_SIG
+            # BCD1_SIG[1] & !UPDATE_SIG
+        BCD1_SIG[1].C = AS_IN(1)X
+        BCD1_SIG[1].R = 
+    Output BCD1_SIG[0]
+
+        4 Input(s)
+            BCD1_SIG[0], OUT_IN(0)X, UPDATE_SIG, AS_IN(1)X
+        2 Fanout(s)
+            glb17.I7, glb08.I3
+        2 Product Term(s)
+        1 GLB Level(s)
+
+        BCD1_SIG[0].D = OUT_IN(0)X & UPDATE_SIG
+            # BCD1_SIG[0] & !UPDATE_SIG
+        BCD1_SIG[0].C = AS_IN(1)X
+        BCD1_SIG[0].R = 
+
+GLB glb09, A6
+
+    10 Input(s)
+        (AS_IN(5).O, AS_IN(5)X, I3), (glb09.O3, BCD5_SIG[0], I0), 
+        (glb09.O2, BCD5_SIG[1], I1), (glb09.O1, BCD5_SIG[2], I17), 
+        (glb09.O0, BCD5_SIG[3], I16), (OUT_IN(0).O, OUT_IN(0)X, I11), 
+        (OUT_IN(1).O, OUT_IN(1)X, I8), (OUT_IN(2).O, OUT_IN(2)X, I9), 
+        (OUT_IN(3).O, OUT_IN(3)X, I10), (glb02.O2, UPDATE_SIG, I2)
+    4 Output(s)
+        (BCD5_SIG[3], O0), (BCD5_SIG[2], O1), (BCD5_SIG[1], O2), 
+        (BCD5_SIG[0], O3)
+    9 Product Term(s)
+
+    Output BCD5_SIG[3]
+
+        4 Input(s)
+            AS_IN(5)X, OUT_IN(3)X, BCD5_SIG[3], UPDATE_SIG
+        2 Fanout(s)
+            glb09.I16, glb15_part2.I12
+        2 Product Term(s)
+        1 GLB Level(s)
+
+        BCD5_SIG[3].D = OUT_IN(3)X & UPDATE_SIG
+            # BCD5_SIG[3] & !UPDATE_SIG
+        BCD5_SIG[3].C = AS_IN(5)X
+        BCD5_SIG[3].R = 
+    Output BCD5_SIG[2]
+
+        4 Input(s)
+            BCD5_SIG[2], AS_IN(5)X, UPDATE_SIG, OUT_IN(2)X
+        2 Fanout(s)
+            glb09.I17, glb16.I6
+        2 Product Term(s)
+        1 GLB Level(s)
+
+        BCD5_SIG[2].D = OUT_IN(2)X & UPDATE_SIG
+            # BCD5_SIG[2] & !UPDATE_SIG
+        BCD5_SIG[2].C = AS_IN(5)X
+        BCD5_SIG[2].R = 
+    Output BCD5_SIG[1]
+
+        4 Input(s)
+            AS_IN(5)X, OUT_IN(1)X, BCD5_SIG[1], UPDATE_SIG
+        2 Fanout(s)
+            glb17.I10, glb09.I1
+        2 Product Term(s)
+        1 GLB Level(s)
+
+        BCD5_SIG[1].D = OUT_IN(1)X & UPDATE_SIG
+            # BCD5_SIG[1] & !UPDATE_SIG
+        BCD5_SIG[1].C = AS_IN(5)X
+        BCD5_SIG[1].R = 
+    Output BCD5_SIG[0]
+
+        4 Input(s)
+            AS_IN(5)X, BCD5_SIG[0], OUT_IN(0)X, UPDATE_SIG
+        2 Fanout(s)
+            glb17.I11, glb09.I0
+        2 Product Term(s)
+        1 GLB Level(s)
+
+        BCD5_SIG[0].D = OUT_IN(0)X & UPDATE_SIG
+            # BCD5_SIG[0] & !UPDATE_SIG
+        BCD5_SIG[0].C = AS_IN(5)X
+        BCD5_SIG[0].R = 
+
+GLB glb10, B7
+
+    11 Input(s)
+        (glb01.O3, UQNN_N27, I0), (glb07.O1, UQNN_N120, I9), (glb14.O2, 
+        UQNN_N20, I2), (glb14.O1, UQNN_N21, I1), (glb13_part2.O0, 
+        UQNN_N8, I8), (glb07.O0, UQNN_N196, I12), (glb10.O3, 
+        UQNN_N9, I17), (glb10.O2, UQNN_N10, I10), (glb10.O0, 
+        UQNN_N11, I16), (glb13_part2.O3, UQNN_N22, I11), (glb07.O3, 
+        OR_858, I15)
+    3 Output(s)
+        (UQNN_N9, O3), (UQNN_N11, O0), (UQNN_N10, O2)
+    15 Product Term(s)
+
+    Output UQNN_N9
+
+        8 Input(s)
+            UQNN_N9, UQNN_N8, UQNN_N27, OR_858, UQNN_N196, UQNN_N20,
+            UQNN_N120, UQNN_N21
+        5 Fanout(s)
+            glb07.I11, glb01.I11, glb10.I17, glb12.I4, glb11.I0
+        5 Product Term(s)
+        3 GLB Level(s)
+
+        UQNN_N9.D = (UQNN_N9 & !OR_858
+            # UQNN_N9 & !UQNN_N20 & !UQNN_N120 & !UQNN_N21 & !UQNN_N27
+            & !UQNN_N8
+            # UQNN_N9 & !UQNN_N20 & !UQNN_N120 & !UQNN_N21 & !UQNN_N196
+            & !UQNN_N8
+            # UQNN_N8 & !UQNN_N20 & !UQNN_N120 & !UQNN_N21 & !UQNN_N27
+            & !UQNN_N9 & OR_858
+            # UQNN_N8 & !UQNN_N20 & !UQNN_N120 & !UQNN_N21 & !UQNN_N196
+            & !UQNN_N9 & OR_858)
+        UQNN_N9.C = CLK_MASTERX
+        UQNN_N9.R = 
+    Output UQNN_N11
+
+        11 Input(s)
+            UQNN_N22, UQNN_N9, UQNN_N8, UQNN_N10, UQNN_N11, UQNN_N27,
+            OR_858, UQNN_N196, UQNN_N20, UQNN_N120, UQNN_N21
+        4 Fanout(s)
+            glb07.I12, glb10.I16, glb12.I3, glb11.I3
+        5 Product Term(s)
+        3 GLB Level(s)
+
+        UQNN_N11.D = (UQNN_N11 & !OR_858
+            # UQNN_N196 & UQNN_N11 & !UQNN_N20 & !UQNN_N120 & !UQNN_N21
+            & !UQNN_N27 & !UQNN_N22
+            # UQNN_N8 & UQNN_N9 & UQNN_N10 & !UQNN_N20 & !UQNN_N120
+            & !UQNN_N21 & !UQNN_N196 & OR_858)
+            $ (UQNN_N11 & !UQNN_N20 & !UQNN_N120 & !UQNN_N21 & !UQNN_N196
+            & OR_858
+            # UQNN_N8 & UQNN_N196 & UQNN_N9 & UQNN_N10 & !UQNN_N20
+            & !UQNN_N120 & !UQNN_N21 & !UQNN_N27 & !UQNN_N22 & OR_858)
+        UQNN_N11.C = CLK_MASTERX
+        UQNN_N11.R = 
+    Output UQNN_N10
+
+        10 Input(s)
+            UQNN_N22, UQNN_N9, UQNN_N8, UQNN_N10, UQNN_N27, OR_858,
+            UQNN_N196, UQNN_N20, UQNN_N120, UQNN_N21
+        5 Fanout(s)
+            glb07.I10, glb01.I14, glb10.I10, glb12.I5, glb11.I5
+        5 Product Term(s)
+        3 GLB Level(s)
+
+        UQNN_N10.D = (UQNN_N10 & !OR_858
+            # UQNN_N27 & UQNN_N196 & UQNN_N10 & !UQNN_N20 & !UQNN_N120
+            & !UQNN_N21
+            # UQNN_N8 & UQNN_N9 & !UQNN_N20 & !UQNN_N120 & !UQNN_N21
+            & !UQNN_N196 & OR_858
+            # UQNN_N8 & UQNN_N9 & !UQNN_N20 & !UQNN_N120 & !UQNN_N21
+            & !UQNN_N27 & !UQNN_N22 & OR_858)
+            $ UQNN_N10 & !UQNN_N20 & !UQNN_N120 & !UQNN_N21 & OR_858
+        UQNN_N10.C = CLK_MASTERX
+        UQNN_N10.R = 
+
+GLB glb11, C2
+
+    11 Input(s)
+        (SDA_BI.O, SDA_BI_Z0, I13), (glb01.O3, UQNN_N27, I15), 
+        (glb17.O3, UQNN_N23, I12), (glb11.O0, UQNN_N36, I16), 
+        (glb13_part2.O0, UQNN_N8, I7), (glb10.O3, UQNN_N9, I0), 
+        (glb10.O2, UQNN_N10, I5), (glb10.O0, UQNN_N11, I3), (glb11.O3, 
+        UQNN_N13, I4), (glb11.O2, UQNN_N14, I14), (glb11.O1, 
+        UQNN_N15, I17)
+    4 Output(s)
+        (UQNN_N36, O0), (UQNN_N15, O1), (UQNN_N14, O2), (UQNN_N13, O3)
+    12 Product Term(s)
+
+    Output UQNN_N36
+
+        8 Input(s)
+            UQNN_N9, UQNN_N36, UQNN_N8, UQNN_N23, UQNN_N10, UQNN_N11,
+            UQNN_N27, SDA_BI_Z0
+        3 Fanout(s)
+            glb11.I16, glb00.I7, glb13_part2.I12
+        3 Product Term(s)
+        1 GLB Level(s)
+
+        UQNN_N36.D = (UQNN_N36
+            # UQNN_N27 & UQNN_N23 & UQNN_N8 & UQNN_N9 & UQNN_N10
+            & !UQNN_N11)
+            $ UQNN_N27 & UQNN_N23 & UQNN_N8 & UQNN_N9 & UQNN_N10
+            & !SDA_BI_Z0 & !UQNN_N11
+        UQNN_N36.C = CLK_MASTERX
+        UQNN_N36.R = 
+    Output UQNN_N15
+
+        8 Input(s)
+            UQNN_N9, UQNN_N8, UQNN_N23, UQNN_N10, UQNN_N11, UQNN_N27,
+            SDA_BI_Z0, UQNN_N15
+        3 Fanout(s)
+            glb18.I9, glb11.I17, glb00.I6
+        3 Product Term(s)
+        1 GLB Level(s)
+
+        UQNN_N15.D = (UQNN_N15
+            # UQNN_N27 & UQNN_N23 & UQNN_N9 & !UQNN_N11 & !UQNN_N8
+            & !UQNN_N10)
+            $ UQNN_N27 & UQNN_N23 & UQNN_N9 & !SDA_BI_Z0 & !UQNN_N11
+            & !UQNN_N8 & !UQNN_N10
+        UQNN_N15.C = CLK_MASTERX
+        UQNN_N15.R = 
+    Output UQNN_N14
+
+        8 Input(s)
+            UQNN_N9, UQNN_N8, UQNN_N23, UQNN_N10, UQNN_N11, UQNN_N27,
+            UQNN_N14, SDA_BI_Z0
+        3 Fanout(s)
+            glb18.I10, glb11.I14, glb00.I14
+        3 Product Term(s)
+        1 GLB Level(s)
+
+        UQNN_N14.D = (UQNN_N14
+            # UQNN_N27 & UQNN_N23 & UQNN_N8 & UQNN_N9 & !UQNN_N11
+            & !UQNN_N10)
+            $ UQNN_N27 & UQNN_N23 & UQNN_N8 & UQNN_N9 & !SDA_BI_Z0
+            & !UQNN_N11 & !UQNN_N10
+        UQNN_N14.C = CLK_MASTERX
+        UQNN_N14.R = 
+    Output UQNN_N13
+
+        8 Input(s)
+            UQNN_N9, UQNN_N8, UQNN_N23, UQNN_N10, UQNN_N11, UQNN_N13,
+            UQNN_N27, SDA_BI_Z0
+        3 Fanout(s)
+            glb18.I11, glb11.I4, glb00.I4
+        3 Product Term(s)
+        1 GLB Level(s)
+
+        UQNN_N13.D = (UQNN_N13
+            # UQNN_N27 & UQNN_N23 & UQNN_N10 & !UQNN_N11 & !UQNN_N8
+            & !UQNN_N9)
+            $ UQNN_N27 & UQNN_N23 & UQNN_N10 & !SDA_BI_Z0 & !UQNN_N11
+            & !UQNN_N8 & !UQNN_N9
+        UQNN_N13.C = CLK_MASTERX
+        UQNN_N13.R = 
+
+GLB glb12, C1
+
+    11 Input(s)
+        (SDA_BI.O, SDA_BI_Z0, I13), (glb01.O3, UQNN_N27, I15), 
+        (glb12.O1, UQNN_N29, I17), (glb12.O0, UQNN_N30, I16), 
+        (glb17.O3, UQNN_N23, I12), (glb13_part2.O0, UQNN_N8, I7), 
+        (glb10.O3, UQNN_N9, I4), (glb10.O2, UQNN_N10, I5), (glb10.O0, 
+        UQNN_N11, I3), (glb12.O3, UQNN_N16, I8), (glb12.O2, 
+        UQNN_N17, I9)
+    4 Output(s)
+        (UQNN_N30, O0), (UQNN_N29, O1), (UQNN_N17, O2), (UQNN_N16, O3)
+    12 Product Term(s)
+
+    Output UQNN_N30
+
+        8 Input(s)
+            UQNN_N9, UQNN_N8, UQNN_N23, UQNN_N10, UQNN_N11, UQNN_N30,
+            UQNN_N27, SDA_BI_Z0
+        3 Fanout(s)
+            glb18.I4, glb12.I16, glb00.I11
+        3 Product Term(s)
+        1 GLB Level(s)
+
+        UQNN_N30.D = (UQNN_N30
+            # UQNN_N27 & UQNN_N23 & UQNN_N8 & UQNN_N10 & !UQNN_N11
+            & !UQNN_N9)
+            $ UQNN_N27 & UQNN_N23 & UQNN_N8 & UQNN_N10 & !SDA_BI_Z0
+            & !UQNN_N11 & !UQNN_N9
+        UQNN_N30.C = CLK_MASTERX
+        UQNN_N30.R = 
+    Output UQNN_N29
+
+        8 Input(s)
+            UQNN_N9, UQNN_N8, UQNN_N23, UQNN_N10, UQNN_N11, UQNN_N27,
+            SDA_BI_Z0, UQNN_N29
+        3 Fanout(s)
+            glb18.I5, glb12.I17, glb00.I1
+        3 Product Term(s)
+        1 GLB Level(s)
+
+        UQNN_N29.D = (UQNN_N29
+            # UQNN_N27 & UQNN_N23 & UQNN_N9 & UQNN_N10 & !UQNN_N11
+            & !UQNN_N8)
+            $ UQNN_N27 & UQNN_N23 & UQNN_N9 & UQNN_N10 & !SDA_BI_Z0
+            & !UQNN_N11 & !UQNN_N8
+        UQNN_N29.C = CLK_MASTERX
+        UQNN_N29.R = 
+    Output UQNN_N17
+
+        8 Input(s)
+            UQNN_N9, UQNN_N8, UQNN_N23, UQNN_N10, UQNN_N11, UQNN_N27,
+            SDA_BI_Z0, UQNN_N17
+        3 Fanout(s)
+            glb18.I6, glb12.I9, glb00.I2
+        3 Product Term(s)
+        1 GLB Level(s)
+
+        UQNN_N17.D = (UQNN_N17
+            # UQNN_N27 & UQNN_N23 & !UQNN_N11 & !UQNN_N8 & !UQNN_N9
+            & !UQNN_N10)
+            $ UQNN_N27 & UQNN_N23 & !SDA_BI_Z0 & !UQNN_N11 & !UQNN_N8
+            & !UQNN_N9 & !UQNN_N10
+        UQNN_N17.C = CLK_MASTERX
+        UQNN_N17.R = 
+    Output UQNN_N16
+
+        8 Input(s)
+            UQNN_N9, UQNN_N8, UQNN_N23, UQNN_N10, UQNN_N11, UQNN_N27,
+            SDA_BI_Z0, UQNN_N16
+        3 Fanout(s)
+            glb18.I7, glb12.I8, glb00.I8
+        3 Product Term(s)
+        1 GLB Level(s)
+
+        UQNN_N16.D = (UQNN_N16
+            # UQNN_N27 & UQNN_N23 & UQNN_N8 & !UQNN_N11 & !UQNN_N9
+            & !UQNN_N10)
+            $ UQNN_N27 & UQNN_N23 & UQNN_N8 & !SDA_BI_Z0 & !UQNN_N11
+            & !UQNN_N9 & !UQNN_N10
+        UQNN_N16.C = CLK_MASTERX
+        UQNN_N16.R = 
+
+GLB glb13_part1, B2
+
+    5 Input(s)
+        (glb07.O1, UQNN_N120, I9), (glb17.O3, UQNN_N23, I3), (glb14.O2, 
+        UQNN_N20, I2), (glb14.O1, UQNN_N21, I1), (glb13_part1.O2, 
+        UQNN_N24, I16)
+    1 Output(s)
+        (UQNN_N24, O2)
+    2 Product Term(s)
+
+    Output UQNN_N24
+
+        5 Input(s)
+            UQNN_N23, UQNN_N24, UQNN_N20, UQNN_N120, UQNN_N21
+        3 Fanout(s)
+            glb13_part1.I16, glb00.I5, glb14.I5
+        2 Product Term(s)
+        2 GLB Level(s)
+
+        UQNN_N24.D = UQNN_N120 & !UQNN_N20 & !UQNN_N21
+            # UQNN_N24 & !UQNN_N20 & !UQNN_N21 & !UQNN_N23
+        UQNN_N24.C = CLK_MASTERX
+        UQNN_N24.R = 
+
+GLB glb13_part2, C7
+
+    14 Input(s)
+        (glb01.O3, UQNN_N27, I15), (glb07.O1, UQNN_N120, I6), 
+        (glb14.O2, UQNN_N20, I13), (glb14.O1, UQNN_N21, I14), 
+        (glb13_part2.O0, UQNN_N8, I16), (glb07.O0, UQNN_N196, I7), 
+        (glb13_part2.O3, UQNN_N22, I4), (glb07.O3, OR_858, I0), 
+        (glb14.O0, UQNN_N31, I11), (glb13_part2.O1, UQNN_N32, I17), 
+        (glb18.O2, UQNN_N33, I9), (glb00.O1, UQNN_N34, I1), (glb11.O0, 
+        UQNN_N36, I12), (glb18.O1, UQNN_N28_part1, I10)
+    3 Output(s)
+        (UQNN_N8, O0), (UQNN_N32, O1), (UQNN_N22, O3)
+    10 Product Term(s)
+
+    Output UQNN_N8
+
+        8 Input(s)
+            UQNN_N22, UQNN_N8, UQNN_N27, OR_858, UQNN_N196, UQNN_N20,
+            UQNN_N120, UQNN_N21
+        6 Fanout(s)
+            glb07.I8, glb01.I8, glb10.I8, glb12.I7, glb11.I7,
+            glb13_part2.I16
+        4 Product Term(s)
+        3 GLB Level(s)
+
+        UQNN_N8.D = UQNN_N8 & !OR_858
+            # !UQNN_N20 & !UQNN_N120 & !UQNN_N21 & !UQNN_N196 & !UQNN_N8
+            & OR_858
+            # UQNN_N8 & UQNN_N196 & UQNN_N22 & !UQNN_N20 & !UQNN_N120
+            & !UQNN_N21 & !UQNN_N27
+            # !UQNN_N20 & !UQNN_N120 & !UQNN_N21 & !UQNN_N27 & !UQNN_N8
+            & !UQNN_N22 & OR_858
+        UQNN_N8.C = CLK_MASTERX
+        UQNN_N8.R = 
+    Output UQNN_N32
+
+        9 Input(s)
+            UQNN_N36, UQNN_N28_part1, UQNN_N31, UQNN_N32, UQNN_N33,
+            UQNN_N20, UQNN_N34, UQNN_N120, UQNN_N21
+        4 Fanout(s)
+            glb18.I13, glb07.I9, glb01.I9, glb13_part2.I17
+        3 Product Term(s)
+        2 GLB Level(s)
+
+        UQNN_N32.D = UQNN_N32 & !UQNN_N20 & !UQNN_N120 & !UQNN_N21
+            # UQNN_N33 & UQNN_N36 & UQNN_N28_part1 & !UQNN_N20
+            & !UQNN_N120 & !UQNN_N21
+            # UQNN_N31 & UQNN_N34 & UQNN_N36 & UQNN_N28_part1 & !UQNN_N20
+            & !UQNN_N120 & !UQNN_N21
+        UQNN_N32.C = CLK_MASTERX
+        UQNN_N32.R = 
+    Output UQNN_N22
+
+        9 Input(s)
+            UQNN_N22, UQNN_N36, UQNN_N28_part1, UQNN_N31, UQNN_N33,
+            UQNN_N196, UQNN_N20, UQNN_N34, UQNN_N21
+        4 Fanout(s)
+            glb18.I15, glb07.I15, glb10.I11, glb13_part2.I4
+        3 Product Term(s)
+        2 GLB Level(s)
+
+        UQNN_N22.D = (UQNN_N33 & UQNN_N28_part1 & !UQNN_N20 & !UQNN_N21
+            & !UQNN_N22 & !UQNN_N36
+            # UQNN_N31 & UQNN_N34 & UQNN_N28_part1 & !UQNN_N20
+            & !UQNN_N21 & !UQNN_N22 & !UQNN_N36)
+            $ UQNN_N22 & !UQNN_N20 & !UQNN_N21 & !UQNN_N196
+        UQNN_N22.C = CLK_MASTERX
+        UQNN_N22.R = 
+
+GLB glb14, D4
+
+    7 Input(s)
+        (SCL_IN.O, SCL_INX, I14), (SDA_BI.O, SDA_BI_Z0, I13), 
+        (glb14.O0, UQNN_N31, I16), (glb17.O3, UQNN_N23, I12), 
+        (glb15_part1.O0, UQNN_N18_part2, I7), (glb14.O3, 
+        UQNN_N19, I17), (glb13_part1.O2, UQNN_N24, I5)
+    4 Output(s)
+        (UQNN_N31, O0), (UQNN_N21, O1), (UQNN_N20, O2), (UQNN_N19, O3)
+    6 Product Term(s)
+
+    Output UQNN_N31
+
+        4 Input(s)
+            UQNN_N23, UQNN_N24, UQNN_N31, SDA_BI_Z0
+        2 Fanout(s)
+            glb13_part2.I11, glb14.I16
+        3 Product Term(s)
+        1 GLB Level(s)
+
+        UQNN_N31.D = UQNN_N31 & !UQNN_N24
+            # UQNN_N31 & !UQNN_N23
+            # UQNN_N23 & UQNN_N24 & !SDA_BI_Z0
+        UQNN_N31.C = CLK_MASTERX
+        UQNN_N31.R = 
+    Output UQNN_N21
+
+        4 Input(s)
+            UQNN_N19, SCL_INX, UQNN_N18_part2, SDA_BI_Z0
+        7 Fanout(s)
+            glb18.I1, glb07.I5, glb13_part1.I1, glb01.I1, glb10.I1,
+            glb00.I10, glb13_part2.I14
+        1 Product Term(s)
+        1 GLB Level(s)
+
+        UQNN_N21.D = SCL_INX & UQNN_N18_part2 & UQNN_N19 & !SDA_BI_Z0
+        UQNN_N21.C = CLK_MASTERX
+        UQNN_N21.R = 
+    Output UQNN_N20
+
+        4 Input(s)
+            UQNN_N19, SCL_INX, UQNN_N18_part2, SDA_BI_Z0
+        7 Fanout(s)
+            glb18.I2, glb07.I2, glb13_part1.I2, glb01.I6, glb10.I2,
+            glb00.I9, glb13_part2.I13
+        1 Product Term(s)
+        1 GLB Level(s)
+
+        UQNN_N20.D = SCL_INX & SDA_BI_Z0 & UQNN_N18_part2 & !UQNN_N19
+        UQNN_N20.C = CLK_MASTERX
+        UQNN_N20.R = 
+    Output UQNN_N19
+
+        1 Input(s)
+            SDA_BI_Z0
+        1 Fanout(s)
+            glb14.I17
+        1 Product Term(s)
+        1 GLB Level(s)
+
+        UQNN_N19.D = SDA_BI_Z0
+        UQNN_N19.C = CLK_MASTERX
+        UQNN_N19.R = 
+
+GLB glb15_part1, D7
+
+    14 Input(s)
+        (glb21.O2, BCD2_SIG[1], I5), (glb20.O2, BCD4_SIG[1], I13), 
+        (glb22.O2, BCD6_SIG[1], I9), (glb02.O3, CNT_SIG[0], I8), 
+        (glb17.O1, CNT_SIG[1], I10), (glb19.O0, M, I7), 
+        (glb15_part1.O2, UQNN_N38, I16), (glb00.O3, OR_1147, I3), 
+        (glb21.O3, BCD2_SIG[0], I4), (glb20.O1, BCD4_SIG[0], I14), 
+        (glb22.O3, BCD6_SIG[0], I12), (glb20.O0, L, I15), 
+        (glb15_part1.O1, UQNN_N37, I17), (glb07.O2, UQNN_N12, I1)
+    4 Output(s)
+        (UQNN_N38, O2), (UQNN_N37, O1), (UQNN_N18_part2, O0), 
+        (UQNN_N18_part1, O3)
+    12 Product Term(s)
+
+    Output UQNN_N38
+
+        8 Input(s)
+            M, UQNN_N38, BCD2_SIG[1], OR_1147, CNT_SIG[1], BCD4_SIG[1],
+            BCD6_SIG[1], CNT_SIG[0]
+        2 Fanout(s)
+            glb01.I10, glb15_part1.I16
+        5 Product Term(s)
+        3 GLB Level(s)
+
+        UQNN_N38.D = (UQNN_N38 & !OR_1147
+            # BCD6_SIG[1] & CNT_SIG[1] & OR_1147 & !CNT_SIG[0]
+            # BCD4_SIG[1] & CNT_SIG[0] & OR_1147 & !CNT_SIG[1]
+            # BCD2_SIG[1] & OR_1147 & !CNT_SIG[0] & !CNT_SIG[1]
+            # CNT_SIG[0] & CNT_SIG[1] & M & OR_1147)
+        UQNN_N38.C = CLK_MASTERX
+        UQNN_N38.R = 
+    Output UQNN_N37
+
+        8 Input(s)
+            UQNN_N37, BCD6_SIG[0], BCD4_SIG[0], OR_1147, CNT_SIG[1],
+            BCD2_SIG[0], CNT_SIG[0], L
+        2 Fanout(s)
+            glb01.I13, glb15_part1.I17
+        5 Product Term(s)
+        3 GLB Level(s)
+
+        UQNN_N37.D = (UQNN_N37 & !OR_1147
+            # BCD6_SIG[0] & CNT_SIG[1] & OR_1147 & !CNT_SIG[0]
+            # BCD4_SIG[0] & CNT_SIG[0] & OR_1147 & !CNT_SIG[1]
+            # BCD2_SIG[0] & OR_1147 & !CNT_SIG[0] & !CNT_SIG[1]
+            # CNT_SIG[0] & CNT_SIG[1] & L & OR_1147)
+        UQNN_N37.C = CLK_MASTERX
+        UQNN_N37.R = 
+    Output UQNN_N18_part2
+
+        1 Input(s)
+            UQNN_N12
+        2 Fanout(s)
+            glb18.I12, glb14.I7
+        1 Product Term(s)
+        1 GLB Level(s)
+
+        UQNN_N18_part2.D = UQNN_N12
+        UQNN_N18_part2.C = CLK_MASTERX
+        UQNN_N18_part2.R = 
+    Output UQNN_N18_part1
+
+        1 Input(s)
+            UQNN_N12
+        1 Fanout(s)
+            glb17.I15
+        1 Product Term(s)
+        1 GLB Level(s)
+
+        UQNN_N18_part1.D = UQNN_N12
+        UQNN_N18_part1.C = CLK_MASTERX
+        UQNN_N18_part1.R = 
+
+GLB glb15_part2, D2
+
+    7 Input(s)
+        (glb08.O0, BCD1_SIG[3], I11), (glb05.O0, BCD3_SIG[3], I15), 
+        (glb09.O0, BCD5_SIG[3], I12), (glb02.O3, CNT_SIG[0], I8), 
+        (glb17.O1, CNT_SIG[1], I14), (glb15_part2.O0, UQNN_N44, I16), 
+        (glb00.O3, OR_1147, I3)
+    1 Output(s)
+        (UQNN_N44, O0)
+    4 Product Term(s)
+
+    Output UQNN_N44
+
+        7 Input(s)
+            BCD5_SIG[3], OR_1147, UQNN_N44, CNT_SIG[1], BCD3_SIG[3],
+            BCD1_SIG[3], CNT_SIG[0]
+        2 Fanout(s)
+            glb01.I3, glb15_part2.I16
+        4 Product Term(s)
+        3 GLB Level(s)
+
+        UQNN_N44.D = UQNN_N44 & !OR_1147
+            # BCD5_SIG[3] & CNT_SIG[1] & OR_1147 & !CNT_SIG[0]
+            # BCD3_SIG[3] & CNT_SIG[0] & OR_1147 & !CNT_SIG[1]
+            # BCD1_SIG[3] & OR_1147 & !CNT_SIG[0] & !CNT_SIG[1]
+        UQNN_N44.C = CLK_MASTERX
+        UQNN_N44.R = 
+
+GLB glb16, D5
+
+    18 Input(s)
+        (glb08.O1, BCD1_SIG[2], I1), (glb21.O1, BCD2_SIG[2], I2), 
+        (glb06.O0, BCD2_SIG[3], I15), (glb19.O1, BCD3_SIG[2], I13), 
+        (glb20.O3, BCD4_SIG[2], I12), (glb04.O0, BCD4_SIG[3], I0), 
+        (glb09.O1, BCD5_SIG[2], I6), (glb22.O1, BCD6_SIG[2], I14), 
+        (glb23.O2, BCD6_SIG[3], I5), (glb02.O3, CNT_SIG[0], I8), 
+        (glb17.O1, CNT_SIG[1], I10), (glb23.O3, ML_SIG, I4), (glb21.O0, 
+        N, I7), (glb03.O0, TRIGGER_SIG, I11), (glb16.O1, 
+        UQNN_N39, I17), (glb16.O2, UQNN_N40_part2, I9), (glb16.O0, 
+        UQNN_N43, I16), (glb00.O3, OR_1147, I3)
+    4 Output(s)
+        (UQNN_N43, O0), (UQNN_N40_part2, O2), (UQNN_N39, O1), 
+        (UQNN_N40_part1, O3)
+    15 Product Term(s)
+
+    Output UQNN_N43
+
+        8 Input(s)
+            BCD5_SIG[2], BCD3_SIG[2], TRIGGER_SIG, UQNN_N43, BCD1_SIG[2],
+            OR_1147, CNT_SIG[1], CNT_SIG[0]
+        2 Fanout(s)
+            glb01.I4, glb16.I16
+        5 Product Term(s)
+        3 GLB Level(s)
+
+        UQNN_N43.D = (UQNN_N43 & !OR_1147
+            # BCD5_SIG[2] & CNT_SIG[1] & OR_1147 & !CNT_SIG[0]
+            # BCD3_SIG[2] & CNT_SIG[0] & OR_1147 & !CNT_SIG[1]
+            # BCD1_SIG[2] & OR_1147 & !CNT_SIG[0] & !CNT_SIG[1]
+            # CNT_SIG[0] & CNT_SIG[1] & TRIGGER_SIG & OR_1147)
+        UQNN_N43.C = CLK_MASTERX
+        UQNN_N43.R = 
+    Output UQNN_N40_part2
+
+        8 Input(s)
+            BCD6_SIG[3], ML_SIG, BCD4_SIG[3], OR_1147, CNT_SIG[1],
+            UQNN_N40_part2, BCD2_SIG[3], CNT_SIG[0]
+        1 Fanout(s)
+            glb16.I9
+        5 Product Term(s)
+        3 GLB Level(s)
+
+        UQNN_N40_part2.D = (UQNN_N40_part2 & !OR_1147
+            # BCD6_SIG[3] & CNT_SIG[1] & OR_1147 & !CNT_SIG[0]
+            # BCD4_SIG[3] & CNT_SIG[0] & OR_1147 & !CNT_SIG[1]
+            # BCD2_SIG[3] & OR_1147 & !CNT_SIG[0] & !CNT_SIG[1]
+            # CNT_SIG[0] & CNT_SIG[1] & ML_SIG & OR_1147)
+        UQNN_N40_part2.C = CLK_MASTERX
+        UQNN_N40_part2.R = 
+    Output UQNN_N39
+
+        8 Input(s)
+            BCD4_SIG[2], BCD2_SIG[2], N, UQNN_N39, BCD6_SIG[2], OR_1147,
+            CNT_SIG[1], CNT_SIG[0]
+        2 Fanout(s)
+            glb01.I5, glb16.I17
+        5 Product Term(s)
+        3 GLB Level(s)
+
+        UQNN_N39.D = (UQNN_N39 & !OR_1147
+            # BCD6_SIG[2] & CNT_SIG[1] & OR_1147 & !CNT_SIG[0]
+            # BCD4_SIG[2] & CNT_SIG[0] & OR_1147 & !CNT_SIG[1]
+            # BCD2_SIG[2] & OR_1147 & !CNT_SIG[0] & !CNT_SIG[1]
+            # CNT_SIG[0] & CNT_SIG[1] & N & OR_1147)
+        UQNN_N39.C = CLK_MASTERX
+        UQNN_N39.R = 
+    Output UQNN_N40_part1
+
+        8 Input(s)
+            BCD6_SIG[3], ML_SIG, BCD4_SIG[3], OR_1147, CNT_SIG[1],
+            UQNN_N40_part2, BCD2_SIG[3], CNT_SIG[0]
+        1 Fanout(s)
+            glb01.I7
+        5 Product Term(s)
+        3 GLB Level(s)
+
+        UQNN_N40_part1.D = (UQNN_N40_part2 & !OR_1147
+            # BCD6_SIG[3] & CNT_SIG[1] & OR_1147 & !CNT_SIG[0]
+            # BCD4_SIG[3] & CNT_SIG[0] & OR_1147 & !CNT_SIG[1]
+            # BCD2_SIG[3] & OR_1147 & !CNT_SIG[0] & !CNT_SIG[1]
+            # CNT_SIG[0] & CNT_SIG[1] & ML_SIG & OR_1147)
+        UQNN_N40_part1.C = CLK_MASTERX
+        UQNN_N40_part1.R = 
+
+GLB glb17, A0
+
+    17 Input(s)
+        (glb08.O3, BCD1_SIG[0], I7), (glb08.O2, BCD1_SIG[1], I6), 
+        (glb19.O3, BCD3_SIG[0], I0), (glb19.O2, BCD3_SIG[1], I1), 
+        (glb09.O3, BCD5_SIG[0], I11), (glb09.O2, BCD5_SIG[1], I10), 
+        (glb02.O3, CNT_SIG[0], I3), (glb17.O1, CNT_SIG[1], I5), 
+        (glb23.O1, FREQ_SIG, I2), (glb22.O0, OVFL_SIG, I4), (glb17.O0, 
+        UQNN_N41, I16), (glb17.O2, UQNN_N42, I17), (glb01.O0, 
+        LED_C, I8), (glb00.O2, READ_REQ_SIG, I13), (glb07.O2, 
+        UQNN_N12, I14), (glb15_part1.O3, UQNN_N18_part1, I15), 
+        (glb00.O3, OR_1147, I12)
+    4 Output(s)
+        (UQNN_N42, O2), (UQNN_N41, O0), (UQNN_N23, O3), 
+        (CNT_SIG[1], O1)
+    14 Product Term(s)
+
+    Output UQNN_N42
+
+        8 Input(s)
+            BCD1_SIG[1], UQNN_N42, BCD3_SIG[1], OR_1147, CNT_SIG[1],
+            OVFL_SIG, BCD5_SIG[1], CNT_SIG[0]
+        2 Fanout(s)
+            glb17.I17, glb01.I2
+        5 Product Term(s)
+        3 GLB Level(s)
+
+        UQNN_N42.D = (UQNN_N42 & !OR_1147
+            # BCD5_SIG[1] & CNT_SIG[1] & OR_1147 & !CNT_SIG[0]
+            # BCD3_SIG[1] & CNT_SIG[0] & OR_1147 & !CNT_SIG[1]
+            # BCD1_SIG[1] & OR_1147 & !CNT_SIG[0] & !CNT_SIG[1]
+            # CNT_SIG[0] & CNT_SIG[1] & OVFL_SIG & OR_1147)
+        UQNN_N42.C = CLK_MASTERX
+        UQNN_N42.R = 
+    Output UQNN_N41
+
+        8 Input(s)
+            UQNN_N41, BCD5_SIG[0], OR_1147, CNT_SIG[1], FREQ_SIG,
+            BCD1_SIG[0], BCD3_SIG[0], CNT_SIG[0]
+        2 Fanout(s)
+            glb17.I16, glb01.I0
+        5 Product Term(s)
+        3 GLB Level(s)
+
+        UQNN_N41.D = (UQNN_N41 & !OR_1147
+            # BCD5_SIG[0] & CNT_SIG[1] & OR_1147 & !CNT_SIG[0]
+            # BCD3_SIG[0] & CNT_SIG[0] & OR_1147 & !CNT_SIG[1]
+            # BCD1_SIG[0] & OR_1147 & !CNT_SIG[0] & !CNT_SIG[1]
+            # CNT_SIG[0] & CNT_SIG[1] & FREQ_SIG & OR_1147)
+        UQNN_N41.C = CLK_MASTERX
+        UQNN_N41.R = 
+    Output UQNN_N23
+
+        2 Input(s)
+            UQNN_N18_part1, UQNN_N12
+        6 Fanout(s)
+            glb07.I3, glb13_part1.I3, glb12.I12, glb11.I12, glb00.I12,
+            glb14.I12
+        1 Product Term(s)
+        1 GLB Level(s)
+
+        UQNN_N23.D = UQNN_N12 & !UQNN_N18_part1
+        UQNN_N23.C = CLK_MASTERX
+        UQNN_N23.R = 
+    Output CNT_SIG[1]
+
+        4 Input(s)
+            READ_REQ_SIG, CNT_SIG[1], CNT_SIG[0], LED_C
+        4 Fanout(s)
+            glb17.I5, glb15_part2.I14, glb16.I10, glb15_part1.I10
+        3 Product Term(s)
+        1 GLB Level(s)
+
+        CNT_SIG[1].D = CNT_SIG[1] & LED_C & !CNT_SIG[0]
+            # CNT_SIG[1] & LED_C & !READ_REQ_SIG
+            # CNT_SIG[0] & LED_C & READ_REQ_SIG & !CNT_SIG[1]
+        CNT_SIG[1].C = CLK_MASTERX
+        CNT_SIG[1].R = 
+
+GLB glb18, A1
+
+    17 Input(s)
+        (glb01.O3, UQNN_N27, I0), (glb12.O1, UQNN_N29, I5), (glb12.O0, 
+        UQNN_N30, I4), (glb13_part2.O1, UQNN_N32, I13), (glb18.O2, 
+        UQNN_N33, I17), (glb18.O0, UQNN_N28_part2, I16), (glb14.O2, 
+        UQNN_N20, I2), (glb14.O1, UQNN_N21, I1), (glb07.O0, 
+        UQNN_N196, I8), (glb07.O2, UQNN_N12, I14), (glb15_part1.O0, 
+        UQNN_N18_part2, I12), (glb11.O3, UQNN_N13, I11), (glb11.O2, 
+        UQNN_N14, I10), (glb11.O1, UQNN_N15, I9), (glb12.O3, 
+        UQNN_N16, I7), (glb12.O2, UQNN_N17, I6), (glb13_part2.O3, 
+        UQNN_N22, I15)
+    4 Output(s)
+        (UQNN_N33, O2), (UQNN_N28_part2, O0), (UQNN_N26, O3), 
+        (UQNN_N28_part1, O1)
+    6 Product Term(s)
+
+    Output UQNN_N33
+
+        14 Input(s)
+            UQNN_N22, UQNN_N13, UQNN_N28_part2, UQNN_N30, UQNN_N27,
+            UQNN_N14, UQNN_N15, UQNN_N29, UQNN_N16, UQNN_N33, UQNN_N17,
+            UQNN_N196, UQNN_N20, UQNN_N21
+        2 Fanout(s)
+            glb18.I17, glb13_part2.I9
+        3 Product Term(s)
+        2 GLB Level(s)
+
+        UQNN_N33.D = UQNN_N196 & UQNN_N22 & !UQNN_N20 & !UQNN_N21
+            # UQNN_N33 & !UQNN_N20 & !UQNN_N21 & !UQNN_N28_part2
+            # UQNN_N27 & UQNN_N29 & UQNN_N30 & UQNN_N196 & !UQNN_N20
+            & !UQNN_N21 & !UQNN_N13 & !UQNN_N14 & !UQNN_N15 & !UQNN_N16
+            & !UQNN_N17
+        UQNN_N33.C = CLK_MASTERX
+        UQNN_N33.R = 
+    Output UQNN_N28_part2
+
+        2 Input(s)
+            UQNN_N12, UQNN_N18_part2
+        3 Fanout(s)
+            glb18.I16, glb07.I4, glb00.I0
+        1 Product Term(s)
+        1 GLB Level(s)
+
+        UQNN_N28_part2.D = UQNN_N18_part2 & !UQNN_N12
+        UQNN_N28_part2.C = CLK_MASTERX
+        UQNN_N28_part2.R = 
+    Output UQNN_N26
+
+        2 Input(s)
+            UQNN_N32, UQNN_N33
+        1 Fanout(s)
+            glb23.I8
+        2 Product Term(s)
+        1 GLB Level(s)
+
+        UQNN_N26.D = (!UQNN_N32 & !UQNN_N33)
+            $ VCC
+        UQNN_N26.C = CLK_MASTERX
+        UQNN_N26.R = 
+    Output UQNN_N28_part1
+
+        2 Input(s)
+            UQNN_N12, UQNN_N18_part2
+        1 Fanout(s)
+            glb13_part2.I10
+        1 Product Term(s)
+        1 GLB Level(s)
+
+        UQNN_N28_part1.D = UQNN_N18_part2 & !UQNN_N12
+        UQNN_N28_part1.C = CLK_MASTERX
+        UQNN_N28_part1.R = 
+
+GLB glb19, A2
+
+    10 Input(s)
+        (AS_IN(3).O, AS_IN(3)X, I5), (glb19.O3, BCD3_SIG[0], I0), 
+        (glb19.O2, BCD3_SIG[1], I1), (glb19.O1, BCD3_SIG[2], I17), 
+        (DS_IN.O, DS_INX, I4), (glb19.O0, M, I16), (OUT_IN(0).O, 
+        OUT_IN(0)X, I11), (OUT_IN(1).O, OUT_IN(1)X, I8), (OUT_IN(2).O, 
+        OUT_IN(2)X, I9), (glb02.O2, UPDATE_SIG, I2)
+    4 Output(s)
+        (M, O0), (BCD3_SIG[2], O1), (BCD3_SIG[1], O2), 
+        (BCD3_SIG[0], O3)
+    9 Product Term(s)
+
+    Output M
+
+        4 Input(s)
+            M, UPDATE_SIG, DS_INX, AS_IN(3)X
+        2 Fanout(s)
+            glb19.I16, glb15_part1.I7
+        2 Product Term(s)
+        1 GLB Level(s)
+
+        M.D = DS_INX & UPDATE_SIG
+            # M & !UPDATE_SIG
+        M.C = AS_IN(3)X
+        M.R = 
+    Output BCD3_SIG[2]
+
+        4 Input(s)
+            BCD3_SIG[2], UPDATE_SIG, OUT_IN(2)X, AS_IN(3)X
+        2 Fanout(s)
+            glb19.I17, glb16.I13
+        2 Product Term(s)
+        1 GLB Level(s)
+
+        BCD3_SIG[2].D = OUT_IN(2)X & UPDATE_SIG
+            # BCD3_SIG[2] & !UPDATE_SIG
+        BCD3_SIG[2].C = AS_IN(3)X
+        BCD3_SIG[2].R = 
+    Output BCD3_SIG[1]
+
+        4 Input(s)
+            OUT_IN(1)X, BCD3_SIG[1], UPDATE_SIG, AS_IN(3)X
+        2 Fanout(s)
+            glb17.I1, glb19.I1
+        2 Product Term(s)
+        1 GLB Level(s)
+
+        BCD3_SIG[1].D = OUT_IN(1)X & UPDATE_SIG
+            # BCD3_SIG[1] & !UPDATE_SIG
+        BCD3_SIG[1].C = AS_IN(3)X
+        BCD3_SIG[1].R = 
+    Output BCD3_SIG[0]
+
+        4 Input(s)
+            OUT_IN(0)X, BCD3_SIG[0], UPDATE_SIG, AS_IN(3)X
+        2 Fanout(s)
+            glb17.I0, glb19.I0
+        2 Product Term(s)
+        1 GLB Level(s)
+
+        BCD3_SIG[0].D = OUT_IN(0)X & UPDATE_SIG
+            # BCD3_SIG[0] & !UPDATE_SIG
+        BCD3_SIG[0].C = AS_IN(3)X
+        BCD3_SIG[0].R = 
+
+GLB glb20, B4
+
+    10 Input(s)
+        (AS_IN(4).O, AS_IN(4)X, I4), (glb20.O1, BCD4_SIG[0], I1), 
+        (glb20.O2, BCD4_SIG[1], I17), (glb20.O3, BCD4_SIG[2], I3), 
+        (DS_IN.O, DS_INX, I15), (glb20.O0, L, I16), (OUT_IN(0).O, 
+        OUT_IN(0)X, I0), (OUT_IN(1).O, OUT_IN(1)X, I8), (OUT_IN(2).O, 
+        OUT_IN(2)X, I9), (glb02.O2, UPDATE_SIG, I2)
+    4 Output(s)
+        (L, O0), (BCD4_SIG[2], O3), (BCD4_SIG[1], O2), 
+        (BCD4_SIG[0], O1)
+    9 Product Term(s)
+
+    Output L
+
+        4 Input(s)
+            AS_IN(4)X, UPDATE_SIG, L, DS_INX
+        2 Fanout(s)
+            glb20.I16, glb15_part1.I15
+        2 Product Term(s)
+        1 GLB Level(s)
+
+        L.D = DS_INX & UPDATE_SIG
+            # L & !UPDATE_SIG
+        L.C = AS_IN(4)X
+        L.R = 
+    Output BCD4_SIG[2]
+
+        4 Input(s)
+            BCD4_SIG[2], AS_IN(4)X, UPDATE_SIG, OUT_IN(2)X
+        2 Fanout(s)
+            glb20.I3, glb16.I12
+        2 Product Term(s)
+        1 GLB Level(s)
+
+        BCD4_SIG[2].D = OUT_IN(2)X & UPDATE_SIG
+            # BCD4_SIG[2] & !UPDATE_SIG
+        BCD4_SIG[2].C = AS_IN(4)X
+        BCD4_SIG[2].R = 
+    Output BCD4_SIG[1]
+
+        4 Input(s)
+            OUT_IN(1)X, AS_IN(4)X, BCD4_SIG[1], UPDATE_SIG
+        2 Fanout(s)
+            glb20.I17, glb15_part1.I13
+        2 Product Term(s)
+        1 GLB Level(s)
+
+        BCD4_SIG[1].D = OUT_IN(1)X & UPDATE_SIG
+            # BCD4_SIG[1] & !UPDATE_SIG
+        BCD4_SIG[1].C = AS_IN(4)X
+        BCD4_SIG[1].R = 
+    Output BCD4_SIG[0]
+
+        4 Input(s)
+            BCD4_SIG[0], AS_IN(4)X, OUT_IN(0)X, UPDATE_SIG
+        2 Fanout(s)
+            glb20.I1, glb15_part1.I14
+        2 Product Term(s)
+        1 GLB Level(s)
+
+        BCD4_SIG[0].D = OUT_IN(0)X & UPDATE_SIG
+            # BCD4_SIG[0] & !UPDATE_SIG
+        BCD4_SIG[0].C = AS_IN(4)X
+        BCD4_SIG[0].R = 
+
+GLB glb21, B3
+
+    9 Input(s)
+        (glb21.O3, BCD2_SIG[0], I11), (glb21.O2, BCD2_SIG[1], I10), 
+        (glb21.O1, BCD2_SIG[2], I17), (DS_IN.O, DS_INX, I4), (glb21.O0, 
+        N, I16), (OUT_IN(0).O, OUT_IN(0)X, I0), (OUT_IN(1).O, 
+        OUT_IN(1)X, I8), (OUT_IN(2).O, OUT_IN(2)X, I9), (glb02.O2, 
+        UPDATE_SIG, I2)
+    4 Output(s)
+        (N, O0), (BCD2_SIG[2], O1), (BCD2_SIG[1], O2), 
+        (BCD2_SIG[0], O3)
+    8 Product Term(s)
+
+    Output N
+
+        3 Input(s)
+            N, UPDATE_SIG, DS_INX
+        2 Fanout(s)
+            glb21.I16, glb16.I7
+        2 Product Term(s)
+        1 GLB Level(s)
+
+        N.D = DS_INX & UPDATE_SIG
+            # N & !UPDATE_SIG
+        N.C = BUF_2438
+        N.R = 
+    Output BCD2_SIG[2]
+
+        3 Input(s)
+            BCD2_SIG[2], UPDATE_SIG, OUT_IN(2)X
+        2 Fanout(s)
+            glb21.I17, glb16.I2
+        2 Product Term(s)
+        1 GLB Level(s)
+
+        BCD2_SIG[2].D = OUT_IN(2)X & UPDATE_SIG
+            # BCD2_SIG[2] & !UPDATE_SIG
+        BCD2_SIG[2].C = BUF_2438
+        BCD2_SIG[2].R = 
+    Output BCD2_SIG[1]
+
+        3 Input(s)
+            OUT_IN(1)X, BCD2_SIG[1], UPDATE_SIG
+        2 Fanout(s)
+            glb21.I10, glb15_part1.I5
+        2 Product Term(s)
+        1 GLB Level(s)
+
+        BCD2_SIG[1].D = OUT_IN(1)X & UPDATE_SIG
+            # BCD2_SIG[1] & !UPDATE_SIG
+        BCD2_SIG[1].C = BUF_2438
+        BCD2_SIG[1].R = 
+    Output BCD2_SIG[0]
+
+        3 Input(s)
+            OUT_IN(0)X, BCD2_SIG[0], UPDATE_SIG
+        2 Fanout(s)
+            glb21.I11, glb15_part1.I4
+        2 Product Term(s)
+        1 GLB Level(s)
+
+        BCD2_SIG[0].D = OUT_IN(0)X & UPDATE_SIG
+            # BCD2_SIG[0] & !UPDATE_SIG
+        BCD2_SIG[0].C = BUF_2438
+        BCD2_SIG[0].R = 
+
+GLB glb22, C4
+
+    9 Input(s)
+        (glb22.O3, BCD6_SIG[0], I12), (glb22.O2, BCD6_SIG[1], I13), 
+        (glb22.O1, BCD6_SIG[2], I17), (OUT_IN(0).O, OUT_IN(0)X, I15), 
+        (OUT_IN(1).O, OUT_IN(1)X, I7), (OUT_IN(2).O, OUT_IN(2)X, I6), 
+        (OVFL_IN.O, OVFL_INX, I14), (glb22.O0, OVFL_SIG, I16), 
+        (glb02.O2, UPDATE_SIG, I9)
+    4 Output(s)
+        (OVFL_SIG, O0), (BCD6_SIG[2], O1), (BCD6_SIG[1], O2), 
+        (BCD6_SIG[0], O3)
+    8 Product Term(s)
+
+    Output OVFL_SIG
+
+        3 Input(s)
+            OVFL_SIG, OVFL_INX, UPDATE_SIG
+        2 Fanout(s)
+            glb17.I4, glb22.I16
+        2 Product Term(s)
+        1 GLB Level(s)
+
+        OVFL_SIG.D = OVFL_INX & UPDATE_SIG
+            # OVFL_SIG & !UPDATE_SIG
+        OVFL_SIG.C = BUF_2439
+        OVFL_SIG.R = 
+    Output BCD6_SIG[2]
+
+        3 Input(s)
+            BCD6_SIG[2], UPDATE_SIG, OUT_IN(2)X
+        2 Fanout(s)
+            glb22.I17, glb16.I14
+        2 Product Term(s)
+        1 GLB Level(s)
+
+        BCD6_SIG[2].D = OUT_IN(2)X & UPDATE_SIG
+            # BCD6_SIG[2] & !UPDATE_SIG
+        BCD6_SIG[2].C = BUF_2439
+        BCD6_SIG[2].R = 
+    Output BCD6_SIG[1]
+
+        3 Input(s)
+            OUT_IN(1)X, BCD6_SIG[1], UPDATE_SIG
+        2 Fanout(s)
+            glb22.I13, glb15_part1.I9
+        2 Product Term(s)
+        1 GLB Level(s)
+
+        BCD6_SIG[1].D = OUT_IN(1)X & UPDATE_SIG
+            # BCD6_SIG[1] & !UPDATE_SIG
+        BCD6_SIG[1].C = BUF_2439
+        BCD6_SIG[1].R = 
+    Output BCD6_SIG[0]
+
+        3 Input(s)
+            BCD6_SIG[0], OUT_IN(0)X, UPDATE_SIG
+        2 Fanout(s)
+            glb22.I12, glb15_part1.I12
+        2 Product Term(s)
+        1 GLB Level(s)
+
+        BCD6_SIG[0].D = OUT_IN(0)X & UPDATE_SIG
+            # BCD6_SIG[0] & !UPDATE_SIG
+        BCD6_SIG[0].C = BUF_2439
+        BCD6_SIG[0].R = 
+
+GLB glb23, D6
+
+    8 Input(s)
+        (glb23.O2, BCD6_SIG[3], I17), (glb23.O1, FREQ_SIG, I16), 
+        (ML_IN.O, ML_INX, I12), (glb23.O3, ML_SIG, I15), (OUT_IN(3).O, 
+        OUT_IN(3)X, I5), (RNG2_IN.O, RNG2_INX, I14), (glb02.O2, 
+        UPDATE_SIG, I13), (glb18.O3, UQNN_N26, I8)
+    3 Output(s)
+        (ML_SIG, O3), (FREQ_SIG, O1), (BCD6_SIG[3], O2)
+    1 Enable Output
+        BUF_2437
+    7 Product Term(s)
+
+    Output ML_SIG
+
+        3 Input(s)
+            ML_INX, ML_SIG, UPDATE_SIG
+        2 Fanout(s)
+            glb16.I4, glb23.I15
+        2 Product Term(s)
+        1 GLB Level(s)
+
+        ML_SIG.D = ML_INX & UPDATE_SIG
+            # ML_SIG & !UPDATE_SIG
+        ML_SIG.C = BUF_2439
+        ML_SIG.R = 
+    Output FREQ_SIG
+
+        3 Input(s)
+            FREQ_SIG, RNG2_INX, UPDATE_SIG
+        2 Fanout(s)
+            glb17.I2, glb23.I16
+        2 Product Term(s)
+        1 GLB Level(s)
+
+        FREQ_SIG.D = RNG2_INX & UPDATE_SIG
+            # FREQ_SIG & !UPDATE_SIG
+        FREQ_SIG.C = BUF_2439
+        FREQ_SIG.R = 
+    Output BCD6_SIG[3]
+
+        3 Input(s)
+            BCD6_SIG[3], OUT_IN(3)X, UPDATE_SIG
+        2 Fanout(s)
+            glb16.I5, glb23.I17
+        2 Product Term(s)
+        1 GLB Level(s)
+
+        BCD6_SIG[3].D = OUT_IN(3)X & UPDATE_SIG
+            # BCD6_SIG[3] & !UPDATE_SIG
+        BCD6_SIG[3].C = BUF_2439
+        BCD6_SIG[3].R = 
+    Enable Output BUF_2437
+
+
+Input AS_IN(1), IO23
+
+    Output AS_IN(1)X
+        2 Fanout(s)
+            glb02.I8, glb08.I8
+
+
+Input AS_IN(2), IO22
+
+    Output AS_IN(2)X
+        1 Fanout(s)
+            glb02.I9
+
+
+Input AS_IN(3), IO21
+
+    Output AS_IN(3)X
+        2 Fanout(s)
+            glb19.I5, glb05.I5
+
+
+Input AS_IN(4), IO20
+
+    Output AS_IN(4)X
+        2 Fanout(s)
+            glb04.I4, glb20.I4
+
+
+Input AS_IN(5), IO19
+
+    Output AS_IN(5)X
+        1 Fanout(s)
+            glb09.I3
+
+
+Input AS_IN(6), IO24
+
+    Output AS_IN(6)X
+        1 Fanout(s)
+            glb02.I12
+
+
+Clock Input CLK_MASTER, Y0
+
+    Output CLK_MASTERX
+        15 Fanout(s)
+            glb17.CLK0, glb18.CLK0, glb07.CLK0, glb13_part1.CLK0,
+            glb01.CLK0, glb10.CLK0, glb02.CLK0, glb12.CLK0, glb11.CLK0,
+            glb00.CLK0, glb13_part2.CLK0, glb15_part2.CLK0, glb14.CLK0,
+            glb16.CLK0, glb15_part1.CLK0
+
+
+Input DS_IN, IO36
+
+    Output DS_INX
+        3 Fanout(s)
+            glb19.I4, glb21.I4, glb20.I15
+
+
+Output LED, IO16
+
+    Input (glb01.O0, LED_C)
+
+    LED = LED_C
+
+
+Input ML_IN, IO35
+
+    Output ML_INX
+        1 Fanout(s)
+            glb23.I12
+
+
+Input MUP_IN, IO34
+
+    Output MUP_INX
+        1 Fanout(s)
+            glb03.I13
+
+
+Input OUT_IN(0), IO27
+
+    Output OUT_IN(0)X
+        6 Fanout(s)
+            glb19.I11, glb09.I11, glb21.I0, glb20.I0, glb22.I15,
+            glb08.I15
+
+
+Input OUT_IN(1), IO28
+
+    Output OUT_IN(1)X
+        6 Fanout(s)
+            glb19.I8, glb09.I8, glb21.I8, glb20.I8, glb22.I7, glb08.I7
+
+
+Input OUT_IN(2), IO29
+
+    Output OUT_IN(2)X
+        6 Fanout(s)
+            glb19.I9, glb09.I9, glb21.I9, glb20.I9, glb22.I6, glb08.I6
+
+
+Input OUT_IN(3), IO30
+
+    Output OUT_IN(3)X
+        6 Fanout(s)
+            glb05.I10, glb04.I10, glb09.I10, glb06.I10, glb08.I5,
+            glb23.I5
+
+
+Input OVFL_IN, IO33
+
+    Output OVFL_INX
+        1 Fanout(s)
+            glb22.I14
+
+
+Input RNG2_IN, IO17
+
+    Output RNG2_INX
+        1 Fanout(s)
+            glb23.I14
+
+
+Input SCL_IN, IO26
+
+    Output SCL_INX
+        2 Fanout(s)
+            glb07.I1, glb14.I14
+
+
+Bidirectional SDA_BI, IO25
+
+    Input (glb01.O1, UQNN_N25)
+    Output SDA_BI_Z0
+        4 Fanout(s)
+            glb12.I13, glb11.I13, glb00.I13, glb14.I13
+    Enable (glb23.OE, BUF_2437)
+
+    SDA_BI = UQNN_N25
+    SDA_BI.E = BUF_2437
+
+
+Clock Assignments
+
+    Net Name		    Clock Assignment
+
+        CLK_MASTERX             External CLK0
+        BUF_2438                Internal CLK1
+        BUF_2439                Internal CLK2
+
+
+GLB and GLB Output Statistics
+
+    GLB Name, Location      GLB Statistics          GLB Output Statistics
+    GLB Output Name         Ins, Outs, PTs          Ins, FOs, PTs, Levels, PTSABP
+
+        glb00, C5               18,  4,  9          
+            OR_1147                                     13,  4,  2,  2, -   
+            READ_REQ_SIG                                 0,  2,  2,  2, -   
+            UQNN_N34                                     6,  2,  3,  1, 4PT 
+            UQNN_N49                                    12,  2,  4,  2, 4PT 
+
+        glb01, B6               18,  3, 12          
+            LED_C                                        3,  4,  2,  1, 4PT 
+            UQNN_N25                                    13,  1,  8,  1, -   
+            UQNN_N27                                     4,  8,  2,  2, 4PT 
+
+        glb02, C0                7,  4,  7          
+            BUF_2438                                     1,  2,  1,  1, 1PT 
+            BUF_2439                                     1,  2,  1,  1, 1PT 
+            CNT_SIG[0]                                   3,  5,  2,  1, 4PT 
+            UPDATE_SIG                                   4, 12,  3,  1, 4PT 
+
+        glb03, D0                2,  1,  2          
+            TRIGGER_SIG                                  2,  1,  0,  1, -   
+
+        glb04, A5                4,  1,  3          
+            BCD4_SIG[3]                                  4,  2,  2,  1, 4PT 
+
+        glb05, A4                4,  1,  3          
+            BCD3_SIG[3]                                  4,  2,  2,  1, 4PT 
+
+        glb06, B0                3,  1,  2          
+            BCD2_SIG[3]                                  3,  2,  2,  1, 4PT 
+
+        glb07, A7               13,  4, 10          
+            OR_858                                      12,  2,  7,  2, -   
+            UQNN_N12                                     1,  3,  1,  1, 1PT 
+            UQNN_N120                                    6,  3,  1,  1, 1PT 
+            UQNN_N196                                    5,  6,  1,  1, 1PT 
+
+        glb08, D1               10,  4,  9          
+            BCD1_SIG[0]                                  4,  2,  2,  1, 4PT 
+            BCD1_SIG[1]                                  4,  2,  2,  1, 4PT 
+            BCD1_SIG[2]                                  4,  2,  2,  1, 4PT 
+            BCD1_SIG[3]                                  4,  2,  2,  1, 4PT 
+
+        glb09, A6               10,  4,  9          
+            BCD5_SIG[0]                                  4,  2,  2,  1, 4PT 
+            BCD5_SIG[1]                                  4,  2,  2,  1, 4PT 
+            BCD5_SIG[2]                                  4,  2,  2,  1, 4PT 
+            BCD5_SIG[3]                                  4,  2,  2,  1, 4PT 
+
+        glb10, B7               11,  3, 15          
+            UQNN_N10                                    10,  5,  5,  3, -   
+            UQNN_N11                                    11,  4,  5,  3, -   
+            UQNN_N9                                      8,  5,  5,  3, -   
+
+        glb11, C2               11,  4, 12          
+            UQNN_N13                                     8,  3,  3,  1, -   
+            UQNN_N14                                     8,  3,  3,  1, -   
+            UQNN_N15                                     8,  3,  3,  1, -   
+            UQNN_N36                                     8,  3,  3,  1, -   
+
+        glb12, C1               11,  4, 12          
+            UQNN_N16                                     8,  3,  3,  1, -   
+            UQNN_N17                                     8,  3,  3,  1, -   
+            UQNN_N29                                     8,  3,  3,  1, -   
+            UQNN_N30                                     8,  3,  3,  1, -   
+
+        glb13_part1, B2          5,  1,  2          
+            UQNN_N24                                     5,  3,  2,  2, 4PT 
+
+        glb13_part2, C7         14,  3, 10          
+            UQNN_N22                                     9,  4,  3,  2, -   
+            UQNN_N32                                     9,  4,  3,  2, 4PT 
+            UQNN_N8                                      8,  6,  4,  3, 4PT 
+
+        glb14, D4                7,  4,  6          
+            UQNN_N19                                     1,  1,  1,  1, 1PT 
+            UQNN_N20                                     4,  7,  1,  1, 1PT 
+            UQNN_N21                                     4,  7,  1,  1, 1PT 
+            UQNN_N31                                     4,  2,  3,  1, 4PT 
+
+        glb15_part1, D7         14,  4, 12          
+            UQNN_N18_part1                               1,  1,  1,  1, 1PT 
+            UQNN_N18_part2                               1,  2,  1,  1, 1PT 
+            UQNN_N37                                     8,  2,  5,  3, -   
+            UQNN_N38                                     8,  2,  5,  3, -   
+
+        glb15_part2, D2          7,  1,  4          
+            UQNN_N44                                     7,  2,  4,  3, 4PT 
+
+        glb16, D5               18,  4, 15          
+            UQNN_N39                                     8,  2,  5,  3, -   
+            UQNN_N40_part1                               8,  1,  5,  3, -   
+            UQNN_N40_part2                               8,  1,  5,  3, -   
+            UQNN_N43                                     8,  2,  5,  3, -   
+
+        glb17, A0               17,  4, 14          
+            CNT_SIG[1]                                   4,  4,  3,  1, 4PT 
+            UQNN_N23                                     2,  6,  1,  1, 1PT 
+            UQNN_N41                                     8,  2,  5,  3, -   
+            UQNN_N42                                     8,  2,  5,  3, -   
+
+        glb18, A1               17,  4,  6          
+            UQNN_N26                                     2,  1,  2,  1, -   
+            UQNN_N28_part1                               2,  1,  1,  1, 1PT 
+            UQNN_N28_part2                               2,  3,  1,  1, 1PT 
+            UQNN_N33                                    14,  2,  3,  2, 4PT 
+
+        glb19, A2               10,  4,  9          
+            BCD3_SIG[0]                                  4,  2,  2,  1, 4PT 
+            BCD3_SIG[1]                                  4,  2,  2,  1, 4PT 
+            BCD3_SIG[2]                                  4,  2,  2,  1, 4PT 
+            M                                            4,  2,  2,  1, 4PT 
+
+        glb20, B4               10,  4,  9          
+            BCD4_SIG[0]                                  4,  2,  2,  1, 4PT 
+            BCD4_SIG[1]                                  4,  2,  2,  1, 4PT 
+            BCD4_SIG[2]                                  4,  2,  2,  1, 4PT 
+            L                                            4,  2,  2,  1, 4PT 
+
+        glb21, B3                9,  4,  8          
+            BCD2_SIG[0]                                  3,  2,  2,  1, 4PT 
+            BCD2_SIG[1]                                  3,  2,  2,  1, 4PT 
+            BCD2_SIG[2]                                  3,  2,  2,  1, 4PT 
+            N                                            3,  2,  2,  1, 4PT 
+
+        glb22, C4                9,  4,  8          
+            BCD6_SIG[0]                                  3,  2,  2,  1, 4PT 
+            BCD6_SIG[1]                                  3,  2,  2,  1, 4PT 
+            BCD6_SIG[2]                                  3,  2,  2,  1, 4PT 
+            OVFL_SIG                                     3,  2,  2,  1, 4PT 
+
+        glb23, D6                8,  3,  7          
+            BCD6_SIG[3]                                  3,  2,  2,  1, 4PT 
+            FREQ_SIG                                     3,  2,  2,  1, 4PT 
+            ML_SIG                                       3,  2,  2,  1, 4PT 
+
+
+Maximum-Level Trace
+
+    GLB Level, Name, Ins    GLB Output Name
+
+        3, glb10, 11            UQNN_N9             
+        2, glb07                 OR_858              
+        1, glb07                  UQNN_N196           
+
+        3, glb10, 11            UQNN_N11            
+        2, glb07                 OR_858              
+        1, glb07                  UQNN_N196           
+
+        3, glb10, 11            UQNN_N10            
+        2, glb07                 OR_858              
+        1, glb07                  UQNN_N196           
+
+        3, glb13_part2, 11      UQNN_N8             
+        2, glb07                 OR_858              
+        1, glb07                  UQNN_N196           
+
+        3, glb15_part1, 24      UQNN_N38            
+        2, glb00                 OR_1147             
+        1, glb07                  UQNN_N196           
+
+        3, glb15_part1, 24      UQNN_N37            
+        2, glb00                 OR_1147             
+        1, glb07                  UQNN_N196           
+
+        3, glb15_part2, 23      UQNN_N44            
+        2, glb00                 OR_1147             
+        1, glb07                  UQNN_N196           
+
+        3, glb16, 24            UQNN_N43            
+        2, glb00                 OR_1147             
+        1, glb07                  UQNN_N196           
+
+        3, glb16, 24            UQNN_N40_part2      
+        2, glb00                 OR_1147             
+        1, glb07                  UQNN_N196           
+
+        3, glb16, 24            UQNN_N39            
+        2, glb00                 OR_1147             
+        1, glb07                  UQNN_N196           
+
+
+Pin Assignments
+
+    Pin Name                Pin Assignment          Pin Type, Pin Attribute
+
+        CLK_MASTER              20                      Clock Input, PULLUP
+        LED                     45                      Output, SLOWSLEW, PULLUP
+        RNG2_IN                 46                      Input, PULLUP
+        AS_IN(5)                48                      Input, PULLUP
+        AS_IN(4)                49                      Input, PULLUP
+        AS_IN(3)                50                      Input, PULLUP
+        AS_IN(2)                51                      Input, PULLUP
+        AS_IN(1)                52                      Input, PULLUP
+        AS_IN(6)                53                      Input, PULLUP
+        SDA_BI                  54                      Bidirectional, SLOWSLEW
+        SCL_IN                  55                      Input, PULLUP
+        OUT_IN(0)               56                      Input, PULLUP
+        OUT_IN(1)               57                      Input, PULLUP
+        OUT_IN(2)               58                      Input, PULLUP
+        OUT_IN(3)               59                      Input, PULLUP
+        OVFL_IN                 69                      Input, PULLUP
+        MUP_IN                  70                      Input, PULLUP
+        ML_IN                   71                      Input, PULLUP
+        DS_IN                   72                      Input, PULLUP
+
+
+Design process management completed successfully

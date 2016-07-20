@@ -1,0 +1,14 @@
+[Compiler Settings]
+Strategy = Area
+Maximum GLB Inputs = 18
+Maximum GLB Outputs = 4
+Carry Pin Direction = TRUE
+Minimize GLB Levels For All Paths = TRUE
+Effort = High
+Perform Timing Analysis = TRUE
+Ignore Reserved Pins = FALSE
+Case Sensitive = FALSE
+UES Use Checksum as default = FALSE
+Use Global Reset = TRUE
+Parameter File = espfluke.par
+XPN File = espfluke.xpn

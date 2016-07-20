@@ -1,0 +1,6 @@
+
+
+MODULE espfluke
+
+	SUBMODULE I2C_SLAVE
+		INSTANCE I2C_1

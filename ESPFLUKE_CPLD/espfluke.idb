@@ -1,0 +1,32 @@
+1 2.0.00.17.20.15
+-i c:\projekt\espfluke\espfluke.laf -if laf -p ispLSI1032E-70LJ84 -of vhdl -of verilog -s a -e 3 -z -m 18 -n 4 -c -ta on -y c:\projekt\espfluke\espfluke.xpn -S -r c:\projekt\espfluke\ispxpert.par 
+c:\projekt\espfluke\ispxpert.par 1468932002 Tue Jul 19 14:40:02 2016
+espfluke.ppn 1468932004 Tue Jul 19 14:40:04 2016
+espfluke.fxp 1468932004 Tue Jul 19 14:40:04 2016
+c:\projekt\espfluke\espfluke.laf 1468932002 Tue Jul 19 14:40:02 2016
+>  c:\projekt\espfluke\espfluke.xpn
+// PART: 	ispLSI1032E-70LJ84
+// FORMAT: 	PINNAME		PINTYPE	LOCK	PULLUP	SLOWSLEW	OPENDRAIN	OUTDELAY	VOLTAGE	CRIT
+		SCL_IN		-		55	1		-1		-1		-1		-1		-1
+		SDA_BI		-		54	0		1		-1		-1		-1		-1
+		LED			-		45	-1		1		-1		-1		-1		-1
+		AS_IN(1)		-		52	-1		-1		-1		-1		-1		-1
+		AS_IN(2)		-		51	-1		-1		-1		-1		-1		-1
+		AS_IN(3)		-		50	-1		-1		-1		-1		-1		-1
+		AS_IN(4)		-		49	-1		-1		-1		-1		-1		-1
+		AS_IN(5)		-		48	-1		-1		-1		-1		-1		-1
+		OUT_IN(0)		-		56	-1		-1		-1		-1		-1		-1
+		OUT_IN(1)		-		57	-1		-1		-1		-1		-1		-1
+		OUT_IN(2)		-		58	-1		-1		-1		-1		-1		-1
+		OUT_IN(3)		-		59	-1		-1		-1		-1		-1		-1
+		DS_IN			-		72	-1		-1		-1		-1		-1		-1
+		ML_IN			-		71	-1		-1		-1		-1		-1		-1
+		MUP_IN		-		70	-1		-1		-1		-1		-1		-1
+		OVFL_IN		-		69	-1		-1		-1		-1		-1		-1
+		RNG2_IN		-		46	-1		-1		-1		-1		-1		-1
+		AS_IN(6)		-		53	-1		-1		-1		-1		-1		-1
+		CLK_MASTER		-		66	-1		-1		-1		-1		-1		-1
+
+// FORMAT: 	NETNAME		CLK		PRESERVE	ECP	GROUP		XOR	ELP	ETP
+
+// FORMAT: 	SYMNAME		PROTECT	REGTYPE

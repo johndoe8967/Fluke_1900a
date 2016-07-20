@@ -1,0 +1,14 @@
+lsb_spec left;
+index_order up;
+array_def    ESPFLUKE pin AS_IN(6:1) 6 INPUT ;
+array_member ESPFLUKE pin AS_IN(6:1) 5 AS_IN(1);
+array_member ESPFLUKE pin AS_IN(6:1) 4 AS_IN(2);
+array_member ESPFLUKE pin AS_IN(6:1) 3 AS_IN(3);
+array_member ESPFLUKE pin AS_IN(6:1) 2 AS_IN(4);
+array_member ESPFLUKE pin AS_IN(6:1) 1 AS_IN(5);
+array_member ESPFLUKE pin AS_IN(6:1) 0 AS_IN(6);
+array_def    ESPFLUKE pin OUT_IN(3:0) 4 INPUT ;
+array_member ESPFLUKE pin OUT_IN(3:0) 3 OUT_IN(0);
+array_member ESPFLUKE pin OUT_IN(3:0) 2 OUT_IN(1);
+array_member ESPFLUKE pin OUT_IN(3:0) 1 OUT_IN(2);
+array_member ESPFLUKE pin OUT_IN(3:0) 0 OUT_IN(3);

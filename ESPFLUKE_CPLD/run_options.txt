@@ -1,0 +1,54 @@
+#--  Synopsys, Inc.
+#--  Version I-2014.03LC 
+#--  Project file C:\projekt\espfluke\run_options.txt
+#--  Written on Tue Jul 19 14:39:54 2016
+
+
+#project files
+add_file -vhdl -lib work "./i2c_slave.vhd"
+add_file -vhdl -lib work "./espfluke.vhd"
+
+
+
+#implementation: "espfluke"
+impl -add espfluke -type fpga
+
+#device options
+set_option -technology PLSI1K
+set_option -part ispLSI1016
+set_option -package LT44
+set_option -speed_grade -110
+set_option -part_companion ""
+
+#compilation/mapping options
+set_option -top_module "espfluke"
+
+# mapper_options
+set_option -frequency 1
+set_option -write_verilog 0
+set_option -write_vhdl 0
+set_option -srs_instrumentation 1
+
+# Lattice ispLSI1K/1KE
+set_option -disable_io_insertion 0
+set_option -RWCheckOnRam 1
+
+# sequential_optimization_options
+set_option -symbolic_fsm_compiler 1
+
+# Compiler Options
+set_option -compiler_compatible 0
+set_option -resource_sharing 1
+
+# Compiler Options
+set_option -auto_infer_blackbox 0
+
+#automatic place and route (vendor) options
+set_option -write_apr_constraint 1
+
+#set result format/file last
+project -result_file "./espfluke.edn"
+
+#set log file 
+set_option log_file "C:/projekt/espfluke/espfluke.srf" 
+impl -active "espfluke"

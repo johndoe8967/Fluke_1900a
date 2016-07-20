@@ -1,0 +1,4 @@
+@W: CD638 :"C:\projekt\espfluke\espfluke.vhd":36:9:36:22|Signal data_valid_sig is undriven 
+@W: CD638 :"C:\projekt\espfluke\espfluke.vhd":38:9:38:28|Signal data_from_master_sig is undriven 
+@W: CD638 :"C:\projekt\espfluke\i2c_slave.vhd":40:9:40:16|Signal data_reg is undriven 
+

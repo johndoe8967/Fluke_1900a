@@ -1,0 +1,10 @@
+Tpd Path Report:
+---------------
+
+Design Name: ESPFLUKE
+Part Name: ispLSI1032E-70LJ84
+  This report contains the path delays between the
+  primary inputs and primary outputs of the design
+  with no register in the path.
+
+43123 WARNING: There are no Tpd paths for this mode of analysis in this design

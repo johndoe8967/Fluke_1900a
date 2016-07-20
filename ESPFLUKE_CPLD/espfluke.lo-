@@ -1,0 +1,34 @@
+ispEXPERT Compiler Release 2.0.00.17.20.15, May 20 2002 13:06:40
+
+Copyright (C) 1994-2000 by Lattice Semiconductor Corporation.
+All Rights Reserved.
+
+
+Design Process Management 
+
+Renaming existing log file to espfluke.lo-
+Renaming existing parameter file to espfluke.pa-
+Renaming existing rpt file to espfluke.rp-
+
+Preprocessing design 'espfluke'...
+
+
+
+Lattice EDIF Netlist Reader  Version 2.0.00.17.20.15 Tue Jul 19 14:40:02 2016
+
+Copyright (c) 1993 - 2000 by Lattice Semiconductor Corporation.
+All Rights Reserved.
+
+Writing laf netlist ...
+
+MSG: Cross reference file [espfluke.xrf] is created
+       Invalid LAF names are mapped to new unique names.
+
+msg: Array and Bundle information is written to file [espfluke.ary]
+
+Please use file [espfluke.xrf] for cross referencing New LAF and EDIF names.
+
+
+Edif netlist reader completed successfully.
+
+

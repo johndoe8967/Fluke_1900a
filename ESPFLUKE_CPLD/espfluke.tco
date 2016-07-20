@@ -1,0 +1,25 @@
+
+Tco Path Report:
+-----------------
+
+Design Name: ESPFLUKE
+Part Name: ispLSI1032E-70LJ84
+   This report lists all the path delays from a primary input
+   that drives the Clock input of a register, whose Q output
+   drives a primary output
+
+ Tco Path Definition:
+ Tco =  Maximum delay from primary input to register clock_pin 
+      + Maximum delay of register  clock-to-Q
+      + Maximum delay from register Q_output to primary output
+
+
+Tco Paths:
+
+  Register            Source              Destination              Path Delay
+  Name                Reference Clock     Primary Output             [ns]
+==----------------------------------------------------------------------------------
+  GLB_UQNN_N27        CLK_MASTER          SDA_BI                   30.90 
+  GLB_UQNN_N26        CLK_MASTER          SDA_BI                   18.00 
+  GLB_LED_C           CLK_MASTER          LED                      18.00 
+==--------------------------------------------------------------------------------

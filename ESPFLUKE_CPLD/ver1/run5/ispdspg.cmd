@@ -1,0 +1,1 @@
+C:\ispLEVER_Classic2_0\ispcomp\bin\dpm.exe -i "c:\projekt\espfluke\ver1\run5\espfluke.laf" -if laf -p ispLSI1032E-70LJ84 -of verilog -of vhdl -s d -e 2 -z -m 11 -n 4 -ta on -y "c:\projekt\espfluke\ver1\run5\espfluke.xpn" -r "c:\projekt\espfluke\ver1\run5\ispxpert.par" 

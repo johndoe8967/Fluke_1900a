@@ -1,0 +1,18 @@
+@N: CD630 :"C:\projekt\espfluke\espfluke.vhd":6:7:6:14|Synthesizing work.espfluke.espfluke_arch 
+@W: CD638 :"C:\projekt\espfluke\espfluke.vhd":36:9:36:22|Signal data_valid_sig is undriven 
+@W: CD638 :"C:\projekt\espfluke\espfluke.vhd":38:9:38:28|Signal data_from_master_sig is undriven 
+@N: CD630 :"C:\projekt\espfluke\i2c_slave.vhd":5:7:5:15|Synthesizing work.i2c_slave.arch 
+@N: CD233 :"C:\projekt\espfluke\i2c_slave.vhd":20:15:20:16|Using sequential encoding for type state_t
+@W: CD638 :"C:\projekt\espfluke\i2c_slave.vhd":40:9:40:16|Signal data_reg is undriven 
+Post processing for work.i2c_slave.arch
+Post processing for work.espfluke.espfluke_arch
+@N: CL201 :"C:\projekt\espfluke\i2c_slave.vhd":97:4:97:5|Trying to extract state machine for register state_reg
+Extracted state machine for register state_reg
+State machine has 7 reachable states with original encodings of:
+   000
+   001
+   010
+   011
+   100
+   101
+   110

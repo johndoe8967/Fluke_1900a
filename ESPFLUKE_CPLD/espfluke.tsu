@@ -1,0 +1,103 @@
+Setup and Hold Report:
+---------------------
+
+Design Name: ESPFLUKE
+Part Name: ispLSI1032E-70LJ84
+
+  This report lists the setup/hold requirements for all the boundary
+  registers in the design
+
+
+Required Setup and Hold
+
+  Register Name         Data                Clock               Setup(ns)      Hold(ns)
+==-------------------------------------------------------------------------------------
+  GLB_ML_SIG            ML_IN               AS_IN(6)            -3.80          13.10   
+  GLB_FREQ_SIG          RNG2_IN             AS_IN(6)            -3.80          13.10   
+  GLB_...G%3% *1        OUT_IN(3)           AS_IN(6)            -3.30          12.60   
+  GLB_UQNN_N31          SDA_BI              CLK_MASTER          10.40          -1.10   
+  GLB_UQNN_N30          SDA_BI              CLK_MASTER          10.40          -1.10   
+  GLB_UQNN_N19          SDA_BI              CLK_MASTER          10.40          -1.10   
+  GLB_UQNN_N18          SDA_BI              CLK_MASTER          10.40          -1.10   
+  GLB_UQNN_N42          SDA_BI              CLK_MASTER          24.60          -15.00  
+  GLB_UQNN_N41          SDA_BI              CLK_MASTER          24.60          -15.00  
+  GLB_...G%3% *2        OUT_IN(3)           AS_IN(1)            2.20           7.10    
+  GLB_...G%2% *3        OUT_IN(2)           AS_IN(1)            2.20           7.10    
+  GLB_...G%1% *4        OUT_IN(1)           AS_IN(1)            2.20           7.10    
+  GLB_...G%0% *5        OUT_IN(0)           AS_IN(1)            2.20           7.10    
+  GLB_..._SIG *6        SDA_BI              CLK_MASTER          11.10          -1.80   
+  GLB_UQNN_N21          SDA_BI              CLK_MASTER          10.40          -1.10   
+  GLB_STOP_SIG          SCL_IN              CLK_MASTER          10.20          -0.90   
+  GLB_STOP_SIG          SDA_BI              CLK_MASTER          10.40          -1.10   
+  GLB_UQNN_N32          SDA_BI              CLK_MASTER          9.60           -0.30   
+  GLB_UQNN_N23          SCL_IN              CLK_MASTER          10.20          -0.90   
+  GLB_UQNN_N23          SDA_BI              CLK_MASTER          10.40          -1.10   
+  GLB_UQNN_N44          SDA_BI              CLK_MASTER          23.10          -13.50  
+  GLB_UQNN_N38          SDA_BI              CLK_MASTER          24.60          -15.00  
+  GLB_M_part2           DS_IN               AS_IN(3)            3.40           5.90    
+  GLB_M_part1           DS_IN               AS_IN(3)            3.40           5.90    
+  GLB_...G%3% *7        OUT_IN(3)           AS_IN(5)            2.30           7.00    
+  GLB_...G%2% *8        OUT_IN(2)           AS_IN(5)            2.30           7.00    
+  GLB_...G%1% *9        OUT_IN(1)           AS_IN(5)            2.30           7.00    
+  GLB_...G%0% *10       OUT_IN(0)           AS_IN(5)            2.30           7.00    
+  GLB_UQNN_N14          SCL_IN              CLK_MASTER          10.20          -0.90   
+  GLB_...G%3% *11       OUT_IN(3)           AS_IN(3)            2.20           7.10    
+  GLB_...G%2% *12       OUT_IN(2)           AS_IN(3)            2.20           7.10    
+  GLB_...G%1% *13       OUT_IN(1)           AS_IN(3)            2.20           7.10    
+  GLB_...G%0% *14       OUT_IN(0)           AS_IN(3)            2.20           7.10    
+  GLB_..._SIG *15       AS_IN(6)            CLK_MASTER          9.40           -0.10   
+  GLB_..._SIG *15       AS_IN(1)            CLK_MASTER          9.40           -0.10   
+  GLB_...G%3% *16       OUT_IN(3)           AS_IN(2)            2.20           7.10    
+  GLB_...G%0% *17       OUT_IN(0)           AS_IN(2)            2.20           7.10    
+  GLB_...G%2% *18       OUT_IN(2)           AS_IN(2)            2.20           7.10    
+  GLB_...G%1% *19       OUT_IN(1)           AS_IN(2)            2.20           7.10    
+  GLB_UQNN_N37          SDA_BI              CLK_MASTER          24.60          -15.00  
+  GLB_...G%3% *20       OUT_IN(3)           AS_IN(4)            2.20           7.10    
+  GLB_...G%2% *21       OUT_IN(2)           AS_IN(4)            2.20           7.10    
+  GLB_...G%1% *22       OUT_IN(1)           AS_IN(4)            2.20           7.10    
+  GLB_...G%0% *23       OUT_IN(0)           AS_IN(4)            2.20           7.10    
+  GLB_UQNN_N36          SDA_BI              CLK_MASTER          10.40          -1.10   
+  GLB_UQNN_N17          SDA_BI              CLK_MASTER          10.40          -1.10   
+  GLB_UQNN_N16          SDA_BI              CLK_MASTER          10.40          -1.10   
+  GLB_UQNN_N15          SDA_BI              CLK_MASTER          10.40          -1.10   
+  GLB_L                 DS_IN               AS_IN(4)            1.90           7.40    
+  GLB_UQNN_N43          SDA_BI              CLK_MASTER          24.60          -15.00  
+  GLB_N                 DS_IN               AS_IN(2)            1.90           7.40    
+  GLB_UQNN_N40          SDA_BI              CLK_MASTER          24.60          -15.00  
+  GLB_UQNN_N39          SDA_BI              CLK_MASTER          24.60          -15.00  
+  GLB_OVFL_SIG          OVFL_IN             AS_IN(6)            -3.80          13.10   
+  GLB_...G%2% *24       OUT_IN(2)           AS_IN(6)            -3.30          12.60   
+  GLB_...G%1% *25       OUT_IN(1)           AS_IN(6)            -3.30          12.60   
+  GLB_...G%0% *26       OUT_IN(0)           AS_IN(6)            -3.30          12.60   
+==-----------------------------------------------------------------------------------
+
+Index Name Table
+==----------------------------------------
+    *1  GLB_BCD6_SIG%3%
+    *2  GLB_BCD1_SIG%3%
+    *3  GLB_BCD1_SIG%2%
+    *4  GLB_BCD1_SIG%1%
+    *5  GLB_BCD1_SIG%0%
+    *6  GLB_READ_REQ_SIG
+    *7  GLB_BCD5_SIG%3%
+    *8  GLB_BCD5_SIG%2%
+    *9  GLB_BCD5_SIG%1%
+    *10  GLB_BCD5_SIG%0%
+    *11  GLB_BCD3_SIG%3%
+    *12  GLB_BCD3_SIG%2%
+    *13  GLB_BCD3_SIG%1%
+    *14  GLB_BCD3_SIG%0%
+    *15  GLB_UPDATE_SIG
+    *16  GLB_BCD2_SIG%3%
+    *17  GLB_BCD2_SIG%0%
+    *18  GLB_BCD2_SIG%2%
+    *19  GLB_BCD2_SIG%1%
+    *20  GLB_BCD4_SIG%3%
+    *21  GLB_BCD4_SIG%2%
+    *22  GLB_BCD4_SIG%1%
+    *23  GLB_BCD4_SIG%0%
+    *24  GLB_BCD6_SIG%2%
+    *25  GLB_BCD6_SIG%1%
+    *26  GLB_BCD6_SIG%0%
+==----------------------------------------
+

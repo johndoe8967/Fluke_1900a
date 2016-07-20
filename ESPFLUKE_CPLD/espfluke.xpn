@@ -1,0 +1,25 @@
+// PART: 	ispLSI1032E-70LJ84
+// FORMAT: 	PINNAME		PINTYPE	LOCK	PULLUP	SLOWSLEW	OPENDRAIN	OUTDELAY	VOLTAGE	CRIT
+		SCL_IN		-		55	1		-1		-1		-1		-1		-1
+		SDA_BI		-		54	0		1		-1		-1		-1		-1
+		LED			-		45	-1		1		-1		-1		-1		-1
+		AS_IN(1)		-		52	-1		-1		-1		-1		-1		-1
+		AS_IN(2)		-		51	-1		-1		-1		-1		-1		-1
+		AS_IN(3)		-		50	-1		-1		-1		-1		-1		-1
+		AS_IN(4)		-		49	-1		-1		-1		-1		-1		-1
+		AS_IN(5)		-		48	-1		-1		-1		-1		-1		-1
+		OUT_IN(0)		-		56	-1		-1		-1		-1		-1		-1
+		OUT_IN(1)		-		57	-1		-1		-1		-1		-1		-1
+		OUT_IN(2)		-		58	-1		-1		-1		-1		-1		-1
+		OUT_IN(3)		-		59	-1		-1		-1		-1		-1		-1
+		DS_IN			-		72	-1		-1		-1		-1		-1		-1
+		ML_IN			-		71	-1		-1		-1		-1		-1		-1
+		MUP_IN		-		70	-1		-1		-1		-1		-1		-1
+		OVFL_IN		-		69	-1		-1		-1		-1		-1		-1
+		RNG2_IN		-		46	-1		-1		-1		-1		-1		-1
+		AS_IN(6)		-		53	-1		-1		-1		-1		-1		-1
+		CLK_MASTER		-		66	-1		-1		-1		-1		-1		-1
+
+// FORMAT: 	NETNAME		CLK		PRESERVE	ECP	GROUP		XOR	ELP	ETP
+
+// FORMAT: 	SYMNAME		PROTECT	REGTYPE

@@ -1,0 +1,10 @@
+C:\ispLEVER_Classic2_0\synpbase\bin\m_cpld.exe  -prodtype  synplify_pro  -encrypt  -pro  -rundir  C:\projekt\espfluke  -part ispLSI1016  -package LT44  -grade -110   -lattice -RWCheckOnRam 1 -summaryfile C:\projekt\espfluke\synlog\report\espfluke_fpga_mapper.xml -top_level_module  espfluke  -multisrs  -oedif  C:\projekt\espfluke\espfluke.edn  -freq 1.000  C:\projekt\espfluke\synwork\espfluke_mult.srs  -devicelib  C:\ispLEVER_Classic2_0\synpbase\lib\cpld\lattice.v  -ologparam  C:\projekt\espfluke\syntmp\espfluke.plg  -osyn  C:\projekt\espfluke\espfluke.srm  -prjdir  c:\projekt\espfluke\  -prjname  espfluke  -log  C:\projekt\espfluke\synlog\espfluke_fpga_mapper.srr 
+rc:0 success:1
+C:\projekt\espfluke\espfluke.edn|o|1468931996|162837
+C:\projekt\espfluke\synwork\espfluke_mult.srs|i|1468931996|3949
+C:\ispLEVER_Classic2_0\synpbase\lib\cpld\lattice.v|i|1401260784|210986
+C:\projekt\espfluke\syntmp\espfluke.plg|o|1468931996|0
+C:\projekt\espfluke\espfluke.srm|o|1468931996|65708
+C:\projekt\espfluke\synlog\espfluke_fpga_mapper.srr|o|1468931996|1573
+C:\ispLEVER_Classic2_0\synpbase\bin64\m_cpld.exe|i|1399368522|8049664
+C:\ispLEVER_Classic2_0\synpbase\bin\m_cpld.exe|i|1399365684|7067648

@@ -1,0 +1,11 @@
+#--  Synopsys, Inc.
+#--  Version I-2014.03LC 
+#--  Project file C:\Projekt\ESPFLUKE\espfluke.prd
+#
+### Watch Implementation type ###
+#
+watch_impl -all
+#
+### Watch Implementation properties ###
+#
+watch_prop -clear

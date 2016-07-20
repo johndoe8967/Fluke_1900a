@@ -1,0 +1,18 @@
+
+fsm_encoding {7974971} onehot
+
+fsm_state_encoding {7974971} idle {0000000}
+
+fsm_state_encoding {7974971} get_address_and_cmd {0000011}
+
+fsm_state_encoding {7974971} answer_ack_start {0000101}
+
+fsm_state_encoding {7974971} read {0001001}
+
+fsm_state_encoding {7974971} read_ack_start {0010001}
+
+fsm_state_encoding {7974971} read_ack_got_rising {0100001}
+
+fsm_state_encoding {7974971} read_stop {1000001}
+
+fsm_registers {7974971} {state_reg[0]}  {state_reg[1]}  {state_reg[2]}  {state_reg[3]}  {state_reg[4]}  {state_reg[5]}  {state_reg_i_0[6]} 

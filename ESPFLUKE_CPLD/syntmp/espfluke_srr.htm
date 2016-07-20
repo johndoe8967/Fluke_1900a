@@ -1,0 +1,101 @@
+<html><body><samp><pre>
+<!@TC:1468931994>
+#Build: Synplify Pro I-2014.03LC , Build 063R, May 27 2014
+#install: C:\ispLEVER_Classic2_0\synpbase
+#OS: Windows 7 6.1
+#Hostname: GP-PC
+
+#Implementation: espfluke
+
+<a name=compilerReport1>$ Start of Compile</a>
+#Tue Jul 19 14:39:54 2016
+
+Synopsys VHDL Compiler, version comp201403rcp1, Build 060R, built May 27 2014
+@N: : <!@TM:1468931995> | Running in 32-bit mode 
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@N:<a href="@N:CD720:@XP_HELP">CD720</a> : <a href="C:\ispLEVER_Classic2_0\synpbase\lib\vhd\std.vhd:123:18:123:22:@N:CD720:@XP_MSG">std.vhd(123)</a><!@TM:1468931995> | Setting time resolution to ns
+@N: : <a href="C:\projekt\espfluke\espfluke.vhd:6:7:6:15:@N::@XP_MSG">espfluke.vhd(6)</a><!@TM:1468931995> | Top entity is set to espfluke.
+File C:\projekt\espfluke\espfluke.vhd changed - recompiling
+VHDL syntax check successful!
+File C:\projekt\espfluke\espfluke.vhd changed - recompiling
+@N:<a href="@N:CD630:@XP_HELP">CD630</a> : <a href="C:\projekt\espfluke\espfluke.vhd:6:7:6:15:@N:CD630:@XP_MSG">espfluke.vhd(6)</a><!@TM:1468931995> | Synthesizing work.espfluke.espfluke_arch 
+<font color=#A52A2A>@W:<a href="@W:CD638:@XP_HELP">CD638</a> : <a href="C:\projekt\espfluke\espfluke.vhd:36:9:36:23:@W:CD638:@XP_MSG">espfluke.vhd(36)</a><!@TM:1468931995> | Signal data_valid_sig is undriven </font>
+<font color=#A52A2A>@W:<a href="@W:CD638:@XP_HELP">CD638</a> : <a href="C:\projekt\espfluke\espfluke.vhd:38:9:38:29:@W:CD638:@XP_MSG">espfluke.vhd(38)</a><!@TM:1468931995> | Signal data_from_master_sig is undriven </font>
+@N:<a href="@N:CD630:@XP_HELP">CD630</a> : <a href="C:\projekt\espfluke\i2c_slave.vhd:5:7:5:16:@N:CD630:@XP_MSG">i2c_slave.vhd(5)</a><!@TM:1468931995> | Synthesizing work.i2c_slave.arch 
+@N:<a href="@N:CD233:@XP_HELP">CD233</a> : <a href="C:\projekt\espfluke\i2c_slave.vhd:20:15:20:17:@N:CD233:@XP_MSG">i2c_slave.vhd(20)</a><!@TM:1468931995> | Using sequential encoding for type state_t
+<font color=#A52A2A>@W:<a href="@W:CD638:@XP_HELP">CD638</a> : <a href="C:\projekt\espfluke\i2c_slave.vhd:40:9:40:17:@W:CD638:@XP_MSG">i2c_slave.vhd(40)</a><!@TM:1468931995> | Signal data_reg is undriven </font>
+Post processing for work.i2c_slave.arch
+Post processing for work.espfluke.espfluke_arch
+@N:<a href="@N:CL201:@XP_HELP">CL201</a> : <a href="C:\projekt\espfluke\i2c_slave.vhd:97:4:97:6:@N:CL201:@XP_MSG">i2c_slave.vhd(97)</a><!@TM:1468931995> | Trying to extract state machine for register state_reg
+Extracted state machine for register state_reg
+State machine has 7 reachable states with original encodings of:
+   000
+   001
+   010
+   011
+   100
+   101
+   110
+@END
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 37MB peak: 38MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Jul 19 14:39:55 2016
+
+###########################################################]
+Synopsys Netlist Linker, version comp201403rcp1, Build 060R, built May 27 2014
+@N: : <!@TM:1468931996> | Running in 32-bit mode 
+File C:\projekt\espfluke\synwork\espfluke_comp.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 36MB peak: 36MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Jul 19 14:39:56 2016
+
+###########################################################]
+Map & Optimize Report
+
+<a name=mapperReport2>Synopsys CPLD Technology Mapper, Version maplat, Build 923R, Built May  6 2014</a>
+Copyright (C) 1994-2013, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use or distribution of the software is strictly prohibited.
+Product Version I-2014.03LC 
+@N:<a href="@N:MF249:@XP_HELP">MF249</a> : <!@TM:1468931996> | Running in 32-bit mode. 
+@N: : <a href="c:\projekt\espfluke\i2c_slave.vhd:97:4:97:6:@N::@XP_MSG">i2c_slave.vhd(97)</a><!@TM:1468931996> | Found counter in view:work.I2C_slave(arch) inst bits_processed_reg[3:0]
+Encoding state machine state_reg_h.state_reg[0:6] (view:work.I2C_slave(arch))
+original code -> new code
+   000 -> 0000000
+   001 -> 0000011
+   010 -> 0000101
+   011 -> 0001001
+   100 -> 0010001
+   101 -> 0100001
+   110 -> 1000001
+---------------------------------------
+<a name=resourceUsage3>Resource Usage Report</a>
+
+Simple gate primitives:
+FD11            72 uses
+AND2            118 uses
+OR2             6 uses
+FD21            1 use
+XOR2            6 uses
+IB11            17 uses
+BI11            1 use
+OB11            1 use
+INV             70 uses
+MUX2            81 uses
+
+
+@N:<a href="@N:FC100:@XP_HELP">FC100</a> : <!@TM:1468931996> | Timing Report not generated for this device, please use place and route tools for timing analysis. 
+I-2014.03LC 
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 36MB peak: 70MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Jul 19 14:39:56 2016
+
+###########################################################]
+
+</pre></samp></body></html>

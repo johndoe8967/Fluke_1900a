@@ -1,0 +1,13 @@
+JDF B
+// Created by Version 2.0 
+PROJECT espfluke
+DESIGN espfluke Normal
+DEVKIT ispLSI1032E-70LJ84
+ENTRY Schematic/VHDL
+MODULE i2c_slave.vhd
+MODSTYLE I2C_slave Normal
+MODULE espfluke.vhd
+MODSTYLE espfluke Normal
+SYNTHESIS_TOOL Synplify
+SIMULATOR_TOOL ActiveHDL
+TOPMODULE espfluke

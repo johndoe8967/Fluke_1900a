@@ -1,0 +1,18 @@
+@N: CD630 :"C:\projekt\espfluke\i2c_slave.vhd":5:7:5:15|Synthesizing work.i2c_slave.arch 
+@N: CD233 :"C:\projekt\espfluke\i2c_slave.vhd":19:15:19:16|Using sequential encoding for type state_t
+@W: CD604 :"C:\projekt\espfluke\i2c_slave.vhd":219:8:219:21|OTHERS clause is not synthesized 
+@W: CD638 :"C:\projekt\espfluke\i2c_slave.vhd":42:9:42:19|Signal scl_wen_reg is undriven 
+@W: CD638 :"C:\projekt\espfluke\i2c_slave.vhd":43:9:43:17|Signal scl_o_reg is undriven 
+Post processing for work.i2c_slave.arch
+@N: CL201 :"C:\projekt\espfluke\i2c_slave.vhd":95:4:95:5|Trying to extract state machine for register state_reg
+Extracted state machine for register state_reg
+State machine has 8 reachable states with original encodings of:
+   000
+   001
+   010
+   011
+   100
+   101
+   110
+   111
+@W: CL249 :"C:\projekt\espfluke\i2c_slave.vhd":95:4:95:5|Initial value is not supported on state machine state_reg

@@ -1,0 +1,33 @@
+// 
+// Software Version 8.2
+// Targeted Device : ispLSI1032E-70LJ84
+// Platform : Windows NT 6.1
+// Date : Fri Jul 15 20:33:19 2016
+// Elapsed Time : 00:00:00
+// 
+                     GND        SYS          1
+              CLK_MASTER         IN         20
+                     VCC        SYS         21
+                     GND        SYS         22
+                   RESET        SYS         24
+                     GND        SYS         43
+                     LED        OUT         45
+                 RNG2_IN         IN         46
+                AS_IN(5)         IN         48
+                AS_IN(4)         IN         49
+                AS_IN(3)         IN         50
+                AS_IN(2)         IN         51
+                AS_IN(1)         IN         52
+                AS_IN(6)         IN         53
+                  SDA_BI       BIDI         54
+                  SCL_IN         IN         55
+               OUT_IN(0)         IN         56
+               OUT_IN(1)         IN         57
+               OUT_IN(2)         IN         58
+               OUT_IN(3)         IN         59
+                     GND        SYS         64
+                     VCC        SYS         65
+                 OVFL_IN         IN         69
+                  MUP_IN         IN         70
+                   ML_IN         IN         71
+                   DS_IN         IN         72

@@ -1,0 +1,33 @@
+#-- Lattice Semiconductor Corporation Ltd.
+#-- Synplify OEM project file c:/projekt/espfluke\I2C_slave.prj
+#-- Written on Mon Jul 04 21:10:26 2016
+
+
+#device options
+set_option -technology PLSI1K
+
+#compilation/mapping options
+
+#map options
+
+#simulation options
+set_option -write_verilog false
+set_option -write_vhdl false
+
+#timing analysis options
+set_option -synthesis_onoff_pragma false
+
+#-- add_file options
+add_file -vhdl -lib work "i2c_slave.vhd"
+
+#-- top module name
+set_option -top_module I2C_slave
+
+#-- set result format/file last
+project -result_file "I2C_slave.edn"
+
+#-- error message log file
+project -log_file i2c_slave.srf
+
+#-- run Synplify with 'arrange VHDL file'
+project -run

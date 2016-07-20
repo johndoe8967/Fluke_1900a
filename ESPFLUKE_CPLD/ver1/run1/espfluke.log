@@ -1,0 +1,77 @@
+ispEXPERT Compiler Release 2.0.00.17.20.15, May 20 2002 13:06:40
+
+Copyright (C) 1994-2000 by Lattice Semiconductor Corporation.
+All Rights Reserved.
+
+
+Design Process Management 
+
+
+Preprocessing design 'espfluke'...
+
+Processing design 'espfluke'...
+
+
+Logical LAF Reading and Translation 
+  
+Reading file 'c:\projekt\espfluke\ver1\run1\espfluke.laf'... 
+32583 WARNING: Pin 'CLK_IN' is in external pin file but not in design; 
+      pin 'CLK_IN' is ignored 
+  
+Checking design rules... 
+Selected part is 'ispLSI1032E-70LJ84' 
+32504 WARNING: Attribute 'Y1_AS_RESET ON' is not valid for part 
+      'ispLSI1032E-70LJ84'; attribute 'Y1_AS_RESET ON' is ignored 
+  
+Writing output files... 
+  
+Logical LAF reading and translation completed successfully 
+
+
+Synthesis and Partitioning 
+  
+Reading design 'espfluke'... 
+  
+Propagating constants... 
+33581 WARNING: Register 'UQBN_B134' is not observable from any output 
+      pin; register is removed 
+  
+Trying to move PT reset signal to global reset pin... 
+      PT reset signal cannot be moved to global reset pin 
+      In order to move PT reset signal to global reset pin, the 
+      following conditions need to be satisfied: 
+      1. There exists at least one pin which drives all register's reset
+      signals 
+      2. This pin is unlocked 
+      3. This pin does not drive any data signals 
+      4. This pin can be disjointly decomposed with other pins, if any, 
+      which drive reset signals 
+  
+Partitioning logic into 2-input, 2-input with DIs, functions to minimize
+      delay... 
+  
+Extracting LXOR2 gates to minimize delay... 
+  
+Packing functions into GLBs using 2 inputs and 1 outputs per GLB to 
+      minimize delay... 
+34506 WARNING: OE net 'UQNN_N26' comes from an IOC or drives logic 
+      besides three-state buffers; buffer 'BUF_4379' is inserted to 
+      generate PT OE 
+Constant VCC drives register 'TRIGGER_SIG' data input 
+34200 ERROR: Number of GLBs, 348, exceeds maximum number             of 
+      available GLBs, 32, in part 'ispLSI1032E-70LJ84' 
+  
+Synthesis and partitioning statistics: 
+  
+Number of Macrocells is 350 
+Number of GLBs is 348 
+Number of product terms is 411 
+Maximum number of GLB levels is 12 
+Average number of inputs per GLB is 2.0 
+Average number of outputs per GLB is 1.0 
+Average number of product terms per GLB is 1.2 
+  
+Synthesis and partitioning completed unsuccessfully 
+
+
+Design process management completed unsuccessfully
