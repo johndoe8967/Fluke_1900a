@@ -16,4 +16,5 @@ DS_IN  i
 MUP_IN  i
 ML_IN  i
 RNG2_IN  i
+INT  o
 LED  o

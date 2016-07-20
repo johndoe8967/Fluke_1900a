@@ -2,14 +2,14 @@
 <!-- 
   Synopsys, Inc.
   Version I-2014.03LC 
-  Project file C:\projekt\espfluke\syntmp\run_option.xml
-  Written on Tue Jul 19 14:39:54 2016
+  Project file C:\Projekt\Fluke_1900a\ESPFLUKE_CPLD\syntmp\run_option.xml
+  Written on Wed Jul 20 10:19:14 2016
 
 
 --> 
 <project_attribute_list name="Project Settings"> 
      <option name="project_name" display_name="Project Name">espfluke</option>
-     <option name="impl_name" display_name="Implementation Name">espfluke</option>
+     <option name="impl_name" display_name="Implementation Name">ESPFLUKE_CPLD</option>
      <option name="top_module" display_name="Top Module">espfluke</option>
      <option name="resource_sharing" display_name="Resource Sharing">1</option>
      <option name="disable_io_insertion" display_name="Disable I/O Insertion">0</option>

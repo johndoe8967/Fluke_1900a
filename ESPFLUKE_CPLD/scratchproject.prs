@@ -1,15 +1,15 @@
 #--  Synopsys, Inc.
 #--  Version I-2014.03LC 
-#--  Project file C:\projekt\espfluke\scratchproject.prs
+#--  Project file C:\Projekt\Fluke_1900a\ESPFLUKE_CPLD\scratchproject.prs
 
 #project files
-add_file -vhdl -lib work "C:/projekt/espfluke/i2c_slave.vhd"
-add_file -vhdl -lib work "C:/projekt/espfluke/espfluke.vhd"
+add_file -vhdl -lib work "C:/Projekt/Fluke_1900a/ESPFLUKE_CPLD/i2c_slave.vhd"
+add_file -vhdl -lib work "C:/Projekt/Fluke_1900a/ESPFLUKE_CPLD/espfluke.vhd"
 
 
 
-#implementation: "espfluke"
-impl -add C:\projekt\espfluke -type fpga
+#implementation: "ESPFLUKE_CPLD"
+impl -add C:\Projekt\Fluke_1900a\ESPFLUKE_CPLD -type fpga
 
 #device options
 set_option -technology PLSI1K
@@ -45,8 +45,8 @@ set_option -auto_infer_blackbox 0
 set_option -write_apr_constraint 1
 
 #set result format/file last
-project -result_file "C:/projekt/espfluke/espfluke.edn"
+project -result_file "C:/Projekt/Fluke_1900a/ESPFLUKE_CPLD/espfluke.edn"
 
 #set log file 
-set_option log_file "C:/projekt/espfluke/espfluke.srf" 
-impl -active "espfluke"
+set_option log_file "C:/Projekt/Fluke_1900a/ESPFLUKE_CPLD/espfluke.srf" 
+impl -active "ESPFLUKE_CPLD"

@@ -1,2 +1,2 @@
-. espfluke espfluke.vhd c:\projekt\espfluke\espfluke.vhd
-I2C_1 I2C_slave i2c_slave.vhd c:\projekt\espfluke\i2c_slave.vhd
+. espfluke espfluke.vhd c:\projekt\fluke_1900a\espfluke_cpld\espfluke.vhd
+I2C_1 I2C_slave i2c_slave.vhd c:\projekt\fluke_1900a\espfluke_cpld\i2c_slave.vhd

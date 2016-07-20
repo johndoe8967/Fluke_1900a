@@ -1,7 +1,7 @@
 #--  Synopsys, Inc.
 #--  Version I-2014.03LC 
-#--  Project file C:\projekt\espfluke\run_options.txt
-#--  Written on Tue Jul 19 14:39:54 2016
+#--  Project file C:\Projekt\Fluke_1900a\ESPFLUKE_CPLD\run_options.txt
+#--  Written on Wed Jul 20 10:19:14 2016
 
 
 #project files
@@ -10,8 +10,8 @@ add_file -vhdl -lib work "./espfluke.vhd"
 
 
 
-#implementation: "espfluke"
-impl -add espfluke -type fpga
+#implementation: "ESPFLUKE_CPLD"
+impl -add ESPFLUKE_CPLD -type fpga
 
 #device options
 set_option -technology PLSI1K
@@ -50,5 +50,5 @@ set_option -write_apr_constraint 1
 project -result_file "./espfluke.edn"
 
 #set log file 
-set_option log_file "C:/projekt/espfluke/espfluke.srf" 
-impl -active "espfluke"
+set_option log_file "C:/Projekt/Fluke_1900a/ESPFLUKE_CPLD/espfluke.srf" 
+impl -active "ESPFLUKE_CPLD"

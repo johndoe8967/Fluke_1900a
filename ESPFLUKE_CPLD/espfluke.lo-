@@ -7,28 +7,195 @@ All Rights Reserved.
 Design Process Management 
 
 Renaming existing log file to espfluke.lo-
-Renaming existing parameter file to espfluke.pa-
 Renaming existing rpt file to espfluke.rp-
 
 Preprocessing design 'espfluke'...
 
+Processing design 'espfluke'...
 
 
-Lattice EDIF Netlist Reader  Version 2.0.00.17.20.15 Tue Jul 19 14:40:02 2016
+Logical LAF Reading and Translation 
+  
+Reading file 'c:\projekt\fluke_1900a\espfluke_cpld\espfluke.laf'... 
+  
+Checking design rules... 
+Selected part is 'ispLSI1032E-70LJ84' 
+32504 WARNING: Attribute 'Y1_AS_RESET ON' is not valid for part 
+      'ispLSI1032E-70LJ84'; attribute 'Y1_AS_RESET ON' is ignored 
+  
+Writing output files... 
+  
+Logical LAF reading and translation completed successfully 
 
+
+Synthesis and Partitioning 
+  
+Reading design 'espfluke'... 
+  
+Optimizing logic with high effort... 
+33581 WARNING: Register 'UQBN_B146' is not observable from any output 
+      pin; register is removed 
+  
+Trying to move PT reset signal to global reset pin... 
+      PT reset signal cannot be moved to global reset pin 
+      In order to move PT reset signal to global reset pin, the 
+      following conditions need to be satisfied: 
+      1. There exists at least one pin which drives all register's reset
+      signals 
+      2. This pin is unlocked 
+      3. This pin does not drive any data signals 
+      4. This pin can be disjointly decomposed with other pins, if any, 
+      which drive reset signals 
+  
+Partitioning logic into 16-input, 18-input with DIs, functions to 
+      minimize area... 
+  
+Estimated number of functions for the present 3-level netlist is 75 
+  
+Maximum number of functions for part 'ispLSI1032E-70LJ84' is 128 
+  
+Collapsing the netlist by relaxing product term and input constraints to
+      find minimum level solution subject to the area increase limit of
+      1.71... 
+  
+Estimated number of levels with the above area increase constraint is 2 
+  
+Final solution may require more than 2 level(s) because there exist, on 
+      the critical/turbo path, 1 signal(s) with more than 16 inputs 
+      and/or more than 20 product terms: 
+      Signal '[871]' has 17 inputs and 3 product terms 
+Partitioning logic into 16-input, 18-input with DIs, functions to 
+      minimize area... 
+  
+Extracting LXOR2 gates to minimize area... 
+  
+Packing functions into GLBs using 16 inputs and 4 outputs per GLB to 
+      minimize area... 
+34506 WARNING: OE net 'UQNN_N26' comes from an IOC or drives logic 
+      besides three-state buffers; buffer 'BUF_2402' is inserted to 
+      generate PT OE 
+Constant VCC drives register 'TRIGGER_SIG' data input 
+  
+Synthesis and partitioning statistics: 
+  
+Number of Macrocells is 77 
+Number of GLBs is 23 
+Number of product terms is 195 
+Maximum number of GLB levels is 3 
+Average number of inputs per GLB is 10.4 
+Average number of outputs per GLB is 3.3 
+Average number of product terms per GLB is 8.5 
+  
+Synthesis and partitioning completed successfully 
+
+
+Physical LAF Reading and Translation
+
+Reading design 'espfluke'...
+
+Writing output files...
+
+Physical LAF reading and translation completed successfully
+
+
+Placement and Routing
+
+Reading design 'espfluke'...
+
+Routing
+
+
+Writing output files...
+
+Placement and routing completed successfully
+
+
+Technology Remapping 
+  
+Reading design 'espfluke'... 
+  
+Remapping... 
+  
+Writing output files... 
+  
+Writing output lco files... 
+  
+Technology remapping completed successfully 
+
+
+Physical LAF Reading and Translation
+
+Reading design 'espfluke'...
+
+Writing output files...
+
+Physical LAF reading and translation completed successfully
+
+
+Fusemap Generation
+
+Reading design 'espfluke'...
+
+Writing output files...
+
+Fusemap generation completed successfully
+
+
+Simulation LAF Netlist Generation
+
+Reading design 'espfluke'...
+
+Writing output files...
+
+
+Information: Global reset (XRESET) is generated to reset all registers
+
+
+
+Simulation LAF netlist generation completed successfully
+
+
+Timing Analyzer 
+Reading design espfluke .... 
+
+Evaluating maximum operating frequency...
+Evaluating setup and hold times...
+              
+Calculating  Tpd Path delays ...
+
+...
+
+              
+     
+Timing analyzer completed successfully 
+
+
+
+Lattice Verilog netlist writer
 Copyright (c) 1993 - 2000 by Lattice Semiconductor Corporation.
 All Rights Reserved.
 
-Writing laf netlist ...
+writing verilog netlist ...
 
-MSG: Cross reference file [espfluke.xrf] is created
-       Invalid LAF names are mapped to new unique names.
-
-msg: Array and Bundle information is written to file [espfluke.ary]
-
-Please use file [espfluke.xrf] for cross referencing New LAF and EDIF names.
+Verilog netlist writer completed successfully.
 
 
-Edif netlist reader completed successfully.
+
+Lattice VHDL netlist writer
+Copyright (c) 1993 - 2000 by Lattice Semiconductor Corporation.
+All Rights Reserved.
+
+writing vhdl file ...
+
+MSG: Cross reference file [ESPFLUKE.vxf] is created
+       Invalid VHDL identifiers are mapped to new unique names.
+       You can use -ext_id option to use extended identifiers if your
+       target system supports extended VHDL identifiers.
 
 
+Please use file [ESPFLUKE.vxf] for cross referencing original and new VHDL names
+
+VHDL netlist writer completed successfully.
+
+
+Design process management completed successfully

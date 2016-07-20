@@ -1,8 +1,8 @@
-C:\ispLEVER_Classic2_0\synpbase\bin\c_vhdl.exe  -osyn  C:\projekt\espfluke\synwork\espfluke_comp.srs  -top  espfluke  -prodtype  synplify_pro  -nostructver -dfltencoding sequential -encrypt  -pro  -dmgen  C:\projekt\espfluke\dm  -lite -ui -fid2 -ram -sharing on -ll 2000 -autosm -ignore_undefined_lib  -lib work C:\projekt\espfluke\i2c_slave.vhd -lib work C:\projekt\espfluke\espfluke.vhd -loga  C:\projekt\espfluke\espfluke.srr 
+C:\ispLEVER_Classic2_0\synpbase\bin64\c_vhdl.exe  -osyn  C:\Projekt\Fluke_1900a\ESPFLUKE_CPLD\synwork\espfluke_comp.srs  -top  espfluke  -prodtype  synplify_pro  -nostructver -dfltencoding sequential -encrypt  -pro  -dmgen  C:\Projekt\Fluke_1900a\ESPFLUKE_CPLD\dm  -lite -ui -fid2 -ram -sharing on -ll 2000 -autosm -ignore_undefined_lib  -lib work C:\Projekt\Fluke_1900a\ESPFLUKE_CPLD\i2c_slave.vhd -lib work C:\Projekt\Fluke_1900a\ESPFLUKE_CPLD\espfluke.vhd -loga  C:\Projekt\Fluke_1900a\ESPFLUKE_CPLD\espfluke.srr 
 rc:0 success:1
-C:\projekt\espfluke\synwork\espfluke_comp.srs|o|1468931995|7122
-C:\projekt\espfluke\i2c_slave.vhd|i|1468698522|8594
-C:\projekt\espfluke\espfluke.vhd|i|1468931981|4406
-C:\projekt\espfluke\espfluke.srr|o|1468931995|2216
-C:\ispLEVER_Classic2_0\synpbase\bin64\c_vhdl.exe|i|1401224104|5533184
+C:\Projekt\Fluke_1900a\ESPFLUKE_CPLD\synwork\espfluke_comp.srs|o|1469002754|7245
+C:\Projekt\Fluke_1900a\ESPFLUKE_CPLD\i2c_slave.vhd|i|1469002023|8596
+C:\Projekt\Fluke_1900a\ESPFLUKE_CPLD\espfluke.vhd|i|1469002623|4460
+C:\Projekt\Fluke_1900a\ESPFLUKE_CPLD\espfluke.srr|o|1469002754|2217
 C:\ispLEVER_Classic2_0\synpbase\bin\c_vhdl.exe|i|1401223898|2046976
+C:\ispLEVER_Classic2_0\synpbase\bin64\c_vhdl.exe|i|1401224104|5533184

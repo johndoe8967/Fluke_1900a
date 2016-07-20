@@ -1,10 +1,10 @@
 1 2.0.00.17.20.15
--i c:\projekt\espfluke\espfluke.laf -if laf -p ispLSI1032E-70LJ84 -of vhdl -of verilog -s a -e 3 -z -m 18 -n 4 -c -ta on -y c:\projekt\espfluke\espfluke.xpn -S -r c:\projekt\espfluke\ispxpert.par 
-c:\projekt\espfluke\ispxpert.par 1468932002 Tue Jul 19 14:40:02 2016
-espfluke.ppn 1468932004 Tue Jul 19 14:40:04 2016
-espfluke.fxp 1468932004 Tue Jul 19 14:40:04 2016
-c:\projekt\espfluke\espfluke.laf 1468932002 Tue Jul 19 14:40:02 2016
->  c:\projekt\espfluke\espfluke.xpn
+-i c:\projekt\fluke_1900a\espfluke_cpld\espfluke.laf -if laf -p ispLSI1032E-70LJ84 -of vhdl -of verilog -s a -e 3 -z -m 18 -n 4 -c -ta on -y c:\projekt\fluke_1900a\espfluke_cpld\espfluke.xpn -S -r c:\projekt\fluke_1900a\espfluke_cpld\ispxpert.par 
+c:\projekt\fluke_1900a\espfluke_cpld\ispxpert.par 1469002644 Wed Jul 20 10:17:24 2016
+espfluke.ppn 1469002646 Wed Jul 20 10:17:26 2016
+espfluke.fxp 1469002646 Wed Jul 20 10:17:26 2016
+c:\projekt\fluke_1900a\espfluke_cpld\espfluke.laf 1469002644 Wed Jul 20 10:17:24 2016
+>  c:\projekt\fluke_1900a\espfluke_cpld\espfluke.xpn
 // PART: 	ispLSI1032E-70LJ84
 // FORMAT: 	PINNAME		PINTYPE	LOCK	PULLUP	SLOWSLEW	OPENDRAIN	OUTDELAY	VOLTAGE	CRIT
 		SCL_IN		-		55	1		-1		-1		-1		-1		-1

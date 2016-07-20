@@ -1,7 +1,7 @@
 [DEVICE]
 Family = plsi1k;
 PartNumber = ispLSI1032E-70LJ84;
-PartType = ispLSI1032E;
+PartType = ispLSI1032E ;
 Package = 84PLCC;
 Speed = 70;
 Operating_condition = COM;
@@ -11,8 +11,8 @@ Default_Device_Io_Types = LVCMOS50,-;
 RCS = ;
 Parent = lc1k.lci;
 Design = espfluke;
-DATE = 07/19/2016;
-TIME = 14:40:04;
+DATE = 07/20/2016;
+TIME = 10:17:26;
 Source_Format = ;
 Type = ;
 Pre_Fit_Time = ;
@@ -52,13 +52,15 @@ AS_IN(3) = pin, 50, -, -, -;
 AS_IN(2) = pin, 51, -, -, -;
 AS_IN(1) = pin, 52, -, -, -;
 LED = pin, 45, -, -, -;
+INT = pin, 4, -, -, -;
 
 [PULLUP]
-Up = SCL_IN, RNG2_IN, OVFL_IN, OUT_IN(3), OUT_IN(2), OUT_IN(1), OUT_IN(0), MUP_IN, ML_IN, DS_IN, CLK_MASTER, AS_IN(6), AS_IN(5), AS_IN(4), AS_IN(3), AS_IN(2), AS_IN(1), LED; 
+Up = SCL_IN, RNG2_IN, OVFL_IN, OUT_IN(3), OUT_IN(2), OUT_IN(1), OUT_IN(0), MUP_IN, ML_IN, DS_IN, CLK_MASTER, AS_IN(6), AS_IN(5), AS_IN(4), AS_IN(3), AS_IN(2), AS_IN(1), LED, INT; 
 Off = SDA_BI; 
 
 [SLEWRATE]
 SLOW = SDA_BI, LED; 
+FAST = INT; 
 
 [IO TYPES]
 
@@ -66,19 +68,19 @@ SLOW = SDA_BI, LED;
 
 [CLK]
 CLK1 = CLK_MASTERX, 
-CLK2 = BUF_2401; 
+CLK2 = BUF_2403; 
 
 [PTSABYPASS]
-Bypass = UQNN_N33, UQNN_N48, UPDATE_SIG, N, L, BCD1_SIG[0], BCD1_SIG[1], BCD1_SIG[2], BCD1_SIG[3], BCD2_SIG[0], BCD2_SIG[1], BCD2_SIG[2], BCD2_SIG[3], BCD3_SIG[0], BCD3_SIG[1], BCD3_SIG[2], BCD3_SIG[3], BCD4_SIG[0], BCD4_SIG[1], BCD4_SIG[2], BCD4_SIG[3], BCD5_SIG[0], BCD5_SIG[1], BCD5_SIG[2], BCD5_SIG[3], UQNN_N11, UQNN_N12, UQNN_N10, UQNN_N22, UQNN_N24, UQNN_N34, UQNN_N32, UQNN_N44, CNT_SIG[0], CNT_SIG[1], TRANSFER_SIG, BCD6_SIG[0], BCD6_SIG[1], BCD6_SIG[2], OVFL_SIG, BCD6_SIG[3], FREQ_SIG, ML_SIG; 
+Bypass = UQNN_N32, UQNN_N47, UPDATE_SIG, N, M, L, BCD1_SIG[0], BCD1_SIG[1], BCD1_SIG[2], BCD1_SIG[3], BCD2_SIG[0], BCD2_SIG[1], BCD2_SIG[2], BCD2_SIG[3], BCD3_SIG[0], BCD3_SIG[1], BCD3_SIG[2], BCD3_SIG[3], BCD4_SIG[0], BCD4_SIG[1], BCD4_SIG[2], BCD4_SIG[3], BCD5_SIG[0], BCD5_SIG[1], BCD5_SIG[2], BCD5_SIG[3], UQNN_N10, UQNN_N11, UQNN_N21, UQNN_N23, UQNN_N33, UQNN_N9, UQNN_N31, UQNN_N43, CNT_SIG[0], CNT_SIG[1], TRANSFER_SIG, BCD6_SIG[0], BCD6_SIG[1], BCD6_SIG[2], OVFL_SIG, BCD6_SIG[3], FREQ_SIG, ML_SIG; 
 
 [Fitter Results]
-I/O_Pin_Util = 28;
-I/O_Pin = 18;
+I/O_Pin_Util = 29;
+I/O_Pin = 19;
 Logic_PT_Util = 31;
 Logic_PT = 204;
 Logic_MC_Util = 60;
-Logic_MC = 78;
-Occupied_PT_Util = 28;
-Occupied_PT = 182;
-GLB_input_Util = 43;
-GLB_input = 251;
+Logic_MC = 77;
+Occupied_PT_Util = 29;
+Occupied_PT = 186;
+GLB_input_Util = 44;
+GLB_input = 255;

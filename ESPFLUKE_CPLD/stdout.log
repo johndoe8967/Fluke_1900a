@@ -1,52 +1,48 @@
 Running in Lattice mode
 
-
-Starting:    C:\ispLEVER_Classic2_0\synpbase\bin\mbin\synbatch.exe
+Starting:    C:\ispLEVER_Classic2_0\synpbase\win64\mbin\synplify.exe
 Install:     C:\ispLEVER_Classic2_0\synpbase
-Date:        Tue Jul 19 14:39:54 2016
+Date:        Wed Jul 20 10:19:13 2016
 Version:     I-2014.03LC 
 
-Arguments:   -product synplify_pro  -batch c:/projekt/espfluke\espfluke.prj
+Arguments:   -product synplify_pro 
 ProductType: synplify_pro
 
 
 
 
+log file: "C:\Projekt\Fluke_1900a\ESPFLUKE_CPLD\espfluke.srr"
 
-log file: "C:\projekt\espfluke\espfluke.srr"
+Running espfluke|ESPFLUKE_CPLD
 
-Running espfluke|espfluke
+Running: Compile on espfluke|ESPFLUKE_CPLD
 
-Running: Compile on espfluke|espfluke
+Running: Compile Process on espfluke|ESPFLUKE_CPLD
 
-Running: Compile Process on espfluke|espfluke
-
-Running: Compile Input on espfluke|espfluke
-Copied C:\projekt\espfluke\synwork\espfluke_comp.srs to C:\projekt\espfluke\espfluke.srs
+Running: Compile Input on espfluke|ESPFLUKE_CPLD
+Copied C:\Projekt\Fluke_1900a\ESPFLUKE_CPLD\synwork\espfluke_comp.srs to C:\Projekt\Fluke_1900a\ESPFLUKE_CPLD\espfluke.srs
 compiler Completed
 Return Code: 0
-Run Time:0h:00m:02s
+Run Time:0h:00m:01s
 
-Running: Multi-srs Generator on espfluke|espfluke
-Copied C:\projekt\espfluke\synwork\espfluke_comp.srs to C:\projekt\espfluke\synwork\espfluke_s.srs
+Running: Multi-srs Generator on espfluke|ESPFLUKE_CPLD
+Copied C:\Projekt\Fluke_1900a\ESPFLUKE_CPLD\synwork\espfluke_comp.srs to C:\Projekt\Fluke_1900a\ESPFLUKE_CPLD\synwork\espfluke_s.srs
 multi_srs_gen Completed
 Return Code: 0
-Run Time:0h:00m:00s
-Copied C:\projekt\espfluke\synwork\espfluke_mult.srs to C:\projekt\espfluke\espfluke.srs
-Copied C:\projekt\espfluke\espfluke.srr to C:\projekt\espfluke\espfluke.srf
-Complete: Compile Process on espfluke|espfluke
-Complete: Compile on espfluke|espfluke
+Run Time:0h:00m:01s
+Copied C:\Projekt\Fluke_1900a\ESPFLUKE_CPLD\synwork\espfluke_mult.srs to C:\Projekt\Fluke_1900a\ESPFLUKE_CPLD\espfluke.srs
+Copied C:\Projekt\Fluke_1900a\ESPFLUKE_CPLD\espfluke.srr to C:\Projekt\Fluke_1900a\ESPFLUKE_CPLD\espfluke.srf
+Complete: Compile Process on espfluke|ESPFLUKE_CPLD
+Complete: Compile on espfluke|ESPFLUKE_CPLD
 
-Running: Map on espfluke|espfluke
+Running: Map on espfluke|ESPFLUKE_CPLD
 
-Running: Map & Optimize on espfluke|espfluke
+Running: Map & Optimize on espfluke|ESPFLUKE_CPLD
 fpga_mapper Completed
 Return Code: 0
-Run Time:0h:00m:00s
-Complete: Map on espfluke|espfluke
-Complete: Logic Synthesis on espfluke|espfluke
-
+Run Time:0h:00m:01s
+Complete: Map on espfluke|ESPFLUKE_CPLD
+Copied C:\Projekt\Fluke_1900a\ESPFLUKE_CPLD\espfluke.srr to C:\Projekt\Fluke_1900a\ESPFLUKE_CPLD\espfluke.srf
+Complete: Logic Synthesis on espfluke|ESPFLUKE_CPLD
+Note: Opening local project RTL file 'C:\Projekt\Fluke_1900a\ESPFLUKE_CPLD\espfluke.srs'
 exit status=0
-
-exit status=0
-

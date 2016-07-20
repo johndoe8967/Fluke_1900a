@@ -14,6 +14,7 @@ entity espfluke is
 		MUP_IN : in std_logic;
 		ML_IN  : in std_logic;
 		RNG2_IN: in std_logic;
+		INT    : out std_logic;
 		LED    : out std_logic
 	);
 end;
@@ -158,4 +159,5 @@ begin
   end process UPDATE_GEN;
 
   LED <= UPDATE_SIG;
+  INT <= TRIGGER_SIG;
 end espfluke_arch;

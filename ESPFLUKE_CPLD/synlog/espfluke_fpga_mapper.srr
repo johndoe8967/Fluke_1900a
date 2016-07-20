@@ -1,8 +1,8 @@
 Synopsys CPLD Technology Mapper, Version maplat, Build 923R, Built May  6 2014
 Copyright (C) 1994-2013, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use or distribution of the software is strictly prohibited.
 Product Version I-2014.03LC 
-@N: MF249 |Running in 32-bit mode.
-@N:"c:\projekt\espfluke\i2c_slave.vhd":97:4:97:5|Found counter in view:work.I2C_slave(arch) inst bits_processed_reg[3:0]
+@N: MF248 |Running in 64-bit mode.
+@N:"c:\projekt\fluke_1900a\espfluke_cpld\i2c_slave.vhd":97:4:97:5|Found counter in view:work.I2C_slave(arch) inst bits_processed_reg[3:0]
 Encoding state machine state_reg_h.state_reg[0:6] (view:work.I2C_slave(arch))
 original code -> new code
    000 -> 0000000
@@ -17,14 +17,14 @@ Resource Usage Report
 
 Simple gate primitives:
 FD11            72 uses
-AND2            118 uses
+AND2            116 uses
 OR2             6 uses
 FD21            1 use
 XOR2            6 uses
 IB11            17 uses
 BI11            1 use
-OB11            1 use
-INV             70 uses
+OB11            2 uses
+INV             69 uses
 MUX2            81 uses
 
 
@@ -32,9 +32,9 @@ MUX2            81 uses
 I-2014.03LC 
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 36MB peak: 70MB)
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 55MB peak: 120MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Tue Jul 19 14:39:56 2016
+# Wed Jul 20 10:19:16 2016
 
 ###########################################################]

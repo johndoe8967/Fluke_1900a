@@ -1,6 +1,6 @@
 #defaultlanguage:vhdl
 #OPTIONS:"|-top|espfluke|-prodtype|synplify_pro|-nostructver|-dfltencoding|sequential|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-ignore_undefined_lib|-lib|work|-lib|work"
-#CUR:"C:\\ispLEVER_Classic2_0\\synpbase\\bin\\c_vhdl.exe":1401223898
+#CUR:"C:\\ispLEVER_Classic2_0\\synpbase\\bin64\\c_vhdl.exe":1401224104
 #CUR:"C:\\ispLEVER_Classic2_0\\synpbase\\lib\\vhd\\location.map":1310457374
 #CUR:"C:\\ispLEVER_Classic2_0\\synpbase\\lib\\vhd\\std.vhd":1401223722
 #CUR:"C:\\ispLEVER_Classic2_0\\synpbase\\lib\\vhd\\snps_haps_pkg.vhd":1401223722
@@ -9,10 +9,10 @@
 #CUR:"C:\\ispLEVER_Classic2_0\\synpbase\\lib\\vhd\\umr_capim.vhd":1401223968
 #CUR:"C:\\ispLEVER_Classic2_0\\synpbase\\lib\\vhd\\arith.vhd":1401223722
 #CUR:"C:\\ispLEVER_Classic2_0\\synpbase\\lib\\vhd\\unsigned.vhd":1401223722
-#CUR:"C:\\projekt\\espfluke\\i2c_slave.vhd":1468698522
-#CUR:"C:\\projekt\\espfluke\\espfluke.vhd":1468931981
-0 "C:\projekt\espfluke\i2c_slave.vhd" vhdl
-1 "C:\projekt\espfluke\espfluke.vhd" vhdl
+#CUR:"C:\\Projekt\\Fluke_1900a\\ESPFLUKE_CPLD\\i2c_slave.vhd":1469002023
+#CUR:"C:\\Projekt\\Fluke_1900a\\ESPFLUKE_CPLD\\espfluke.vhd":1469002623
+0 "C:\Projekt\Fluke_1900a\ESPFLUKE_CPLD\i2c_slave.vhd" vhdl
+1 "C:\Projekt\Fluke_1900a\ESPFLUKE_CPLD\espfluke.vhd" vhdl
 
 # Dependency Lists (Uses list)
 0 -1

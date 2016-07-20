@@ -1,5 +1,1 @@
-C:\Projekt\ESPFLUKE\espfluke.lct : <W0001> : Can not find signal 'CLK_IN'.
-C:\Projekt\ESPFLUKE\espfluke.lct : <W0104> : Location Assignment 'CLK_IN' : Can not find this signal name.
-C:\Projekt\ESPFLUKE\espfluke.lct : <W0601> : IO Types Setting 'CLK_IN' : Invalid signal name.
-C:\Projekt\ESPFLUKE\espfluke.lct : <W0604> : IO Types Setting 'CLK_IN' : No such IO Type 'LVCMOS50'.
-Loading Lattice Constraint File 'C:\Projekt\ESPFLUKE\espfluke.lct' done!
+Loading Lattice Constraint File 'C:\Projekt\Fluke_1900a\ESPFLUKE_CPLD\espfluke.lct' done!

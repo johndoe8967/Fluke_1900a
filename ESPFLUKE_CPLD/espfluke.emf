@@ -4,7 +4,7 @@
   (keywordmap (keywordLevel 0))
   (status
     (written
-      (timeStamp 2016 07 19 12 40 01)
+      (timeStamp 2016 07 20 08 20 41)
       (program "edfmerge" (Version "2.0 Beta"))
       (dataOrigin "ispLEVER Classic"
         (Version "2.0"))))
@@ -520,9 +520,9 @@
     (cell ESPFLUKE
       (cellType GENERIC)
       (property file8
-        (string "c:\projekt\espfluke\espfluke.vhd"))
+        (string "c:\projekt\fluke_1900a\espfluke_cpld\espfluke.vhd"))
       (property file7
-        (string "c:\projekt\espfluke\i2c_slave.vhd"))
+        (string "c:\projekt\fluke_1900a\espfluke_cpld\i2c_slave.vhd"))
       (property file6
         (string "c:\isplever_classic2_0\synpbase\lib\vhd\unsigned.vhd"))
       (property file5
@@ -584,10 +584,14 @@
             (direction INPUT)
             (property crossref
               (string "8:16:2:16:8")))
+          (port INT
+            (direction OUTPUT)
+            (property crossref
+              (string "8:17:2:17:4")))
           (port LED
             (direction OUTPUT)
             (property crossref
-              (string "8:17:2:17:4"))))
+              (string "8:18:2:18:4"))))
         (contents
           (instance
             (rename I2C_1_state_reg_h_state_reg_3 "I2C_1.state_reg_h.state_reg[3]")
@@ -868,321 +872,321 @@
               (cellRef AND2
                 (libraryRef lattice)))
             (property crossref
-              (string "8:63:2:63:6")))
+              (string "8:64:2:64:6")))
           (instance
             (rename I2C_1_I_132 "I2C_1.I_132")
             (viewRef prim
               (cellRef OR2
                 (libraryRef lattice)))
             (property crossref
-              (string "8:63:2:63:6")))
+              (string "8:64:2:64:6")))
           (instance
             (rename I2C_1_I_133 "I2C_1.I_133")
             (viewRef prim
               (cellRef AND2
                 (libraryRef lattice)))
             (property crossref
-              (string "8:63:2:63:6")))
+              (string "8:64:2:64:6")))
           (instance
             (rename I2C_1_I_134 "I2C_1.I_134")
             (viewRef prim
               (cellRef OR2
                 (libraryRef lattice)))
             (property crossref
-              (string "8:63:2:63:6")))
+              (string "8:64:2:64:6")))
           (instance
             (rename I2C_1_I_135 "I2C_1.I_135")
             (viewRef prim
               (cellRef AND2
                 (libraryRef lattice)))
             (property crossref
-              (string "8:63:2:63:6")))
+              (string "8:64:2:64:6")))
           (instance
             (rename I2C_1_I_136 "I2C_1.I_136")
             (viewRef prim
               (cellRef OR2
                 (libraryRef lattice)))
             (property crossref
-              (string "8:63:2:63:6")))
+              (string "8:64:2:64:6")))
           (instance
             (rename I2C_1_I_137 "I2C_1.I_137")
             (viewRef prim
               (cellRef AND2
                 (libraryRef lattice)))
             (property crossref
-              (string "8:63:2:63:6")))
+              (string "8:64:2:64:6")))
           (instance
             (rename I2C_1_I_138 "I2C_1.I_138")
             (viewRef prim
               (cellRef AND2
                 (libraryRef lattice)))
             (property crossref
-              (string "8:63:2:63:6")))
+              (string "8:64:2:64:6")))
           (instance
             (rename I2C_1_I_139 "I2C_1.I_139")
             (viewRef prim
               (cellRef OR2
                 (libraryRef lattice)))
             (property crossref
-              (string "8:63:2:63:6")))
+              (string "8:64:2:64:6")))
           (instance
             (rename I2C_1_I_140 "I2C_1.I_140")
             (viewRef prim
               (cellRef AND2
                 (libraryRef lattice)))
             (property crossref
-              (string "8:63:2:63:6")))
+              (string "8:64:2:64:6")))
           (instance
             (rename I2C_1_I_141 "I2C_1.I_141")
             (viewRef prim
               (cellRef OR2
                 (libraryRef lattice)))
             (property crossref
-              (string "8:63:2:63:6")))
+              (string "8:64:2:64:6")))
           (instance
             (rename I2C_1_I_142 "I2C_1.I_142")
             (viewRef prim
               (cellRef AND2
                 (libraryRef lattice)))
             (property crossref
-              (string "8:63:2:63:6")))
+              (string "8:64:2:64:6")))
           (instance
             (rename I2C_1_I_143 "I2C_1.I_143")
             (viewRef prim
               (cellRef OR2
                 (libraryRef lattice)))
             (property crossref
-              (string "8:63:2:63:6")))
+              (string "8:64:2:64:6")))
           (instance
             (rename BCD1_SIG_0 "BCD1_SIG[0]")
             (viewRef prim
               (cellRef FD11
                 (libraryRef lattice)))
             (property crossref
-              (string "8:77:4:77:5")))
+              (string "8:78:4:78:5")))
           (instance
             (rename BCD1_SIG_1 "BCD1_SIG[1]")
             (viewRef prim
               (cellRef FD11
                 (libraryRef lattice)))
             (property crossref
-              (string "8:77:4:77:5")))
+              (string "8:78:4:78:5")))
           (instance
             (rename BCD1_SIG_2 "BCD1_SIG[2]")
             (viewRef prim
               (cellRef FD11
                 (libraryRef lattice)))
             (property crossref
-              (string "8:77:4:77:5")))
+              (string "8:78:4:78:5")))
           (instance
             (rename BCD1_SIG_3 "BCD1_SIG[3]")
             (viewRef prim
               (cellRef FD11
                 (libraryRef lattice)))
             (property crossref
-              (string "8:77:4:77:5")))
+              (string "8:78:4:78:5")))
           (instance
             (rename BCD3_SIG_0 "BCD3_SIG[0]")
             (viewRef prim
               (cellRef FD11
                 (libraryRef lattice)))
             (property crossref
-              (string "8:77:4:77:5")))
+              (string "8:78:4:78:5")))
           (instance
             (rename BCD3_SIG_1 "BCD3_SIG[1]")
             (viewRef prim
               (cellRef FD11
                 (libraryRef lattice)))
             (property crossref
-              (string "8:77:4:77:5")))
+              (string "8:78:4:78:5")))
           (instance
             (rename BCD3_SIG_2 "BCD3_SIG[2]")
             (viewRef prim
               (cellRef FD11
                 (libraryRef lattice)))
             (property crossref
-              (string "8:77:4:77:5")))
+              (string "8:78:4:78:5")))
           (instance
             (rename BCD3_SIG_3 "BCD3_SIG[3]")
             (viewRef prim
               (cellRef FD11
                 (libraryRef lattice)))
             (property crossref
-              (string "8:77:4:77:5")))
+              (string "8:78:4:78:5")))
           (instance
             (rename BCD2_SIG_0 "BCD2_SIG[0]")
             (viewRef prim
               (cellRef FD11
                 (libraryRef lattice)))
             (property crossref
-              (string "8:77:4:77:5")))
+              (string "8:78:4:78:5")))
           (instance
             (rename BCD2_SIG_1 "BCD2_SIG[1]")
             (viewRef prim
               (cellRef FD11
                 (libraryRef lattice)))
             (property crossref
-              (string "8:77:4:77:5")))
+              (string "8:78:4:78:5")))
           (instance
             (rename BCD2_SIG_2 "BCD2_SIG[2]")
             (viewRef prim
               (cellRef FD11
                 (libraryRef lattice)))
             (property crossref
-              (string "8:77:4:77:5")))
+              (string "8:78:4:78:5")))
           (instance
             (rename BCD2_SIG_3 "BCD2_SIG[3]")
             (viewRef prim
               (cellRef FD11
                 (libraryRef lattice)))
             (property crossref
-              (string "8:77:4:77:5")))
+              (string "8:78:4:78:5")))
           (instance
             (rename BCD5_SIG_1 "BCD5_SIG[1]")
             (viewRef prim
               (cellRef FD11
                 (libraryRef lattice)))
             (property crossref
-              (string "8:77:4:77:5")))
+              (string "8:78:4:78:5")))
           (instance
             (rename BCD5_SIG_2 "BCD5_SIG[2]")
             (viewRef prim
               (cellRef FD11
                 (libraryRef lattice)))
             (property crossref
-              (string "8:77:4:77:5")))
+              (string "8:78:4:78:5")))
           (instance
             (rename BCD5_SIG_3 "BCD5_SIG[3]")
             (viewRef prim
               (cellRef FD11
                 (libraryRef lattice)))
             (property crossref
-              (string "8:77:4:77:5")))
+              (string "8:78:4:78:5")))
           (instance
             (rename BCD4_SIG_0 "BCD4_SIG[0]")
             (viewRef prim
               (cellRef FD11
                 (libraryRef lattice)))
             (property crossref
-              (string "8:77:4:77:5")))
+              (string "8:78:4:78:5")))
           (instance
             (rename BCD4_SIG_1 "BCD4_SIG[1]")
             (viewRef prim
               (cellRef FD11
                 (libraryRef lattice)))
             (property crossref
-              (string "8:77:4:77:5")))
+              (string "8:78:4:78:5")))
           (instance
             (rename BCD4_SIG_2 "BCD4_SIG[2]")
             (viewRef prim
               (cellRef FD11
                 (libraryRef lattice)))
             (property crossref
-              (string "8:77:4:77:5")))
+              (string "8:78:4:78:5")))
           (instance
             (rename BCD4_SIG_3 "BCD4_SIG[3]")
             (viewRef prim
               (cellRef FD11
                 (libraryRef lattice)))
             (property crossref
-              (string "8:77:4:77:5")))
+              (string "8:78:4:78:5")))
           (instance
             (rename CNT_SIG_0 "CNT_SIG[0]")
             (viewRef prim
               (cellRef FD11
                 (libraryRef lattice)))
             (property crossref
-              (string "8:102:1:102:2")))
+              (string "8:103:1:103:2")))
           (instance
             (rename CNT_SIG_1 "CNT_SIG[1]")
             (viewRef prim
               (cellRef FD11
                 (libraryRef lattice)))
             (property crossref
-              (string "8:102:1:102:2")))
+              (string "8:103:1:103:2")))
           (instance
             (rename BCD6_SIG_0 "BCD6_SIG[0]")
             (viewRef prim
               (cellRef FD11
                 (libraryRef lattice)))
             (property crossref
-              (string "8:77:4:77:5")))
+              (string "8:78:4:78:5")))
           (instance
             (rename BCD6_SIG_1 "BCD6_SIG[1]")
             (viewRef prim
               (cellRef FD11
                 (libraryRef lattice)))
             (property crossref
-              (string "8:77:4:77:5")))
+              (string "8:78:4:78:5")))
           (instance
             (rename BCD6_SIG_2 "BCD6_SIG[2]")
             (viewRef prim
               (cellRef FD11
                 (libraryRef lattice)))
             (property crossref
-              (string "8:77:4:77:5")))
+              (string "8:78:4:78:5")))
           (instance
             (rename BCD6_SIG_3 "BCD6_SIG[3]")
             (viewRef prim
               (cellRef FD11
                 (libraryRef lattice)))
             (property crossref
-              (string "8:77:4:77:5")))
+              (string "8:78:4:78:5")))
           (instance
             (rename BCD5_SIG_0 "BCD5_SIG[0]")
             (viewRef prim
               (cellRef FD11
                 (libraryRef lattice)))
             (property crossref
-              (string "8:77:4:77:5")))
+              (string "8:78:4:78:5")))
           (instance OVFL_SIG
             (viewRef prim
               (cellRef FD11
                 (libraryRef lattice)))
             (property crossref
-              (string "8:126:4:126:5")))
+              (string "8:127:4:127:5")))
           (instance N
             (viewRef prim
               (cellRef FD11
                 (libraryRef lattice)))
             (property crossref
-              (string "8:126:4:126:5")))
+              (string "8:127:4:127:5")))
           (instance ML_SIG
             (viewRef prim
               (cellRef FD11
                 (libraryRef lattice)))
             (property crossref
-              (string "8:126:4:126:5")))
+              (string "8:127:4:127:5")))
           (instance M
             (viewRef prim
               (cellRef FD11
                 (libraryRef lattice)))
             (property crossref
-              (string "8:126:4:126:5")))
+              (string "8:127:4:127:5")))
           (instance L
             (viewRef prim
               (cellRef FD11
                 (libraryRef lattice)))
             (property crossref
-              (string "8:126:4:126:5")))
+              (string "8:127:4:127:5")))
           (instance FREQ_SIG
             (viewRef prim
               (cellRef FD11
                 (libraryRef lattice)))
             (property crossref
-              (string "8:126:4:126:5")))
+              (string "8:127:4:127:5")))
           (instance UPDATE_SIG
             (viewRef prim
               (cellRef FD11
                 (libraryRef lattice)))
             (property crossref
-              (string "8:150:1:150:2")))
+              (string "8:151:1:151:2")))
           (instance TRIGGER_SIG
             (viewRef prim
               (cellRef FD21
                 (libraryRef lattice)))
             (property crossref
-              (string "8:123:4:123:5")))
+              (string "8:124:4:124:5")))
           (instance I_2
             (viewRef prim
               (cellRef XOR2
@@ -1277,149 +1281,13 @@
             (viewRef prim
               (cellRef IB11
                 (libraryRef lattice))))
-          (instance LED
+          (instance INT
             (viewRef prim
               (cellRef OB11
                 (libraryRef lattice))))
-          (instance
-            (rename I2C_1_addr_reg_0_sqmuxa "I2C_1.addr_reg_0_sqmuxa")
+          (instance LED
             (viewRef prim
-              (cellRef AND2
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_state_reg_h_state_reg_nsss_i_0_a3_0 "I2C_1.state_reg_h.state_reg_nsss_i_0_a3[0]")
-            (viewRef prim
-              (cellRef AND2
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_state_reg_h_state_reg_srsts_0_i_a2_1_3 "I2C_1.state_reg_h.state_reg_srsts_0_i_a2_1[3]")
-            (viewRef prim
-              (cellRef AND2
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_state_reg_h_state_reg_srsts_0_i_a2_3 "I2C_1.state_reg_h.state_reg_srsts_0_i_a2[3]")
-            (viewRef prim
-              (cellRef AND2
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_state_reg_h_state_reg_srsts_0_0_a3_1_4 "I2C_1.state_reg_h.state_reg_srsts_0_0_a3_1[4]")
-            (viewRef prim
-              (cellRef AND2
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_state_reg_h_state_reg_srsts_0_0_a3_4 "I2C_1.state_reg_h.state_reg_srsts_0_0_a3[4]")
-            (viewRef prim
-              (cellRef AND2
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_state_reg_h_state_reg_srsts_0_0_a3_0_1_4 "I2C_1.state_reg_h.state_reg_srsts_0_0_a3_0_1[4]")
-            (viewRef prim
-              (cellRef AND2
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_state_reg_h_state_reg_srsts_0_0_a3_0_4 "I2C_1.state_reg_h.state_reg_srsts_0_0_a3_0[4]")
-            (viewRef prim
-              (cellRef AND2
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_data_to_master_reg_0_sqmuxa_0_a3_1 "I2C_1.data_to_master_reg_0_sqmuxa_0_a3_1")
-            (viewRef prim
-              (cellRef AND2
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_data_to_master_reg_0_sqmuxa_0_a3_2 "I2C_1.data_to_master_reg_0_sqmuxa_0_a3_2")
-            (viewRef prim
-              (cellRef AND2
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_data_to_master_reg_0_sqmuxa_0_a3 "I2C_1.data_to_master_reg_0_sqmuxa_0_a3")
-            (viewRef prim
-              (cellRef AND2
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_cmd_reg_1_sqmuxa_0_a3_1 "I2C_1.cmd_reg_1_sqmuxa_0_a3_1")
-            (viewRef prim
-              (cellRef AND2
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_cmd_reg_1_sqmuxa_0_a3 "I2C_1.cmd_reg_1_sqmuxa_0_a3")
-            (viewRef prim
-              (cellRef AND2
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_data_to_master_reg_1_sqmuxa_1 "I2C_1.data_to_master_reg_1_sqmuxa_1")
-            (viewRef prim
-              (cellRef AND2
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_data_to_master_reg_1_sqmuxa "I2C_1.data_to_master_reg_1_sqmuxa")
-            (viewRef prim
-              (cellRef AND2
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_addr_reg_0_sqmuxa_1 "I2C_1.addr_reg_0_sqmuxa_1")
-            (viewRef prim
-              (cellRef AND2
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_addr_reg_0_1_1_0 "I2C_1.addr_reg_0_1_1_0")
-            (viewRef prim
-              (cellRef AND2
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_addr_reg_0_1 "I2C_1.addr_reg_0_1")
-            (viewRef prim
-              (cellRef AND2
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_addr_reg_0_2_1 "I2C_1.addr_reg_0_2_1")
-            (viewRef prim
-              (cellRef AND2
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_addr_reg_0_2 "I2C_1.addr_reg_0_2")
-            (viewRef prim
-              (cellRef AND2
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_addr_reg_0_3_1 "I2C_1.addr_reg_0_3_1")
-            (viewRef prim
-              (cellRef AND2
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_addr_reg_0_3 "I2C_1.addr_reg_0_3")
-            (viewRef prim
-              (cellRef AND2
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_addr_reg_0_4_1 "I2C_1.addr_reg_0_4_1")
-            (viewRef prim
-              (cellRef AND2
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_addr_reg_0_4 "I2C_1.addr_reg_0_4")
-            (viewRef prim
-              (cellRef AND2
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_addr_reg_0_5_1 "I2C_1.addr_reg_0_5_1")
-            (viewRef prim
-              (cellRef AND2
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_addr_reg_0_5 "I2C_1.addr_reg_0_5")
-            (viewRef prim
-              (cellRef AND2
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_state_reg_h_state_reg_srsts_0_i_1_3 "I2C_1.state_reg_h.state_reg_srsts_0_i_1[3]")
-            (viewRef prim
-              (cellRef AND2
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_state_reg_h_state_reg_srsts_0_i_3 "I2C_1.state_reg_h.state_reg_srsts_0_i[3]")
-            (viewRef prim
-              (cellRef AND2
+              (cellRef OB11
                 (libraryRef lattice))))
           (instance
             (rename I2C_1_state_reg_h_state_reg_srsts_0_i_1_1 "I2C_1.state_reg_h.state_reg_srsts_0_i_1[1]")
@@ -1428,46 +1296,6 @@
                 (libraryRef lattice))))
           (instance
             (rename I2C_1_state_reg_h_state_reg_srsts_0_i_1 "I2C_1.state_reg_h.state_reg_srsts_0_i[1]")
-            (viewRef prim
-              (cellRef AND2
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_state_reg_h_state_reg_nsss_i_0_a3_1_0 "I2C_1.state_reg_h.state_reg_nsss_i_0_a3_1[0]")
-            (viewRef prim
-              (cellRef AND2
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_data_to_master_reg_0_sqmuxa_0_a2 "I2C_1.data_to_master_reg_0_sqmuxa_0_a2")
-            (viewRef prim
-              (cellRef AND2
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_un5_scl_1 "I2C_1.un5_scl_1")
-            (viewRef prim
-              (cellRef AND2
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_un5_scl "I2C_1.un5_scl")
-            (viewRef prim
-              (cellRef AND2
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_un12_scl_prev_reg_1 "I2C_1.un12_scl_prev_reg_1")
-            (viewRef prim
-              (cellRef AND2
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_un12_scl_prev_reg "I2C_1.un12_scl_prev_reg")
-            (viewRef prim
-              (cellRef AND2
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_state_reg_h_state_reg_srsts_0_0_a3_0_1_2 "I2C_1.state_reg_h.state_reg_srsts_0_0_a3_0_1[2]")
-            (viewRef prim
-              (cellRef AND2
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_state_reg_h_state_reg_srsts_0_0_a3_0_2 "I2C_1.state_reg_h.state_reg_srsts_0_0_a3_0[2]")
             (viewRef prim
               (cellRef AND2
                 (libraryRef lattice))))
@@ -1482,12 +1310,97 @@
               (cellRef AND2
                 (libraryRef lattice))))
           (instance
-            (rename I2C_1_bits_processed_reg_1_sqmuxa_0_a3_1 "I2C_1.bits_processed_reg_1_sqmuxa_0_a3_1")
+            (rename I2C_1_state_reg_h_state_reg_srsts_0_0_a3_0_1_2 "I2C_1.state_reg_h.state_reg_srsts_0_0_a3_0_1[2]")
             (viewRef prim
               (cellRef AND2
                 (libraryRef lattice))))
           (instance
-            (rename I2C_1_bits_processed_reg_1_sqmuxa_0_a3 "I2C_1.bits_processed_reg_1_sqmuxa_0_a3")
+            (rename I2C_1_state_reg_h_state_reg_srsts_0_0_a3_0_2 "I2C_1.state_reg_h.state_reg_srsts_0_0_a3_0[2]")
+            (viewRef prim
+              (cellRef AND2
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_cmd_reg_1_sqmuxa_0_a3_1 "I2C_1.cmd_reg_1_sqmuxa_0_a3_1")
+            (viewRef prim
+              (cellRef AND2
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_cmd_reg_1_sqmuxa_0_a3 "I2C_1.cmd_reg_1_sqmuxa_0_a3")
+            (viewRef prim
+              (cellRef AND2
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_un12_scl_prev_reg_1 "I2C_1.un12_scl_prev_reg_1")
+            (viewRef prim
+              (cellRef AND2
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_un12_scl_prev_reg "I2C_1.un12_scl_prev_reg")
+            (viewRef prim
+              (cellRef AND2
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_un5_scl_1 "I2C_1.un5_scl_1")
+            (viewRef prim
+              (cellRef AND2
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_un5_scl "I2C_1.un5_scl")
+            (viewRef prim
+              (cellRef AND2
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_addr_reg_0_sqmuxa_1 "I2C_1.addr_reg_0_sqmuxa_1")
+            (viewRef prim
+              (cellRef AND2
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_addr_reg_0_sqmuxa "I2C_1.addr_reg_0_sqmuxa")
+            (viewRef prim
+              (cellRef AND2
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_state_reg_h_state_reg_nsss_i_0_a3_0 "I2C_1.state_reg_h.state_reg_nsss_i_0_a3[0]")
+            (viewRef prim
+              (cellRef AND2
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_addr_reg_0_3_1 "I2C_1.addr_reg_0_3_1")
+            (viewRef prim
+              (cellRef AND2
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_addr_reg_0_3 "I2C_1.addr_reg_0_3")
+            (viewRef prim
+              (cellRef AND2
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_addr_reg_0_5_1 "I2C_1.addr_reg_0_5_1")
+            (viewRef prim
+              (cellRef AND2
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_addr_reg_0_5 "I2C_1.addr_reg_0_5")
+            (viewRef prim
+              (cellRef AND2
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_addr_reg_0_4_1 "I2C_1.addr_reg_0_4_1")
+            (viewRef prim
+              (cellRef AND2
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_addr_reg_0_4 "I2C_1.addr_reg_0_4")
+            (viewRef prim
+              (cellRef AND2
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_addr_reg_0_2_1 "I2C_1.addr_reg_0_2_1")
+            (viewRef prim
+              (cellRef AND2
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_addr_reg_0_2 "I2C_1.addr_reg_0_2")
             (viewRef prim
               (cellRef AND2
                 (libraryRef lattice))))
@@ -1497,7 +1410,7 @@
               (cellRef AND2
                 (libraryRef lattice))))
           (instance
-            (rename I2C_1_addr_regZ0Z_0 "I2C_1.addr_reg_0")
+            (rename I2C_1_addr_reg_0_1 "I2C_1.addr_reg_0_1")
             (viewRef prim
               (cellRef AND2
                 (libraryRef lattice))))
@@ -1512,12 +1425,97 @@
               (cellRef AND2
                 (libraryRef lattice))))
           (instance
-            (rename I2C_1_state_reg_h_N_172_i "I2C_1.state_reg_h.N_172_i")
+            (rename I2C_1_addr_reg_0_1_2 "I2C_1.addr_reg_0_1_2")
+            (viewRef prim
+              (cellRef AND2
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_addr_regZ0Z_0 "I2C_1.addr_reg_0")
+            (viewRef prim
+              (cellRef AND2
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_data_to_master_reg_0_sqmuxa_0_a3_2 "I2C_1.data_to_master_reg_0_sqmuxa_0_a3_2")
+            (viewRef prim
+              (cellRef AND2
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_data_to_master_reg_0_sqmuxa_0_a3 "I2C_1.data_to_master_reg_0_sqmuxa_0_a3")
+            (viewRef prim
+              (cellRef AND2
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_data_to_master_reg_0_sqmuxa_0_a2_1 "I2C_1.data_to_master_reg_0_sqmuxa_0_a2_1")
+            (viewRef prim
+              (cellRef AND2
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_data_to_master_reg_0_sqmuxa_0_a2_2 "I2C_1.data_to_master_reg_0_sqmuxa_0_a2_2")
+            (viewRef prim
+              (cellRef AND2
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_data_to_master_reg_0_sqmuxa_0_a2_3 "I2C_1.data_to_master_reg_0_sqmuxa_0_a2_3")
+            (viewRef prim
+              (cellRef AND2
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_data_to_master_reg_0_sqmuxa_0_a2_4 "I2C_1.data_to_master_reg_0_sqmuxa_0_a2_4")
+            (viewRef prim
+              (cellRef AND2
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_data_to_master_reg_0_sqmuxa_0_a2_5 "I2C_1.data_to_master_reg_0_sqmuxa_0_a2_5")
+            (viewRef prim
+              (cellRef AND2
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_data_to_master_reg_0_sqmuxa_0_a2 "I2C_1.data_to_master_reg_0_sqmuxa_0_a2")
+            (viewRef prim
+              (cellRef AND2
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_state_reg_h_state_reg_srsts_0_0_a3_0_1_4 "I2C_1.state_reg_h.state_reg_srsts_0_0_a3_0_1[4]")
+            (viewRef prim
+              (cellRef AND2
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_state_reg_h_state_reg_srsts_0_0_a3_0_4 "I2C_1.state_reg_h.state_reg_srsts_0_0_a3_0[4]")
+            (viewRef prim
+              (cellRef AND2
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_state_reg_h_state_reg_srsts_0_0_a3_1_4 "I2C_1.state_reg_h.state_reg_srsts_0_0_a3_1[4]")
+            (viewRef prim
+              (cellRef AND2
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_state_reg_h_state_reg_srsts_0_0_a3_4 "I2C_1.state_reg_h.state_reg_srsts_0_0_a3[4]")
+            (viewRef prim
+              (cellRef AND2
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_bits_processed_reg_1_sqmuxa_0_a3_1 "I2C_1.bits_processed_reg_1_sqmuxa_0_a3_1")
+            (viewRef prim
+              (cellRef AND2
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_bits_processed_reg_1_sqmuxa_0_a3 "I2C_1.bits_processed_reg_1_sqmuxa_0_a3")
+            (viewRef prim
+              (cellRef AND2
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_state_reg_h_state_reg_nsss_i_0_a3_1_0 "I2C_1.state_reg_h.state_reg_nsss_i_0_a3_1[0]")
+            (viewRef prim
+              (cellRef AND2
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_data_to_master_reg_1_sqmuxa_i "I2C_1.data_to_master_reg_1_sqmuxa_i")
             (viewRef prim
               (cellRef INV
                 (libraryRef lattice))))
           (instance
-            (rename I2C_1_state_reg_h_N_173_i "I2C_1.state_reg_h.N_173_i")
+            (rename I2C_1_un1_data_to_master_reg_0_sqmuxa_i "I2C_1.un1_data_to_master_reg_0_sqmuxa_i")
             (viewRef prim
               (cellRef INV
                 (libraryRef lattice))))
@@ -1528,6 +1526,16 @@
                 (libraryRef lattice))))
           (instance
             (rename I2C_1_state_reg_h_state_reg_srsts_0_i_5 "I2C_1.state_reg_h.state_reg_srsts_0_i[5]")
+            (viewRef prim
+              (cellRef AND2
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_state_reg_h_state_reg_srsts_0_i_1_3 "I2C_1.state_reg_h.state_reg_srsts_0_i_1[3]")
+            (viewRef prim
+              (cellRef AND2
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_state_reg_h_state_reg_srsts_0_i_3 "I2C_1.state_reg_h.state_reg_srsts_0_i[3]")
             (viewRef prim
               (cellRef AND2
                 (libraryRef lattice))))
@@ -1562,72 +1570,52 @@
               (cellRef AND2
                 (libraryRef lattice))))
           (instance
-            (rename I2C_1_data_to_master_reg_0_sqmuxa_0_a2_1 "I2C_1.data_to_master_reg_0_sqmuxa_0_a2_1")
+            (rename I2C_1_data_to_master_reg_1_sqmuxa_1 "I2C_1.data_to_master_reg_1_sqmuxa_1")
             (viewRef prim
               (cellRef AND2
                 (libraryRef lattice))))
           (instance
-            (rename I2C_1_data_to_master_reg_0_sqmuxa_0_a2_2 "I2C_1.data_to_master_reg_0_sqmuxa_0_a2_2")
+            (rename I2C_1_data_to_master_reg_1_sqmuxa "I2C_1.data_to_master_reg_1_sqmuxa")
             (viewRef prim
               (cellRef AND2
                 (libraryRef lattice))))
           (instance
-            (rename I2C_1_data_to_master_reg_0_sqmuxa_0_a2_3 "I2C_1.data_to_master_reg_0_sqmuxa_0_a2_3")
+            (rename I2C_1_data_to_master_reg_0_sqmuxa_0_a3_1 "I2C_1.data_to_master_reg_0_sqmuxa_0_a3_1")
             (viewRef prim
               (cellRef AND2
                 (libraryRef lattice))))
           (instance
-            (rename I2C_1_data_to_master_reg_0_sqmuxa_0_a2_4 "I2C_1.data_to_master_reg_0_sqmuxa_0_a2_4")
-            (viewRef prim
-              (cellRef AND2
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_data_to_master_reg_0_sqmuxa_0_a2_5 "I2C_1.data_to_master_reg_0_sqmuxa_0_a2_5")
-            (viewRef prim
-              (cellRef AND2
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_state_reg_h_state_reg_srsts_0_0_i_4 "I2C_1.state_reg_h.state_reg_srsts_0_0_i[4]")
+            (rename I2C_1_state_reg_h_state_reg_nsss_i_0_i_0 "I2C_1.state_reg_h.state_reg_nsss_i_0_i[0]")
             (viewRef prim
               (cellRef INV
                 (libraryRef lattice))))
           (instance
-            (rename I2C_1_state_reg_h_N_163_i "I2C_1.state_reg_h.N_163_i")
+            (rename I2C_1_un1_state_reg43_i_1_i "I2C_1.un1_state_reg43_i_1_i")
             (viewRef prim
               (cellRef INV
                 (libraryRef lattice))))
           (instance
-            (rename I2C_1_transfer_reg_1_i "I2C_1.transfer_reg_1_i")
+            (rename I2C_1_state_reg_h_state_reg_srsts_0_i_o2_i_3 "I2C_1.state_reg_h.state_reg_srsts_0_i_o2_i[3]")
             (viewRef prim
               (cellRef INV
                 (libraryRef lattice))))
           (instance
-            (rename I2C_1_data_to_master_reg_0_sqmuxa_i "I2C_1.data_to_master_reg_0_sqmuxa_i")
+            (rename I2C_1_un1_state_reg43_i_1_o2_i "I2C_1.un1_state_reg43_i_1_o2_i")
             (viewRef prim
               (cellRef INV
                 (libraryRef lattice))))
           (instance
-            (rename I2C_1_data_to_master_reg_1_sqmuxa_i "I2C_1.data_to_master_reg_1_sqmuxa_i")
+            (rename I2C_1_state_reg_h_state_reg_srsts_0_i_o2_0_i_3 "I2C_1.state_reg_h.state_reg_srsts_0_i_o2_0_i[3]")
             (viewRef prim
               (cellRef INV
                 (libraryRef lattice))))
           (instance
-            (rename I2C_1_un1_data_to_master_reg_0_sqmuxa_i "I2C_1.un1_data_to_master_reg_0_sqmuxa_i")
+            (rename I2C_1_N_184_i "I2C_1.N_184_i")
             (viewRef prim
               (cellRef INV
                 (libraryRef lattice))))
           (instance
-            (rename I2C_1_state_reg_h_N_167_i "I2C_1.state_reg_h.N_167_i")
-            (viewRef prim
-              (cellRef INV
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_state_reg_h_N_166_i "I2C_1.state_reg_h.N_166_i")
-            (viewRef prim
-              (cellRef INV
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_state_reg_h_state_reg_srsts_0_0_i_2 "I2C_1.state_reg_h.state_reg_srsts_0_0_i[2]")
+            (rename I2C_1_state_reg_h_state_reg_nsss_i_0_o2_i_0 "I2C_1.state_reg_h.state_reg_nsss_i_0_o2_i[0]")
             (viewRef prim
               (cellRef INV
                 (libraryRef lattice))))
@@ -1647,30 +1635,27 @@
               (cellRef INV
                 (libraryRef lattice))))
           (instance
-            (rename UPDATE_GEN_un2_transfer_sig_i "UPDATE_GEN.un2_transfer_sig_i")
-            (viewRef prim
-              (cellRef INV
-                (libraryRef lattice))))
-          (instance UPDATE_SIG_i
-            (viewRef prim
-              (cellRef INV
-                (libraryRef lattice))))
-          (instance UPDATE_SIG_1_i
+            (rename I2C_1_state_reg_h_N_168_i "I2C_1.state_reg_h.N_168_i")
             (viewRef prim
               (cellRef INV
                 (libraryRef lattice))))
           (instance
-            (rename I2C_1_state_reg_h_state_reg_nsss_i_0_o2_i_0 "I2C_1.state_reg_h.state_reg_nsss_i_0_o2_i[0]")
+            (rename I2C_1_state_reg_h_N_169_i "I2C_1.state_reg_h.N_169_i")
             (viewRef prim
               (cellRef INV
                 (libraryRef lattice))))
           (instance
-            (rename I2C_1_state_reg_h_state_reg_srsts_0_i_o2_i_0 "I2C_1.state_reg_h.state_reg_srsts_0_i_o2_i[0]")
+            (rename I2C_1_state_reg_h_N_173_i "I2C_1.state_reg_h.N_173_i")
             (viewRef prim
               (cellRef INV
                 (libraryRef lattice))))
           (instance
-            (rename I2C_1_state_reg_h_state_reg_srsts_0_i_o2_i_1 "I2C_1.state_reg_h.state_reg_srsts_0_i_o2_i[1]")
+            (rename I2C_1_state_reg_h_N_172_i "I2C_1.state_reg_h.N_172_i")
+            (viewRef prim
+              (cellRef INV
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_data_to_master_reg_0_sqmuxa_i "I2C_1.data_to_master_reg_0_sqmuxa_i")
             (viewRef prim
               (cellRef INV
                 (libraryRef lattice))))
@@ -1680,47 +1665,46 @@
               (cellRef INV
                 (libraryRef lattice))))
           (instance
-            (rename I2C_1_state_reg_h_state_reg_srsts_0_i_o2_0_i_3 "I2C_1.state_reg_h.state_reg_srsts_0_i_o2_0_i[3]")
-            (viewRef prim
-              (cellRef INV
-                (libraryRef lattice))))
-          (instance
             (rename I2C_1_continue_reg_0_sqmuxa_i_o3_i "I2C_1.continue_reg_0_sqmuxa_i_o3_i")
             (viewRef prim
               (cellRef INV
                 (libraryRef lattice))))
           (instance
-            (rename I2C_1_un1_state_reg43_i_1_o2_i "I2C_1.un1_state_reg43_i_1_o2_i")
+            (rename I2C_1_state_reg_h_N_167_i "I2C_1.state_reg_h.N_167_i")
             (viewRef prim
               (cellRef INV
                 (libraryRef lattice))))
           (instance
-            (rename I2C_1_state_reg_h_N_176_i "I2C_1.state_reg_h.N_176_i")
+            (rename I2C_1_state_reg_h_N_166_i "I2C_1.state_reg_h.N_166_i")
             (viewRef prim
               (cellRef INV
                 (libraryRef lattice))))
           (instance
-            (rename I2C_1_state_reg_h_state_reg_srsts_0_i_o2_i_3 "I2C_1.state_reg_h.state_reg_srsts_0_i_o2_i[3]")
+            (rename I2C_1_state_reg_h_state_reg_srsts_0_0_i_2 "I2C_1.state_reg_h.state_reg_srsts_0_0_i[2]")
             (viewRef prim
               (cellRef INV
                 (libraryRef lattice))))
           (instance
-            (rename I2C_1_un1_state_reg43_i_1_i "I2C_1.un1_state_reg43_i_1_i")
+            (rename I2C_1_state_reg_h_N_163_i "I2C_1.state_reg_h.N_163_i")
             (viewRef prim
               (cellRef INV
                 (libraryRef lattice))))
           (instance
-            (rename I2C_1_state_reg_h_N_174_i "I2C_1.state_reg_h.N_174_i")
+            (rename I2C_1_UPDATE_GEN_un2_transfer_sig_i "I2C_1.UPDATE_GEN.un2_transfer_sig_i")
+            (viewRef prim
+              (cellRef INV
+                (libraryRef lattice))))
+          (instance UPDATE_SIG_i
             (viewRef prim
               (cellRef INV
                 (libraryRef lattice))))
           (instance
-            (rename I2C_1_state_reg_h_N_175_i "I2C_1.state_reg_h.N_175_i")
+            (rename I2C_1_UPDATE_SIG_1_i "I2C_1.UPDATE_SIG_1_i")
             (viewRef prim
               (cellRef INV
                 (libraryRef lattice))))
           (instance
-            (rename I2C_1_state_reg_h_state_reg_nsss_i_0_i_0 "I2C_1.state_reg_h.state_reg_nsss_i_0_i[0]")
+            (rename I2C_1_transfer_reg_1_i "I2C_1.transfer_reg_1_i")
             (viewRef prim
               (cellRef INV
                 (libraryRef lattice))))
@@ -1735,6 +1719,21 @@
               (cellRef INV
                 (libraryRef lattice))))
           (instance
+            (rename I2C_1_state_reg_h_state_reg_srsts_0_0_i_4 "I2C_1.state_reg_h.state_reg_srsts_0_0_i[4]")
+            (viewRef prim
+              (cellRef INV
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_state_reg_h_N_174_i "I2C_1.state_reg_h.N_174_i")
+            (viewRef prim
+              (cellRef INV
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_state_reg_h_N_175_i "I2C_1.state_reg_h.N_175_i")
+            (viewRef prim
+              (cellRef INV
+                (libraryRef lattice))))
+          (instance
             (rename I2C_1_state_reg_h_N_165_i "I2C_1.state_reg_h.N_165_i")
             (viewRef prim
               (cellRef INV
@@ -1745,34 +1744,29 @@
               (cellRef INV
                 (libraryRef lattice))))
           (instance
-            (rename I2C_1_state_reg_h_N_169_i "I2C_1.state_reg_h.N_169_i")
+            (rename I2C_1_state_reg_h_state_reg_srsts_0_i_o2_i_0 "I2C_1.state_reg_h.state_reg_srsts_0_i_o2_i[0]")
             (viewRef prim
               (cellRef INV
                 (libraryRef lattice))))
           (instance
-            (rename I2C_1_state_reg_h_N_168_i "I2C_1.state_reg_h.N_168_i")
+            (rename I2C_1_state_reg_h_state_reg_srsts_0_i_o2_i_1 "I2C_1.state_reg_h.state_reg_srsts_0_i_o2_i[1]")
             (viewRef prim
               (cellRef INV
                 (libraryRef lattice))))
           (instance
-            (rename I2C_1_N_184_i "I2C_1.N_184_i")
+            (rename I2C_1_addr_reg_0Z0Z_2 "I2C_1.addr_reg_0[2]")
             (viewRef prim
-              (cellRef INV
+              (cellRef MUX2
                 (libraryRef lattice))))
           (instance
-            (rename I2C_1_state_reg_h_state_reg_srsts_0_i_o2_0 "I2C_1.state_reg_h.state_reg_srsts_0_i_o2[0]")
+            (rename I2C_1_addr_reg_0Z0Z_1 "I2C_1.addr_reg_0[1]")
             (viewRef prim
-              (cellRef AND2
+              (cellRef MUX2
                 (libraryRef lattice))))
           (instance
-            (rename I2C_1_state_reg_h_state_reg_nsss_i_0_o2_0 "I2C_1.state_reg_h.state_reg_nsss_i_0_o2[0]")
+            (rename I2C_1_addr_reg_0Z0Z_0 "I2C_1.addr_reg_0[0]")
             (viewRef prim
-              (cellRef AND2
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_STOP_SIG_i "I2C_1.STOP_SIG_i")
-            (viewRef prim
-              (cellRef INV
+              (cellRef MUX2
                 (libraryRef lattice))))
           (instance I_18
             (viewRef prim
@@ -1789,62 +1783,12 @@
               (cellRef MUX2
                 (libraryRef lattice))))
           (instance
-            (rename I2C_1_un1_state_reg43_i_1 "I2C_1.un1_state_reg43_i_1")
-            (viewRef prim
-              (cellRef AND2
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_state_reg_h_state_reg_srsts_0_i_o2_3 "I2C_1.state_reg_h.state_reg_srsts_0_i_o2[3]")
-            (viewRef prim
-              (cellRef AND2
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_state_reg_h_state_reg_srsts_0_i_o3_0 "I2C_1.state_reg_h.state_reg_srsts_0_i_o3[0]")
-            (viewRef prim
-              (cellRef AND2
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_state_reg_h_state_reg_srsts_0_i_o3_3 "I2C_1.state_reg_h.state_reg_srsts_0_i_o3[3]")
-            (viewRef prim
-              (cellRef AND2
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_state_reg_h_state_reg_srsts_0_i_o2_5 "I2C_1.state_reg_h.state_reg_srsts_0_i_o2[5]")
-            (viewRef prim
-              (cellRef AND2
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_state_reg_h_state_reg_i_5 "I2C_1.state_reg_h.state_reg_i[5]")
-            (viewRef prim
-              (cellRef INV
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_un1_state_reg43_i_1_o2 "I2C_1.un1_state_reg43_i_1_o2")
-            (viewRef prim
-              (cellRef AND2
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_scl_rising_reg_i "I2C_1.scl_rising_reg_i")
-            (viewRef prim
-              (cellRef INV
-                (libraryRef lattice))))
-          (instance
             (rename I2C_1_state_reg_h_state_reg_i_2 "I2C_1.state_reg_h.state_reg_i[2]")
             (viewRef prim
               (cellRef INV
                 (libraryRef lattice))))
           (instance
             (rename I2C_1_continue_reg_0_sqmuxa_i_o3 "I2C_1.continue_reg_0_sqmuxa_i_o3")
-            (viewRef prim
-              (cellRef AND2
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_continue_reg_i "I2C_1.continue_reg_i")
-            (viewRef prim
-              (cellRef INV
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_state_reg_h_state_reg_srsts_0_i_o2_0_3 "I2C_1.state_reg_h.state_reg_srsts_0_i_o2_0[3]")
             (viewRef prim
               (cellRef AND2
                 (libraryRef lattice))))
@@ -1864,12 +1808,87 @@
               (cellRef INV
                 (libraryRef lattice))))
           (instance
-            (rename I2C_1_transfer_reg_2 "I2C_1.transfer_reg_2")
+            (rename I2C_1_state_reg_h_state_reg_srsts_0_i_o2_0 "I2C_1.state_reg_h.state_reg_srsts_0_i_o2[0]")
             (viewRef prim
               (cellRef AND2
                 (libraryRef lattice))))
           (instance
-            (rename I2C_1_transfer_reg_1 "I2C_1.transfer_reg_1")
+            (rename I2C_1_bits_processed_reg_i_2 "I2C_1.bits_processed_reg_i[2]")
+            (viewRef prim
+              (cellRef INV
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_addr_reg_0_0_1 "I2C_1.addr_reg_0_0_1")
+            (viewRef prim
+              (cellRef AND2
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_bits_processed_reg_i_1 "I2C_1.bits_processed_reg_i[1]")
+            (viewRef prim
+              (cellRef INV
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_addr_reg_0_1_0 "I2C_1.addr_reg_0_1_0")
+            (viewRef prim
+              (cellRef AND2
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_bits_processed_reg_c0_i "I2C_1.bits_processed_reg_c0_i")
+            (viewRef prim
+              (cellRef INV
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_scl_rising_reg_i "I2C_1.scl_rising_reg_i")
+            (viewRef prim
+              (cellRef INV
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_sda_prev_reg_i "I2C_1.sda_prev_reg_i")
+            (viewRef prim
+              (cellRef INV
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_addr_reg_0Z0Z_5 "I2C_1.addr_reg_0[5]")
+            (viewRef prim
+              (cellRef MUX2
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_addr_reg_0Z0Z_3 "I2C_1.addr_reg_0[3]")
+            (viewRef prim
+              (cellRef MUX2
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_TRANSFER_SIG_i "I2C_1.TRANSFER_SIG_i")
+            (viewRef prim
+              (cellRef INV
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_UPDATE_GEN_un2_transfer_sig "I2C_1.UPDATE_GEN.un2_transfer_sig")
+            (viewRef prim
+              (cellRef AND2
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_un1_scl "I2C_1.un1_scl")
+            (viewRef prim
+              (cellRef AND2
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_scl_prev_reg_i "I2C_1.scl_prev_reg_i")
+            (viewRef prim
+              (cellRef INV
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_un2_scl_prev_reg "I2C_1.un2_scl_prev_reg")
+            (viewRef prim
+              (cellRef AND2
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_scl_sig_i "I2C_1.scl_sig_i")
+            (viewRef prim
+              (cellRef INV
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_un5_scl_prev_reg "I2C_1.un5_scl_prev_reg")
             (viewRef prim
               (cellRef AND2
                 (libraryRef lattice))))
@@ -1894,57 +1913,22 @@
               (cellRef AND2
                 (libraryRef lattice))))
           (instance
-            (rename I2C_1_state_reg_h_state_reg_srsts_0_i_a3_3 "I2C_1.state_reg_h.state_reg_srsts_0_i_a3[3]")
-            (viewRef prim
-              (cellRef AND2
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_state_reg_h_state_reg_srsts_0_i_a3_0_3 "I2C_1.state_reg_h.state_reg_srsts_0_i_a3_0[3]")
-            (viewRef prim
-              (cellRef AND2
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_state_reg_h_state_reg_nsss_i_0_a3_0_0 "I2C_1.state_reg_h.state_reg_nsss_i_0_a3_0[0]")
-            (viewRef prim
-              (cellRef AND2
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_state_reg_h_state_reg_i_3 "I2C_1.state_reg_h.state_reg_i[3]")
-            (viewRef prim
-              (cellRef INV
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_state_reg_h_state_reg_i_4 "I2C_1.state_reg_h.state_reg_i[4]")
-            (viewRef prim
-              (cellRef INV
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_sda_wen_reg_1_i_a2 "I2C_1.sda_wen_reg_1_i_a2")
-            (viewRef prim
-              (cellRef AND2
-                (libraryRef lattice))))
-          (instance
             (rename I2C_1_state_reg_h_state_reg_srsts_0_i_0 "I2C_1.state_reg_h.state_reg_srsts_0_i[0]")
             (viewRef prim
               (cellRef AND2
                 (libraryRef lattice))))
           (instance
-            (rename I2C_1_state_reg_h_state_reg_srsts_0_0_4 "I2C_1.state_reg_h.state_reg_srsts_0_0[4]")
+            (rename I2C_1_state_reg_h_state_reg_srsts_0_0_2 "I2C_1.state_reg_h.state_reg_srsts_0_0[2]")
             (viewRef prim
               (cellRef AND2
                 (libraryRef lattice))))
           (instance
-            (rename I2C_1_state_reg_h_state_reg_nsss_i_0_0 "I2C_1.state_reg_h.state_reg_nsss_i_0[0]")
+            (rename I2C_1_state_reg_h_state_reg_srsts_0_i_o3_0 "I2C_1.state_reg_h.state_reg_srsts_0_i_o3[0]")
             (viewRef prim
               (cellRef AND2
                 (libraryRef lattice))))
           (instance
-            (rename I2C_1_cmd_reg_1_sqmuxa_0_a2 "I2C_1.cmd_reg_1_sqmuxa_0_a2")
-            (viewRef prim
-              (cellRef AND2
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_bits_processed_reg_c2_0_a2 "I2C_1.bits_processed_reg_c2_0_a2")
+            (rename I2C_1_state_reg_h_state_reg_srsts_0_i_o3_3 "I2C_1.state_reg_h.state_reg_srsts_0_i_o3[3]")
             (viewRef prim
               (cellRef AND2
                 (libraryRef lattice))))
@@ -1984,32 +1968,117 @@
               (cellRef MUX2
                 (libraryRef lattice))))
           (instance
-            (rename I2C_1_scl_sig_i "I2C_1.scl_sig_i")
+            (rename I2C_1_transfer_reg_1 "I2C_1.transfer_reg_1")
+            (viewRef prim
+              (cellRef AND2
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_STOP_SIG_i "I2C_1.STOP_SIG_i")
             (viewRef prim
               (cellRef INV
                 (libraryRef lattice))))
           (instance
-            (rename I2C_1_un5_scl_prev_reg "I2C_1.un5_scl_prev_reg")
+            (rename I2C_1_transfer_reg_2 "I2C_1.transfer_reg_2")
             (viewRef prim
               (cellRef AND2
                 (libraryRef lattice))))
           (instance
-            (rename I2C_1_scl_prev_reg_i "I2C_1.scl_prev_reg_i")
+            (rename I2C_1_I2CREAD_CNT_SIG_4_0 "I2C_1.I2CREAD.CNT_SIG_4[0]")
+            (viewRef prim
+              (cellRef AND2
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_I2CREAD_CNT_SIG_4_1 "I2C_1.I2CREAD.CNT_SIG_4[1]")
+            (viewRef prim
+              (cellRef AND2
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_UPDATE_SIG_1 "I2C_1.UPDATE_SIG_1")
+            (viewRef prim
+              (cellRef AND2
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_AS_IN_i_1 "I2C_1.AS_IN_i[1]")
             (viewRef prim
               (cellRef INV
                 (libraryRef lattice))))
           (instance
-            (rename I2C_1_un2_scl_prev_reg "I2C_1.un2_scl_prev_reg")
+            (rename I2C_1_UPDATE_SIG_2 "I2C_1.UPDATE_SIG_2")
             (viewRef prim
               (cellRef AND2
                 (libraryRef lattice))))
           (instance
-            (rename I2C_1_un1_scl "I2C_1.un1_scl")
+            (rename I2C_1_state_reg_h_state_reg_nsss_i_0_0 "I2C_1.state_reg_h.state_reg_nsss_i_0[0]")
             (viewRef prim
               (cellRef AND2
                 (libraryRef lattice))))
           (instance
-            (rename I2C_1_un1_data_to_master_reg_0_sqmuxa "I2C_1.un1_data_to_master_reg_0_sqmuxa")
+            (rename I2C_1_state_reg_h_state_reg_srsts_0_0_4 "I2C_1.state_reg_h.state_reg_srsts_0_0[4]")
+            (viewRef prim
+              (cellRef AND2
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_bits_processed_reg_i_3 "I2C_1.bits_processed_reg_i[3]")
+            (viewRef prim
+              (cellRef INV
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_cmd_reg_1_sqmuxa_0_a2 "I2C_1.cmd_reg_1_sqmuxa_0_a2")
+            (viewRef prim
+              (cellRef AND2
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_state_reg_h_state_reg_i_4 "I2C_1.state_reg_h.state_reg_i[4]")
+            (viewRef prim
+              (cellRef INV
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_sda_wen_reg_1_i_a2 "I2C_1.sda_wen_reg_1_i_a2")
+            (viewRef prim
+              (cellRef AND2
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_bits_processed_reg_c2_0_a2 "I2C_1.bits_processed_reg_c2_0_a2")
+            (viewRef prim
+              (cellRef AND2
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_state_reg_h_state_reg_nsss_i_0_a3_0_0 "I2C_1.state_reg_h.state_reg_nsss_i_0_a3_0[0]")
+            (viewRef prim
+              (cellRef AND2
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_state_reg_h_state_reg_srsts_0_i_a3_0_5 "I2C_1.state_reg_h.state_reg_srsts_0_i_a3_0[5]")
+            (viewRef prim
+              (cellRef AND2
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_start_reg_i "I2C_1.start_reg_i")
+            (viewRef prim
+              (cellRef INV
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_state_reg_h_state_reg_i_5 "I2C_1.state_reg_h.state_reg_i[5]")
+            (viewRef prim
+              (cellRef INV
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_state_reg_h_state_reg_srsts_0_i_a3_5 "I2C_1.state_reg_h.state_reg_srsts_0_i_a3[5]")
+            (viewRef prim
+              (cellRef AND2
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_state_reg_h_state_reg_i_3 "I2C_1.state_reg_h.state_reg_i[3]")
+            (viewRef prim
+              (cellRef INV
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_state_reg_h_state_reg_srsts_0_i_a3_0_3 "I2C_1.state_reg_h.state_reg_srsts_0_i_a3_0[3]")
+            (viewRef prim
+              (cellRef AND2
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_state_reg_h_state_reg_srsts_0_i_a3_3 "I2C_1.state_reg_h.state_reg_srsts_0_i_a3[3]")
             (viewRef prim
               (cellRef AND2
                 (libraryRef lattice))))
@@ -2027,21 +2096,6 @@
             (rename I2C_1_data_to_master_reg_0_sqmuxa_0_o2_1 "I2C_1.data_to_master_reg_0_sqmuxa_0_o2_1")
             (viewRef prim
               (cellRef AND2
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_addr_reg_0_1_0 "I2C_1.addr_reg_0_1_0")
-            (viewRef prim
-              (cellRef AND2
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_addr_reg_0_0_1 "I2C_1.addr_reg_0_0_1")
-            (viewRef prim
-              (cellRef AND2
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_bits_processed_reg_i_2 "I2C_1.bits_processed_reg_i[2]")
-            (viewRef prim
-              (cellRef INV
                 (libraryRef lattice))))
           (instance
             (rename I2C_1_bits_processed_reg_8 "I2C_1.bits_processed_reg_8")
@@ -2064,14 +2118,19 @@
               (cellRef AND2
                 (libraryRef lattice))))
           (instance
-            (rename I2C_1_bits_processed_reg_c0_i "I2C_1.bits_processed_reg_c0_i")
+            (rename I2C_1_state_reg_h_state_reg_nsss_i_0_o2_0 "I2C_1.state_reg_h.state_reg_nsss_i_0_o2[0]")
+            (viewRef prim
+              (cellRef AND2
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_continue_reg_i "I2C_1.continue_reg_i")
             (viewRef prim
               (cellRef INV
                 (libraryRef lattice))))
           (instance
-            (rename I2C_1_bits_processed_reg_i_1 "I2C_1.bits_processed_reg_i[1]")
+            (rename I2C_1_state_reg_h_state_reg_srsts_0_i_o2_0_3 "I2C_1.state_reg_h.state_reg_srsts_0_i_o2_0[3]")
             (viewRef prim
-              (cellRef INV
+              (cellRef AND2
                 (libraryRef lattice))))
           (instance
             (rename I2C_1_bits_processed_reg_c1_i_o3 "I2C_1.bits_processed_reg_c1_i_o3")
@@ -2079,22 +2138,42 @@
               (cellRef AND2
                 (libraryRef lattice))))
           (instance
-            (rename I2C_1_state_reg_h_state_reg_srsts_0_0_2 "I2C_1.state_reg_h.state_reg_srsts_0_0[2]")
+            (rename I2C_1_un1_state_reg43_i_1_o2 "I2C_1.un1_state_reg43_i_1_o2")
             (viewRef prim
               (cellRef AND2
                 (libraryRef lattice))))
           (instance
-            (rename I2C_1_bits_processed_reg_i_3 "I2C_1.bits_processed_reg_i[3]")
+            (rename I2C_1_state_reg_h_state_reg_srsts_0_i_o2_5 "I2C_1.state_reg_h.state_reg_srsts_0_i_o2[5]")
             (viewRef prim
-              (cellRef INV
+              (cellRef AND2
                 (libraryRef lattice))))
           (instance
-            (rename I2C_1_addr_reg_0Z0Z_2 "I2C_1.addr_reg_0[2]")
+            (rename I2C_1_state_reg_h_state_reg_srsts_0_i_o2_3 "I2C_1.state_reg_h.state_reg_srsts_0_i_o2[3]")
+            (viewRef prim
+              (cellRef AND2
+                (libraryRef lattice))))
+          (instance
+            (rename I2C_1_un1_state_reg43_i_1 "I2C_1.un1_state_reg43_i_1")
+            (viewRef prim
+              (cellRef AND2
+                (libraryRef lattice))))
+          (instance
+            (rename DATA_TO_MASTER_SIG_1_3 "DATA_TO_MASTER_SIG_1[3]")
             (viewRef prim
               (cellRef MUX2
                 (libraryRef lattice))))
           (instance
-            (rename I2C_1_addr_reg_0Z0Z_3 "I2C_1.addr_reg_0[3]")
+            (rename DATA_TO_MASTER_SIG_1_2 "DATA_TO_MASTER_SIG_1[2]")
+            (viewRef prim
+              (cellRef MUX2
+                (libraryRef lattice))))
+          (instance
+            (rename DATA_TO_MASTER_SIG_1_1 "DATA_TO_MASTER_SIG_1[1]")
+            (viewRef prim
+              (cellRef MUX2
+                (libraryRef lattice))))
+          (instance
+            (rename DATA_TO_MASTER_SIG_1_0 "DATA_TO_MASTER_SIG_1[0]")
             (viewRef prim
               (cellRef MUX2
                 (libraryRef lattice))))
@@ -2104,22 +2183,17 @@
               (cellRef MUX2
                 (libraryRef lattice))))
           (instance
-            (rename I2C_1_addr_reg_0Z0Z_5 "I2C_1.addr_reg_0[5]")
-            (viewRef prim
-              (cellRef MUX2
-                (libraryRef lattice))))
-          (instance
             (rename I2C_1_addr_reg_0_6 "I2C_1.addr_reg_0[6]")
             (viewRef prim
               (cellRef MUX2
                 (libraryRef lattice))))
           (instance
-            (rename I2C_1_addr_reg_i_3 "I2C_1.addr_reg_i[3]")
+            (rename I2C_1_addr_reg_i_2 "I2C_1.addr_reg_i[2]")
             (viewRef prim
               (cellRef INV
                 (libraryRef lattice))))
           (instance
-            (rename I2C_1_addr_reg_i_2 "I2C_1.addr_reg_i[2]")
+            (rename I2C_1_addr_reg_i_3 "I2C_1.addr_reg_i[3]")
             (viewRef prim
               (cellRef INV
                 (libraryRef lattice))))
@@ -2159,9 +2233,34 @@
               (cellRef XOR2
                 (libraryRef lattice))))
           (instance
-            (rename I2C_1_sda_prev_reg_i "I2C_1.sda_prev_reg_i")
+            (rename DATA_TO_MASTER_SIG_3_3 "DATA_TO_MASTER_SIG_3[3]")
             (viewRef prim
-              (cellRef INV
+              (cellRef MUX2
+                (libraryRef lattice))))
+          (instance
+            (rename DATA_TO_MASTER_SIG_3_2 "DATA_TO_MASTER_SIG_3[2]")
+            (viewRef prim
+              (cellRef MUX2
+                (libraryRef lattice))))
+          (instance
+            (rename DATA_TO_MASTER_SIG_3_1 "DATA_TO_MASTER_SIG_3[1]")
+            (viewRef prim
+              (cellRef MUX2
+                (libraryRef lattice))))
+          (instance
+            (rename DATA_TO_MASTER_SIG_3_0 "DATA_TO_MASTER_SIG_3[0]")
+            (viewRef prim
+              (cellRef MUX2
+                (libraryRef lattice))))
+          (instance
+            (rename DATA_TO_MASTER_SIG_2_6 "DATA_TO_MASTER_SIG_2[6]")
+            (viewRef prim
+              (cellRef MUX2
+                (libraryRef lattice))))
+          (instance
+            (rename DATA_TO_MASTER_SIG_2_5 "DATA_TO_MASTER_SIG_2[5]")
+            (viewRef prim
+              (cellRef MUX2
                 (libraryRef lattice))))
           (instance
             (rename DATA_TO_MASTER_SIG_2_4 "DATA_TO_MASTER_SIG_2[4]")
@@ -2209,34 +2308,9 @@
               (cellRef MUX2
                 (libraryRef lattice))))
           (instance
-            (rename DATA_TO_MASTER_SIG_1_3 "DATA_TO_MASTER_SIG_1[3]")
+            (rename AS_IN_i_4 "AS_IN_i[4]")
             (viewRef prim
-              (cellRef MUX2
-                (libraryRef lattice))))
-          (instance
-            (rename DATA_TO_MASTER_SIG_1_2 "DATA_TO_MASTER_SIG_1[2]")
-            (viewRef prim
-              (cellRef MUX2
-                (libraryRef lattice))))
-          (instance
-            (rename DATA_TO_MASTER_SIG_1_1 "DATA_TO_MASTER_SIG_1[1]")
-            (viewRef prim
-              (cellRef MUX2
-                (libraryRef lattice))))
-          (instance
-            (rename DATA_TO_MASTER_SIG_1_0 "DATA_TO_MASTER_SIG_1[0]")
-            (viewRef prim
-              (cellRef MUX2
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_addr_reg_0Z0Z_0 "I2C_1.addr_reg_0[0]")
-            (viewRef prim
-              (cellRef MUX2
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_addr_reg_0Z0Z_1 "I2C_1.addr_reg_0[1]")
-            (viewRef prim
-              (cellRef MUX2
+              (cellRef INV
                 (libraryRef lattice))))
           (instance
             (rename CNT_SIG_i_1 "CNT_SIG_i[1]")
@@ -2269,36 +2343,6 @@
               (cellRef MUX2
                 (libraryRef lattice))))
           (instance
-            (rename DATA_TO_MASTER_SIG_3_3 "DATA_TO_MASTER_SIG_3[3]")
-            (viewRef prim
-              (cellRef MUX2
-                (libraryRef lattice))))
-          (instance
-            (rename DATA_TO_MASTER_SIG_3_2 "DATA_TO_MASTER_SIG_3[2]")
-            (viewRef prim
-              (cellRef MUX2
-                (libraryRef lattice))))
-          (instance
-            (rename DATA_TO_MASTER_SIG_3_1 "DATA_TO_MASTER_SIG_3[1]")
-            (viewRef prim
-              (cellRef MUX2
-                (libraryRef lattice))))
-          (instance
-            (rename DATA_TO_MASTER_SIG_3_0 "DATA_TO_MASTER_SIG_3[0]")
-            (viewRef prim
-              (cellRef MUX2
-                (libraryRef lattice))))
-          (instance
-            (rename DATA_TO_MASTER_SIG_2_6 "DATA_TO_MASTER_SIG_2[6]")
-            (viewRef prim
-              (cellRef MUX2
-                (libraryRef lattice))))
-          (instance
-            (rename DATA_TO_MASTER_SIG_2_5 "DATA_TO_MASTER_SIG_2[5]")
-            (viewRef prim
-              (cellRef MUX2
-                (libraryRef lattice))))
-          (instance
             (rename AS_IN_i_2 "AS_IN_i[2]")
             (viewRef prim
               (cellRef INV
@@ -2309,9 +2353,34 @@
               (cellRef INV
                 (libraryRef lattice))))
           (instance
-            (rename AS_IN_i_4 "AS_IN_i[4]")
+            (rename BCD4_SIG_0_2 "BCD4_SIG_0[2]")
             (viewRef prim
-              (cellRef INV
+              (cellRef MUX2
+                (libraryRef lattice))))
+          (instance
+            (rename BCD4_SIG_0_3 "BCD4_SIG_0[3]")
+            (viewRef prim
+              (cellRef MUX2
+                (libraryRef lattice))))
+          (instance
+            (rename BCD3_SIG_0_0 "BCD3_SIG_0[0]")
+            (viewRef prim
+              (cellRef MUX2
+                (libraryRef lattice))))
+          (instance
+            (rename BCD3_SIG_0_1 "BCD3_SIG_0[1]")
+            (viewRef prim
+              (cellRef MUX2
+                (libraryRef lattice))))
+          (instance
+            (rename BCD3_SIG_0_2 "BCD3_SIG_0[2]")
+            (viewRef prim
+              (cellRef MUX2
+                (libraryRef lattice))))
+          (instance
+            (rename BCD3_SIG_0_3 "BCD3_SIG_0[3]")
+            (viewRef prim
+              (cellRef MUX2
                 (libraryRef lattice))))
           (instance
             (rename BCD2_SIG_0_0 "BCD2_SIG_0[0]")
@@ -2350,6 +2419,31 @@
                 (libraryRef lattice))))
           (instance
             (rename BCD1_SIG_0_3 "BCD1_SIG_0[3]")
+            (viewRef prim
+              (cellRef MUX2
+                (libraryRef lattice))))
+          (instance ML_IN_i
+            (viewRef prim
+              (cellRef INV
+                (libraryRef lattice))))
+          (instance ML_SIG_0
+            (viewRef prim
+              (cellRef MUX2
+                (libraryRef lattice))))
+          (instance M_0
+            (viewRef prim
+              (cellRef MUX2
+                (libraryRef lattice))))
+          (instance L_0
+            (viewRef prim
+              (cellRef MUX2
+                (libraryRef lattice))))
+          (instance FREQ_SIG_0
+            (viewRef prim
+              (cellRef MUX2
+                (libraryRef lattice))))
+          (instance
+            (rename BCD6_SIG_0_0 "BCD6_SIG_0[0]")
             (viewRef prim
               (cellRef MUX2
                 (libraryRef lattice))))
@@ -2399,113 +2493,7 @@
               (cellRef MUX2
                 (libraryRef lattice))))
           (instance
-            (rename BCD4_SIG_0_2 "BCD4_SIG_0[2]")
-            (viewRef prim
-              (cellRef MUX2
-                (libraryRef lattice))))
-          (instance
-            (rename BCD4_SIG_0_3 "BCD4_SIG_0[3]")
-            (viewRef prim
-              (cellRef MUX2
-                (libraryRef lattice))))
-          (instance
-            (rename BCD3_SIG_0_0 "BCD3_SIG_0[0]")
-            (viewRef prim
-              (cellRef MUX2
-                (libraryRef lattice))))
-          (instance
-            (rename BCD3_SIG_0_1 "BCD3_SIG_0[1]")
-            (viewRef prim
-              (cellRef MUX2
-                (libraryRef lattice))))
-          (instance
-            (rename BCD3_SIG_0_2 "BCD3_SIG_0[2]")
-            (viewRef prim
-              (cellRef MUX2
-                (libraryRef lattice))))
-          (instance
-            (rename BCD3_SIG_0_3 "BCD3_SIG_0[3]")
-            (viewRef prim
-              (cellRef MUX2
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_TRANSFER_SIG_i "I2C_1.TRANSFER_SIG_i")
-            (viewRef prim
-              (cellRef INV
-                (libraryRef lattice))))
-          (instance
-            (rename UPDATE_GEN_un2_transfer_sig "UPDATE_GEN.un2_transfer_sig")
-            (viewRef prim
-              (cellRef AND2
-                (libraryRef lattice))))
-          (instance OVFL_SIG_0
-            (viewRef prim
-              (cellRef MUX2
-                (libraryRef lattice))))
-          (instance N_0
-            (viewRef prim
-              (cellRef MUX2
-                (libraryRef lattice))))
-          (instance ML_IN_i
-            (viewRef prim
-              (cellRef INV
-                (libraryRef lattice))))
-          (instance ML_SIG_0
-            (viewRef prim
-              (cellRef MUX2
-                (libraryRef lattice))))
-          (instance M_0
-            (viewRef prim
-              (cellRef MUX2
-                (libraryRef lattice))))
-          (instance L_0
-            (viewRef prim
-              (cellRef MUX2
-                (libraryRef lattice))))
-          (instance FREQ_SIG_0
-            (viewRef prim
-              (cellRef MUX2
-                (libraryRef lattice))))
-          (instance
-            (rename AS_IN_i_1 "AS_IN_i[1]")
-            (viewRef prim
-              (cellRef INV
-                (libraryRef lattice))))
-          (instance UPDATE_SIG_2
-            (viewRef prim
-              (cellRef AND2
-                (libraryRef lattice))))
-          (instance UPDATE_SIG_1
-            (viewRef prim
-              (cellRef AND2
-                (libraryRef lattice))))
-          (instance
-            (rename I2CREAD_CNT_SIG_4_0 "I2CREAD.CNT_SIG_4[0]")
-            (viewRef prim
-              (cellRef AND2
-                (libraryRef lattice))))
-          (instance
-            (rename I2CREAD_CNT_SIG_4_1 "I2CREAD.CNT_SIG_4[1]")
-            (viewRef prim
-              (cellRef AND2
-                (libraryRef lattice))))
-          (instance
-            (rename BCD6_SIG_0_0 "BCD6_SIG_0[0]")
-            (viewRef prim
-              (cellRef MUX2
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_state_reg_h_state_reg_srsts_0_i_a3_0_5 "I2C_1.state_reg_h.state_reg_srsts_0_i_a3_0[5]")
-            (viewRef prim
-              (cellRef AND2
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_start_reg_i "I2C_1.start_reg_i")
-            (viewRef prim
-              (cellRef INV
-                (libraryRef lattice))))
-          (instance
-            (rename I2C_1_state_reg_h_state_reg_srsts_0_i_a3_5 "I2C_1.state_reg_h.state_reg_srsts_0_i_a3[5]")
+            (rename I2C_1_un1_data_to_master_reg_0_sqmuxa "I2C_1.un1_data_to_master_reg_0_sqmuxa")
             (viewRef prim
               (cellRef AND2
                 (libraryRef lattice))))
@@ -2541,6 +2529,14 @@
                 (libraryRef lattice))))
           (instance
             (rename I2C_1_sda_o_reg_1_1 "I2C_1.sda_o_reg_1_1")
+            (viewRef prim
+              (cellRef MUX2
+                (libraryRef lattice))))
+          (instance OVFL_SIG_0
+            (viewRef prim
+              (cellRef MUX2
+                (libraryRef lattice))))
+          (instance N_0
             (viewRef prim
               (cellRef MUX2
                 (libraryRef lattice))))
@@ -2594,36 +2590,22 @@
             (viewRef prim
               (cellRef MUX2
                 (libraryRef lattice))))
+          (net TRIGGER_SIG
+            (joined
+              (portRef Q0
+                (instanceRef TRIGGER_SIG))
+              (portRef A1
+                (instanceRef DATA_TO_MASTER_SIG_2_6))
+              (portRef A0
+                (instanceRef INT))))
           (net UPDATE_SIG
             (joined
               (portRef Q0
                 (instanceRef UPDATE_SIG))
               (portRef S0
-                (instanceRef BCD6_SIG_0_0))
-              (portRef S0
-                (instanceRef FREQ_SIG_0))
-              (portRef S0
-                (instanceRef L_0))
-              (portRef S0
-                (instanceRef M_0))
-              (portRef S0
-                (instanceRef ML_SIG_0))
-              (portRef S0
                 (instanceRef N_0))
               (portRef S0
                 (instanceRef OVFL_SIG_0))
-              (portRef S0
-                (instanceRef BCD3_SIG_0_3))
-              (portRef S0
-                (instanceRef BCD3_SIG_0_2))
-              (portRef S0
-                (instanceRef BCD3_SIG_0_1))
-              (portRef S0
-                (instanceRef BCD3_SIG_0_0))
-              (portRef S0
-                (instanceRef BCD4_SIG_0_3))
-              (portRef S0
-                (instanceRef BCD4_SIG_0_2))
               (portRef S0
                 (instanceRef BCD4_SIG_0_1))
               (portRef S0
@@ -2643,6 +2625,16 @@
               (portRef S0
                 (instanceRef BCD6_SIG_0_1))
               (portRef S0
+                (instanceRef BCD6_SIG_0_0))
+              (portRef S0
+                (instanceRef FREQ_SIG_0))
+              (portRef S0
+                (instanceRef L_0))
+              (portRef S0
+                (instanceRef M_0))
+              (portRef S0
+                (instanceRef ML_SIG_0))
+              (portRef S0
                 (instanceRef BCD1_SIG_0_3))
               (portRef S0
                 (instanceRef BCD1_SIG_0_2))
@@ -2658,6 +2650,18 @@
                 (instanceRef BCD2_SIG_0_1))
               (portRef S0
                 (instanceRef BCD2_SIG_0_0))
+              (portRef S0
+                (instanceRef BCD3_SIG_0_3))
+              (portRef S0
+                (instanceRef BCD3_SIG_0_2))
+              (portRef S0
+                (instanceRef BCD3_SIG_0_1))
+              (portRef S0
+                (instanceRef BCD3_SIG_0_0))
+              (portRef S0
+                (instanceRef BCD4_SIG_0_3))
+              (portRef S0
+                (instanceRef BCD4_SIG_0_2))
               (portRef A0
                 (instanceRef UPDATE_SIG_i))
               (portRef A0
@@ -2668,14 +2672,14 @@
               (portRef Z0
                 (instanceRef I_2))
               (portRef A1
-                (instanceRef I2CREAD_CNT_SIG_4_0))))
+                (instanceRef I2C_1_I2CREAD_CNT_SIG_4_0))))
           (net
             (rename un1_CNT_SIG_1_2 "un1_CNT_SIG_1[2]")
             (joined
               (portRef Z0
                 (instanceRef I_4))
               (portRef A1
-                (instanceRef I2CREAD_CNT_SIG_4_1))))
+                (instanceRef I2C_1_I2CREAD_CNT_SIG_4_1))))
           (net GND
             (joined
               (portRef A1
@@ -2687,9 +2691,9 @@
               (portRef Q0
                 (instanceRef I2C_1_transfer_reg))
               (portRef A0
-                (instanceRef I2CREAD_CNT_SIG_4_1))
+                (instanceRef I2C_1_I2CREAD_CNT_SIG_4_1))
               (portRef A0
-                (instanceRef I2CREAD_CNT_SIG_4_0))
+                (instanceRef I2C_1_I2CREAD_CNT_SIG_4_0))
               (portRef A0
                 (instanceRef I2C_1_TRANSFER_SIG_i))))
           (net READ_REQ_SIG
@@ -2770,14 +2774,6 @@
               (portRef Q0
                 (instanceRef CNT_SIG_0))
               (portRef S0
-                (instanceRef DATA_TO_MASTER_SIG_3_0))
-              (portRef S0
-                (instanceRef DATA_TO_MASTER_SIG_3_1))
-              (portRef S0
-                (instanceRef DATA_TO_MASTER_SIG_3_2))
-              (portRef S0
-                (instanceRef DATA_TO_MASTER_SIG_3_3))
-              (portRef S0
                 (instanceRef DATA_TO_MASTER_SIG_3_4))
               (portRef S0
                 (instanceRef DATA_TO_MASTER_SIG_3_5))
@@ -2785,6 +2781,14 @@
                 (instanceRef DATA_TO_MASTER_SIG_3_6))
               (portRef S0
                 (instanceRef DATA_TO_MASTER_SIG_3_7))
+              (portRef S0
+                (instanceRef DATA_TO_MASTER_SIG_3_0))
+              (portRef S0
+                (instanceRef DATA_TO_MASTER_SIG_3_1))
+              (portRef S0
+                (instanceRef DATA_TO_MASTER_SIG_3_2))
+              (portRef S0
+                (instanceRef DATA_TO_MASTER_SIG_3_3))
               (portRef A0
                 (instanceRef I_2))
               (portRef A0
@@ -2794,20 +2798,8 @@
             (joined
               (portRef Q0
                 (instanceRef CNT_SIG_1))
-              (portRef S0
-                (instanceRef DATA_TO_MASTER_SIG_2_5))
-              (portRef S0
-                (instanceRef DATA_TO_MASTER_SIG_2_6))
               (portRef A0
                 (instanceRef CNT_SIG_i_1))
-              (portRef S0
-                (instanceRef DATA_TO_MASTER_SIG_1_0))
-              (portRef S0
-                (instanceRef DATA_TO_MASTER_SIG_1_1))
-              (portRef S0
-                (instanceRef DATA_TO_MASTER_SIG_1_2))
-              (portRef S0
-                (instanceRef DATA_TO_MASTER_SIG_1_3))
               (portRef S0
                 (instanceRef DATA_TO_MASTER_SIG_1_4))
               (portRef S0
@@ -2826,6 +2818,18 @@
                 (instanceRef DATA_TO_MASTER_SIG_2_3))
               (portRef S0
                 (instanceRef DATA_TO_MASTER_SIG_2_4))
+              (portRef S0
+                (instanceRef DATA_TO_MASTER_SIG_2_5))
+              (portRef S0
+                (instanceRef DATA_TO_MASTER_SIG_2_6))
+              (portRef S0
+                (instanceRef DATA_TO_MASTER_SIG_1_0))
+              (portRef S0
+                (instanceRef DATA_TO_MASTER_SIG_1_1))
+              (portRef S0
+                (instanceRef DATA_TO_MASTER_SIG_1_2))
+              (portRef S0
+                (instanceRef DATA_TO_MASTER_SIG_1_3))
               (portRef A0
                 (instanceRef I_4))))
           (net VCC
@@ -2842,19 +2846,6 @@
                 (instanceRef I2C_1_I_137))
               (portRef D0
                 (instanceRef TRIGGER_SIG))))
-          (net TRIGGER_SIG
-            (joined
-              (portRef Q0
-                (instanceRef TRIGGER_SIG))
-              (portRef A1
-                (instanceRef DATA_TO_MASTER_SIG_2_6))))
-          (net
-            (rename UPDATE_GEN_un2_transfer_sig "UPDATE_GEN.un2_transfer_sig")
-            (joined
-              (portRef Z0
-                (instanceRef UPDATE_GEN_un2_transfer_sig))
-              (portRef A0
-                (instanceRef UPDATE_GEN_un2_transfer_sig_i))))
           (net
             (rename BCD1_SIG_0 "BCD1_SIG[0]")
             (joined
@@ -3123,14 +3114,14 @@
             (rename I2CREAD_CNT_SIG_4_0 "I2CREAD.CNT_SIG_4[0]")
             (joined
               (portRef Z0
-                (instanceRef I2CREAD_CNT_SIG_4_0))
+                (instanceRef I2C_1_I2CREAD_CNT_SIG_4_0))
               (portRef D0
                 (instanceRef CNT_SIG_0))))
           (net
             (rename I2CREAD_CNT_SIG_4_1 "I2CREAD.CNT_SIG_4[1]")
             (joined
               (portRef Z0
-                (instanceRef I2CREAD_CNT_SIG_4_1))
+                (instanceRef I2C_1_I2CREAD_CNT_SIG_4_1))
               (portRef D0
                 (instanceRef CNT_SIG_1))))
           (net N_1
@@ -3313,16 +3304,10 @@
                 (instanceRef BCD1_SIG_0_3))
               (portRef D0
                 (instanceRef BCD1_SIG_3))))
-          (net N_32
-            (joined
-              (portRef ZN0
-                (instanceRef UPDATE_SIG_1_i))
-              (portRef A1
-                (instanceRef UPDATE_SIG_2))))
           (net N_33
             (joined
               (portRef Z0
-                (instanceRef UPDATE_SIG_2))
+                (instanceRef I2C_1_UPDATE_SIG_2))
               (portRef D0
                 (instanceRef UPDATE_SIG))))
           (net N_36
@@ -3496,18 +3481,18 @@
                 (instanceRef I2C_1_sda_o_reg_1_7))
               (portRef A1
                 (instanceRef I2C_1_bits_processed_reg_c1_i_o3))
-              (portRef A0
-                (instanceRef I2C_1_bits_processed_reg_c0_i))
               (portRef A1
                 (instanceRef I2C_1_bits_processed_regZ0Z_2))
               (portRef A0
                 (instanceRef I2C_1_bits_processed_reg_e0))
+              (portRef A0
+                (instanceRef I2C_1_bits_processed_reg_c0_i))
               (portRef A1
                 (instanceRef I2C_1_addr_reg_0_0_1_0))
               (portRef A1
-                (instanceRef I2C_1_addr_reg_0_4))
+                (instanceRef I2C_1_addr_reg_0_2_1))
               (portRef A1
-                (instanceRef I2C_1_addr_reg_0_2_1))))
+                (instanceRef I2C_1_addr_reg_0_4))))
           (net
             (rename I2C_1_bits_processed_reg_1 "I2C_1.bits_processed_reg[1]")
             (joined
@@ -3520,13 +3505,13 @@
               (portRef A0
                 (instanceRef I2C_1_bits_processed_reg_c1_i_o3))
               (portRef A0
-                (instanceRef I2C_1_bits_processed_reg_i_1))
-              (portRef A0
                 (instanceRef I2C_1_bits_processed_reg_4))
+              (portRef A0
+                (instanceRef I2C_1_bits_processed_reg_e1))
               (portRef A1
                 (instanceRef I2C_1_addr_reg_0_1_0))
               (portRef A0
-                (instanceRef I2C_1_bits_processed_reg_e1))))
+                (instanceRef I2C_1_bits_processed_reg_i_1))))
           (net
             (rename I2C_1_bits_processed_reg_2 "I2C_1.bits_processed_reg[2]")
             (joined
@@ -3542,25 +3527,25 @@
                 (instanceRef I2C_1_sda_o_reg_1_5))
               (portRef A0
                 (instanceRef I2C_1_bits_processed_reg_6))
-              (portRef A0
-                (instanceRef I2C_1_bits_processed_reg_i_2))
               (portRef A1
-                (instanceRef I2C_1_addr_reg_0_0_1))
+                (instanceRef I2C_1_bits_processed_reg_c2_0_a2))
               (portRef A0
                 (instanceRef I2C_1_bits_processed_reg_e2))
               (portRef A1
-                (instanceRef I2C_1_bits_processed_reg_c2_0_a2))
+                (instanceRef I2C_1_addr_reg_0_0_1))
+              (portRef A0
+                (instanceRef I2C_1_bits_processed_reg_i_2))
               (portRef A1
-                (instanceRef I2C_1_addr_reg_0_1_1))))
+                (instanceRef I2C_1_addr_reg_0_1_2))))
           (net
             (rename I2C_1_bits_processed_reg_3 "I2C_1.bits_processed_reg[3]")
             (joined
               (portRef Q0
                 (instanceRef I2C_1_bits_processed_reg_3))
               (portRef A0
-                (instanceRef I2C_1_bits_processed_reg_i_3))
-              (portRef A0
                 (instanceRef I2C_1_bits_processed_reg_8))
+              (portRef A0
+                (instanceRef I2C_1_bits_processed_reg_i_3))
               (portRef A0
                 (instanceRef I2C_1_bits_processed_reg_e3))
               (portRef A1
@@ -3570,10 +3555,10 @@
             (joined
               (portRef Q0
                 (instanceRef I2C_1_scl_sig))
-              (portRef A1
-                (instanceRef I2C_1_un2_scl_prev_reg))
               (portRef A0
                 (instanceRef I2C_1_scl_sig_i))
+              (portRef A1
+                (instanceRef I2C_1_un2_scl_prev_reg))
               (portRef D0
                 (instanceRef I2C_1_scl_prev_reg))))
           (net
@@ -3627,11 +3612,11 @@
               (portRef Q0
                 (instanceRef I2C_1_scl_prev_reg))
               (portRef A0
-                (instanceRef I2C_1_un1_scl))
+                (instanceRef I2C_1_un5_scl_prev_reg))
               (portRef A0
                 (instanceRef I2C_1_scl_prev_reg_i))
               (portRef A0
-                (instanceRef I2C_1_un5_scl_prev_reg))))
+                (instanceRef I2C_1_un1_scl))))
           (net
             (rename I2C_1_sda_prev_reg "I2C_1.sda_prev_reg")
             (joined
@@ -3651,9 +3636,7 @@
               (portRef A0
                 (instanceRef I2C_1_state_reg_h_state_reg_i_3))
               (portRef A1
-                (instanceRef I2C_1_sda_o_reg_0_1))
-              (portRef A1
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_a2_3))))
+                (instanceRef I2C_1_sda_o_reg_0_1))))
           (net
             (rename I2C_1_start_reg "I2C_1.start_reg")
             (joined
@@ -3673,24 +3656,24 @@
               (portRef A0
                 (instanceRef I2C_1_state_reg_h_state_reg_i_2))
               (portRef A1
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_0_a3_2))
+                (instanceRef I2C_1_data_to_master_reg_1_sqmuxa_1))
               (portRef A1
-                (instanceRef I2C_1_data_to_master_reg_1_sqmuxa_1))))
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_0_a3_2))))
           (net
             (rename I2C_1_scl_rising_reg "I2C_1.scl_rising_reg")
             (joined
               (portRef Q0
                 (instanceRef I2C_1_scl_rising_reg))
               (portRef A0
+                (instanceRef I2C_1_scl_rising_reg_i))
+              (portRef A0
                 (instanceRef I2C_1_continue_reg_0_sqmuxa_i_o3))
               (portRef A0
-                (instanceRef I2C_1_scl_rising_reg_i))
+                (instanceRef I2C_1_data_to_master_reg_1_sqmuxa_1))
               (portRef A1
                 (instanceRef I2C_1_bits_processed_reg_1_sqmuxa_0_a3_1))
               (portRef A0
                 (instanceRef I2C_1_addr_reg_0_sqmuxa_1))
-              (portRef A0
-                (instanceRef I2C_1_data_to_master_reg_1_sqmuxa_1))
               (portRef A1
                 (instanceRef I2C_1_cmd_reg_1_sqmuxa_0_a3_1))))
           (net
@@ -3719,26 +3702,24 @@
               (portRef A1
                 (instanceRef I2C_1_bits_processed_reg_1_sqmuxa_0_a3))
               (portRef A1
+                (instanceRef I2C_1_data_to_master_reg_0_sqmuxa_0_a3_2))
+              (portRef A1
                 (instanceRef I2C_1_addr_reg_0_sqmuxa_1))
               (portRef A1
-                (instanceRef I2C_1_cmd_reg_1_sqmuxa_0_a3))
-              (portRef A1
-                (instanceRef I2C_1_data_to_master_reg_0_sqmuxa_0_a3_2))))
+                (instanceRef I2C_1_cmd_reg_1_sqmuxa_0_a3))))
           (net
             (rename I2C_1_scl_falling_reg "I2C_1.scl_falling_reg")
             (joined
               (portRef Q0
                 (instanceRef I2C_1_scl_falling_reg))
-              (portRef A0
-                (instanceRef I2C_1_bits_processed_reg_0_sqmuxa_1_1))
-              (portRef A1
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_o2_0_0))
-              (portRef A1
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_o2_5))
               (portRef A1
                 (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_o2_3))
               (portRef A1
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_a2_1_3))))
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_o2_5))
+              (portRef A0
+                (instanceRef I2C_1_bits_processed_reg_0_sqmuxa_1_1))
+              (portRef A1
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_o2_0_0))))
           (net
             (rename I2C_1_addr_reg_0 "I2C_1.addr_reg[0]")
             (joined
@@ -3782,12 +3763,12 @@
             (joined
               (portRef Q0
                 (instanceRef I2C_1_state_reg_h_state_reg_1))
-              (portRef A0
-                (instanceRef I2C_1_state_reg_h_state_reg_i_1))
               (portRef A1
                 (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_o2_0_3))
               (portRef A1
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_o2_0))))
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_o2_0))
+              (portRef A0
+                (instanceRef I2C_1_state_reg_h_state_reg_i_1))))
           (net
             (rename I2C_1_state_reg_0 "I2C_1.state_reg[0]")
             (joined
@@ -4084,6 +4065,17 @@
               (portRef A1
                 (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_a3_3))))
           (net
+            (rename I2C_1_N_184 "I2C_1.N_184")
+            (joined
+              (portRef Z0
+                (instanceRef I2C_1_data_to_master_reg_0_sqmuxa_0_a2))
+              (portRef A0
+                (instanceRef I2C_1_N_184_i))
+              (portRef A1
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_0_a3_0_4))
+              (portRef A0
+                (instanceRef I2C_1_data_to_master_reg_0_sqmuxa_0_a3_2))))
+          (net
             (rename I2C_1_N_193 "I2C_1.N_193")
             (joined
               (portRef Z0
@@ -4168,19 +4160,30 @@
               (portRef A1
                 (instanceRef I2C_1_I_143))))
           (net
-            (rename I2C_1_N_172 "I2C_1.N_172")
+            (rename I2C_1_N_136 "I2C_1.N_136")
             (joined
-              (portRef Z0
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_a3_5))
+              (portRef ZN0
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_o2_i_3))
               (portRef A0
-                (instanceRef I2C_1_state_reg_h_N_172_i))))
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_a3_0_3))
+              (portRef A0
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_o2_1))
+              (portRef A0
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_0_a3_1_4))))
           (net
-            (rename I2C_1_N_173 "I2C_1.N_173")
+            (rename I2C_1_data_to_master_reg_1_sqmuxa "I2C_1.data_to_master_reg_1_sqmuxa")
             (joined
               (portRef Z0
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_a3_0_5))
+                (instanceRef I2C_1_data_to_master_reg_1_sqmuxa))
               (portRef A0
-                (instanceRef I2C_1_state_reg_h_N_173_i))))
+                (instanceRef I2C_1_data_to_master_reg_1_sqmuxa_i))))
+          (net
+            (rename I2C_1_data_to_master_reg_0_sqmuxa "I2C_1.data_to_master_reg_0_sqmuxa")
+            (joined
+              (portRef Z0
+                (instanceRef I2C_1_data_to_master_reg_0_sqmuxa_0_a3))
+              (portRef A0
+                (instanceRef I2C_1_data_to_master_reg_0_sqmuxa_i))))
           (net
             (rename I2C_1_N_191 "I2C_1.N_191")
             (joined
@@ -4224,34 +4227,6 @@
               (portRef A0
                 (instanceRef I2C_1_sda_o_reg_1_3))))
           (net
-            (rename I2C_1_addr_regZ0Z_0 "I2C_1.addr_reg_0")
-            (joined
-              (portRef Z0
-                (instanceRef I2C_1_addr_regZ0Z_0))
-              (portRef S0
-                (instanceRef I2C_1_addr_reg_0Z0Z_0))))
-          (net
-            (rename I2C_1_addr_reg_0_0 "I2C_1.addr_reg_0_0")
-            (joined
-              (portRef Z0
-                (instanceRef I2C_1_addr_reg_0_0))
-              (portRef S0
-                (instanceRef I2C_1_addr_reg_0Z0Z_1))))
-          (net
-            (rename I2C_1_addr_reg_0_1 "I2C_1.addr_reg_0_1")
-            (joined
-              (portRef Z0
-                (instanceRef I2C_1_addr_reg_0_1))
-              (portRef S0
-                (instanceRef I2C_1_addr_reg_0Z0Z_2))))
-          (net
-            (rename I2C_1_addr_reg_0_2 "I2C_1.addr_reg_0_2")
-            (joined
-              (portRef Z0
-                (instanceRef I2C_1_addr_reg_0_2))
-              (portRef S0
-                (instanceRef I2C_1_addr_reg_0Z0Z_3))))
-          (net
             (rename I2C_1_addr_reg_0_3 "I2C_1.addr_reg_0_3")
             (joined
               (portRef Z0
@@ -4259,30 +4234,12 @@
               (portRef S0
                 (instanceRef I2C_1_addr_reg_0Z0Z_4))))
           (net
-            (rename I2C_1_addr_reg_0_4 "I2C_1.addr_reg_0_4")
-            (joined
-              (portRef Z0
-                (instanceRef I2C_1_addr_reg_0_4))
-              (portRef S0
-                (instanceRef I2C_1_addr_reg_0Z0Z_5))))
-          (net
             (rename I2C_1_addr_reg_0_5 "I2C_1.addr_reg_0_5")
             (joined
               (portRef Z0
                 (instanceRef I2C_1_addr_reg_0_5))
               (portRef S0
                 (instanceRef I2C_1_addr_reg_0_6))))
-          (net
-            (rename I2C_1_N_184 "I2C_1.N_184")
-            (joined
-              (portRef Z0
-                (instanceRef I2C_1_data_to_master_reg_0_sqmuxa_0_a2))
-              (portRef A0
-                (instanceRef I2C_1_N_184_i))
-              (portRef A0
-                (instanceRef I2C_1_data_to_master_reg_0_sqmuxa_0_a3_2))
-              (portRef A1
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_0_a3_0_4))))
           (net
             (rename I2C_1_bits_processed_reg_n3 "I2C_1.bits_processed_reg_n3")
             (joined
@@ -4363,15 +4320,6 @@
               (portRef A1
                 (instanceRef I2C_1_bits_processed_reg_n1))))
           (net
-            (rename I2C_1_un1_scl "I2C_1.un1_scl")
-            (joined
-              (portRef Z0
-                (instanceRef I2C_1_un1_scl))
-              (portRef A1
-                (instanceRef I2C_1_un12_scl_prev_reg_1))
-              (portRef A1
-                (instanceRef I2C_1_un5_scl_1))))
-          (net
             (rename I2C_1_bits_processed_reg_0_sqmuxa_1 "I2C_1.bits_processed_reg_0_sqmuxa_1")
             (joined
               (portRef Z0
@@ -4388,19 +4336,26 @@
               (portRef A1
                 (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_0_a3_0_1_2))))
           (net
-            (rename I2C_1_N_167 "I2C_1.N_167")
+            (rename I2C_1_N_171 "I2C_1.N_171")
             (joined
               (portRef Z0
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_0_a3_0_2))
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_0_a3_0_4))
               (portRef A0
-                (instanceRef I2C_1_state_reg_h_N_167_i))))
+                (instanceRef I2C_1_state_reg_h_N_171_i))))
           (net
-            (rename I2C_1_N_166 "I2C_1.N_166")
+            (rename I2C_1_N_143 "I2C_1.N_143")
+            (joined
+              (portRef ZN0
+                (instanceRef I2C_1_un1_state_reg43_i_1_o2_i))
+              (portRef A1
+                (instanceRef I2C_1_un1_state_reg43_i_1))))
+          (net
+            (rename I2C_1_N_170 "I2C_1.N_170")
             (joined
               (portRef Z0
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_0_a3_2))
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_0_a3_4))
               (portRef A0
-                (instanceRef I2C_1_state_reg_h_N_166_i))))
+                (instanceRef I2C_1_state_reg_h_N_170_i))))
           (net
             (rename I2C_1_bits_processed_reg_1_sqmuxa "I2C_1.bits_processed_reg_1_sqmuxa")
             (joined
@@ -4408,6 +4363,48 @@
                 (instanceRef I2C_1_bits_processed_reg_1_sqmuxa_0_a3))
               (portRef A0
                 (instanceRef I2C_1_bits_processed_reg_1_sqmuxa_i))))
+          (net
+            (rename I2C_1_N_174 "I2C_1.N_174")
+            (joined
+              (portRef Z0
+                (instanceRef I2C_1_state_reg_h_state_reg_nsss_i_0_a3_0))
+              (portRef A0
+                (instanceRef I2C_1_state_reg_h_N_174_i))))
+          (net
+            (rename I2C_1_N_158 "I2C_1.N_158")
+            (joined
+              (portRef ZN0
+                (instanceRef I2C_1_state_reg_h_state_reg_nsss_i_0_o2_i_0))
+              (portRef A0
+                (instanceRef I2C_1_state_reg_h_state_reg_nsss_i_0_a3_1_0))))
+          (net
+            (rename I2C_1_N_173 "I2C_1.N_173")
+            (joined
+              (portRef Z0
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_a3_0_5))
+              (portRef A0
+                (instanceRef I2C_1_state_reg_h_N_173_i))))
+          (net
+            (rename I2C_1_N_172 "I2C_1.N_172")
+            (joined
+              (portRef Z0
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_a3_5))
+              (portRef A0
+                (instanceRef I2C_1_state_reg_h_N_172_i))))
+          (net
+            (rename I2C_1_N_169 "I2C_1.N_169")
+            (joined
+              (portRef Z0
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_a3_0_3))
+              (portRef A0
+                (instanceRef I2C_1_state_reg_h_N_169_i))))
+          (net
+            (rename I2C_1_N_168 "I2C_1.N_168")
+            (joined
+              (portRef Z0
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_a3_3))
+              (portRef A0
+                (instanceRef I2C_1_state_reg_h_N_168_i))))
           (net
             (rename I2C_1_bits_processed_rege "I2C_1.bits_processed_rege")
             (joined
@@ -4427,67 +4424,43 @@
               (portRef Z0
                 (instanceRef I2C_1_addr_reg_0_1_0))
               (portRef A0
-                (instanceRef I2C_1_addr_reg_0_1_1))
+                (instanceRef I2C_1_addr_reg_0_1_2))
               (portRef A0
-                (instanceRef I2C_1_addr_reg_0_3_1))
+                (instanceRef I2C_1_addr_reg_0_2_1))
               (portRef A0
-                (instanceRef I2C_1_addr_reg_0_2_1))))
+                (instanceRef I2C_1_addr_reg_0_3_1))))
           (net
-            (rename I2C_1_addr_reg_0_sqmuxa "I2C_1.addr_reg_0_sqmuxa")
+            (rename I2C_1_N_147 "I2C_1.N_147")
+            (joined
+              (portRef ZN0
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_o2_0_i_3))
+              (portRef A0
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_a3_3))))
+          (net
+            (rename I2C_1_N_175 "I2C_1.N_175")
             (joined
               (portRef Z0
-                (instanceRef I2C_1_addr_reg_0_sqmuxa))
+                (instanceRef I2C_1_state_reg_h_state_reg_nsss_i_0_a3_0_0))
               (portRef A0
-                (instanceRef I2C_1_addr_reg_0_0_1))
-              (portRef A0
-                (instanceRef I2C_1_addr_reg_0_1_0))
-              (portRef A1
-                (instanceRef I2C_1_addr_reg_0_5_1))
-              (portRef A1
-                (instanceRef I2C_1_addr_reg_0_4_1))))
-          (net
-            (rename I2C_1_addr_reg_0_1_1 "I2C_1.addr_reg_0_1_1")
-            (joined
-              (portRef Z0
-                (instanceRef I2C_1_addr_reg_0_0_1))
-              (portRef A0
-                (instanceRef I2C_1_addr_reg_0_0_1_0))
-              (portRef A0
-                (instanceRef I2C_1_addr_reg_0_1_1_0))))
+                (instanceRef I2C_1_state_reg_h_N_175_i))))
           (net
             (rename I2C_1_N_185 "I2C_1.N_185")
             (joined
               (portRef Z0
                 (instanceRef I2C_1_cmd_reg_1_sqmuxa_0_a2))
-              (portRef A1
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_0_a3_0_2))
               (portRef A0
                 (instanceRef I2C_1_cmd_reg_1_sqmuxa_0_a3_1))
-              (portRef A0
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_a2_1_3))))
+              (portRef A1
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_0_a3_0_2))))
           (net
             (rename I2C_1_bits_processed_reg_c2 "I2C_1.bits_processed_reg_c2")
             (joined
               (portRef Z0
                 (instanceRef I2C_1_bits_processed_reg_c2_0_a2))
               (portRef A0
-                (instanceRef I2C_1_bits_processed_reg_7))
+                (instanceRef I2C_1_cmd_reg_1_sqmuxa_0_a2))
               (portRef A0
-                (instanceRef I2C_1_cmd_reg_1_sqmuxa_0_a2))))
-          (net
-            (rename I2C_1_data_to_master_reg_0_sqmuxa "I2C_1.data_to_master_reg_0_sqmuxa")
-            (joined
-              (portRef Z0
-                (instanceRef I2C_1_data_to_master_reg_0_sqmuxa_0_a3))
-              (portRef A0
-                (instanceRef I2C_1_data_to_master_reg_0_sqmuxa_i))))
-          (net
-            (rename I2C_1_data_to_master_reg_1_sqmuxa "I2C_1.data_to_master_reg_1_sqmuxa")
-            (joined
-              (portRef Z0
-                (instanceRef I2C_1_data_to_master_reg_1_sqmuxa))
-              (portRef A0
-                (instanceRef I2C_1_data_to_master_reg_1_sqmuxa_i))))
+                (instanceRef I2C_1_bits_processed_reg_7))))
           (net
             (rename I2C_1_N_21 "I2C_1.N_21")
             (joined
@@ -4495,6 +4468,28 @@
                 (instanceRef I2C_1_transfer_reg_1_i))
               (portRef A0
                 (instanceRef I2C_1_transfer_reg_2))))
+          (net N_32
+            (joined
+              (portRef ZN0
+                (instanceRef I2C_1_UPDATE_SIG_1_i))
+              (portRef A1
+                (instanceRef I2C_1_UPDATE_SIG_2))))
+          (net
+            (rename UPDATE_GEN_un2_transfer_sig "UPDATE_GEN.un2_transfer_sig")
+            (joined
+              (portRef Z0
+                (instanceRef I2C_1_UPDATE_GEN_un2_transfer_sig))
+              (portRef A0
+                (instanceRef I2C_1_UPDATE_GEN_un2_transfer_sig_i))))
+          (net
+            (rename I2C_1_un1_scl "I2C_1.un1_scl")
+            (joined
+              (portRef Z0
+                (instanceRef I2C_1_un1_scl))
+              (portRef A1
+                (instanceRef I2C_1_un5_scl_1))
+              (portRef A1
+                (instanceRef I2C_1_un12_scl_prev_reg_1))))
           (net
             (rename I2C_1_N_163 "I2C_1.N_163")
             (joined
@@ -4540,79 +4535,19 @@
               (portRef S0
                 (instanceRef I2C_1_continue_reg_0))))
           (net
-            (rename I2C_1_N_168 "I2C_1.N_168")
+            (rename I2C_1_N_166 "I2C_1.N_166")
             (joined
               (portRef Z0
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_a3_3))
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_0_a3_2))
               (portRef A0
-                (instanceRef I2C_1_state_reg_h_N_168_i))))
+                (instanceRef I2C_1_state_reg_h_N_166_i))))
           (net
-            (rename I2C_1_N_147 "I2C_1.N_147")
-            (joined
-              (portRef ZN0
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_o2_0_i_3))
-              (portRef A0
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_a3_3))))
-          (net
-            (rename I2C_1_N_169 "I2C_1.N_169")
+            (rename I2C_1_N_167 "I2C_1.N_167")
             (joined
               (portRef Z0
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_a3_0_3))
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_0_a3_0_2))
               (portRef A0
-                (instanceRef I2C_1_state_reg_h_N_169_i))))
-          (net
-            (rename I2C_1_N_136 "I2C_1.N_136")
-            (joined
-              (portRef ZN0
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_o2_i_3))
-              (portRef A0
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_a3_0_3))
-              (portRef A0
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_o2_1))
-              (portRef A0
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_0_a3_1_4))))
-          (net
-            (rename I2C_1_N_175 "I2C_1.N_175")
-            (joined
-              (portRef Z0
-                (instanceRef I2C_1_state_reg_h_state_reg_nsss_i_0_a3_0_0))
-              (portRef A0
-                (instanceRef I2C_1_state_reg_h_N_175_i))))
-          (net
-            (rename I2C_1_N_170 "I2C_1.N_170")
-            (joined
-              (portRef Z0
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_0_a3_4))
-              (portRef A0
-                (instanceRef I2C_1_state_reg_h_N_170_i))))
-          (net
-            (rename I2C_1_N_171 "I2C_1.N_171")
-            (joined
-              (portRef Z0
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_0_a3_0_4))
-              (portRef A0
-                (instanceRef I2C_1_state_reg_h_N_171_i))))
-          (net
-            (rename I2C_1_N_174 "I2C_1.N_174")
-            (joined
-              (portRef Z0
-                (instanceRef I2C_1_state_reg_h_state_reg_nsss_i_0_a3_0))
-              (portRef A0
-                (instanceRef I2C_1_state_reg_h_N_174_i))))
-          (net
-            (rename I2C_1_N_143 "I2C_1.N_143")
-            (joined
-              (portRef ZN0
-                (instanceRef I2C_1_un1_state_reg43_i_1_o2_i))
-              (portRef A1
-                (instanceRef I2C_1_un1_state_reg43_i_1))))
-          (net
-            (rename I2C_1_N_176 "I2C_1.N_176")
-            (joined
-              (portRef Z0
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_a2_3))
-              (portRef A0
-                (instanceRef I2C_1_state_reg_h_N_176_i))))
+                (instanceRef I2C_1_state_reg_h_N_167_i))))
           (net
             (rename I2C_1_N_148 "I2C_1.N_148")
             (joined
@@ -4621,12 +4556,62 @@
               (portRef A1
                 (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_o2_1))))
           (net
-            (rename I2C_1_N_158 "I2C_1.N_158")
+            (rename I2C_1_addr_reg_0_sqmuxa "I2C_1.addr_reg_0_sqmuxa")
             (joined
-              (portRef ZN0
-                (instanceRef I2C_1_state_reg_h_state_reg_nsss_i_0_o2_i_0))
+              (portRef Z0
+                (instanceRef I2C_1_addr_reg_0_sqmuxa))
               (portRef A0
-                (instanceRef I2C_1_state_reg_h_state_reg_nsss_i_0_a3_1_0))))
+                (instanceRef I2C_1_addr_reg_0_1_0))
+              (portRef A0
+                (instanceRef I2C_1_addr_reg_0_0_1))
+              (portRef A1
+                (instanceRef I2C_1_addr_reg_0_4_1))
+              (portRef A1
+                (instanceRef I2C_1_addr_reg_0_5_1))))
+          (net
+            (rename I2C_1_addr_reg_0_4 "I2C_1.addr_reg_0_4")
+            (joined
+              (portRef Z0
+                (instanceRef I2C_1_addr_reg_0_4))
+              (portRef S0
+                (instanceRef I2C_1_addr_reg_0Z0Z_5))))
+          (net
+            (rename I2C_1_addr_reg_0_2 "I2C_1.addr_reg_0_2")
+            (joined
+              (portRef Z0
+                (instanceRef I2C_1_addr_reg_0_2))
+              (portRef S0
+                (instanceRef I2C_1_addr_reg_0Z0Z_3))))
+          (net
+            (rename I2C_1_addr_reg_0_1 "I2C_1.addr_reg_0_1")
+            (joined
+              (portRef Z0
+                (instanceRef I2C_1_addr_reg_0_1))
+              (portRef S0
+                (instanceRef I2C_1_addr_reg_0Z0Z_2))))
+          (net
+            (rename I2C_1_addr_reg_0_1_1 "I2C_1.addr_reg_0_1_1")
+            (joined
+              (portRef Z0
+                (instanceRef I2C_1_addr_reg_0_0_1))
+              (portRef A0
+                (instanceRef I2C_1_addr_reg_0_0_1_0))
+              (portRef A0
+                (instanceRef I2C_1_addr_reg_0_1_1))))
+          (net
+            (rename I2C_1_addr_reg_0_0 "I2C_1.addr_reg_0_0")
+            (joined
+              (portRef Z0
+                (instanceRef I2C_1_addr_reg_0_0))
+              (portRef S0
+                (instanceRef I2C_1_addr_reg_0Z0Z_1))))
+          (net
+            (rename I2C_1_addr_regZ0Z_0 "I2C_1.addr_reg_0")
+            (joined
+              (portRef Z0
+                (instanceRef I2C_1_addr_regZ0Z_0))
+              (portRef S0
+                (instanceRef I2C_1_addr_reg_0Z0Z_0))))
           (net
             (rename I2C_1_cmd_reg_1_sqmuxa "I2C_1.cmd_reg_1_sqmuxa")
             (joined
@@ -4641,37 +4626,16 @@
               (portRef A0
                 (instanceRef I2C_1_continue_reg_0))
               (portRef A1
-                (instanceRef I2C_1_un5_scl))
+                (instanceRef I2C_1_data_to_master_reg_1_sqmuxa))
               (portRef A1
-                (instanceRef I2C_1_data_to_master_reg_1_sqmuxa))))
-          (net STOP_SIG_i
-            (joined
-              (portRef ZN0
-                (instanceRef I2C_1_STOP_SIG_i))
-              (portRef A1
-                (instanceRef I2C_1_state_reg_h_state_reg_nsss_i_0_a3_0_0))
-              (portRef A1
-                (instanceRef I2C_1_transfer_reg_2))
-              (portRef A1
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_o3_0))
-              (portRef A1
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_5))
-              (portRef A1
-                (instanceRef I2C_1_state_reg_h_state_reg_nsss_i_0_a3_0))))
+                (instanceRef I2C_1_un5_scl))))
           (net
-            (rename I2C_1_state_reg_i_1 "I2C_1.state_reg_i[1]")
+            (rename I2C_1_sda_prev_reg_i "I2C_1.sda_prev_reg_i")
             (joined
               (portRef ZN0
-                (instanceRef I2C_1_state_reg_h_state_reg_i_1))
-              (portRef A1
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_a3_0_1))))
-          (net
-            (rename I2C_1_continue_reg_i "I2C_1.continue_reg_i")
-            (joined
-              (portRef ZN0
-                (instanceRef I2C_1_continue_reg_i))
+                (instanceRef I2C_1_sda_prev_reg_i))
               (portRef A0
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_o2_0_0))))
+                (instanceRef I2C_1_un12_scl_prev_reg_1))))
           (net
             (rename I2C_1_scl_rising_reg_i "I2C_1.scl_rising_reg_i")
             (joined
@@ -4679,77 +4643,6 @@
                 (instanceRef I2C_1_scl_rising_reg_i))
               (portRef A1
                 (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_0_a3_1_2))))
-          (net
-            (rename I2C_1_state_reg_i_2 "I2C_1.state_reg_i[2]")
-            (joined
-              (portRef ZN0
-                (instanceRef I2C_1_state_reg_h_state_reg_i_2))
-              (portRef A1
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_a3_1))))
-          (net
-            (rename I2C_1_state_reg_i_5 "I2C_1.state_reg_i[5]")
-            (joined
-              (portRef ZN0
-                (instanceRef I2C_1_state_reg_h_state_reg_i_5))
-              (portRef A1
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_a3_5))))
-          (net
-            (rename I2C_1_state_reg_i_3 "I2C_1.state_reg_i[3]")
-            (joined
-              (portRef ZN0
-                (instanceRef I2C_1_state_reg_h_state_reg_i_3))
-              (portRef A0
-                (instanceRef I2C_1_sda_wen_reg_1_i_a2))
-              (portRef A1
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_a3_0_3))))
-          (net
-            (rename I2C_1_state_reg_i_4 "I2C_1.state_reg_i[4]")
-            (joined
-              (portRef ZN0
-                (instanceRef I2C_1_state_reg_h_state_reg_i_4))
-              (portRef A1
-                (instanceRef I2C_1_sda_wen_reg_1_i_a2))))
-          (net
-            (rename I2C_1_state_reg_i_0 "I2C_1.state_reg_i[0]")
-            (joined
-              (portRef ZN0
-                (instanceRef I2C_1_state_reg_h_state_reg_i_0))
-              (portRef A1
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_a3_0))))
-          (net
-            (rename I2C_1_scl_prev_reg_i "I2C_1.scl_prev_reg_i")
-            (joined
-              (portRef ZN0
-                (instanceRef I2C_1_scl_prev_reg_i))
-              (portRef A0
-                (instanceRef I2C_1_un2_scl_prev_reg))))
-          (net
-            (rename I2C_1_scl_sig_i "I2C_1.scl_sig_i")
-            (joined
-              (portRef ZN0
-                (instanceRef I2C_1_scl_sig_i))
-              (portRef A1
-                (instanceRef I2C_1_un5_scl_prev_reg))))
-          (net
-            (rename I2C_1_N_228_i "I2C_1.N_228_i")
-            (joined
-              (portRef ZN0
-                (instanceRef I2C_1_N_228_i))
-              (portRef A1
-                (instanceRef I2C_1_bits_processed_reg_e0))))
-          (net
-            (rename I2C_1_bits_processed_reg_i_3 "I2C_1.bits_processed_reg_i[3]")
-            (joined
-              (portRef ZN0
-                (instanceRef I2C_1_bits_processed_reg_i_3))
-              (portRef A1
-                (instanceRef I2C_1_cmd_reg_1_sqmuxa_0_a2))
-              (portRef A0
-                (instanceRef I2C_1_bits_processed_reg_1_sqmuxa_0_a3_1))
-              (portRef A0
-                (instanceRef I2C_1_I_131))
-              (portRef A0
-                (instanceRef I2C_1_I_132))))
           (net
             (rename I2C_1_bits_processed_reg_c0_i "I2C_1.bits_processed_reg_c0_i")
             (joined
@@ -4760,11 +4653,11 @@
               (portRef A1
                 (instanceRef I2C_1_addr_regZ0Z_0))
               (portRef A1
+                (instanceRef I2C_1_addr_reg_0_1_1))
+              (portRef A1
                 (instanceRef I2C_1_addr_reg_0_5))
               (portRef A1
                 (instanceRef I2C_1_addr_reg_0_3_1))
-              (portRef A1
-                (instanceRef I2C_1_addr_reg_0_1_1_0))
               (portRef A0
                 (instanceRef I2C_1_I_137))))
           (net
@@ -4790,20 +4683,140 @@
               (portRef A1
                 (instanceRef I2C_1_data_to_master_reg_0_sqmuxa_0_o2_1))
               (portRef A1
-                (instanceRef I2C_1_addr_reg_0_3))
-              (portRef A1
                 (instanceRef I2C_1_addr_reg_0_2))
+              (portRef A1
+                (instanceRef I2C_1_addr_reg_0_3))
               (portRef A0
                 (instanceRef I2C_1_I_133))
               (portRef A0
                 (instanceRef I2C_1_I_134))))
           (net
-            (rename I2C_1_sda_prev_reg_i "I2C_1.sda_prev_reg_i")
+            (rename I2C_1_state_reg_i_1 "I2C_1.state_reg_i[1]")
             (joined
               (portRef ZN0
-                (instanceRef I2C_1_sda_prev_reg_i))
+                (instanceRef I2C_1_state_reg_h_state_reg_i_1))
+              (portRef A1
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_a3_0_1))))
+          (net
+            (rename I2C_1_state_reg_i_2 "I2C_1.state_reg_i[2]")
+            (joined
+              (portRef ZN0
+                (instanceRef I2C_1_state_reg_h_state_reg_i_2))
+              (portRef A1
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_a3_1))))
+          (net
+            (rename I2C_1_state_reg_i_0 "I2C_1.state_reg_i[0]")
+            (joined
+              (portRef ZN0
+                (instanceRef I2C_1_state_reg_h_state_reg_i_0))
+              (portRef A1
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_a3_0))))
+          (net
+            (rename I2C_1_scl_sig_i "I2C_1.scl_sig_i")
+            (joined
+              (portRef ZN0
+                (instanceRef I2C_1_scl_sig_i))
+              (portRef A1
+                (instanceRef I2C_1_un5_scl_prev_reg))))
+          (net
+            (rename I2C_1_scl_prev_reg_i "I2C_1.scl_prev_reg_i")
+            (joined
+              (portRef ZN0
+                (instanceRef I2C_1_scl_prev_reg_i))
               (portRef A0
-                (instanceRef I2C_1_un12_scl_prev_reg_1))))
+                (instanceRef I2C_1_un2_scl_prev_reg))))
+          (net TRANSFER_SIG_i
+            (joined
+              (portRef ZN0
+                (instanceRef I2C_1_TRANSFER_SIG_i))
+              (portRef A1
+                (instanceRef I2C_1_transfer_reg_1))
+              (portRef A1
+                (instanceRef I2C_1_UPDATE_GEN_un2_transfer_sig))))
+          (net
+            (rename AS_IN_i_1 "AS_IN_i[1]")
+            (joined
+              (portRef ZN0
+                (instanceRef I2C_1_AS_IN_i_1))
+              (portRef A0
+                (instanceRef I2C_1_UPDATE_SIG_2))))
+          (net STOP_SIG_i
+            (joined
+              (portRef ZN0
+                (instanceRef I2C_1_STOP_SIG_i))
+              (portRef A1
+                (instanceRef I2C_1_state_reg_h_state_reg_nsss_i_0_a3_0_0))
+              (portRef A1
+                (instanceRef I2C_1_transfer_reg_2))
+              (portRef A1
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_o3_0))
+              (portRef A1
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_5))
+              (portRef A1
+                (instanceRef I2C_1_state_reg_h_state_reg_nsss_i_0_a3_0))))
+          (net
+            (rename I2C_1_N_228_i "I2C_1.N_228_i")
+            (joined
+              (portRef ZN0
+                (instanceRef I2C_1_N_228_i))
+              (portRef A1
+                (instanceRef I2C_1_bits_processed_reg_e0))))
+          (net
+            (rename I2C_1_state_reg_i_3 "I2C_1.state_reg_i[3]")
+            (joined
+              (portRef ZN0
+                (instanceRef I2C_1_state_reg_h_state_reg_i_3))
+              (portRef A1
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_a3_0_3))
+              (portRef A0
+                (instanceRef I2C_1_sda_wen_reg_1_i_a2))))
+          (net
+            (rename I2C_1_start_reg_i "I2C_1.start_reg_i")
+            (joined
+              (portRef ZN0
+                (instanceRef I2C_1_start_reg_i))
+              (portRef A0
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_a3_5))
+              (portRef A1
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_a3_0_5))
+              (portRef A0
+                (instanceRef I2C_1_transfer_reg_1))
+              (portRef A0
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_o3_0))))
+          (net
+            (rename I2C_1_state_reg_i_5 "I2C_1.state_reg_i[5]")
+            (joined
+              (portRef ZN0
+                (instanceRef I2C_1_state_reg_h_state_reg_i_5))
+              (portRef A1
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_a3_5))))
+          (net
+            (rename I2C_1_state_reg_i_4 "I2C_1.state_reg_i[4]")
+            (joined
+              (portRef ZN0
+                (instanceRef I2C_1_state_reg_h_state_reg_i_4))
+              (portRef A1
+                (instanceRef I2C_1_sda_wen_reg_1_i_a2))))
+          (net
+            (rename I2C_1_bits_processed_reg_i_3 "I2C_1.bits_processed_reg_i[3]")
+            (joined
+              (portRef ZN0
+                (instanceRef I2C_1_bits_processed_reg_i_3))
+              (portRef A1
+                (instanceRef I2C_1_cmd_reg_1_sqmuxa_0_a2))
+              (portRef A0
+                (instanceRef I2C_1_bits_processed_reg_1_sqmuxa_0_a3_1))
+              (portRef A0
+                (instanceRef I2C_1_I_131))
+              (portRef A0
+                (instanceRef I2C_1_I_132))))
+          (net
+            (rename I2C_1_continue_reg_i "I2C_1.continue_reg_i")
+            (joined
+              (portRef ZN0
+                (instanceRef I2C_1_continue_reg_i))
+              (portRef A0
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_o2_0_0))))
           (net
             (rename I2C_1_addr_reg_i_6 "I2C_1.addr_reg_i[6]")
             (joined
@@ -4826,18 +4839,18 @@
               (portRef A0
                 (instanceRef I2C_1_data_to_master_reg_0_sqmuxa_0_a2_3))))
           (net
-            (rename I2C_1_addr_reg_i_3 "I2C_1.addr_reg_i[3]")
-            (joined
-              (portRef ZN0
-                (instanceRef I2C_1_addr_reg_i_3))
-              (portRef A1
-                (instanceRef I2C_1_data_to_master_reg_0_sqmuxa_0_a2_2))))
-          (net
             (rename I2C_1_addr_reg_i_2 "I2C_1.addr_reg_i[2]")
             (joined
               (portRef ZN0
                 (instanceRef I2C_1_addr_reg_i_2))
               (portRef A0
+                (instanceRef I2C_1_data_to_master_reg_0_sqmuxa_0_a2_2))))
+          (net
+            (rename I2C_1_addr_reg_i_3 "I2C_1.addr_reg_i[3]")
+            (joined
+              (portRef ZN0
+                (instanceRef I2C_1_addr_reg_i_3))
+              (portRef A1
                 (instanceRef I2C_1_data_to_master_reg_0_sqmuxa_0_a2_2))))
           (net
             (rename CNT_SIG_i_1 "CNT_SIG_i[1]")
@@ -4867,40 +4880,12 @@
                 (instanceRef AS_IN_i_2))
               (portRef CLK
                 (instanceRef N))))
-          (net
-            (rename AS_IN_i_1 "AS_IN_i[1]")
-            (joined
-              (portRef ZN0
-                (instanceRef AS_IN_i_1))
-              (portRef A0
-                (instanceRef UPDATE_SIG_2))))
           (net ML_IN_i
             (joined
               (portRef ZN0
                 (instanceRef ML_IN_i))
               (portRef A1
                 (instanceRef ML_SIG_0))))
-          (net TRANSFER_SIG_i
-            (joined
-              (portRef ZN0
-                (instanceRef I2C_1_TRANSFER_SIG_i))
-              (portRef A1
-                (instanceRef UPDATE_GEN_un2_transfer_sig))
-              (portRef A1
-                (instanceRef I2C_1_transfer_reg_1))))
-          (net
-            (rename I2C_1_start_reg_i "I2C_1.start_reg_i")
-            (joined
-              (portRef ZN0
-                (instanceRef I2C_1_start_reg_i))
-              (portRef A0
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_a3_5))
-              (portRef A1
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_a3_0_5))
-              (portRef A0
-                (instanceRef I2C_1_transfer_reg_1))
-              (portRef A0
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_o3_0))))
           (net CLK_MASTER_i
             (joined
               (portRef ZN0
@@ -5025,23 +5010,23 @@
               (portRef Z0
                 (instanceRef SDA_BI))
               (portRef A1
-                (instanceRef I2C_1_addr_reg_0Z0Z_1))
-              (portRef A1
-                (instanceRef I2C_1_addr_reg_0Z0Z_0))
-              (portRef A1
                 (instanceRef I2C_1_addr_reg_0_6))
-              (portRef A1
-                (instanceRef I2C_1_addr_reg_0Z0Z_5))
               (portRef A1
                 (instanceRef I2C_1_addr_reg_0Z0Z_4))
               (portRef A1
                 (instanceRef I2C_1_addr_reg_0Z0Z_3))
               (portRef A1
-                (instanceRef I2C_1_addr_reg_0Z0Z_2))
+                (instanceRef I2C_1_addr_reg_0Z0Z_5))
               (portRef A1
                 (instanceRef I2C_1_cmd_reg_0))
               (portRef A0
                 (instanceRef I_18))
+              (portRef A1
+                (instanceRef I2C_1_addr_reg_0Z0Z_0))
+              (portRef A1
+                (instanceRef I2C_1_addr_reg_0Z0Z_1))
+              (portRef A1
+                (instanceRef I2C_1_addr_reg_0Z0Z_2))
               (portRef A1
                 (instanceRef I2C_1_un12_scl_prev_reg))
               (portRef D0
@@ -5057,17 +5042,17 @@
               (portRef Z0
                 (instanceRef OUT_IN_0))
               (portRef A1
-                (instanceRef BCD6_SIG_0_0))
-              (portRef A1
-                (instanceRef BCD3_SIG_0_0))
-              (portRef A1
                 (instanceRef BCD4_SIG_0_0))
               (portRef A1
                 (instanceRef BCD5_SIG_0_0))
               (portRef A1
+                (instanceRef BCD6_SIG_0_0))
+              (portRef A1
                 (instanceRef BCD1_SIG_0_0))
               (portRef A1
-                (instanceRef BCD2_SIG_0_0))))
+                (instanceRef BCD2_SIG_0_0))
+              (portRef A1
+                (instanceRef BCD3_SIG_0_0))))
           (net
             (rename OUT_IN_0 "OUT_IN[0]")
             (joined
@@ -5081,8 +5066,6 @@
               (portRef Z0
                 (instanceRef OUT_IN_1))
               (portRef A1
-                (instanceRef BCD3_SIG_0_1))
-              (portRef A1
                 (instanceRef BCD4_SIG_0_1))
               (portRef A1
                 (instanceRef BCD5_SIG_0_1))
@@ -5091,7 +5074,9 @@
               (portRef A1
                 (instanceRef BCD1_SIG_0_1))
               (portRef A1
-                (instanceRef BCD2_SIG_0_1))))
+                (instanceRef BCD2_SIG_0_1))
+              (portRef A1
+                (instanceRef BCD3_SIG_0_1))))
           (net
             (rename OUT_IN_1 "OUT_IN[1]")
             (joined
@@ -5105,17 +5090,17 @@
               (portRef Z0
                 (instanceRef OUT_IN_2))
               (portRef A1
-                (instanceRef BCD3_SIG_0_2))
-              (portRef A1
-                (instanceRef BCD4_SIG_0_2))
-              (portRef A1
                 (instanceRef BCD5_SIG_0_2))
               (portRef A1
                 (instanceRef BCD6_SIG_0_2))
               (portRef A1
                 (instanceRef BCD1_SIG_0_2))
               (portRef A1
-                (instanceRef BCD2_SIG_0_2))))
+                (instanceRef BCD2_SIG_0_2))
+              (portRef A1
+                (instanceRef BCD3_SIG_0_2))
+              (portRef A1
+                (instanceRef BCD4_SIG_0_2))))
           (net
             (rename OUT_IN_2 "OUT_IN[2]")
             (joined
@@ -5129,17 +5114,17 @@
               (portRef Z0
                 (instanceRef OUT_IN_3))
               (portRef A1
-                (instanceRef BCD3_SIG_0_3))
-              (portRef A1
-                (instanceRef BCD4_SIG_0_3))
-              (portRef A1
                 (instanceRef BCD5_SIG_0_3))
               (portRef A1
                 (instanceRef BCD6_SIG_0_3))
               (portRef A1
                 (instanceRef BCD1_SIG_0_3))
               (portRef A1
-                (instanceRef BCD2_SIG_0_3))))
+                (instanceRef BCD2_SIG_0_3))
+              (portRef A1
+                (instanceRef BCD3_SIG_0_3))
+              (portRef A1
+                (instanceRef BCD4_SIG_0_3))))
           (net
             (rename OUT_IN_3 "OUT_IN[3]")
             (joined
@@ -5153,7 +5138,7 @@
               (portRef Z0
                 (instanceRef AS_IN_1))
               (portRef A0
-                (instanceRef AS_IN_i_1))
+                (instanceRef I2C_1_AS_IN_i_1))
               (portRef CLK
                 (instanceRef BCD1_SIG_0))
               (portRef CLK
@@ -5261,7 +5246,7 @@
               (portRef Z0
                 (instanceRef AS_IN_6))
               (portRef A0
-                (instanceRef UPDATE_GEN_un2_transfer_sig))
+                (instanceRef I2C_1_UPDATE_GEN_un2_transfer_sig))
               (portRef CLK
                 (instanceRef BCD6_SIG_0))
               (portRef CLK
@@ -5299,11 +5284,11 @@
               (portRef Z0
                 (instanceRef DS_IN))
               (portRef A1
+                (instanceRef N_0))
+              (portRef A1
                 (instanceRef L_0))
               (portRef A1
-                (instanceRef M_0))
-              (portRef A1
-                (instanceRef N_0))))
+                (instanceRef M_0))))
           (net DS_IN
             (joined
               (portRef DS_IN)
@@ -5342,6 +5327,11 @@
               (portRef RNG2_IN)
               (portRef XI0
                 (instanceRef RNG2_IN))))
+          (net INT
+            (joined
+              (portRef XO0
+                (instanceRef INT))
+              (portRef INT)))
           (net LED
             (joined
               (portRef XO0
@@ -5369,41 +5359,6 @@
               (portRef A1
                 (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_1_1))))
           (net
-            (rename I2C_1_N_169_i "I2C_1.N_169_i")
-            (joined
-              (portRef ZN0
-                (instanceRef I2C_1_state_reg_h_N_169_i))
-              (portRef A1
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_3))))
-          (net
-            (rename I2C_1_N_129_i "I2C_1.N_129_i")
-            (joined
-              (portRef Z0
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_3))
-              (portRef D0
-                (instanceRef I2C_1_state_reg_h_state_reg_3))))
-          (net
-            (rename I2C_1_N_168_i "I2C_1.N_168_i")
-            (joined
-              (portRef ZN0
-                (instanceRef I2C_1_state_reg_h_N_168_i))
-              (portRef A1
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_1_3))))
-          (net
-            (rename I2C_1_N_184_i "I2C_1.N_184_i")
-            (joined
-              (portRef ZN0
-                (instanceRef I2C_1_N_184_i))
-              (portRef A1
-                (instanceRef I2C_1_state_reg_h_state_reg_nsss_i_0_o2_0))))
-          (net
-            (rename I2C_1_N_158_0 "I2C_1.N_158_0")
-            (joined
-              (portRef Z0
-                (instanceRef I2C_1_state_reg_h_state_reg_nsss_i_0_o2_0))
-              (portRef A0
-                (instanceRef I2C_1_state_reg_h_state_reg_nsss_i_0_o2_i_0))))
-          (net
             (rename I2C_1_N_150_0 "I2C_1.N_150_0")
             (joined
               (portRef Z0
@@ -5427,13 +5382,6 @@
               (portRef A0
                 (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_o2_0_i_0))))
           (net
-            (rename I2C_1_N_147_0 "I2C_1.N_147_0")
-            (joined
-              (portRef Z0
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_o2_0_3))
-              (portRef A0
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_o2_0_i_3))))
-          (net
             (rename I2C_1_N_146_0 "I2C_1.N_146_0")
             (joined
               (portRef Z0
@@ -5441,41 +5389,23 @@
               (portRef A0
                 (instanceRef I2C_1_continue_reg_0_sqmuxa_i_o3_i))))
           (net
-            (rename I2C_1_N_143_i "I2C_1.N_143_i")
-            (joined
-              (portRef Z0
-                (instanceRef I2C_1_un1_state_reg43_i_1_o2))
-              (portRef A0
-                (instanceRef I2C_1_state_reg_h_state_reg_nsss_i_0_o2_0))
-              (portRef A0
-                (instanceRef I2C_1_un1_state_reg43_i_1_o2_i))
-              (portRef A1
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_0_a3_0_1_4))))
-          (net
-            (rename I2C_1_N_142_i "I2C_1.N_142_i")
-            (joined
-              (portRef Z0
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_o2_5))
-              (portRef A0
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_a3_0_5))
-              (portRef A0
-                (instanceRef I2C_1_un1_state_reg43_i_1_o2))))
-          (net
-            (rename I2C_1_N_176_i "I2C_1.N_176_i")
+            (rename I2C_1_N_167_i "I2C_1.N_167_i")
             (joined
               (portRef ZN0
-                (instanceRef I2C_1_state_reg_h_N_176_i))
+                (instanceRef I2C_1_state_reg_h_N_167_i))
               (portRef A1
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_o3_3))))
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_o3_3))
+              (portRef A1
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_0_2))))
           (net
             (rename I2C_1_N_141_0 "I2C_1.N_141_0")
             (joined
               (portRef Z0
                 (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_o3_3))
               (portRef A0
-                (instanceRef I2C_1_bits_processed_regZ0Z_2))
-              (portRef A0
                 (instanceRef I2C_1_un1_state_reg43_i_1))
+              (portRef A0
+                (instanceRef I2C_1_bits_processed_regZ0Z_2))
               (portRef A0
                 (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_1_3))))
           (net
@@ -5484,68 +5414,73 @@
               (portRef Z0
                 (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_o3_0))
               (portRef A0
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_0))
-              (portRef A0
                 (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_o3_3))
               (portRef A0
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_0_a3_1_2))
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_0))
+              (portRef A1
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_0_a3_1_4))
+              (portRef A0
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_0_a3_0_1_4))
               (portRef A0
                 (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_0_a3_0_1_2))
               (portRef A0
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_1_1))
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_0_a3_1_2))
               (portRef A0
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_0_a3_0_1_4))
-              (portRef A1
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_0_a3_1_4))))
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_1_1))))
           (net
-            (rename I2C_1_N_136_i "I2C_1.N_136_i")
-            (joined
-              (portRef Z0
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_o2_3))
-              (portRef A0
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_o2_i_3))
-              (portRef A0
-                (instanceRef I2C_1_data_to_master_reg_0_sqmuxa_0_a3_1))))
-          (net
-            (rename I2C_1_un1_state_reg43_i_i "I2C_1.un1_state_reg43_i_i")
-            (joined
-              (portRef Z0
-                (instanceRef I2C_1_un1_state_reg43_i_1))
-              (portRef A1
-                (instanceRef I2C_1_bits_processed_reg_4))
-              (portRef A1
-                (instanceRef I2C_1_bits_processed_reg_6))
-              (portRef A1
-                (instanceRef I2C_1_bits_processed_reg_8))
-              (portRef A1
-                (instanceRef I2C_1_bits_processed_reg_5))
-              (portRef A1
-                (instanceRef I2C_1_bits_processed_reg_7))
-              (portRef A0
-                (instanceRef I2C_1_un1_state_reg43_i_1_i))
-              (portRef A1
-                (instanceRef I2C_1_bits_processed_reglde))))
-          (net
-            (rename I2C_1_N_174_i "I2C_1.N_174_i")
+            (rename I2C_1_N_166_i "I2C_1.N_166_i")
             (joined
               (portRef ZN0
-                (instanceRef I2C_1_state_reg_h_N_174_i))
+                (instanceRef I2C_1_state_reg_h_N_166_i))
               (portRef A0
-                (instanceRef I2C_1_state_reg_h_state_reg_nsss_i_0_0))))
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_0_2))))
           (net
-            (rename I2C_1_N_175_i "I2C_1.N_175_i")
-            (joined
-              (portRef ZN0
-                (instanceRef I2C_1_state_reg_h_N_175_i))
-              (portRef A1
-                (instanceRef I2C_1_state_reg_h_state_reg_nsss_i_0_0))))
-          (net
-            (rename I2C_1_state_reg_h_state_reg_nsss_i_0_0 "I2C_1.state_reg_h.state_reg_nsss_i_0[0]")
+            (rename I2C_1_state_reg_h_state_reg_nsss_0_4 "I2C_1.state_reg_h.state_reg_nsss_0[4]")
             (joined
               (portRef Z0
-                (instanceRef I2C_1_state_reg_h_state_reg_nsss_i_0_0))
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_0_2))
               (portRef A0
-                (instanceRef I2C_1_state_reg_h_state_reg_nsss_i_0_i_0))))
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_0_i_2))))
+          (net
+            (rename I2C_1_N_163_i "I2C_1.N_163_i")
+            (joined
+              (portRef ZN0
+                (instanceRef I2C_1_state_reg_h_N_163_i))
+              (portRef A1
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_0))))
+          (net
+            (rename I2C_1_N_124_i "I2C_1.N_124_i")
+            (joined
+              (portRef Z0
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_0))
+              (portRef D0
+                (instanceRef I2C_1_state_reg_h_state_reg_0))))
+          (net
+            (rename UPDATE_GEN_un2_transfer_sig_i "UPDATE_GEN.un2_transfer_sig_i")
+            (joined
+              (portRef ZN0
+                (instanceRef I2C_1_UPDATE_GEN_un2_transfer_sig_i))
+              (portRef A0
+                (instanceRef I2C_1_UPDATE_SIG_1))))
+          (net UPDATE_SIG_i
+            (joined
+              (portRef ZN0
+                (instanceRef UPDATE_SIG_i))
+              (portRef A1
+                (instanceRef I2C_1_UPDATE_SIG_1))))
+          (net N_32_0
+            (joined
+              (portRef Z0
+                (instanceRef I2C_1_UPDATE_SIG_1))
+              (portRef A0
+                (instanceRef I2C_1_UPDATE_SIG_1_i))))
+          (net
+            (rename I2C_1_N_21_0 "I2C_1.N_21_0")
+            (joined
+              (portRef Z0
+                (instanceRef I2C_1_transfer_reg_1))
+              (portRef A0
+                (instanceRef I2C_1_transfer_reg_1_i))))
           (net
             (rename I2C_1_N_171_i "I2C_1.N_171_i")
             (joined
@@ -5568,77 +5503,104 @@
               (portRef A0
                 (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_0_i_4))))
           (net
-            (rename I2C_1_N_163_i "I2C_1.N_163_i")
+            (rename I2C_1_N_174_i "I2C_1.N_174_i")
             (joined
               (portRef ZN0
-                (instanceRef I2C_1_state_reg_h_N_163_i))
+                (instanceRef I2C_1_state_reg_h_N_174_i))
+              (portRef A0
+                (instanceRef I2C_1_state_reg_h_state_reg_nsss_i_0_0))))
+          (net
+            (rename I2C_1_N_175_i "I2C_1.N_175_i")
+            (joined
+              (portRef ZN0
+                (instanceRef I2C_1_state_reg_h_N_175_i))
               (portRef A1
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_0))))
+                (instanceRef I2C_1_state_reg_h_state_reg_nsss_i_0_0))))
           (net
-            (rename I2C_1_N_124_i "I2C_1.N_124_i")
+            (rename I2C_1_state_reg_h_state_reg_nsss_i_0_0 "I2C_1.state_reg_h.state_reg_nsss_i_0[0]")
             (joined
               (portRef Z0
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_0))
-              (portRef D0
-                (instanceRef I2C_1_state_reg_h_state_reg_0))))
+                (instanceRef I2C_1_state_reg_h_state_reg_nsss_i_0_0))
+              (portRef A0
+                (instanceRef I2C_1_state_reg_h_state_reg_nsss_i_0_i_0))))
           (net
-            (rename I2C_1_N_21_0 "I2C_1.N_21_0")
+            (rename I2C_1_un1_state_reg43_i_i "I2C_1.un1_state_reg43_i_i")
             (joined
               (portRef Z0
-                (instanceRef I2C_1_transfer_reg_1))
-              (portRef A0
-                (instanceRef I2C_1_transfer_reg_1_i))))
-          (net
-            (rename I2C_1_data_to_master_reg_0_sqmuxa_i "I2C_1.data_to_master_reg_0_sqmuxa_i")
-            (joined
-              (portRef ZN0
-                (instanceRef I2C_1_data_to_master_reg_0_sqmuxa_i))
-              (portRef A0
-                (instanceRef I2C_1_un1_data_to_master_reg_0_sqmuxa))))
-          (net
-            (rename I2C_1_data_to_master_reg_1_sqmuxa_i "I2C_1.data_to_master_reg_1_sqmuxa_i")
-            (joined
-              (portRef ZN0
-                (instanceRef I2C_1_data_to_master_reg_1_sqmuxa_i))
+                (instanceRef I2C_1_un1_state_reg43_i_1))
               (portRef A1
-                (instanceRef I2C_1_un1_data_to_master_reg_0_sqmuxa))))
-          (net
-            (rename I2C_1_un1_data_to_master_reg_0_sqmuxa_0 "I2C_1.un1_data_to_master_reg_0_sqmuxa_0")
-            (joined
-              (portRef Z0
-                (instanceRef I2C_1_un1_data_to_master_reg_0_sqmuxa))
-              (portRef A0
-                (instanceRef I2C_1_un1_data_to_master_reg_0_sqmuxa_i))))
-          (net
-            (rename I2C_1_N_167_i "I2C_1.N_167_i")
-            (joined
-              (portRef ZN0
-                (instanceRef I2C_1_state_reg_h_N_167_i))
+                (instanceRef I2C_1_bits_processed_reg_4))
               (portRef A1
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_0_2))))
-          (net
-            (rename I2C_1_N_166_i "I2C_1.N_166_i")
-            (joined
-              (portRef ZN0
-                (instanceRef I2C_1_state_reg_h_N_166_i))
+                (instanceRef I2C_1_bits_processed_reg_6))
+              (portRef A1
+                (instanceRef I2C_1_bits_processed_reg_8))
+              (portRef A1
+                (instanceRef I2C_1_bits_processed_reg_5))
+              (portRef A1
+                (instanceRef I2C_1_bits_processed_reg_7))
               (portRef A0
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_0_2))))
+                (instanceRef I2C_1_un1_state_reg43_i_1_i))
+              (portRef A1
+                (instanceRef I2C_1_bits_processed_reglde))))
           (net
-            (rename I2C_1_state_reg_h_state_reg_nsss_0_4 "I2C_1.state_reg_h.state_reg_nsss_0[4]")
+            (rename I2C_1_N_136_i "I2C_1.N_136_i")
             (joined
               (portRef Z0
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_0_2))
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_o2_3))
               (portRef A0
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_0_i_2))))
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_o2_i_3))
+              (portRef A0
+                (instanceRef I2C_1_data_to_master_reg_0_sqmuxa_0_a3_1))))
+          (net
+            (rename I2C_1_N_142_i "I2C_1.N_142_i")
+            (joined
+              (portRef Z0
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_o2_5))
+              (portRef A0
+                (instanceRef I2C_1_un1_state_reg43_i_1_o2))
+              (portRef A0
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_a3_0_5))))
+          (net
+            (rename I2C_1_N_143_i "I2C_1.N_143_i")
+            (joined
+              (portRef Z0
+                (instanceRef I2C_1_un1_state_reg43_i_1_o2))
+              (portRef A0
+                (instanceRef I2C_1_state_reg_h_state_reg_nsss_i_0_o2_0))
+              (portRef A0
+                (instanceRef I2C_1_un1_state_reg43_i_1_o2_i))
+              (portRef A1
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_0_a3_0_1_4))))
           (net
             (rename I2C_1_N_144_i "I2C_1.N_144_i")
             (joined
               (portRef Z0
                 (instanceRef I2C_1_bits_processed_reg_c1_i_o3))
               (portRef A0
-                (instanceRef I2C_1_bits_processed_reg_5))
+                (instanceRef I2C_1_bits_processed_reg_c2_0_a2))
               (portRef A0
-                (instanceRef I2C_1_bits_processed_reg_c2_0_a2))))
+                (instanceRef I2C_1_bits_processed_reg_5))))
+          (net
+            (rename I2C_1_N_147_0 "I2C_1.N_147_0")
+            (joined
+              (portRef Z0
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_o2_0_3))
+              (portRef A0
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_o2_0_i_3))))
+          (net
+            (rename I2C_1_N_184_i "I2C_1.N_184_i")
+            (joined
+              (portRef ZN0
+                (instanceRef I2C_1_N_184_i))
+              (portRef A1
+                (instanceRef I2C_1_state_reg_h_state_reg_nsss_i_0_o2_0))))
+          (net
+            (rename I2C_1_N_158_0 "I2C_1.N_158_0")
+            (joined
+              (portRef Z0
+                (instanceRef I2C_1_state_reg_h_state_reg_nsss_i_0_o2_0))
+              (portRef A0
+                (instanceRef I2C_1_state_reg_h_state_reg_nsss_i_0_o2_i_0))))
           (net
             (rename I2C_1_N_140_1_i "I2C_1.N_140_1_i")
             (joined
@@ -5647,9 +5609,9 @@
               (portRef A0
                 (instanceRef I2C_1_data_to_master_reg_0_sqmuxa_0_o2_1_0))
               (portRef A0
-                (instanceRef I2C_1_addr_reg_0_5_1))
+                (instanceRef I2C_1_addr_reg_0_4_1))
               (portRef A0
-                (instanceRef I2C_1_addr_reg_0_4_1))))
+                (instanceRef I2C_1_addr_reg_0_5_1))))
           (net
             (rename I2C_1_N_140_i "I2C_1.N_140_i")
             (joined
@@ -5681,37 +5643,39 @@
               (portRef A0
                 (instanceRef I2C_1_bits_processed_reglde_i))))
           (net
-            (rename UPDATE_GEN_un2_transfer_sig_i "UPDATE_GEN.un2_transfer_sig_i")
+            (rename I2C_1_N_168_i "I2C_1.N_168_i")
             (joined
               (portRef ZN0
-                (instanceRef UPDATE_GEN_un2_transfer_sig_i))
-              (portRef A0
-                (instanceRef UPDATE_SIG_1))))
-          (net UPDATE_SIG_i
-            (joined
-              (portRef ZN0
-                (instanceRef UPDATE_SIG_i))
+                (instanceRef I2C_1_state_reg_h_N_168_i))
               (portRef A1
-                (instanceRef UPDATE_SIG_1))))
-          (net N_32_0
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_1_3))))
+          (net
+            (rename I2C_1_N_169_i "I2C_1.N_169_i")
+            (joined
+              (portRef ZN0
+                (instanceRef I2C_1_state_reg_h_N_169_i))
+              (portRef A1
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_3))))
+          (net
+            (rename I2C_1_N_129_i "I2C_1.N_129_i")
             (joined
               (portRef Z0
-                (instanceRef UPDATE_SIG_1))
-              (portRef A0
-                (instanceRef UPDATE_SIG_1_i))))
-          (net
-            (rename I2C_1_N_172_i "I2C_1.N_172_i")
-            (joined
-              (portRef ZN0
-                (instanceRef I2C_1_state_reg_h_N_172_i))
-              (portRef A0
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_1_5))))
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_3))
+              (portRef D0
+                (instanceRef I2C_1_state_reg_h_state_reg_3))))
           (net
             (rename I2C_1_N_173_i "I2C_1.N_173_i")
             (joined
               (portRef ZN0
                 (instanceRef I2C_1_state_reg_h_N_173_i))
               (portRef A1
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_1_5))))
+          (net
+            (rename I2C_1_N_172_i "I2C_1.N_172_i")
+            (joined
+              (portRef ZN0
+                (instanceRef I2C_1_state_reg_h_N_172_i))
+              (portRef A0
                 (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_1_5))))
           (net
             (rename I2C_1_N_133_i "I2C_1.N_133_i")
@@ -5721,12 +5685,40 @@
               (portRef D0
                 (instanceRef I2C_1_state_reg_h_state_reg_5))))
           (net
+            (rename I2C_1_data_to_master_reg_0_sqmuxa_i "I2C_1.data_to_master_reg_0_sqmuxa_i")
+            (joined
+              (portRef ZN0
+                (instanceRef I2C_1_data_to_master_reg_0_sqmuxa_i))
+              (portRef A0
+                (instanceRef I2C_1_un1_data_to_master_reg_0_sqmuxa))))
+          (net
+            (rename I2C_1_data_to_master_reg_1_sqmuxa_i "I2C_1.data_to_master_reg_1_sqmuxa_i")
+            (joined
+              (portRef ZN0
+                (instanceRef I2C_1_data_to_master_reg_1_sqmuxa_i))
+              (portRef A1
+                (instanceRef I2C_1_un1_data_to_master_reg_0_sqmuxa))))
+          (net
+            (rename I2C_1_un1_data_to_master_reg_0_sqmuxa_0 "I2C_1.un1_data_to_master_reg_0_sqmuxa_0")
+            (joined
+              (portRef Z0
+                (instanceRef I2C_1_un1_data_to_master_reg_0_sqmuxa))
+              (portRef A0
+                (instanceRef I2C_1_un1_data_to_master_reg_0_sqmuxa_i))))
+          (net
             (rename I2C_1_N_133_i_1 "I2C_1.N_133_i_1")
             (joined
               (portRef Z0
                 (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_1_5))
               (portRef A0
                 (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_5))))
+          (net
+            (rename I2C_1_N_129_i_1 "I2C_1.N_129_i_1")
+            (joined
+              (portRef Z0
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_1_3))
+              (portRef A0
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_3))))
           (net
             (rename I2C_1_bits_processed_rege_0_1 "I2C_1.bits_processed_rege_0_1")
             (joined
@@ -5748,6 +5740,27 @@
                 (instanceRef I2C_1_sda_o_reg_0_1))
               (portRef A0
                 (instanceRef I2C_1_sda_o_reg_0))))
+          (net
+            (rename I2C_1_data_to_master_reg_1_sqmuxa_1 "I2C_1.data_to_master_reg_1_sqmuxa_1")
+            (joined
+              (portRef Z0
+                (instanceRef I2C_1_data_to_master_reg_1_sqmuxa_1))
+              (portRef A0
+                (instanceRef I2C_1_data_to_master_reg_1_sqmuxa))))
+          (net
+            (rename I2C_1_data_to_master_reg_0_sqmuxa_1 "I2C_1.data_to_master_reg_0_sqmuxa_1")
+            (joined
+              (portRef Z0
+                (instanceRef I2C_1_data_to_master_reg_0_sqmuxa_0_a3_1))
+              (portRef A0
+                (instanceRef I2C_1_data_to_master_reg_0_sqmuxa_0_a3))))
+          (net
+            (rename I2C_1_data_to_master_reg_0_sqmuxa_2 "I2C_1.data_to_master_reg_0_sqmuxa_2")
+            (joined
+              (portRef Z0
+                (instanceRef I2C_1_data_to_master_reg_0_sqmuxa_0_a3_2))
+              (portRef A1
+                (instanceRef I2C_1_data_to_master_reg_0_sqmuxa_0_a3))))
           (net
             (rename I2C_1_N_184_1 "I2C_1.N_184_1")
             (joined
@@ -5784,117 +5797,12 @@
               (portRef A1
                 (instanceRef I2C_1_data_to_master_reg_0_sqmuxa_0_a2))))
           (net
-            (rename I2C_1_un5_scl_1 "I2C_1.un5_scl_1")
+            (rename I2C_1_N_171_1 "I2C_1.N_171_1")
             (joined
               (portRef Z0
-                (instanceRef I2C_1_un5_scl_1))
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_0_a3_0_1_4))
               (portRef A0
-                (instanceRef I2C_1_un5_scl))))
-          (net
-            (rename I2C_1_un12_scl_prev_reg_1 "I2C_1.un12_scl_prev_reg_1")
-            (joined
-              (portRef Z0
-                (instanceRef I2C_1_un12_scl_prev_reg_1))
-              (portRef A0
-                (instanceRef I2C_1_un12_scl_prev_reg))))
-          (net
-            (rename I2C_1_N_167_1 "I2C_1.N_167_1")
-            (joined
-              (portRef Z0
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_0_a3_0_1_2))
-              (portRef A0
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_0_a3_0_2))))
-          (net
-            (rename I2C_1_N_166_1 "I2C_1.N_166_1")
-            (joined
-              (portRef Z0
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_0_a3_1_2))
-              (portRef A0
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_0_a3_2))))
-          (net
-            (rename I2C_1_bits_processed_reg_1_sqmuxa_1 "I2C_1.bits_processed_reg_1_sqmuxa_1")
-            (joined
-              (portRef Z0
-                (instanceRef I2C_1_bits_processed_reg_1_sqmuxa_0_a3_1))
-              (portRef A0
-                (instanceRef I2C_1_bits_processed_reg_1_sqmuxa_0_a3))))
-          (net
-            (rename I2C_1_addr_reg_0_1_0 "I2C_1.addr_reg_0_1_0")
-            (joined
-              (portRef Z0
-                (instanceRef I2C_1_addr_reg_0_1_1))
-              (portRef A0
-                (instanceRef I2C_1_addr_regZ0Z_0))))
-          (net
-            (rename I2C_1_addr_reg_0_0_1 "I2C_1.addr_reg_0_0_1")
-            (joined
-              (portRef Z0
-                (instanceRef I2C_1_addr_reg_0_0_1_0))
-              (portRef A0
-                (instanceRef I2C_1_addr_reg_0_0))))
-          (net
-            (rename I2C_1_addr_reg_0_1_1_0 "I2C_1.addr_reg_0_1_1_0")
-            (joined
-              (portRef Z0
-                (instanceRef I2C_1_addr_reg_0_1_1_0))
-              (portRef A0
-                (instanceRef I2C_1_addr_reg_0_1))))
-          (net
-            (rename I2C_1_addr_reg_0_2_1 "I2C_1.addr_reg_0_2_1")
-            (joined
-              (portRef Z0
-                (instanceRef I2C_1_addr_reg_0_2_1))
-              (portRef A0
-                (instanceRef I2C_1_addr_reg_0_2))))
-          (net
-            (rename I2C_1_addr_reg_0_3_1_0 "I2C_1.addr_reg_0_3_1_0")
-            (joined
-              (portRef Z0
-                (instanceRef I2C_1_addr_reg_0_3_1))
-              (portRef A0
-                (instanceRef I2C_1_addr_reg_0_3))))
-          (net
-            (rename I2C_1_addr_reg_0_4_1 "I2C_1.addr_reg_0_4_1")
-            (joined
-              (portRef Z0
-                (instanceRef I2C_1_addr_reg_0_4_1))
-              (portRef A0
-                (instanceRef I2C_1_addr_reg_0_4))))
-          (net
-            (rename I2C_1_addr_reg_0_5_1 "I2C_1.addr_reg_0_5_1")
-            (joined
-              (portRef Z0
-                (instanceRef I2C_1_addr_reg_0_5_1))
-              (portRef A0
-                (instanceRef I2C_1_addr_reg_0_5))))
-          (net
-            (rename I2C_1_N_129_i_1 "I2C_1.N_129_i_1")
-            (joined
-              (portRef Z0
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_1_3))
-              (portRef A0
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_3))))
-          (net
-            (rename I2C_1_N_126_i_1 "I2C_1.N_126_i_1")
-            (joined
-              (portRef Z0
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_1_1))
-              (portRef A0
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_1))))
-          (net
-            (rename I2C_1_N_174_1 "I2C_1.N_174_1")
-            (joined
-              (portRef Z0
-                (instanceRef I2C_1_state_reg_h_state_reg_nsss_i_0_a3_1_0))
-              (portRef A0
-                (instanceRef I2C_1_state_reg_h_state_reg_nsss_i_0_a3_0))))
-          (net
-            (rename I2C_1_N_176_1 "I2C_1.N_176_1")
-            (joined
-              (portRef Z0
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_a2_1_3))
-              (portRef A0
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_a2_3))))
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_0_a3_0_4))))
           (net
             (rename I2C_1_N_170_1 "I2C_1.N_170_1")
             (joined
@@ -5903,26 +5811,89 @@
               (portRef A0
                 (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_0_a3_4))))
           (net
-            (rename I2C_1_N_171_1 "I2C_1.N_171_1")
+            (rename I2C_1_bits_processed_reg_1_sqmuxa_1 "I2C_1.bits_processed_reg_1_sqmuxa_1")
             (joined
               (portRef Z0
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_0_a3_0_1_4))
+                (instanceRef I2C_1_bits_processed_reg_1_sqmuxa_0_a3_1))
               (portRef A0
-                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_0_a3_0_4))))
+                (instanceRef I2C_1_bits_processed_reg_1_sqmuxa_0_a3))))
           (net
-            (rename I2C_1_data_to_master_reg_0_sqmuxa_1 "I2C_1.data_to_master_reg_0_sqmuxa_1")
+            (rename I2C_1_N_174_1 "I2C_1.N_174_1")
             (joined
               (portRef Z0
-                (instanceRef I2C_1_data_to_master_reg_0_sqmuxa_0_a3_1))
+                (instanceRef I2C_1_state_reg_h_state_reg_nsss_i_0_a3_1_0))
               (portRef A0
-                (instanceRef I2C_1_data_to_master_reg_0_sqmuxa_0_a3))))
+                (instanceRef I2C_1_state_reg_h_state_reg_nsss_i_0_a3_0))))
           (net
-            (rename I2C_1_data_to_master_reg_0_sqmuxa_2 "I2C_1.data_to_master_reg_0_sqmuxa_2")
+            (rename I2C_1_addr_reg_0_3_1_0 "I2C_1.addr_reg_0_3_1_0")
             (joined
               (portRef Z0
-                (instanceRef I2C_1_data_to_master_reg_0_sqmuxa_0_a3_2))
-              (portRef A1
-                (instanceRef I2C_1_data_to_master_reg_0_sqmuxa_0_a3))))
+                (instanceRef I2C_1_addr_reg_0_3_1))
+              (portRef A0
+                (instanceRef I2C_1_addr_reg_0_3))))
+          (net
+            (rename I2C_1_addr_reg_0_5_1 "I2C_1.addr_reg_0_5_1")
+            (joined
+              (portRef Z0
+                (instanceRef I2C_1_addr_reg_0_5_1))
+              (portRef A0
+                (instanceRef I2C_1_addr_reg_0_5))))
+          (net
+            (rename I2C_1_addr_reg_0_4_1 "I2C_1.addr_reg_0_4_1")
+            (joined
+              (portRef Z0
+                (instanceRef I2C_1_addr_reg_0_4_1))
+              (portRef A0
+                (instanceRef I2C_1_addr_reg_0_4))))
+          (net
+            (rename I2C_1_addr_reg_0_2_1 "I2C_1.addr_reg_0_2_1")
+            (joined
+              (portRef Z0
+                (instanceRef I2C_1_addr_reg_0_2_1))
+              (portRef A0
+                (instanceRef I2C_1_addr_reg_0_2))))
+          (net
+            (rename I2C_1_addr_reg_0_1_1_0 "I2C_1.addr_reg_0_1_1_0")
+            (joined
+              (portRef Z0
+                (instanceRef I2C_1_addr_reg_0_1_1))
+              (portRef A0
+                (instanceRef I2C_1_addr_reg_0_1))))
+          (net
+            (rename I2C_1_addr_reg_0_0_1 "I2C_1.addr_reg_0_0_1")
+            (joined
+              (portRef Z0
+                (instanceRef I2C_1_addr_reg_0_0_1_0))
+              (portRef A0
+                (instanceRef I2C_1_addr_reg_0_0))))
+          (net
+            (rename I2C_1_addr_reg_0_1_0 "I2C_1.addr_reg_0_1_0")
+            (joined
+              (portRef Z0
+                (instanceRef I2C_1_addr_reg_0_1_2))
+              (portRef A0
+                (instanceRef I2C_1_addr_regZ0Z_0))))
+          (net
+            (rename I2C_1_N_126_i_1 "I2C_1.N_126_i_1")
+            (joined
+              (portRef Z0
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_1_1))
+              (portRef A0
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_i_1))))
+          (net
+            (rename I2C_1_N_166_1 "I2C_1.N_166_1")
+            (joined
+              (portRef Z0
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_0_a3_1_2))
+              (portRef A0
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_0_a3_2))))
+          (net
+            (rename I2C_1_N_167_1 "I2C_1.N_167_1")
+            (joined
+              (portRef Z0
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_0_a3_0_1_2))
+              (portRef A0
+                (instanceRef I2C_1_state_reg_h_state_reg_srsts_0_0_a3_0_2))))
           (net
             (rename I2C_1_cmd_reg_1_sqmuxa_1 "I2C_1.cmd_reg_1_sqmuxa_1")
             (joined
@@ -5931,12 +5902,19 @@
               (portRef A0
                 (instanceRef I2C_1_cmd_reg_1_sqmuxa_0_a3))))
           (net
-            (rename I2C_1_data_to_master_reg_1_sqmuxa_1 "I2C_1.data_to_master_reg_1_sqmuxa_1")
+            (rename I2C_1_un12_scl_prev_reg_1 "I2C_1.un12_scl_prev_reg_1")
             (joined
               (portRef Z0
-                (instanceRef I2C_1_data_to_master_reg_1_sqmuxa_1))
+                (instanceRef I2C_1_un12_scl_prev_reg_1))
               (portRef A0
-                (instanceRef I2C_1_data_to_master_reg_1_sqmuxa))))
+                (instanceRef I2C_1_un12_scl_prev_reg))))
+          (net
+            (rename I2C_1_un5_scl_1 "I2C_1.un5_scl_1")
+            (joined
+              (portRef Z0
+                (instanceRef I2C_1_un5_scl_1))
+              (portRef A0
+                (instanceRef I2C_1_un5_scl))))
           (net
             (rename I2C_1_addr_reg_0_sqmuxa_1 "I2C_1.addr_reg_0_sqmuxa_1")
             (joined

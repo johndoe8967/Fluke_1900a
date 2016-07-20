@@ -19,7 +19,14 @@ Tco Paths:
   Register            Source              Destination              Path Delay
   Name                Reference Clock     Primary Output             [ns]
 ==----------------------------------------------------------------------------------
-  GLB_UQNN_N27        CLK_MASTER          SDA_BI                   30.90 
-  GLB_UQNN_N26        CLK_MASTER          SDA_BI                   18.00 
-  GLB_LED_C           CLK_MASTER          LED                      18.00 
+  GLB_UQNN_N28        CLK_MASTER          SDA_BI                   30.80 
+  GLB_UQNN_N27        CLK_MASTER          SDA_BI                   30.80 
+  GLB_..._SIG *1      CLK_MASTER          LED                      18.00 
+  GLB_INT_SIG         CLK_MASTER          SDA_BI                   30.40 
 ==--------------------------------------------------------------------------------
+
+Index Name Table
+==----------------------------------------
+    *1  GLB_UPDATE_SIG
+==----------------------------------------
+

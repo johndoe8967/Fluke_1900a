@@ -2,10 +2,11 @@
 // Software Version 8.2
 // Targeted Device : ispLSI1032E-70LJ84
 // Platform : Windows NT 6.1
-// Date : Tue Jul 19 14:40:04 2016
+// Date : Wed Jul 20 10:17:26 2016
 // Elapsed Time : 00:00:00
 // 
                      GND        SYS          1
+                     INT        OUT          4
                      VCC        SYS         21
                      GND        SYS         22
                    RESET        SYS         24
