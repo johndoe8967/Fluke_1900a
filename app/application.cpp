@@ -19,6 +19,7 @@
 // definition of IO pins
 #define SCL 	2
 #define SDA		0
+#define INT_PIN 0
 
 /*
  * tcp server for telnet connection
@@ -30,15 +31,10 @@ TcpClient *myClient[MAXCLIENT];
 Fluke myFluke;
 
 Timer cyclicTimer;
+//#define USEINTERRUPT
+Timer *interruptTimer;
 
-void cyclicProcess() {
-	debugf("Read");
-//#define debugWebServer
-#ifdef debugWebServer
-	float a = (float)rand()/(float)(RAND_MAX);
-
-	sendMeasureToClients(a);
-#else
+void processData() {
 	if (myFluke.readI2C()) {
 		unsigned long timestamp = millis();
 		String message = myFluke.getPrintable();
@@ -60,8 +56,34 @@ void cyclicProcess() {
 			}
 		}
 	}
+}
+
+void cyclicProcess() {
+	debugf("Read");
+//#define debugWebServer
+#ifdef debugWebServer
+	float a = (float)rand()/(float)(RAND_MAX);
+
+	sendMeasureToClients(a);
+#else
+	processData();
 #endif
 }
+
+#ifdef USEINTERRUPT
+void IRAM_ATTR interruptHandler() {
+	detachInterrupt(INT_PIN);
+	while (digitalRead(INT_PIN) == false);
+
+	pinMode(INT_PIN, OUTPUT);
+	processData();
+	pinMode(INT_PIN, INPUT_PULLUP);
+
+	attachInterrupt(INT_PIN, interruptHandler, FALLING);
+
+}
+#endif
+
 
 // add up to 4 clients simultaneous
 void onClient(TcpClient* client) {
@@ -105,7 +127,16 @@ void onConnect() {
 	serialTelnet = new TcpServer(TcpClientConnectDelegate(onClient),TcpClientDataDelegate(clientReceiveData),TcpClientCompleteDelegate(clientComplete));
 	serialTelnet->listen(23);
 	startWebServer();
-	cyclicTimer.initializeMs(100,TimerDelegate(&cyclicProcess)).start();
+
+#ifdef USEINTERRUPT
+	pinMode(INT_PIN, INPUT_PULLUP);
+	attachInterrupt(INT_PIN, interruptHandler, FALLING);
+	interruptTimer = new Timer();
+	interruptTimer->initializeMs(5,TimerDelegate(&processData));
+#else
+	cyclicTimer.initializeMs(20,TimerDelegate(&cyclicProcess)).start();
+#endif
+
 	startmDNS();  // Start mDNS "Advertise" of your hostname "test.local" for this example
 }
 
@@ -138,6 +169,7 @@ void init()
 	Wire.pins(SCL, SDA);
 	Wire.begin();
 #endif
+
 
 	WifiStation.enable(true);
 	WifiStation.waitConnection(ConnectionDelegate(&onConnect),10,ConnectionDelegate(&noConnect));
