@@ -29,6 +29,9 @@ TcpServer *serialTelnet;
 TcpClient *myClient[MAXCLIENT];
 
 //#define USEFTP
+//#define debugWebServer
+//#define USEINTERRUPT
+
 #ifdef USEFTP
 FTPServer ftp;
 #endif
@@ -36,7 +39,6 @@ FTPServer ftp;
 Fluke myFluke;
 
 Timer cyclicTimer;
-//#define USEINTERRUPT
 Timer *interruptTimer;
 
 void sendData(String message, long value) {
@@ -69,7 +71,6 @@ void processData() {
 }
 
 void cyclicProcess() {
-#define debugWebServer
 #ifdef debugWebServer
 	long a = rand();
 	static char reduction = 0;
