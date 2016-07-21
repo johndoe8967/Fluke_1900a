@@ -25,11 +25,8 @@ function drawChart() {
   data.addColumn('string','Time');
   data.addColumn('number', 'Value');
   numberOfRows=0;
-  data.addRow([numberOfRows.toString(),0]);
-  numberOfRows=1;
-  options = {'title':'UV Chart',
-                 'width':900,
-                 'height':600};
+  options = {'title':'Measurements chart',
+                 'height':800};
 
   chart = new google.visualization.LineChart(document.getElementById('chart_div'));
   chart.draw(data, options);
