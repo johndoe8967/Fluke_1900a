@@ -28,6 +28,11 @@
 TcpServer *serialTelnet;
 TcpClient *myClient[MAXCLIENT];
 
+//#define USEFTP
+#ifdef USEFTP
+FTPServer ftp;
+#endif
+
 Fluke myFluke;
 
 Timer cyclicTimer;
@@ -120,6 +125,18 @@ void startmDNS() {
     info->txt_data[0] = (char *) "path=/";
     espconn_mdns_init(info);
 }
+#ifdef USEFTP
+
+void startFTP()
+{
+	if (!fileExist("index.html"))
+		fileSetContent("index.html", "<h3>Please connect to FTP and upload files from folder 'web/build' (details in code)</h3>");
+
+	// Start FTP server
+	ftp.listen(21);
+	ftp.addUser("me", "123"); // FTP account
+}
+#endif
 
 // start telnet server and cyclic process on connect
 // announce name / IP with mDNS
@@ -127,6 +144,10 @@ void onConnect() {
 	serialTelnet = new TcpServer(TcpClientConnectDelegate(onClient),TcpClientDataDelegate(clientReceiveData),TcpClientCompleteDelegate(clientComplete));
 	serialTelnet->listen(23);
 	startWebServer();
+
+#ifdef USEFTP
+	startFTP();
+#endif
 
 #ifdef USEINTERRUPT
 	pinMode(INT_PIN, INPUT_PULLUP);
