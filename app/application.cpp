@@ -39,37 +39,46 @@ Timer cyclicTimer;
 //#define USEINTERRUPT
 Timer *interruptTimer;
 
-void processData() {
-	if (myFluke.readI2C()) {
-		unsigned long timestamp = millis();
-		String message = myFluke.getPrintable();
+void sendData(String message, long value) {
+	unsigned long timestamp = millis();
 
-		debugf("Mess: %s", message.c_str() );
-		sendMeasureToClients((float)myFluke.getValue()/10);
+	debugf("Mess: %s", message.c_str() );
+	sendMeasureToClients((float)value/10);
 
-		for (char i=0; i<MAXCLIENT; i++) {
-			if (myClient[i]) {
-				String timeString = "          ";
-				timeString += String(timestamp);
-				timeString = timeString.substring(timeString.length()-10);
+	for (char i=0; i<MAXCLIENT; i++) {
+		if (myClient[i]) {
+			String timeString = "          ";
+			timeString += String(timestamp);
+			timeString = timeString.substring(timeString.length()-10);
 
-				if (myFluke.isOverflow()) 	timeString += "Ovl ";
-				else 						timeString += "    ";
+			if (myFluke.isOverflow()) 	timeString += "Ovl ";
+			else 						timeString += "    ";
 
-				timeString += message;
-				myClient[i]->writeString(timeString);
-			}
+			timeString += message;
+			timeString += "\r\n";
+			myClient[i]->writeString(timeString);
 		}
 	}
 }
 
-void cyclicProcess() {
-	debugf("Read");
-//#define debugWebServer
-#ifdef debugWebServer
-	float a = (float)rand()/(float)(RAND_MAX);
+void processData() {
+	if (myFluke.readI2C()) {
+		String message = myFluke.getPrintable();
+		sendData(message, myFluke.getValue());
+	}
+}
 
-	sendMeasureToClients(a);
+void cyclicProcess() {
+#define debugWebServer
+#ifdef debugWebServer
+	long a = rand();
+	static char reduction = 0;
+	reduction++;
+	if ((reduction % 100) == 0) {
+		reduction = 0;
+		String message = String(float(a/10),1);
+		sendData(message,a);
+	}
 #else
 	processData();
 #endif

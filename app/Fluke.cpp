@@ -95,6 +95,5 @@ String Fluke::getPrintable() {
 	} else {
 		test += " ns";
 	}
-	test += "\r\n";
 	return test;
 }
