@@ -24,7 +24,7 @@
 /*
  * tcp server for telnet connection
  */
-#define MAXCLIENT 4
+#define MAXCLIENT 2
 TcpServer *serialTelnet;
 TcpClient *myClient[MAXCLIENT];
 
@@ -98,6 +98,8 @@ void onClient(TcpClient* client) {
 			return;
 		}
 	}
+	client->writeString("to many clients\n\r");
+	client->close();
 }
 
 // unused, unknown
