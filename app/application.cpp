@@ -193,18 +193,18 @@ void init()
 
 #ifndef USEINTERRUPT
 	Serial.begin(SERIAL_BAUD_RATE); // 115200 by default
+#ifdef debug
+	Serial.systemDebugOutput(true); // Disable debug output
+#else
 	Serial.systemDebugOutput(false); // Disable debug output
 #endif
-
-	debugf("Starting");
+#endif
 	spiffs_mount(); // Mount file system, in order to work with files
-
 
 #ifndef debugWebServer
 	Wire.pins(SCL, SDA);
 	Wire.begin();
 #endif
-
 
 	WifiStation.enable(true);
 	WifiStation.waitConnection(ConnectionDelegate(&onConnect),10,ConnectionDelegate(&noConnect));
