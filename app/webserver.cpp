@@ -69,8 +69,8 @@ void wsDisconnected(WebSocket& socket)
 	totalActiveSockets--;
 }
 
-void sendMeasureToClients(float value) {
-	String message = "{\"type\": \"JSON\", \"msg\": \"value\", \"value\": " + String(value) + "}";
+void sendMeasureToClients(float value, unsigned long time) {
+	String message = "{\"type\": \"JSON\", \"msg\": \"measure\", \"value\": " + String(value,2) + ", \"time\": " + String((float)(time/10)/100,2) + "}";
 	for (int i = 0; i < clients.count(); i++)
 		clients[i].sendString(message);
 }

@@ -50,7 +50,7 @@ void sendData(String message, long value) {
 	if ((reductionCounter % reduction) == 0) {
 		reductionCounter=0;
 		debugf("Mess: %s", message.c_str() );
-		sendMeasureToClients((float)value/10);
+		sendMeasureToClients((float)value/10000, timestamp);
 
 		for (char i=0; i<MAXCLIENT; i++) {
 			if (myClient[i]) {

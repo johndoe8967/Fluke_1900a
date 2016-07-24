@@ -23,7 +23,7 @@
 	function drawChart() {
 
 		data = new google.visualization.DataTable();
-		data.addColumn('string', 'Time');
+		data.addColumn('number', 'Time');
 		data.addColumn('number', 'Value');
 		numberOfRows = 0;
 		options = {
@@ -80,9 +80,8 @@
 		var msg = JSON.parse(evt.data);
 		switch (msg.type) {
 		case "JSON":
-			if ((loaded == 1) && (msg.msg == "value")) {
-				data.addRow([ numberOfRows.toString(), msg.value ]);
-				numberOfRows = numberOfRows + 1;
+			if ((loaded == 1) && (msg.msg == "measure")) {
+				data.addRow([ msg.time, msg.value ]);
 				if (data.getNumberOfRows() > 300) {
 					data.removeRow(0);
 				}

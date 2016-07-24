@@ -11,7 +11,7 @@
 
 
 void startWebServer();
-void sendMeasureToClients(float value);
+void sendMeasureToClients(float value, unsigned long time);
 
 extern int reduction;
 
