@@ -14,7 +14,7 @@
 #include "webserver.h"
 
 
-#define debug
+//#define debug
 
 // definition of IO pins
 #define SCL 	2
@@ -40,7 +40,7 @@ Fluke myFluke;
 
 Timer cyclicTimer;
 Timer *interruptTimer;
-int reduction=1;
+int reduction=100;
 int reductionCounter=0;
 
 void sendData(String message, long value) {
@@ -79,13 +79,13 @@ void processData() {
 void cyclicProcess() {
 #ifdef debugWebServer
 	long a = rand();
-	static char reduction = 0;
-	reduction++;
-	if ((reduction % 100) == 0) {
-		reduction = 0;
+//	static char reduction = 0;
+//	reduction++;
+//	if ((reduction % 1) == 0) {
+//		reduction = 0;
 		String message = String(float(a/10),1);
 		sendData(message,a);
-	}
+//	}
 #else
 	processData();
 #endif
