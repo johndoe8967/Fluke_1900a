@@ -3,114 +3,164 @@
 <meta charset="utf-8" />
 
 <title>WebSocket Test</title>
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript"
+	src="https://www.gstatic.com/charts/loader.js"></script>
 <script language="javascript" type="text/javascript">
+	// Load the Visualization API and the corechart package.
+	google.charts.load('current', {
+		'packages' : [ 'corechart' ]
+	});
 
-// Load the Visualization API and the corechart package.
-google.charts.load('current', {'packages':['corechart']});
+	var data;
+	var chart;
+	var options;
+	var numberOfRows;
+	var loaded;
+	var output;
 
-var data;
-var chart;
-var options;
-var numberOfRows;
-var loaded;
-var output;
+	google.charts.setOnLoadCallback(drawChart);
 
+	function drawChart() {
 
-google.charts.setOnLoadCallback(drawChart);
+		data = new google.visualization.DataTable();
+		data.addColumn('string', 'Time');
+		data.addColumn('number', 'Value');
+		numberOfRows = 0;
+		options = {
+			'title' : 'Measurements chart',
+			'height' : 800
+		};
 
-function drawChart() {
+		chart = new google.visualization.LineChart(document
+				.getElementById('chart_div'));
+		chart.draw(data, options);
+		loaded = 1;
+	}
+	
+	function init() {
+		document.getElementById("Export").onclick = function() {
+			var csvFormattedDataTable = google.visualization.dataTableToCsv(data);
+			var encodedUri = 'data:application/csv;charset=utf-8,'
+					+ encodeURIComponent(csvFormattedDataTable);
+			this.href = encodedUri;
+		}
 
-  data = new google.visualization.DataTable();
-  data.addColumn('string','Time');
-  data.addColumn('number', 'Value');
-  numberOfRows=0;
-  options = {'title':'Measurements chart',
-                 'height':800};
+		output = document.getElementById("output");
+		testWebSocket();
+	}
 
-  chart = new google.visualization.LineChart(document.getElementById('chart_div'));
-  chart.draw(data, options);
-  loaded = 1;
-}
+	function testWebSocket() {
+		var wsUri = "ws://" + location.host + "/";
+		websocket = new WebSocket(wsUri);
+		websocket.onopen = function(evt) {
+			onOpen(evt)
+		};
+		websocket.onclose = function(evt) {
+			onClose(evt)
+		};
+		websocket.onmessage = function(evt) {
+			onMessage(evt)
+		};
+		websocket.onerror = function(evt) {
+			onError(evt)
+		};
+	}
 
-  function init()
-  {
-    output = document.getElementById("output");
-    testWebSocket();
-  }
+	function onOpen(evt) {
+		writeToScreen("CONNECTED");
+		doSend("Sming love WebSockets");
+	}
 
-  function testWebSocket()
-  {
-	var wsUri = "ws://" + location.host + "/";
-    websocket = new WebSocket(wsUri);
-    websocket.onopen = function(evt) { onOpen(evt) };
-    websocket.onclose = function(evt) { onClose(evt) };
-    websocket.onmessage = function(evt) { onMessage(evt) };
-    websocket.onerror = function(evt) { onError(evt) };
-  }
+	function onClose(evt) {
+		writeToScreen("DISCONNECTED");
+	}
 
-  function onOpen(evt)
-  {
-    writeToScreen("CONNECTED");
-    doSend("Sming love WebSockets");
-  }
+	function onMessage(evt) {
+		//    writeToScreen('<span style="color: blue;">RESPONSE: ' + evt.data+'</span>');
+		var msg = JSON.parse(evt.data);
+		switch (msg.type) {
+		case "JSON":
+			if ((loaded == 1) && (msg.msg == "value")) {
+				data.addRow([ numberOfRows.toString(), msg.value ]);
+				numberOfRows = numberOfRows + 1;
+				if (data.getNumberOfRows() > 300) {
+					data.removeRow(0);
+				}
+				chart.clearChart();
+				chart.draw(data, options);
+			}
+			break;
+		}
 
-  function onClose(evt)
-  {
-    writeToScreen("DISCONNECTED");
-  }
+		//websocket.close();
+	}
 
-  function onMessage(evt)
-  {
-//    writeToScreen('<span style="color: blue;">RESPONSE: ' + evt.data+'</span>');
-    var msg = JSON.parse(evt.data);
-    switch(msg.type) {
-    case "JSON":
-    	if ((loaded==1)&&(msg.msg=="value")) {
-      	  data.addRow( [ numberOfRows.toString() , msg.value] );
-      	  numberOfRows = numberOfRows + 1;
-      	  if (data.getNumberOfRows() > 300) {
-	      	  data.removeRow(0);
-      	  }
-      	  chart.clearChart();
-    	  chart.draw(data,options);    		
-    	}
-      break;
-    }
+	function onError(evt) {
+		writeToScreen('<span style="color: red;">ERROR:</span> ' + evt.data);
+	}
 
-    //websocket.close();
-  }
+	function doSend(message) {
+		writeToScreen("SENT: " + message);
+		websocket.send(message);
+	}
 
-  function onError(evt)
-  {
-    writeToScreen('<span style="color: red;">ERROR:</span> ' + evt.data);
-  }
+	function writeToScreen(message) {
+		var pre = document.createElement("p");
+		pre.style.wordWrap = "break-word";
+		pre.innerHTML = message;
+		output.appendChild(pre);
+	}
 
-  function doSend(message)
-  {
-    writeToScreen("SENT: " + message); 
-    websocket.send(message);
-  }
+	function doDisconnect() {
+		var disconnect = document.getElementById("disconnect");
+		disconnect.disabled = true;
+		websocket.close();
 
-  function writeToScreen(message)
-  {
-    var pre = document.createElement("p");
-    pre.style.wordWrap = "break-word";
-    pre.innerHTML = message;
-    output.appendChild(pre);
-  }
-  
-  function doDisconnect()
-  {
-	var disconnect = document.getElementById("disconnect");
-	disconnect.disabled = true;
-	websocket.close();
-  }
+	}
+	function sendReduction() {
+		var reduction = document.getElementById("reductionValue");
+		var message = {
+			type : "JSON",
+			msg : "reduction",
+			value : reduction.value
+		};
+		websocket.send(JSON.stringify(message));
+	}
 
-  window.addEventListener("load", init, false);
-
+	function doSetWIFI() {
+		var SSID = document.getElementById("SSID");
+		var PWD = document.getElementById("PWD");
+		var message = {
+			type : "JSON",
+			msg : "WIFI",
+			SSID : SSID.value,
+			PWD : PWD.value
+		};
+		websocket.send(JSON.stringify(message));		
+	}
+	
+	window.addEventListener("load", init, false);
 </script>
 
-<h2>Fluke 1900a Graph <input type="button" id="disconnect" onclick="doDisconnect()" value="X" title="Disconnect WS"/></h2>
+<h2>
+	Fluke 1900a Graph <input type="button" id="disconnect"
+		onclick="doDisconnect()" value="X" title="Disconnect WS" />
+</h2>
 <div id="chart_div"></div>
+<a id="Export" href="#" download="table-data.csv" target="_blank">Download as csv</a>
+
+<div class="form-group">
+	<label>Untersetzung: </label> <input class="form-control"
+		style="width: 250px" type="number" id="reductionValue"
+		name="reduction" value="1"
+		onkeydown="if (event.keyCode == 13) sendReduction()">
+</div>
+<div class="form-group">
+	<label style="float: left">SSID / PWD: </label> <input
+		class="form-control" style="width: 250px; float: left" type="text"
+		id="SSID" value="SSID"> <input class="form-control"
+		style="width: 250px" type="text" id="PWD" value="PWD"> <input
+		type="button" id="setWIFI" onclick="doSetWIFI()" value="set WIFI"
+		title="set WIFI credentials" />
+</div>
 <div id="output"></div>

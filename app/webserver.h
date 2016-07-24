@@ -13,5 +13,6 @@
 void startWebServer();
 void sendMeasureToClients(float value);
 
+extern int reduction;
 
 #endif /* INCLUDE_WEBSERVER_H_ */

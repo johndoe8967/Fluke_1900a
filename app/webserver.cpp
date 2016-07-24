@@ -38,12 +38,25 @@ void wsConnected(WebSocket& socket)
 {
 	totalActiveSockets++;
 }
-
 void wsMessageReceived(WebSocket& socket, const String& message)
 {
-	Serial.printf("WebSocket message received:\r\n%s\r\n", message.c_str());
-	String response = "Echo: " + message;
-	socket.sendString(response);
+	debugf("WebSocket message received:\r\n%s", message.c_str());
+
+	DynamicJsonBuffer jsonBuffer;
+	JsonObject& root = jsonBuffer.parseObject(message);
+
+	String value = root["type"].asString();
+	if (value==String("JSON")) {
+		value = root["msg"].asString();
+		if (value==String("reduction")) {
+			reduction = root["value"];
+		}
+		if (value==String("WIFI")) {
+			String SSID = root["SSID"].asString();
+			String PWD = root["PWD"].asString();
+			WifiStation.config(SSID,PWD);
+		}
+	}
 }
 
 void wsBinaryReceived(WebSocket& socket, uint8_t* data, size_t size)

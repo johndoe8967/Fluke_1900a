@@ -29,7 +29,7 @@ TcpServer *serialTelnet;
 TcpClient *myClient[MAXCLIENT];
 
 //#define USEFTP
-//#define debugWebServer
+#define debugWebServer
 //#define USEINTERRUPT
 
 #ifdef USEFTP
@@ -40,25 +40,31 @@ Fluke myFluke;
 
 Timer cyclicTimer;
 Timer *interruptTimer;
+int reduction=1;
+int reductionCounter=0;
 
 void sendData(String message, long value) {
 	unsigned long timestamp = millis();
 
-	debugf("Mess: %s", message.c_str() );
-	sendMeasureToClients((float)value/10);
+	reductionCounter++;
+	if ((reductionCounter % reduction) == 0) {
+		reductionCounter=0;
+		debugf("Mess: %s", message.c_str() );
+		sendMeasureToClients((float)value/10);
 
-	for (char i=0; i<MAXCLIENT; i++) {
-		if (myClient[i]) {
-			String timeString = "          ";
-			timeString += String(timestamp);
-			timeString = timeString.substring(timeString.length()-10);
+		for (char i=0; i<MAXCLIENT; i++) {
+			if (myClient[i]) {
+				String timeString = "          ";
+				timeString += String(timestamp);
+				timeString = timeString.substring(timeString.length()-10);
 
-			if (myFluke.isOverflow()) 	timeString += "Ovl ";
-			else 						timeString += "    ";
+				if (myFluke.isOverflow()) 	timeString += "Ovl ";
+				else 						timeString += "    ";
 
-			timeString += message;
-			timeString += "\r\n";
-			myClient[i]->writeString(timeString);
+				timeString += message;
+				timeString += "\r\n";
+				myClient[i]->writeString(timeString);
+			}
 		}
 	}
 }
