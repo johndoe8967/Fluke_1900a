@@ -70,7 +70,27 @@ void Fluke::calcNumberFromDigits() {
 
 
 void Fluke::calculateFrequency() {
+	long ovlTemp=ovlFreq;
 	calcNumberFromDigits();
+
+	if (this->isOverflow()) {
+		if (data[3] & EINER) {
+
+		} else if (data[3] & ZENER) {
+			ovlTemp /= 10;
+		} else if (data[3] & HUNDERTER) {
+			ovlTemp /= 100;
+		}
+
+		if (data[3] & MEGA) {
+			ovlTemp /= 1000;
+		}
+		ovlTemp %= 1000000;
+
+		if ((value - ovlTemp) > 500000) {
+			value -= 1000000;
+		}
+	}
 
 	if (data[3] & EINER) {
 
@@ -82,6 +102,9 @@ void Fluke::calculateFrequency() {
 
 	if (data[3] & MEGA) {
 		value *= 1000;
+	}
+	if (this->isOverflow()) {
+		value += ovlFreq;
 	}
 }
 
@@ -96,4 +119,11 @@ String Fluke::getPrintable() {
 		test += " ns";
 	}
 	return test;
+}
+
+void Fluke::setOverflowFreq(long freq)
+{
+	if ((freq > 0) && (freq < 100000000)) {
+		ovlFreq = freq;
+	}
 }

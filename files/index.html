@@ -125,6 +125,15 @@
 		};
 		websocket.send(JSON.stringify(message));
 	}
+	function sendOvlFreq() {
+		var ovlFreq = document.getElementById("ovlfrequency");
+		var message = {
+			type : "JSON",
+			msg : "ovlFreq",
+			value : ovlFreq.value
+		};
+		websocket.send(JSON.stringify(message));
+	}
 
 	function doSetWIFI() {
 		var SSID = document.getElementById("SSID");
@@ -149,10 +158,18 @@
 <a id="Export" href="#" download="table-data.csv" target="_blank">Download as csv</a>
 
 <div class="form-group">
-	<label>Untersetzung: </label> <input class="form-control"
-		style="width: 250px" type="number" id="reductionValue"
+	<label>Untersetzung: </label> 
+	<input class="form-control"
+		type="number" id="reductionValue"
 		name="reduction" value="1"
 		onkeydown="if (event.keyCode == 13) sendReduction()">
+</div>
+<div class="form-group">
+	<label>Ovl Frequency: </label> 
+	<input class="form-control"
+		type="number" id="ovlfrequency"
+		name="ovlFrequency" value="0"
+		onkeydown="if (event.keyCode == 13) sendOvlFreq()">
 </div>
 <div class="form-group">
 	<label style="float: left">SSID / PWD: </label> <input

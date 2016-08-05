@@ -42,6 +42,7 @@ Timer cyclicTimer;
 Timer *interruptTimer;
 int reduction=1;
 int reductionCounter=0;
+long ovlFreq=0;
 
 void sendData(String message, long value) {
 	unsigned long timestamp = millis();
@@ -70,6 +71,7 @@ void sendData(String message, long value) {
 }
 
 void processData() {
+	myFluke.setOverflowFreq(ovlFreq);
 	if (myFluke.readI2C()) {
 		String message = myFluke.getPrintable();
 		sendData(message, myFluke.getValue());

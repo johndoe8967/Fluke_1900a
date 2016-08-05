@@ -32,6 +32,7 @@ public:
 	bool newMeasurementAvailable() const { return data[3] & TRIG;}
 	bool isFrequency() const {return data[3] & FREQ;}
 	bool isOverflow() const {return data[3] & OVL;}
+	void setOverflowFreq(long freq);
 
 private:
 	void addDigit(int digit);
@@ -39,6 +40,7 @@ private:
 	void calculateFrequency();
 
 	long value;
+	long ovlFreq;
 	int data[4];
 };
 

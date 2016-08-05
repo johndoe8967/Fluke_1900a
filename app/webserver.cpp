@@ -51,6 +51,9 @@ void wsMessageReceived(WebSocket& socket, const String& message)
 		if (value==String("reduction")) {
 			reduction = root["value"];
 		}
+		if (value==String("ovlFreq")) {
+			ovlFreq = root["value"];
+		}
 		if (value==String("WIFI")) {
 			String SSID = root["SSID"].asString();
 			String PWD = root["PWD"].asString();
