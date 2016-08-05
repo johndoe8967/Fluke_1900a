@@ -87,7 +87,7 @@ void Fluke::calculateFrequency() {
 
 String Fluke::getPrintable() {
 	String test = "          ";
-	test += String(float(value/10),1);
+	test += String(float(value)/10,1);
 	test = test.substring(test.length()-9);
 
 	if (data[3] & FREQ) {

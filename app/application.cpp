@@ -29,7 +29,7 @@ TcpServer *serialTelnet;
 TcpClient *myClient[MAXCLIENT];
 
 //#define USEFTP
-#define debugWebServer
+//#define debugWebServer
 //#define USEINTERRUPT
 
 #ifdef USEFTP
@@ -40,7 +40,7 @@ Fluke myFluke;
 
 Timer cyclicTimer;
 Timer *interruptTimer;
-int reduction=100;
+int reduction=1;
 int reductionCounter=0;
 
 void sendData(String message, long value) {
@@ -50,7 +50,7 @@ void sendData(String message, long value) {
 	if ((reductionCounter % reduction) == 0) {
 		reductionCounter=0;
 		debugf("Mess: %s", message.c_str() );
-		sendMeasureToClients((float)value/10000, timestamp);
+		sendMeasureToClients((float)value/10, timestamp);
 
 		for (char i=0; i<MAXCLIENT; i++) {
 			if (myClient[i]) {
@@ -58,8 +58,8 @@ void sendData(String message, long value) {
 				timeString += String(timestamp);
 				timeString = timeString.substring(timeString.length()-10);
 
-				if (myFluke.isOverflow()) 	timeString += "Ovl ";
-				else 						timeString += "    ";
+				if (myFluke.isOverflow()) 	timeString += " Ovl ";
+				else 						timeString += "     ";
 
 				timeString += message;
 				timeString += "\r\n";
@@ -93,15 +93,7 @@ void cyclicProcess() {
 
 #ifdef USEINTERRUPT
 void IRAM_ATTR interruptHandler() {
-	detachInterrupt(INT_PIN);
-	while (digitalRead(INT_PIN) == false);
-
-	pinMode(INT_PIN, OUTPUT);
-	processData();
-	pinMode(INT_PIN, INPUT_PULLUP);
-
-	attachInterrupt(INT_PIN, interruptHandler, FALLING);
-
+	interruptTimer->startOnce();
 }
 #endif
 
@@ -169,11 +161,11 @@ void onConnect() {
 
 #ifdef USEINTERRUPT
 	pinMode(INT_PIN, INPUT_PULLUP);
-	attachInterrupt(INT_PIN, interruptHandler, FALLING);
+	attachInterrupt(INT_PIN, interruptHandler, RISING);
 	interruptTimer = new Timer();
 	interruptTimer->initializeMs(5,TimerDelegate(&processData));
 #else
-	cyclicTimer.initializeMs(20,TimerDelegate(&cyclicProcess)).start();
+	cyclicTimer.initializeMs(100,TimerDelegate(&cyclicProcess)).start();
 #endif
 
 	startmDNS();  // Start mDNS "Advertise" of your hostname "test.local" for this example
