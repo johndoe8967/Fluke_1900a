@@ -124,6 +124,6 @@ String Fluke::getPrintable() {
 void Fluke::setOverflowFreq(long freq)
 {
 	if ((freq > 0) && (freq < 100000000)) {
-		ovlFreq = freq;
+		ovlFreq = freq*10;
 	}
 }
