@@ -87,7 +87,9 @@ void Fluke::calculateFrequency() {
 		}
 		ovlTemp %= 1000000;
 
-		if ((value - ovlTemp) > 500000) {
+		value -= ovlTemp;
+
+		if ((value) > 500000) {
 			value -= 1000000;
 		}
 	}
