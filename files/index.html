@@ -2,7 +2,7 @@
 
 <meta charset="utf-8" />
 
-<title>WebSocket Test</title>
+<title>Fluke 1900a Chart</title>
 <script type="text/javascript"
 	src="https://www.gstatic.com/charts/loader.js"></script>
 <script language="javascript" type="text/javascript">
@@ -24,11 +24,21 @@
 
 		data = new google.visualization.DataTable();
 		data.addColumn('number', 'Time');
+
 		data.addColumn('number', 'Value');
 		numberOfRows = 0;
 		options = {
 			'title' : 'Measurements chart',
-			'height' : 800
+			'height' : 750,
+			'chartArea' : {
+				'left' : 100,
+				'right' : 30,
+				'bottom' : 50,
+				'top' : 40
+			},
+			'legend' : {
+				'position' : 'bottom'
+			}
 		};
 
 		chart = new google.visualization.LineChart(document
@@ -36,10 +46,11 @@
 		chart.draw(data, options);
 		loaded = 1;
 	}
-	
+
 	function init() {
 		document.getElementById("Export").onclick = function() {
-			var csvFormattedDataTable = google.visualization.dataTableToCsv(data);
+			var csvFormattedDataTable = google.visualization
+					.dataTableToCsv(data);
 			var encodedUri = 'data:application/csv;charset=utf-8,'
 					+ encodeURIComponent(csvFormattedDataTable);
 			this.href = encodedUri;
@@ -144,31 +155,26 @@
 			SSID : SSID.value,
 			PWD : PWD.value
 		};
-		websocket.send(JSON.stringify(message));		
+		websocket.send(JSON.stringify(message));
 	}
-	
+
 	window.addEventListener("load", init, false);
 </script>
 
-<h2>
-	Fluke 1900a Graph <input type="button" id="disconnect"
-		onclick="doDisconnect()" value="X" title="Disconnect WS" />
-</h2>
 <div id="chart_div"></div>
-<a id="Export" href="#" download="table-data.csv" target="_blank">Download as csv</a>
+<a id="Export" href="#" download="table-data.csv" target="_blank">Download
+	as csv</a>
+<input style="float: right" type="button" id="disconnect"
+	onclick="doDisconnect()" value="X" title="Disconnect WS" />
 
 <div class="form-group">
-	<label>Untersetzung: </label> 
-	<input class="form-control"
-		type="number" id="reductionValue"
-		name="reduction" value="1"
+	<label>Untersetzung: </label> <input class="form-control" type="number"
+		id="reductionValue" name="reduction" value="1"
 		onkeydown="if (event.keyCode == 13) sendReduction()">
 </div>
 <div class="form-group">
-	<label>Ovl Frequency: </label> 
-	<input class="form-control"
-		type="number" id="ovlfrequency"
-		name="ovlFrequency" value="0"
+	<label>Ovl Frequency: </label> <input class="form-control"
+		type="number" id="ovlfrequency" name="ovlFrequency" value="0"
 		onkeydown="if (event.keyCode == 13) sendOvlFreq()">
 </div>
 <div class="form-group">
