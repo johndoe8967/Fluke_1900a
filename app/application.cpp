@@ -30,7 +30,7 @@ TcpClient *myClient[MAXCLIENT];
 
 //#define USEFTP
 //#define debugWebServer
-//#define USEINTERRUPT
+//#define USEINTERRUPT1
 
 #ifdef USEFTP
 FTPServer ftp;
@@ -38,8 +38,13 @@ FTPServer ftp;
 
 Fluke myFluke;
 
-Timer cyclicTimer;
+#ifdef USEINTERRUPT
 Timer *interruptTimer;
+bool interruptReady = false;
+void interruptHandler();
+#endif
+
+Timer cyclicTimer;
 int reduction=1;
 int reductionCounter=0;
 long ovlFreq=0;
@@ -71,13 +76,23 @@ void sendData(String message, long value) {
 }
 
 void processData() {
+#ifdef USEINTERRUPT1
+	if (interruptReady==false) return;
+	interruptReady = false;
+	debugf("Interrupt");
+#endif
 	myFluke.setOverflowFreq(ovlFreq);
 	if (myFluke.readI2C()) {
 		String message = myFluke.getPrintable();
 		sendData(message, myFluke.getValue());
 	}
+#ifdef USEINTERRUPT
+	interruptTimer->stop();
+	attachInterrupt(INT_PIN, interruptHandler, RISING);
+#endif
 }
 
+#ifndef USEINTERRUPT
 void cyclicProcess() {
 #ifdef debugWebServer
 	long a = rand();
@@ -92,10 +107,14 @@ void cyclicProcess() {
 	processData();
 #endif
 }
+#endif
 
-#ifdef USEINTERRUPT
-void IRAM_ATTR interruptHandler() {
-	interruptTimer->startOnce();
+#ifdef USEINTERRUPT1
+#define say(a) ( Serial.print(a) )
+
+void IRAM_ATTR interruptHandler()
+{
+	interruptReady = true;
 }
 #endif
 
@@ -161,13 +180,12 @@ void onConnect() {
 	startFTP();
 #endif
 
-#ifdef USEINTERRUPT
-	pinMode(INT_PIN, INPUT_PULLUP);
-	attachInterrupt(INT_PIN, interruptHandler, RISING);
-	interruptTimer = new Timer();
-	interruptTimer->initializeMs(5,TimerDelegate(&processData));
+#ifdef USEINTERRUPT1
+//	interruptTimer = new Timer();
+//	interruptTimer->initializeMs(10,TimerDelegate(&processData));
+	cyclicTimer.initializeMs(5,TimerDelegate(&cyclicProcess)).start();
 #else
-	cyclicTimer.initializeMs(100,TimerDelegate(&cyclicProcess)).start();
+	cyclicTimer.initializeMs(5,TimerDelegate(&cyclicProcess)).start();
 #endif
 
 	startmDNS();  // Start mDNS "Advertise" of your hostname "test.local" for this example
@@ -192,7 +210,7 @@ void init()
 	WifiStation.enable(false);
 
 #ifndef USEINTERRUPT
-	Serial.begin(SERIAL_BAUD_RATE); // 115200 by default
+	Serial.begin(76800); // 115200 by default
 #ifdef debug
 	Serial.systemDebugOutput(true); // Disable debug output
 #else
@@ -207,5 +225,13 @@ void init()
 #endif
 
 	WifiStation.enable(true);
+	WifiStation.setHostname("Fluke1900a");
 	WifiStation.waitConnection(ConnectionDelegate(&onConnect),10,ConnectionDelegate(&noConnect));
+
+#ifdef USEINTERRUPT1
+	PIN_FUNC_SELECT(PERIPHS_IO_MUX_U0RXD_U, FUNC_GPIO3);
+	pinMode(INT_PIN, INPUT_PULLUP);
+
+	attachInterrupt(INT_PIN, interruptHandler, RISING);
+#endif
 }
