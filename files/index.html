@@ -157,6 +157,12 @@
 		};
 		websocket.send(JSON.stringify(message));
 	}
+	
+	function doClear() {
+		data.removeRows(0,data.getNumberOfRows());
+		chart.clearChart();
+		chart.draw(data, options);
+	}
 
 	window.addEventListener("load", init, false);
 </script>
@@ -166,6 +172,8 @@
 	as csv</a>
 <input style="float: right" type="button" id="disconnect"
 	onclick="doDisconnect()" value="X" title="Disconnect WS" />
+<input style="float: right" type="button" id="clearChart"
+	onclick="doClear()" value="Clear" title="Clear Chart" />
 
 <div class="form-group">
 	<label>Untersetzung: </label> <input class="form-control" type="number"
