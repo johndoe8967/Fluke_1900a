@@ -30,7 +30,7 @@ TcpClient *myClient[MAXCLIENT];
 
 //#define USEFTP
 //#define debugWebServer
-//#define USEINTERRUPT1
+//#define USEINTERRUPT
 
 #ifdef USEFTP
 FTPServer ftp;
@@ -76,7 +76,7 @@ void sendData(String message, long value) {
 }
 
 void processData() {
-#ifdef USEINTERRUPT1
+#ifdef USEINTERRUPT
 	if (interruptReady==false) return;
 	interruptReady = false;
 	debugf("Interrupt");
@@ -86,32 +86,19 @@ void processData() {
 		String message = myFluke.getPrintable();
 		sendData(message, myFluke.getValue());
 	}
-#ifdef USEINTERRUPT
-	interruptTimer->stop();
-	attachInterrupt(INT_PIN, interruptHandler, RISING);
-#endif
 }
 
-#ifndef USEINTERRUPT
 void cyclicProcess() {
 #ifdef debugWebServer
 	long a = rand();
-//	static char reduction = 0;
-//	reduction++;
-//	if ((reduction % 1) == 0) {
-//		reduction = 0;
-		String message = String(float(a/10),1);
-		sendData(message,a);
-//	}
+	String message = String(float(a/10),1);
+	sendData(message,a);
 #else
 	processData();
 #endif
 }
-#endif
 
-#ifdef USEINTERRUPT1
-#define say(a) ( Serial.print(a) )
-
+#ifdef USEINTERRUPT
 void IRAM_ATTR interruptHandler()
 {
 	interruptReady = true;
@@ -180,13 +167,7 @@ void onConnect() {
 	startFTP();
 #endif
 
-#ifdef USEINTERRUPT1
-//	interruptTimer = new Timer();
-//	interruptTimer->initializeMs(10,TimerDelegate(&processData));
 	cyclicTimer.initializeMs(5,TimerDelegate(&cyclicProcess)).start();
-#else
-	cyclicTimer.initializeMs(5,TimerDelegate(&cyclicProcess)).start();
-#endif
 
 	startmDNS();  // Start mDNS "Advertise" of your hostname "test.local" for this example
 }
@@ -209,14 +190,13 @@ void init()
 	WifiAccessPoint.enable(false);
 	WifiStation.enable(false);
 
-#ifndef USEINTERRUPT
-	Serial.begin(76800); // 115200 by default
+	Serial.begin(115200); // 115200 by default
 #ifdef debug
 	Serial.systemDebugOutput(true); // Disable debug output
 #else
 	Serial.systemDebugOutput(false); // Disable debug output
 #endif
-#endif
+
 	spiffs_mount(); // Mount file system, in order to work with files
 
 #ifndef debugWebServer
@@ -228,7 +208,7 @@ void init()
 	WifiStation.setHostname("Fluke1900a");
 	WifiStation.waitConnection(ConnectionDelegate(&onConnect),10,ConnectionDelegate(&noConnect));
 
-#ifdef USEINTERRUPT1
+#ifdef USEINTERRUPT
 	PIN_FUNC_SELECT(PERIPHS_IO_MUX_U0RXD_U, FUNC_GPIO3);
 	pinMode(INT_PIN, INPUT_PULLUP);
 
